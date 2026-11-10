@@ -1,0 +1,82 @@
+{
+  "title": "RYOKU 20V Brushless Impact Wrench 500Nm",
+  "input": "input/IMG_4692.MOV",
+  "output": "output/ryoku_impact_wrench_tiktok.mp4",
+  "crf": 16,
+  "preset": "slow",
+  "sfx_volume": 0.5,
+
+  "whisper": {
+    "ggml_model": "models/ggml-large-v3.bin",
+    "language": "ms",
+    "initial_prompt": "Review impact wrench RYOKU 20V brushless, tork 500Nm, bateri, charger, socket, aksesori."
+  },
+
+  "corrections": {
+    "cap": "chuck",
+    "b": "bit",
+    "matambik": "mata bit",
+    "kancik": "Kancil",
+    "biva": "Viva",
+    "serviti": "CVT",
+    "p": "3-pin"
+  },
+
+  "subtitle_style": {"y": 1330, "font_size": 86, "max_words": 3, "max_chars": 16,
+                     "active_color": "#FFE600"},
+  "number_color": "#FFE600",
+  "keyword_colors": {
+    "#39FF14": ["ryoku", "impact", "wrench", "brushless", "bateri", "charger", "socket",
+                "chuck", "aksesori", "bit", "hexagon", "pakej"],
+    "#FF3B6B": ["cantik", "cepat", "senang", "latest", "mahal", "kualiti", "sangat"],
+    "#00E5FF": ["skru", "motor", "cvt", "engine", "rim", "kancil", "viva", "repair",
+                "service", "tenaga", "tork"]
+  },
+
+  "hook": {
+    "duration": 3.0,
+    "label": "GENG BENGKEL, TENGOK NI!",
+    "lines": ["SKRU KETAT?", "SETTLE 1 SAAT!"],
+    "colors": ["#FFFFFF", "#FFE600"],
+    "box_color": "#E0102E"
+  },
+
+  "callouts": [
+    {"start": 9.8,  "end": 13.3, "title": "IMPACT WRENCH", "subtitle": "Brushless • Cordless 20V",
+     "side": "right", "y": 700, "color": "#39FF14", "title_size": 78},
+    {"start": 13.6, "end": 18.4, "title": "500 Nm", "subtitle": "TORK MAKSIMUM",
+     "side": "left", "y": 720, "color": "#FFE600", "title_size": 120, "badge": "POWER"},
+    {"start": 20.4, "end": 24.3, "title": "1/2\" DRIVE", "subtitle": "Muat socket & mata bit hexagon",
+     "side": "right", "y": 700, "color": "#00E5FF", "title_size": 88},
+    {"start": 36.3, "end": 43.2, "title": "SET LENGKAP", "subtitle": "Socket • Chuck • Mata Bit",
+     "side": "left", "y": 640, "color": "#39FF14", "title_size": 84, "badge": "BONUS"},
+    {"start": 38.4, "end": 43.2, "title": "2x BATERI", "subtitle": "+ 1 Charger 20V",
+     "side": "right", "y": 920, "color": "#FFE600", "title_size": 84},
+    {"start": 61.6, "end": 68.5, "title": "SESUAI UNTUK", "subtitle": "Motor • CVT • Engine • Rim Kereta",
+     "side": "left", "y": 700, "color": "#00E5FF", "title_size": 80},
+    {"start": 69.0, "end": 73.4, "title": "MODEL TERKINI", "subtitle": "RYOKU 500Nm • Kualiti Cantik",
+     "side": "right", "y": 700, "color": "#FF3B6B", "title_size": 80, "badge": "LATEST"}
+  ],
+
+  "zooms": [
+    {"start": -1.0, "end": 1.7,  "scale": 1.20, "ramp_out": 0.7, "sfx": false},
+    {"start": 2.3,  "end": 4.3,  "scale": 1.12},
+    {"start": 14.0, "end": 17.2, "scale": 1.35},
+    {"start": 20.5, "end": 23.2, "scale": 1.22},
+    {"start": 32.7, "end": 35.3, "scale": 1.28, "ramp_in": 0.08, "ramp_out": 1.8},
+    {"start": 51.5, "end": 52.8, "scale": 1.15},
+    {"start": 53.7, "end": 55.3, "scale": 1.15},
+    {"start": 64.6, "end": 68.4, "scale": 1.18},
+    {"start": 69.0, "end": 72.2, "scale": 1.32}
+  ],
+
+  "cta": {
+    "duration": 4.5,
+    "y": 470,
+    "lines": ["JANGAN TUNGGU LAGI!", "HARGA TAK MAHAL!", "STOK TERHAD"],
+    "colors": ["#FFFFFF", "#FFE600", "#39FF14"],
+    "button": "TEKAN BEG KUNING",
+    "button_y": 880,
+    "arrow_x": 150
+  }
+}

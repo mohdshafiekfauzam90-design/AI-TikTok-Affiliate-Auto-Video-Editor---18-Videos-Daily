@@ -1,0 +1,7 @@
+numpy>=1.26
+Pillow>=10
+pywhispercpp>=1.3      # Whisper (whisper.cpp) tanpa PyTorch
+platformdirs
+tqdm
+requests
+# Pilihan: openai-whisper (perlukan PyTorch) jika tiada "ggml_model" dalam config
