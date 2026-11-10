@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/mohdshafiekfauzam90-design/AI-TikTok-Affiliate-Auto-Video-Editor---18-Videos-Daily#readme",
   "dependencies": {
+    "gsap": "^3.15.0",
     "hyperframes": "^0.9.30"
   }
 }
