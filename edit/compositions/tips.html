@@ -1,0 +1,54 @@
+<template>
+  <style>
+
+      :root { --yellow:#FFD21F; --red:#E5252A; --ink:#0D0D0D; --white:#FFFFFF; }
+
+      .hf-stroke { paint-order: stroke fill; -webkit-text-stroke: 14px var(--ink); }
+
+      #tips { position:absolute; inset:0; font-family:'Inter',sans-serif; color:var(--white); }
+
+      .tip { position:absolute; left:56px; right:120px; top:256px; background:var(--white); color:var(--ink);
+        border-radius:26px; padding:26px 32px 28px; box-shadow:0 18px 40px rgba(0,0,0,.35); }
+      .tip .tag { display:inline-block; background:var(--red); color:var(--white); font-weight:900; font-size:30px;
+        letter-spacing:.12em; padding:6px 16px; border-radius:8px; }
+      .tip .h { font-family:'Archivo Black','Inter',sans-serif; font-size:58px; line-height:1.05; margin-top:12px; }
+      .tip .b { font-weight:800; font-size:40px; line-height:1.2; margin-top:12px; color:#222; }
+      .tip .b2 { display:inline-block; font-weight:900; font-size:36px; margin-top:16px; background:var(--yellow);
+        padding:8px 18px; border-radius:10px; opacity:0; }
+      #tip3 { position:absolute; left:56px; top:262px; display:flex; align-items:center; gap:16px; background:rgba(13,13,13,.84);
+        border:3px solid var(--yellow); font-weight:900; font-size:44px; padding:16px 28px; border-radius:16px; }
+      #tip3 .tick { display:inline-flex; align-items:center; justify-content:center; width:50px; height:50px; border-radius:50%;
+        background:var(--yellow); color:var(--ink); font-size:32px; }
+
+  </style>
+  <div id="tips" data-composition-id="tips" data-width="1080" data-height="1920">
+    <div id="tip1" class="clip tip" data-start="0.1" data-duration="8.6" data-track-index="1">
+      <div class="tag">TIP</div>
+      <div class="h">TUKAR CARBON SENANG</div>
+      <div id="tip1-a" class="b">Tukar kat bawah je &mdash; tak perlu buka sampai dalam</div>
+      <div id="tip1-b" class="b2">Ada kiri &amp; kanan</div>
+    </div>
+    <div id="tip2" class="clip tip" data-start="8.85" data-duration="6.550000000000001" data-track-index="1">
+      <div class="tag">TIP</div>
+      <div class="h">DAH GUNA BANYAK KALI?</div>
+      <div class="b">Letak grease balik kat atas</div>
+    </div>
+    <div id="tip3" class="clip" data-start="16.05" data-duration="1.5" data-track-index="2">
+      <span class="tick">&#10003;</span>MINYAK GREASE DISERTAKAN
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#tip1", { y: -40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, ease: "expo.out" }, 0.1);
+    tl.fromTo("#tip1-a", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 0.4);
+    tl.fromTo("#tip1-b", { scale: 0.6, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.2)" }, 3.85);
+    tl.to("#tip1", { y: -30, opacity: 0, duration: 0.2, ease: "power3.in" }, 8.45);
+    tl.fromTo("#tip2", { y: -40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, ease: "expo.out" }, 8.85);
+    tl.to("#tip2", { y: -30, opacity: 0, duration: 0.2, ease: "power3.in" }, 15.15);
+    tl.fromTo("#tip3", { x: -50, opacity: 0 }, { x: 0, opacity: 1, duration: 0.35, ease: "back.out(1.8)" }, 16.05);
+    tl.to("#tip3", { opacity: 0, duration: 0.15 }, 17.38);
+
+    window.__timelines["tips"] = tl;
+  </script>
+</template>

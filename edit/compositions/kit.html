@@ -1,0 +1,45 @@
+<template>
+  <style>
+
+      :root { --yellow:#FFD21F; --red:#E5252A; --ink:#0D0D0D; --white:#FFFFFF; }
+
+      .hf-stroke { paint-order: stroke fill; -webkit-text-stroke: 14px var(--ink); }
+
+      #kit { position:absolute; inset:0; font-family:'Inter',sans-serif; color:var(--white); }
+
+      #kit-panel { position:absolute; left:56px; top:256px; width:640px; background:rgba(13,13,13,.84);
+        border-radius:26px; padding:26px 30px 14px; border-left:12px solid var(--yellow); box-shadow:0 18px 40px rgba(0,0,0,.4); }
+      #kit-panel .head { font-family:'Archivo Black','Inter',sans-serif; font-size:52px; color:var(--yellow); margin-bottom:10px; }
+      #kit-panel .item { display:flex; align-items:flex-start; gap:18px; padding:10px 0; opacity:0; }
+      #kit-panel .tick { flex:none; display:inline-flex; align-items:center; justify-content:center; width:52px; height:52px;
+        border-radius:50%; background:var(--yellow); color:var(--ink); font-weight:900; font-size:34px; margin-top:2px; }
+      #kit-panel .t { font-weight:900; font-size:48px; line-height:1.1; }
+      #kit-panel .s { font-weight:700; font-size:30px; color:#d9d9d9; margin-top:4px; letter-spacing:.02em; }
+
+  </style>
+  <div id="kit" data-composition-id="kit" data-width="1080" data-height="1920">
+    <div id="kit-panel" class="clip" data-start="1.683" data-duration="11.45" data-track-index="1">
+      <div class="head">DAPAT SEKALI</div>
+      <div id="k1" class="item"><span class="tick">&#10003;</span><div><div class="t">CASING</div></div></div>
+      <div id="k2" class="item"><span class="tick">&#10003;</span><div><div class="t">MATA &times;6 BATANG</div><div class="s">HACKING + TEBUK DINDING</div></div></div>
+      <div id="k3" class="item"><span class="tick">&#10003;</span><div><div class="t">MINYAK GREASE</div></div></div>
+      <div id="k4" class="item"><span class="tick">&#10003;</span><div><div class="t">1 CARBON</div></div></div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#kit-panel", { x: -80, opacity: 0 }, { x: 0, opacity: 1, duration: 0.45, ease: "expo.out" }, 1.683);
+    tl.fromTo("#k1", { x: -40, opacity: 0 }, { x: 0, opacity: 1, duration: 0.32, ease: "back.out(1.7)" }, 3.083);
+    tl.fromTo("#k1 .tick", { scale: 0 }, { scale: 1, duration: 0.3, ease: "back.out(3)" }, 3.143);
+    tl.fromTo("#k2", { x: -40, opacity: 0 }, { x: 0, opacity: 1, duration: 0.32, ease: "back.out(1.7)" }, 5.183);
+    tl.fromTo("#k2 .tick", { scale: 0 }, { scale: 1, duration: 0.3, ease: "back.out(3)" }, 5.243);
+    tl.fromTo("#k3", { x: -40, opacity: 0 }, { x: 0, opacity: 1, duration: 0.32, ease: "back.out(1.7)" }, 10.683);
+    tl.fromTo("#k3 .tick", { scale: 0 }, { scale: 1, duration: 0.3, ease: "back.out(3)" }, 10.743);
+    tl.fromTo("#k4", { x: -40, opacity: 0 }, { x: 0, opacity: 1, duration: 0.32, ease: "back.out(1.7)" }, 11.683);
+    tl.fromTo("#k4 .tick", { scale: 0 }, { scale: 1, duration: 0.3, ease: "back.out(3)" }, 11.743);
+    tl.to("#kit-panel", { x: -60, opacity: 0, duration: 0.22, ease: "power3.in" }, 12.853);
+
+    window.__timelines["kit"] = tl;
+  </script>
+</template>

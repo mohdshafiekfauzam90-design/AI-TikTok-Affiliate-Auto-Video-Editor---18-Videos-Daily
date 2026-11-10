@@ -1,0 +1,30 @@
+<template>
+  <style>
+
+      :root { --yellow:#FFD21F; --red:#E5252A; --ink:#0D0D0D; --white:#FFFFFF; }
+
+      .hf-stroke { paint-order: stroke fill; -webkit-text-stroke: 14px var(--ink); }
+
+      #demo { position:absolute; inset:0; font-family:'Inter',sans-serif; color:var(--white); }
+
+      #demo-chip { position:absolute; left:60px; top:262px; display:flex; align-items:center; gap:16px;
+        background:rgba(13,13,13,.78); border:3px solid var(--yellow); color:var(--white); font-weight:900;
+        font-size:42px; letter-spacing:.03em; padding:16px 28px; border-radius:16px; }
+      #demo-chip .dot { width:22px; height:22px; border-radius:50%; background:var(--red); box-shadow:0 0 0 6px rgba(229,37,42,.3); }
+
+  </style>
+  <div id="demo" data-composition-id="demo" data-width="1080" data-height="1920">
+    <div id="demo-chip" class="clip" data-start="0.15" data-duration="7.15" data-track-index="1">
+      <span class="dot"></span>TEST PECAH BATA
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#demo-chip", { x: -60, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "power4.out" }, 0.15);
+    tl.fromTo("#demo-chip .dot", { scale: 1 }, { scale: 0.6, duration: 0.5, ease: "sine.inOut", yoyo: true, repeat: 12 }, 0.6);
+    tl.to("#demo-chip", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 7.1);
+
+    window.__timelines["demo"] = tl;
+  </script>
+</template>

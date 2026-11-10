@@ -1,0 +1,23 @@
+{
+  "name": "ai-tiktok-affiliate-auto-video-editor---18-videos-daily",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohdshafiekfauzam90-design/AI-TikTok-Affiliate-Auto-Video-Editor---18-Videos-Daily.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohdshafiekfauzam90-design/AI-TikTok-Affiliate-Auto-Video-Editor---18-Videos-Daily/issues"
+  },
+  "homepage": "https://github.com/mohdshafiekfauzam90-design/AI-TikTok-Affiliate-Auto-Video-Editor---18-Videos-Daily#readme",
+  "dependencies": {
+    "hyperframes": "^0.9.30"
+  }
+}

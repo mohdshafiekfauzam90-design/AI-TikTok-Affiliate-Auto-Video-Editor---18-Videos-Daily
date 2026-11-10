@@ -1,0 +1,80 @@
+<template>
+  <style>
+
+      :root { --yellow:#FFD21F; --red:#E5252A; --ink:#0D0D0D; --white:#FFFFFF; }
+
+      .hf-stroke { paint-order: stroke fill; -webkit-text-stroke: 14px var(--ink); }
+
+      #product { position:absolute; inset:0; font-family:'Inter',sans-serif; color:var(--white); }
+
+      #p-name { position:absolute; left:60px; right:60px; top:256px; }
+      #p-name .lbl { display:inline-block; background:var(--yellow); color:var(--ink); font-weight:900; font-size:34px;
+        padding:8px 18px; border-radius:10px; letter-spacing:.05em; }
+      #p-name .big { font-family:'Archivo Black','Inter',sans-serif; font-size:96px; line-height:1.0; margin-top:14px; }
+      .sticker { position:absolute; right:70px; top:520px; background:var(--red); color:var(--white);
+        font-family:'Archivo Black','Inter',sans-serif; font-size:56px; padding:14px 28px; border-radius:16px;
+        border:5px solid var(--white); box-shadow:0 14px 30px rgba(0,0,0,.4); }
+      #p-watt { position:absolute; left:0; right:0; top:262px; text-align:center; }
+      #p-watt .num { font-family:'Archivo Black','Inter',sans-serif; font-size:230px; line-height:.95; color:var(--yellow);
+        text-shadow:0 14px 40px rgba(0,0,0,.45); }
+      #p-watt .unit { display:inline-block; margin-top:4px; background:var(--ink); color:var(--white); font-weight:900;
+        font-size:64px; letter-spacing:.3em; padding:6px 10px 6px 30px; border-radius:12px; }
+      #p-mode { position:absolute; left:60px; right:60px; top:256px; }
+      #p-mode .head { font-family:'Archivo Black','Inter',sans-serif; font-size:96px; line-height:1; paint-order:stroke fill; -webkit-text-stroke:14px var(--ink); }
+      #p-mode .head .sub { -webkit-text-stroke:0; }
+      #p-mode .head .n { color:var(--yellow); }
+      #p-mode .head .sub { display:inline-block; vertical-align:middle; font-family:'Inter'; font-weight:900;
+        font-size:30px; background:var(--white); color:var(--ink); padding:8px 14px; border-radius:10px; margin-left:8px; }
+      #p-mode .chips { display:flex; flex-direction:column; gap:18px; margin-top:26px; align-items:flex-start; }
+      #p-mode .chip { display:flex; align-items:center; gap:18px; background:rgba(13,13,13,.82); border:3px solid var(--yellow);
+        font-weight:900; font-size:50px; padding:14px 30px 14px 16px; border-radius:18px; opacity:0; }
+      #p-mode .chip b { display:inline-flex; align-items:center; justify-content:center; width:62px; height:62px;
+        border-radius:12px; background:var(--yellow); color:var(--ink); font-size:40px; }
+      #p-plug { position:absolute; left:60px; top:262px; display:flex; align-items:center; gap:14px; background:var(--yellow);
+        color:var(--ink); font-weight:900; font-size:58px; padding:14px 30px; border-radius:16px; box-shadow:0 12px 30px rgba(0,0,0,.35); }
+      #p-plug .ic { font-size:52px; }
+
+  </style>
+  <div id="product" data-composition-id="product" data-width="1080" data-height="1920">
+    <div id="p-name" class="clip" data-start="1.1" data-duration="2.85" data-track-index="1">
+      <div class="lbl">INI DIA</div>
+      <div class="big"><span class="hf-stroke">ROTARY</span><br><span class="hf-stroke">HAMMER DRILL</span></div>
+    </div>
+    <div id="p-bajet" class="clip sticker" data-start="2.42" data-duration="1.5300000000000002" data-track-index="2">HARGA BAJET</div>
+    <div id="p-watt" class="clip" data-start="4.4" data-duration="2.25" data-track-index="1">
+      <div class="num"><span id="p-watt-n" class="hf-stroke">2200</span></div>
+      <div class="unit">WATT</div>
+    </div>
+    <div id="p-mode" class="clip" data-start="6.65" data-duration="8.049999999999999" data-track-index="1">
+      <div class="head"><span class="n">2</span> MODE <span class="sub">BOLEH ADJUST</span></div>
+      <div class="chips">
+        <div id="p-mode-1" class="chip"><b>1</b>HACKING</div>
+        <div id="p-mode-2" class="chip"><b>2</b>TEBUK DINDING</div>
+      </div>
+    </div>
+    <div id="p-plug" class="clip" data-start="15.8" data-duration="1.166999999999998" data-track-index="2">
+      <span class="ic">&#9889;</span>PLUG 3 PIN
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#p-name .lbl", { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.3, ease: "power3.out" }, 1.1);
+    tl.fromTo("#p-name .big", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, ease: "expo.out" }, 1.18);
+    tl.to("#p-name", { opacity: 0, y: -20, duration: 0.2, ease: "power3.in" }, 3.7);
+    tl.fromTo("#p-bajet", { scale: 0.2, rotation: -24 }, { scale: 1, rotation: -6, duration: 0.42, ease: "back.out(2.4)" }, 2.42);
+    tl.to("#p-bajet", { scale: 0.4, opacity: 0, duration: 0.18, ease: "power3.in" }, 3.75);
+    tl.fromTo("#p-watt", { scale: 0.7, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.35, ease: "expo.out" }, 4.4);
+    tl.fromTo("#p-watt-n", { textContent: 0 }, { textContent: 2200, duration: 1.4, ease: "power2.out", snap: { textContent: 10 } }, 4.46);
+    tl.fromTo("#p-watt .unit", { scaleX: 0 }, { scaleX: 1, duration: 0.3, ease: "power3.out" }, 5.94);
+    tl.to("#p-watt", { opacity: 0, scale: 0.92, duration: 0.18, ease: "power3.in" }, 6.45);
+    tl.fromTo("#p-mode .head", { x: -80, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 6.65);
+    tl.fromTo("#p-mode-1", { x: -60, opacity: 0 }, { x: 0, opacity: 1, duration: 0.35, ease: "back.out(1.8)" }, 11.3);
+    tl.fromTo("#p-mode-2", { x: -60, opacity: 0 }, { x: 0, opacity: 1, duration: 0.35, ease: "back.out(1.8)" }, 13.2);
+    tl.to("#p-mode-1", { opacity: 0.55, duration: 0.2 }, 13.2);
+    tl.to("#p-mode", { opacity: 0, x: -30, duration: 0.2, ease: "power3.in" }, 14.48);
+    tl.fromTo("#p-plug", { y: -30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.3, ease: "back.out(2)" }, 15.8);
+
+    window.__timelines["product"] = tl;
+  </script>
+</template>

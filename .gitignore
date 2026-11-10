@@ -1,0 +1,10 @@
+node_modules/
+edit/node_modules/
+*.mp4
+*.wav
+*.mov
+!edit/assets/sfx/*.mp3
+edit/.media/
+edit/snapshots/
+edit/renders/
+.hyperframes/
