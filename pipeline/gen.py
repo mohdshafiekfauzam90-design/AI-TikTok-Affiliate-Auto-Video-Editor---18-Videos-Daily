@@ -113,7 +113,6 @@ hosts = []
 # over the brick-breaking demo; its three beats land as kinetic type on the words.
 hook_beats = [("TEBUK DINDING?", 1.26), ("PECAH KONKRIT?", 2.46), ("SEMUA BOLEH!", 3.48)]
 hook_html = """    <div id="hook-top" class="clip" data-start="0" data-duration="4.4" data-track-index="1">
-      <div id="hook-kicker">REVIEW JUJUR &middot; MUROH DOOH</div>
       <div id="hook-title"><span class="hf-stroke">HAMMER DRILL</span></div>
       <div id="hook-watt"><span>2200</span>WATT</div>
     </div>
@@ -122,10 +121,8 @@ hook_html = """    <div id="hook-top" class="clip" data-start="0" data-duration=
     f'<span class="hf-stroke">{html.escape(txt)}</span></div>\n' for k, (txt, t) in enumerate(hook_beats))
 hook_css = """
       #hook-top { position:absolute; left:0; right:0; top:206px; text-align:center; }
-      #hook-kicker { display:inline-block; background:var(--yellow); color:var(--ink); font-weight:900;
-        font-size:34px; letter-spacing:.04em; padding:10px 22px; border-radius:10px; }
       #hook-title { font-family:'Archivo Black','Inter',sans-serif; font-size:118px; line-height:1.02;
-        margin-top:18px; letter-spacing:-.01em; text-shadow:0 10px 30px rgba(0,0,0,.45); }
+        margin-top:0; letter-spacing:-.01em; text-shadow:0 10px 30px rgba(0,0,0,.45); }
       #hook-watt { display:inline-flex; align-items:baseline; gap:14px; margin-top:12px;
         background:var(--red); padding:6px 26px 10px; border-radius:14px; transform:rotate(-3deg);
         font-family:'Archivo Black','Inter',sans-serif; font-size:44px; box-shadow:0 12px 30px rgba(0,0,0,.35); }
@@ -136,7 +133,6 @@ hook_css = """
 """
 hook_js = """    tl.fromTo("#hook-title", { scale: 1.12 }, { scale: 1, duration: 0.5, ease: "expo.out" }, 0);
     tl.fromTo("#hook-watt", { scale: 0.6, rotation: -14 }, { scale: 1, rotation: -3, duration: 0.45, ease: "back.out(2.2)" }, 0.12);
-    tl.fromTo("#hook-kicker", { y: -12 }, { y: 0, duration: 0.4, ease: "power3.out" }, 0);
     tl.to("#hook-top", { y: -26, opacity: 0, duration: 0.22, ease: "power3.in" }, 4.16);
 """ + "".join(
     f'    tl.fromTo("#hook-b{k} span", {{ scale: 1.6, opacity: 0 }}, {{ scale: 1, opacity: 1, duration: 0.24, ease: "expo.out" }}, {t - 0.06:.2f});\n'

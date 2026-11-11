@@ -20,6 +20,7 @@ time, without being asked again, unless the owner says otherwise.
 Style: professional, clean, engaging, for TikTok Shop Affiliate Malaysia. Never invent product
 visuals, prices, discounts or specs not in the footage or speech. Keep the MUROH DOOH identity
 (brand tag + sign-off; palette yellow #FFD21F, red #E5252A, ink #0D0D0D unless the owner gives an official one).
+Never put a "REVIEW JUJUR · MUROH DOOH" line (or any "review jujur" kicker) on the hook: the owner asked for it gone.
 
 ## Pipeline (see README.md for details)
 
