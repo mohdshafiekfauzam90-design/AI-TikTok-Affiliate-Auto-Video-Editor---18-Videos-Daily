@@ -29,7 +29,7 @@ def snap(t):
 # line whose speaker pauses inside a number), exact = trim inner pauses but keep the given edges, speech = both
 # opts: {"speed": x} speeds picture+sound, {"gain": 0} mutes a repeated line under a demo shot.
 KEEPS = [
-    (7.62, 18.70, "speech", "Power gang. Yang ni kalau korang nak buat potong besi tempat-tempat pun takde masalah. Angle grinder daripada Soarfly brushless motor, boleh adjust 3 level."),
+    (7.62, 18.70, "speech", "Power gang. Yang ni kalau korang nak buat potong besi [unclear word cut] pun takde masalah. Angle grinder daripada Soarfly brushless motor, boleh adjust 3 level."),
     (18.70, 20.70, "demo", "presses the speed button (motor)", {"speed": 1.6}),
     (20.70, 24.55, "exact", "Level 1, level 2, level 3."),
     (24.85, 37.90, "speech", "Untuk yang ni gang korang juga akan dapat. Lepas tu aksesori yang dia bagi pun banyak... semua ada dekat sini."),
@@ -41,7 +41,7 @@ KEEPS = [
     (84.40, 87.55, "speech", "Jadi kalau korang nak, boleh tengok dekat beg dekat bawah."),
     (87.55, 88.30, "demo", "end plate under CTA"),
 ]
-MANUAL_CUTS = []
+MANUAL_CUTS = [(10.78, 11.18)]   # "tebal-tebal" / "tempat-tempat": passes disagree, so the word is cut, not guessed
 HOOK = dict(video=(0.00, 6.00), voice=None, drill_gain=1.0)
 
 segs = []
