@@ -1,0 +1,43 @@
+<template>
+  <style>
+
+      :root { --yellow:#FFD21F; --red:#E5252A; --ink:#0D0D0D; --white:#FFFFFF; }
+
+      .hf-stroke { paint-order: stroke fill; -webkit-text-stroke: 14px var(--ink); }
+
+      #power { position:absolute; inset:0; font-family:'Inter',sans-serif; color:var(--white); }
+
+      .band { position:absolute; left:48px; top:250px; width:640px; }
+      .card { display:inline-flex; flex-direction:column; align-items:flex-start; gap:8px; background:rgba(13,13,13,.84);
+        border-left:10px solid var(--yellow); border-radius:20px; padding:14px 22px; box-shadow:0 16px 36px rgba(0,0,0,.35); }
+      .card .k { font-weight:900; font-size:30px; letter-spacing:.08em; color:var(--yellow); }
+      .card .v { font-family:'Archivo Black','Inter',sans-serif; font-size:56px; line-height:1; }
+      .card .big { font-family:'Archivo Black','Inter',sans-serif; font-size:84px; line-height:.95; color:var(--yellow); }
+      .chips { display:flex; flex-wrap:wrap; gap:10px; }
+      .chip { display:inline-flex; align-items:center; gap:10px; background:var(--yellow); color:var(--ink); font-weight:900;
+        font-size:34px; padding:8px 18px; border-radius:12px; opacity:0; }
+      .chip.dark { background:var(--white); }
+
+  </style>
+  <div id="power" data-composition-id="power" data-width="1080" data-height="1920">
+    <div id="pw-a" class="clip band" data-start="1.3" data-duration="3.4" data-track-index="1"><div class="card"><div class="k">POTONG BESI</div><div class="v">TAKDE MASALAH</div></div></div>
+    <div id="pw-b" class="clip band" data-start="4.8" data-duration="7.0" data-track-index="1"><div class="card"><div class="k">SOARFLY</div><div class="v">BRUSHLESS MOTOR</div><div id="pw-c" class="chip">ADJUST 3 LEVEL</div></div></div>
+    <div id="pw-d" class="clip band" data-start="11.9" data-duration="3.65" data-track-index="1"><div class="card"><div class="k">KELAJUAN</div><div class="chips"><div id="lv-1" class="chip">LEVEL 1</div><div id="lv-2" class="chip">LEVEL 2</div><div id="lv-3" class="chip">LEVEL 3</div></div></div></div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#pw-a", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 1.3);
+    tl.to("#pw-a", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 4.5);
+    tl.fromTo("#pw-b", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 4.8);
+    tl.fromTo("#pw-c", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 8.98);
+    tl.to("#pw-b", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 11.6);
+    tl.fromTo("#pw-d", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 11.9);
+    tl.fromTo("#lv-1", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 12.48);
+    tl.fromTo("#lv-2", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 13.68);
+    tl.fromTo("#lv-3", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 14.9);
+    tl.to("#pw-d", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 15.35);
+
+    window.__timelines["power"] = tl;
+  </script>
+</template>
