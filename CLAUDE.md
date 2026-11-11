@@ -50,6 +50,9 @@ Never put a "REVIEW JUJUR · MUROH DOOH" line (or any "review jujur" kicker) on 
    move that scene's cards to the top band (`card_scene(..., css=TOP_CARD_CSS)`) and lift its captions too, so
    the reading stays visible (see `pipeline/gen_jump_starter.py`). Spoken specs a pass mis-hears as a price
    ("RM16,000 mah") must be confirmed with a prompted second pass before they go on screen ("16000 mAh").
+   Check the hook title against the presenter's face too: when the face is at the top of the hook shot, drop the
+   title to chest height (`#hook-top { top:700px }`, see `pipeline/gen_backpack_battery.py`). Words both passes
+   cannot make out ("mesin ropuk", "potash") are cut rather than guessed into a caption.
    `npx hyperframes check`, then a snapshot review. (`edit/` is the first video, the hammer drill.)
 7. **Render**: `cd projects/<video> && npx hyperframes render -q delivery -f 30 -w 3 -o <out>.mp4`. GSAP is bundled in `edit/assets/vendor/` (the CDN fails under the render proxy).
 8. **Deliver**: copy the result to `output/` (never overwrite or delete earlier outputs).
