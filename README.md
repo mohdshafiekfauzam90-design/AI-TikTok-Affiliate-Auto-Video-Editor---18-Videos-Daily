@@ -47,3 +47,10 @@ cd edit && npx hyperframes check && npx hyperframes render -q delivery -o final.
 ```
 
 Large media (`*.mp4`, `*.wav`) are git-ignored; `edit/assets/video/spine.mp4` must be rebuilt (steps 2–3) on a fresh clone.
+
+## Delivery to iPhone
+
+`python3 pipeline/make_download_page.py output/<video>.mp4 <dir> "<Heading>" "<Title>"` splits the
+finished MP4 byte-for-byte into 14 MB parts and writes a download page (`pipeline/templates/download_page.html`)
+that rejoins them, checks every part's SHA-256 and saves the identical file through the iPhone share sheet.
+The standing workflow for every new video is in `CLAUDE.md`.

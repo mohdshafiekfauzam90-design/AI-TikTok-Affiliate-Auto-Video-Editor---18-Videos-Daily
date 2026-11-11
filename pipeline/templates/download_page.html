@@ -1,0 +1,135 @@
+<title>__TITLE__</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+/* Layout: one narrow column, phone-first: poster beside the facts, one big save action, then steps. */
+:root{
+  --bg:#f6f5f0; --surface:#ffffff; --ink:#151514; --muted:#5d5b55; --line:#e2dfd6;
+  --accent:#ffd21f; --accent-ink:#151514; --brand:#e5252a; --ok:#1f8a4c; --err:#b3261e;
+  --font-display:"Archivo Black","Arial Black",system-ui,sans-serif;
+  --font-body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#141413; --surface:#1e1d1b; --ink:#f3f1ea; --muted:#a9a59b; --line:#34322e;
+  --accent:#ffd21f; --accent-ink:#151514; --brand:#ff4b4f; --ok:#4cc27e; --err:#ff8a80; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#141413; --surface:#1e1d1b; --ink:#f3f1ea; --muted:#a9a59b; --line:#34322e;
+  --accent:#ffd21f; --accent-ink:#151514; --brand:#ff4b4f; --ok:#4cc27e; --err:#ff8a80; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:16px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 40px}
+.wrap{max-width:560px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+.brand{display:inline-flex;align-self:flex-start;background:var(--brand);color:#fff;font-weight:800;font-size:12px;letter-spacing:.14em;padding:5px 10px;border-radius:6px}
+h1{font-family:var(--font-display);font-size:clamp(26px,7vw,34px);line-height:1.08;margin:0;text-wrap:balance}
+.lead{margin:0;color:var(--muted)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px;display:grid;grid-template-columns:120px 1fr;gap:16px;align-items:start}
+.card img{width:120px;aspect-ratio:9/16;object-fit:cover;border-radius:10px;max-width:100%;display:block;background:#000}
+dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 12px;font-size:14px;min-width:0}
+dt{color:var(--muted)} dd{margin:0;font-weight:600;font-variant-numeric:tabular-nums}
+.act{display:flex;flex-direction:column;gap:12px}
+button{font:inherit;font-weight:800;font-size:18px;border:0;border-radius:14px;padding:16px 18px;cursor:pointer;
+  background:var(--accent);color:var(--accent-ink);min-height:56px}
+button:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+button[disabled]{opacity:.55;cursor:default}
+button.secondary{background:transparent;color:var(--ink);border:2px solid var(--line);font-size:16px;min-height:48px}
+.bar{height:10px;background:var(--line);border-radius:99px;overflow:hidden}
+.bar>span{display:block;height:100%;width:0;background:var(--accent);transition:width .2s}
+.status{font-size:14px;color:var(--muted);min-height:1.5em;font-variant-numeric:tabular-nums}
+.status.ok{color:var(--ok);font-weight:700} .status.err{color:var(--err);font-weight:700}
+ol{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:8px}
+h2{font-size:16px;margin:0 0 8px;letter-spacing:.02em}
+.note{font-size:13px;color:var(--muted)}
+code{font-size:12px;word-break:break-all}
+@media (max-width:380px){.card{grid-template-columns:96px 1fr}.card img{width:96px}}
+@media (prefers-reduced-motion:reduce){.bar>span{transition:none}}
+</style>
+<div class="wrap">
+  <span class="brand">MUROH DOOH</span>
+  <h1>__HEADING__</h1>
+  <p class="lead">Fail asal yang siap diedit. Tidak dirender semula atau dimampatkan.</p>
+
+  <div class="card">
+    <img src="data:image/jpeg;base64,__THUMB__" alt="Bingkai akhir video">
+    <dl>
+      <dt>Resolusi</dt><dd>1080 × 1920</dd>
+      <dt>Nisbah</dt><dd>9:16</dd>
+      <dt>Format</dt><dd>MP4 · H.264</dd>
+      <dt>Kadar</dt><dd>30 fps</dd>
+      <dt>Durasi</dt><dd>__DUR__</dd>
+      <dt>Saiz</dt><dd>__MB__ MB</dd>
+    </dl>
+  </div>
+
+  <div class="act">
+    <button id="prep" type="button">1. Sediakan video</button>
+    <div class="bar" aria-hidden="true"><span id="fill"></span></div>
+    <div id="status" class="status" role="status">Tekan butang di atas untuk mula.</div>
+    <button id="save" type="button" disabled>2. Simpan ke iPhone</button>
+  </div>
+
+  <section>
+    <h2>Cara simpan ke Photos di iPhone</h2>
+    <ol>
+      <li>Tekan <b>Sediakan video</b> dan tunggu sampai 100%. Guna Wi-Fi kalau boleh (__MB__ MB).</li>
+      <li>Tekan <b>Simpan ke iPhone</b>, kemudian sahkan.</li>
+      <li>Pada menu kongsi iPhone, pilih <b>Save Video</b> untuk masuk ke Photos, atau <b>Save to Files</b>.</li>
+      <li>Buka TikTok, tekan <b>+</b>, kemudian <b>Upload</b> dan pilih video ini.</li>
+    </ol>
+  </section>
+  <p class="note">Setiap bahagian fail disemak dengan SHA-256 sebelum disambung, jadi fail yang anda simpan sama bait-demi-bait dengan fail asal.<br>SHA-256: <code>__FULLSHA__</code></p>
+</div>
+<script>
+const PARTS = __PARTS__;
+const TOTAL = __TOTAL__;
+const NAME = "__NAME__";
+const $ = (id) => document.getElementById(id);
+let blob = null;
+const hex = (buf) => Array.from(new Uint8Array(buf), (b) => b.toString(16).padStart(2, "0")).join("");
+function setStatus(t, cls) { const s = $("status"); s.textContent = t; s.className = "status" + (cls ? " " + cls : ""); }
+
+$("prep").addEventListener("click", async () => {
+  $("prep").disabled = true; $("save").disabled = true; blob = null;
+  const chunks = []; let done = 0;
+  try {
+    for (let i = 0; i < PARTS.length; i++) {
+      const p = PARTS[i];
+      setStatus(`Memuat bahagian ${i + 1} daripada ${PARTS.length}…`);
+      let buf = null;
+      for (let attempt = 0; attempt < 3 && !buf; attempt++) {
+        try {
+          const r = await fetch(p.path, { cache: "no-store" });
+          if (!r.ok) throw new Error("HTTP " + r.status);
+          const b = await r.arrayBuffer();
+          if (b.byteLength !== p.size) throw new Error("saiz tidak sepadan");
+          const h = hex(await crypto.subtle.digest("SHA-256", b));
+          if (h !== p.sha) throw new Error("semakan SHA-256 gagal");
+          buf = b;
+        } catch (e) { if (attempt === 2) throw e; }
+      }
+      chunks.push(new Blob([buf])); done += p.size;
+      $("fill").style.width = (done / TOTAL * 100).toFixed(1) + "%";
+    }
+    blob = new Blob(chunks, { type: "video/mp4" });
+    setStatus(`Siap: ${(blob.size / 1e6).toFixed(1)} MB, semua ${PARTS.length} bahagian sah. Tekan "Simpan ke iPhone".`, "ok");
+    $("save").disabled = false;
+  } catch (e) {
+    setStatus("Gagal memuat video (" + (e && e.message || e) + "). Semak sambungan internet dan tekan lagi.", "err");
+  } finally { $("prep").disabled = false; $("prep").textContent = blob ? "Sediakan semula" : "1. Sediakan video"; }
+});
+
+$("save").addEventListener("click", async () => {
+  if (!blob) return;
+  let dl = null;
+  try { dl = await (window.claude ? window.claude.use("downloads") : null); } catch (e) { dl = null; }
+  if (!dl) { setStatus("Simpan fail tidak disokong dalam paparan ini. Buka halaman ini dalam app Claude atau claude.ai.", "err"); return; }
+  $("save").disabled = true;
+  try {
+    const res = await dl.save({ filename: NAME, data: blob });
+    setStatus(res && res.status === "saved" ? "Diserahkan ke iPhone. Pilih Save Video pada menu kongsi." : "Selesai.", "ok");
+  } catch (e) {
+    const c = e && e.code;
+    if (c === "declined") setStatus("Simpan dibatalkan. Tekan Simpan ke iPhone untuk cuba lagi.");
+    else if (c === "rate_limited") setStatus("Tunggu sebentar, kemudian tekan Simpan ke iPhone sekali lagi.");
+    else if (c === "too_large") setStatus("Fail terlalu besar untuk paparan ini. Cuba buka di claude.ai dalam Safari.", "err");
+    else setStatus("Tidak dapat menyimpan di sini (" + (c || "ralat") + "). Cuba buka di claude.ai dalam Safari.", "err");
+  } finally { $("save").disabled = false; }
+});
+</script>
