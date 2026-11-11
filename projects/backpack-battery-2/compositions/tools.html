@@ -1,0 +1,43 @@
+<template>
+  <style>
+
+      :root { --yellow:#FFD21F; --red:#E5252A; --ink:#0D0D0D; --white:#FFFFFF; }
+
+      .hf-stroke { paint-order: stroke fill; -webkit-text-stroke: 14px var(--ink); }
+
+      #tools { position:absolute; inset:0; font-family:'Inter',sans-serif; color:var(--white); }
+
+      .band { position:absolute; left:48px; bottom:735px; width:620px; }
+      .card { display:inline-flex; flex-direction:column; align-items:flex-start; gap:8px; background:rgba(13,13,13,.84);
+        border-left:10px solid var(--yellow); border-radius:20px; padding:14px 22px; box-shadow:0 16px 36px rgba(0,0,0,.35); }
+      .card .k { font-weight:900; font-size:30px; letter-spacing:.08em; color:var(--yellow); }
+      .card .v { font-family:'Archivo Black','Inter',sans-serif; font-size:56px; line-height:1; }
+      .card .big { font-family:'Archivo Black','Inter',sans-serif; font-size:84px; line-height:.95; color:var(--yellow); }
+      .chips { display:flex; flex-wrap:wrap; gap:10px; }
+      .chip { display:inline-flex; align-items:center; gap:10px; background:var(--yellow); color:var(--ink); font-weight:900;
+        font-size:34px; padding:8px 18px; border-radius:12px; opacity:0; }
+      .chip.dark { background:var(--white); }
+
+  </style>
+  <div id="tools" data-composition-id="tools" data-width="1080" data-height="1920">
+    <div id="cb-a" class="clip band" data-start="0.75" data-duration="2.45" data-track-index="1"><div class="card"><div class="k">KABEL</div><div class="big">&plusmn;1 METER</div></div></div>
+    <div id="tl-a" class="clip band" data-start="3.85" data-duration="4.42" data-track-index="1"><div class="card"><div class="k">SESUAI SEMUA POWER TOOLS</div><div class="v">TAPAK MAKITA</div></div></div>
+    <div id="tl-b" class="clip band" data-start="8.35" data-duration="4.2" data-track-index="1"><div class="card"><div class="k">BRAND</div><div class="v">SANTINO</div></div></div>
+    <div id="rp-a" class="clip band" data-start="14.35" data-duration="5.2" data-track-index="1"><div class="card"><div class="k">MESIN RUMPUT</div><div class="v">BOLEH GUNA LAMA</div><div id="rp-s" class="chip">SANGAT SESUAI</div></div></div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#cb-a", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 0.75);
+    tl.to("#cb-a", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 3.0);
+    tl.fromTo("#tl-a", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 3.85);
+    tl.to("#tl-a", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 8.07);
+    tl.fromTo("#tl-b", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 8.35);
+    tl.to("#tl-b", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 12.35);
+    tl.fromTo("#rp-a", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 14.35);
+    tl.fromTo("#rp-s", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 16.71);
+    tl.to("#rp-a", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 19.35);
+
+    window.__timelines["tools"] = tl;
+  </script>
+</template>
