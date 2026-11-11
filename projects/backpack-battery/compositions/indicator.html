@@ -20,13 +20,13 @@
 
   </style>
   <div id="indicator" data-composition-id="indicator" data-width="1080" data-height="1920">
-    <div id="in-a" class="clip band" data-start="1.6" data-duration="4.25" data-track-index="1"><div class="card"><div class="k">BILA GUNA</div><div class="v">ADA INDICATOR BATERI</div></div></div>
+    <div id="in-a" class="clip band" data-start="1.6" data-duration="2.0" data-track-index="1"><div class="card"><div class="k">BILA GUNA</div><div class="v">ADA INDICATOR BATERI</div></div></div>
 
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#in-a", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 1.6);
-    tl.to("#in-a", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 5.65);
+    tl.to("#in-a", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 3.4);
 
     window.__timelines["indicator"] = tl;
   </script>

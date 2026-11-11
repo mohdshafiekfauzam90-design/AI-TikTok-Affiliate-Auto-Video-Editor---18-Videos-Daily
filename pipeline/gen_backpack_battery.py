@@ -161,7 +161,7 @@ assert TOP_CARD_CSS != CARD_CSS
 # ------------------------------------------ 2. PROBLEM: normal battery 40 min - 1 h, buy this
 card_scene("problem", 5.2, 21.1, 11, [
     ("pb-a", 11.3, 15.85, '<div class="k">BATERI BIASA</div><div class="big">40 MIN&ndash;1 JAM</div><div id="pb-h" class="chip dark">SEKEJAP JE HABIS</div>', [("pb-h", 12.06)]),
-    ("pb-b", 16.4, 21.0, '<div class="k">UPGRADE KE</div><div class="v">BATERI PIKUL</div>', []),
+    ("pb-b", 16.4, 18.1, '<div class="k">UPGRADE KE</div><div class="v">BATERI PIKUL</div>', []),
 ])
 # ------------------------------------------------- 3. CABLE 1 m, brand, bag, 3-pin plug
 card_scene("cable", 21.1, 42.7, 12, [
@@ -172,16 +172,38 @@ card_scene("cable", 21.1, 42.7, 12, [
 ])
 # ------------------------------------- 4. INDICATOR (battery close-up: top band, label clear)
 card_scene("indicator", 42.7, 48.6, 13, [
-    ("in-a", 44.3, 48.55, '<div class="k">BILA GUNA</div><div class="v">ADA INDICATOR BATERI</div>', []),
+    ("in-a", 44.3, 46.3, '<div class="k">BILA GUNA</div><div class="v">ADA INDICATOR BATERI</div>', []),
 ], css=TOP_CARD_CSS)
 # ---------------------------------------------- 5. UPGRADE + IN THE BOX + BIGGER CHARGER
 card_scene("box", 48.6, 67.06, 14, [
-    ("bx-a", 48.6, 52.95, '<div class="k">BATERI BIASA CEPAT HABIS?</div><div id="bx-u" class="chip">UPGRADE BATERI NI</div>', [("bx-u", 51.4)]),
     ("bx-b", 53.2, 58.8, '<div class="k">DAPAT SEKALI</div><div class="chips"><div id="bx-g" class="chip">&#10003; BEG</div><div id="bx-c" class="chip">&#10003; CHARGER</div></div>',
      [("bx-g", 55.2), ("bx-c", 57.06)]),
     ("bx-d", 58.9, 62.9, '<div class="k">CHARGER DIA</div><div class="v">BESAR SIKIT</div><div id="bx-s" class="chip dark">TAK SAMA MACAM BIASA</div>', [("bx-s", 59.46)]),
     ("bx-e", 63.4, 67.0, '<div class="k">KERJA JANGKA MASA LAMA</div><div class="v">KENA ADA SATU</div>', []),
 ])
+# ------------------------------------------- 6b. OWNER'S LISTING IMAGES (B-roll inserts)
+# Official product-listing screenshots the owner supplied ("Bahan screenshot", Drive): shown as
+# picture cards over his own voice at the matching moment. Specs on them (21V MAX 30Ah) come from
+# the owner's listing, not invented.
+LISTING = [("ls-hero", "assets/img/listing_hero.jpg", 18.15, 21.05),       # "bateri yang saya pikul ni"
+           ("ls-disp", "assets/img/listing_display.jpg", 46.35, 48.55),    # right after the real indicator
+           ("ls-comp", "assets/img/listing_compatible.jpg", 48.75, 52.9)]  # "korang boleh upgrade bateri ni"
+L0 = 18.0; LD = r(53.0 - L0)
+ls_html = "".join(
+    f'    <div id="{i}" class="clip shot" data-start="{r(a - L0)}" data-duration="{r(b - a)}" data-track-index="1">'
+    f'<img id="{i}-img" src="{src}" alt="Gambar listing produk Santino"></div>\n' for i, src, a, b in LISTING)
+ls_css = """
+      .shot { position:absolute; left:70px; right:70px; top:262px; text-align:center; }
+      .shot img { width:940px; height:auto; border-radius:28px; border:6px solid var(--white);
+        box-shadow:0 24px 60px rgba(0,0,0,.5); display:block; margin:0 auto; }
+"""
+ls_js = "".join(
+    f'    tl.fromTo("#{i}", {{ scale: 0.86, y: 40, opacity: 0 }}, {{ scale: 1, y: 0, opacity: 1, duration: 0.4, ease: "back.out(1.6)" }}, {r(a - L0)});\n'
+    f'    tl.to("#{i}", {{ scale: 1.03, duration: {r(b - a - 0.6)}, ease: "none" }}, {r(a - L0 + 0.4)});\n'
+    f'    tl.to("#{i}", {{ scale: 0.9, opacity: 0, duration: 0.2, ease: "power3.in" }}, {r(b - L0 - 0.2)});\n'
+    for i, src, a, b in LISTING)
+hosts.append(scene("listing", L0, LD, ls_html, ls_css, ls_js, 19))
+
 # ------------------------------------------------------------- 7. CTA (64.75 - end)
 C0 = 67.06; CD = r(DUR - C0)
 def LC(t): return r(t - C0)
@@ -289,7 +311,7 @@ SFX = [
     (0.00, "whoosh-short", 0.28), (3.48, "impact-bass-1", 0.11), (5.10, "whoosh-cinematic", 0.28),
     (11.28, "whoosh-short", 0.22), (12.04, "pop", 0.4), (14.20, "ping", 0.5), (16.38, "pop", 0.45),
     (24.48, "pop", 0.45), (27.40, "pop", 0.4), (29.58, "pop", 0.42), (36.66, "pop", 0.42), (40.82, "pop", 0.42),
-    (44.28, "ping", 0.5), (48.58, "whoosh-short", 0.22), (51.38, "pop", 0.45), (53.18, "whoosh-short", 0.22),
+    (44.28, "ping", 0.5), (18.13, "whoosh", 0.26), (46.33, "whoosh-short", 0.24), (48.73, "whoosh", 0.26), (53.18, "whoosh-short", 0.22),
     (55.18, "pop", 0.42), (57.04, "pop", 0.42), (58.88, "pop", 0.4), (59.44, "pop", 0.38), (63.38, "pop", 0.42),
     (67.04, "sparkle", 0.28), (67.83, "impact-bass-2", 0.07),
 ]

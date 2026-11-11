@@ -1,0 +1,35 @@
+<template>
+  <style>
+
+      :root { --yellow:#FFD21F; --red:#E5252A; --ink:#0D0D0D; --white:#FFFFFF; }
+
+      .hf-stroke { paint-order: stroke fill; -webkit-text-stroke: 14px var(--ink); }
+
+      #listing { position:absolute; inset:0; font-family:'Inter',sans-serif; color:var(--white); }
+
+      .shot { position:absolute; left:70px; right:70px; top:262px; text-align:center; }
+      .shot img { width:940px; height:auto; border-radius:28px; border:6px solid var(--white);
+        box-shadow:0 24px 60px rgba(0,0,0,.5); display:block; margin:0 auto; }
+
+  </style>
+  <div id="listing" data-composition-id="listing" data-width="1080" data-height="1920">
+    <div id="ls-hero" class="clip shot" data-start="0.15" data-duration="2.9" data-track-index="1"><img id="ls-hero-img" src="assets/img/listing_hero.jpg" alt="Gambar listing produk Santino"></div>
+    <div id="ls-disp" class="clip shot" data-start="28.35" data-duration="2.2" data-track-index="1"><img id="ls-disp-img" src="assets/img/listing_display.jpg" alt="Gambar listing produk Santino"></div>
+    <div id="ls-comp" class="clip shot" data-start="30.75" data-duration="4.15" data-track-index="1"><img id="ls-comp-img" src="assets/img/listing_compatible.jpg" alt="Gambar listing produk Santino"></div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#ls-hero", { scale: 0.86, y: 40, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.4, ease: "back.out(1.6)" }, 0.15);
+    tl.to("#ls-hero", { scale: 1.03, duration: 2.3, ease: "none" }, 0.55);
+    tl.to("#ls-hero", { scale: 0.9, opacity: 0, duration: 0.2, ease: "power3.in" }, 2.85);
+    tl.fromTo("#ls-disp", { scale: 0.86, y: 40, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.4, ease: "back.out(1.6)" }, 28.35);
+    tl.to("#ls-disp", { scale: 1.03, duration: 1.6, ease: "none" }, 28.75);
+    tl.to("#ls-disp", { scale: 0.9, opacity: 0, duration: 0.2, ease: "power3.in" }, 30.35);
+    tl.fromTo("#ls-comp", { scale: 0.86, y: 40, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.4, ease: "back.out(1.6)" }, 30.75);
+    tl.to("#ls-comp", { scale: 1.03, duration: 3.55, ease: "none" }, 31.15);
+    tl.to("#ls-comp", { scale: 0.9, opacity: 0, duration: 0.2, ease: "power3.in" }, 34.7);
+
+    window.__timelines["listing"] = tl;
+  </script>
+</template>

@@ -20,7 +20,6 @@
 
   </style>
   <div id="box" data-composition-id="box" data-width="1080" data-height="1920">
-    <div id="bx-a" class="clip band" data-start="0.0" data-duration="4.35" data-track-index="1"><div class="card"><div class="k">BATERI BIASA CEPAT HABIS?</div><div id="bx-u" class="chip">UPGRADE BATERI NI</div></div></div>
     <div id="bx-b" class="clip band" data-start="4.6" data-duration="5.6" data-track-index="1"><div class="card"><div class="k">DAPAT SEKALI</div><div class="chips"><div id="bx-g" class="chip">&#10003; BEG</div><div id="bx-c" class="chip">&#10003; CHARGER</div></div></div></div>
     <div id="bx-d" class="clip band" data-start="10.3" data-duration="4.0" data-track-index="1"><div class="card"><div class="k">CHARGER DIA</div><div class="v">BESAR SIKIT</div><div id="bx-s" class="chip dark">TAK SAMA MACAM BIASA</div></div></div>
     <div id="bx-e" class="clip band" data-start="14.8" data-duration="3.6" data-track-index="1"><div class="card"><div class="k">KERJA JANGKA MASA LAMA</div><div class="v">KENA ADA SATU</div></div></div>
@@ -28,9 +27,6 @@
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#bx-a", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 0.0);
-    tl.fromTo("#bx-u", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 2.8);
-    tl.to("#bx-a", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 4.15);
     tl.fromTo("#bx-b", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 4.6);
     tl.fromTo("#bx-g", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 6.6);
     tl.fromTo("#bx-c", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 8.46);

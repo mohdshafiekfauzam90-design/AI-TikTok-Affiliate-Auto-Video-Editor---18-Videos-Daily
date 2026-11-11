@@ -22,6 +22,16 @@ visuals, prices, discounts or specs not in the footage or speech. Keep the MUROH
 (brand tag + sign-off; palette yellow #FFD21F, red #E5252A, ink #0D0D0D unless the owner gives an official one).
 Never put a "REVIEW JUJUR · MUROH DOOH" line (or any "review jujur" kicker) on the hook: the owner asked for it gone.
 
+## Owner's screenshot material ("Bahan screenshot")
+
+The owner may send a Drive folder of official product-listing screenshots after (or with) a video. List it with
+the Drive connector (`parentId = '<folder id>'`), download each file with the same `drive.usercontent` curl
+(they are often JPEGs named `.PNG`), copy them to `projects/<video>/assets/img/`, and insert them as picture-card
+B-roll over the owner's own voice at the moment that matches each image (a `listing` scene: card above the
+captions, cards that collide shortened for that window, a whoosh on entry), as in `pipeline/gen_backpack_battery.py`.
+Specs printed on the owner's listing images (e.g. "21V MAX 30Ah") may be shown, since the owner supplied them;
+say so in the reply. Deliver the result as a new file (`..._v2.mp4`), never overwriting the earlier one.
+
 ## Pipeline (see README.md for details)
 
 1. **Get the video**: from a Drive link id, `curl -L -o raw.mp4 "https://drive.usercontent.google.com/download?id=<ID>&export=download&confirm=t"` into the scratchpad.
