@@ -46,6 +46,10 @@ Never put a "REVIEW JUJUR · MUROH DOOH" line (or any "review jujur" kicker) on 
    With no presenter on camera (hands-only demo, e.g. `pipeline/gen_table_vice.py`), cards go in a top band over
    the blank background instead. Read a list of sizes as units in captions ("3″ 4″ 5″"), not "3456".
    A source tagged with a rotation (e.g. 3840×2160 with rotation -90) is still portrait: ffmpeg auto-rotates.
+   When the product's own screen or label is the subject of a close-up (e.g. the jump starter's pressure display),
+   move that scene's cards to the top band (`card_scene(..., css=TOP_CARD_CSS)`) and lift its captions too, so
+   the reading stays visible (see `pipeline/gen_jump_starter.py`). Spoken specs a pass mis-hears as a price
+   ("RM16,000 mah") must be confirmed with a prompted second pass before they go on screen ("16000 mAh").
    `npx hyperframes check`, then a snapshot review. (`edit/` is the first video, the hammer drill.)
 7. **Render**: `cd projects/<video> && npx hyperframes render -q delivery -f 30 -w 3 -o <out>.mp4`. GSAP is bundled in `edit/assets/vendor/` (the CDN fails under the render proxy).
 8. **Deliver**: copy the result to `output/` (never overwrite or delete earlier outputs).

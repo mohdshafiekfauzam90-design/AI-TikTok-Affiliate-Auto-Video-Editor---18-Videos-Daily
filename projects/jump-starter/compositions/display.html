@@ -1,0 +1,50 @@
+<template>
+  <style>
+
+      :root { --yellow:#FFD21F; --red:#E5252A; --ink:#0D0D0D; --white:#FFFFFF; }
+
+      .hf-stroke { paint-order: stroke fill; -webkit-text-stroke: 14px var(--ink); }
+
+      #display { position:absolute; inset:0; font-family:'Inter',sans-serif; color:var(--white); }
+
+      .band { position:absolute; left:48px; top:250px; width:620px; }
+      .card { display:inline-flex; flex-direction:column; align-items:flex-start; gap:8px; background:rgba(13,13,13,.84);
+        border-left:10px solid var(--yellow); border-radius:20px; padding:14px 22px; box-shadow:0 16px 36px rgba(0,0,0,.35); }
+      .card .k { font-weight:900; font-size:30px; letter-spacing:.08em; color:var(--yellow); }
+      .card .v { font-family:'Archivo Black','Inter',sans-serif; font-size:56px; line-height:1; }
+      .card .big { font-family:'Archivo Black','Inter',sans-serif; font-size:84px; line-height:.95; color:var(--yellow); }
+      .chips { display:flex; flex-wrap:wrap; gap:10px; }
+      .chip { display:inline-flex; align-items:center; gap:10px; background:var(--yellow); color:var(--ink); font-weight:900;
+        font-size:34px; padding:8px 18px; border-radius:12px; opacity:0; }
+      .chip.dark { background:var(--white); }
+
+  </style>
+  <div id="display" data-composition-id="display" data-width="1080" data-height="1920">
+    <div id="dp-on" class="clip band" data-start="1.5" data-duration="3.1" data-track-index="1"><div class="card"><div class="k">NAK ON?</div><div class="v">TEKAN LAMA</div></div></div>
+    <div id="dp-u" class="clip band" data-start="5.2" data-duration="9.2" data-track-index="1"><div class="card"><div class="k">BUTANG U &middot; TUKAR UNIT</div><div class="chips"><div id="dp-1" class="chip">PSI</div><div id="dp-2" class="chip">kPa</div><div id="dp-3" class="chip">KG</div><div id="dp-4" class="chip dark">BAR (ASAL)</div></div></div></div>
+    <div id="dp-m" class="clip band" data-start="14.95" data-duration="5.15" data-track-index="1"><div class="card"><div class="k">PILIH MODE PUMP</div><div class="chips"><div id="dp-k" class="chip">KERETA</div><div id="dp-b" class="chip">BASIKAL</div><div id="dp-mt" class="chip">MOTOR</div><div id="dp-bl" class="chip">BOLA</div></div></div></div>
+    <div id="dp-p" class="clip band" data-start="20.2" data-duration="3.5" data-track-index="1"><div class="card"><div class="k">TAMBAH / TOLAK</div><div class="v">TEKANAN ANGIN TAYAR</div></div></div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#dp-on", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 1.5);
+    tl.to("#dp-on", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 4.4);
+    tl.fromTo("#dp-u", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 5.2);
+    tl.fromTo("#dp-1", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 8.26);
+    tl.fromTo("#dp-2", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 10.12);
+    tl.fromTo("#dp-3", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 11.2);
+    tl.fromTo("#dp-4", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 12.82);
+    tl.to("#dp-u", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 14.2);
+    tl.fromTo("#dp-m", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 14.95);
+    tl.fromTo("#dp-k", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 16.6);
+    tl.fromTo("#dp-b", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 17.38);
+    tl.fromTo("#dp-mt", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 18.28);
+    tl.fromTo("#dp-bl", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 19.38);
+    tl.to("#dp-m", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 19.9);
+    tl.fromTo("#dp-p", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 20.2);
+    tl.to("#dp-p", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 23.5);
+
+    window.__timelines["display"] = tl;
+  </script>
+</template>
