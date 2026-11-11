@@ -1,0 +1,41 @@
+<template>
+  <style>
+
+      :root { --yellow:#FFD21F; --red:#E5252A; --ink:#0D0D0D; --white:#FFFFFF; }
+
+      .hf-stroke { paint-order: stroke fill; -webkit-text-stroke: 14px var(--ink); }
+
+      #value { position:absolute; inset:0; font-family:'Inter',sans-serif; color:var(--white); }
+
+      .band { position:absolute; left:48px; top:250px; width:640px; }
+      .card { display:inline-flex; flex-direction:column; align-items:flex-start; gap:8px; background:rgba(13,13,13,.84);
+        border-left:10px solid var(--yellow); border-radius:20px; padding:16px 24px; box-shadow:0 16px 36px rgba(0,0,0,.35); }
+      .card .k { font-weight:900; font-size:30px; letter-spacing:.08em; color:var(--yellow); }
+      .card .v { font-family:'Archivo Black','Inter',sans-serif; font-size:60px; line-height:1; }
+      .card .big { font-family:'Archivo Black','Inter',sans-serif; font-size:100px; line-height:.95; color:var(--yellow); }
+      .chips { display:flex; flex-wrap:wrap; gap:10px; }
+      .chip { display:inline-flex; align-items:center; gap:10px; background:var(--yellow); color:var(--ink); font-weight:900;
+        font-size:36px; padding:8px 18px; border-radius:12px; opacity:0; }
+      .chip.dark { background:var(--white); }
+
+  </style>
+  <div id="value" data-composition-id="value" data-width="1080" data-height="1920">
+    <div id="vl-a" class="clip band" data-start="0.02" data-duration="3.1" data-track-index="1"><div class="card"><div class="v">KUALITI CANTIK</div><div id="vl-h" class="chip">HARGA TAK MAHAL</div></div></div>
+    <div id="vl-b" class="clip band" data-start="5.28" data-duration="3.09" data-track-index="1"><div class="card"><div class="k">KEDAI LUAR</div><div class="v">CONFIRM TAK DAPAT</div><div class="k">HARGA MACAM NI</div></div></div>
+    <div id="vl-c" class="clip band" data-start="9.78" data-duration="5.14" data-track-index="1"><div class="card"><div class="k">UNTUK RUMAH</div><div class="big">4&ndash;5&Prime;</div><div id="vl-ck" class="chip">DAH CUKUP</div></div></div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#vl-a", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 0.02);
+    tl.fromTo("#vl-h", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 1.9);
+    tl.to("#vl-a", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 2.92);
+    tl.fromTo("#vl-b", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 5.28);
+    tl.to("#vl-b", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 8.17);
+    tl.fromTo("#vl-c", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 9.78);
+    tl.fromTo("#vl-ck", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 14.28);
+    tl.to("#vl-c", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 14.72);
+
+    window.__timelines["value"] = tl;
+  </script>
+</template>

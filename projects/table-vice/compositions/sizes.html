@@ -1,0 +1,46 @@
+<template>
+  <style>
+
+      :root { --yellow:#FFD21F; --red:#E5252A; --ink:#0D0D0D; --white:#FFFFFF; }
+
+      .hf-stroke { paint-order: stroke fill; -webkit-text-stroke: 14px var(--ink); }
+
+      #sizes { position:absolute; inset:0; font-family:'Inter',sans-serif; color:var(--white); }
+
+      .band { position:absolute; left:48px; top:250px; width:640px; }
+      .card { display:inline-flex; flex-direction:column; align-items:flex-start; gap:8px; background:rgba(13,13,13,.84);
+        border-left:10px solid var(--yellow); border-radius:20px; padding:16px 24px; box-shadow:0 16px 36px rgba(0,0,0,.35); }
+      .card .k { font-weight:900; font-size:30px; letter-spacing:.08em; color:var(--yellow); }
+      .card .v { font-family:'Archivo Black','Inter',sans-serif; font-size:60px; line-height:1; }
+      .card .big { font-family:'Archivo Black','Inter',sans-serif; font-size:100px; line-height:.95; color:var(--yellow); }
+      .chips { display:flex; flex-wrap:wrap; gap:10px; }
+      .chip { display:inline-flex; align-items:center; gap:10px; background:var(--yellow); color:var(--ink); font-weight:900;
+        font-size:36px; padding:8px 18px; border-radius:12px; opacity:0; }
+      .chip.dark { background:var(--white); }
+
+  </style>
+  <div id="sizes" data-composition-id="sizes" data-width="1080" data-height="1920">
+    <div id="sz-a" class="clip band" data-start="1.433" data-duration="5.3" data-track-index="1"><div class="card"><div class="k">ADA SAIZ</div><div class="chips"><div id="sz-3" class="chip">3&Prime;</div><div id="sz-4" class="chip">4&Prime;</div><div id="sz-5" class="chip">5&Prime;</div><div id="sz-6" class="chip">6&Prime;</div><div id="sz-8" class="chip">8&Prime;</div></div></div></div>
+    <div id="sz-b" class="clip band" data-start="7.533" data-duration="2.5" data-track-index="1"><div class="card"><div class="k">YANG SAYA GUNA</div><div class="big">8 INCI</div><div id="sz-pb" class="chip">PALING BESAR</div></div></div>
+    <div id="sz-c" class="clip band" data-start="11.333" data-duration="3.35" data-track-index="1"><div class="card"><div class="v">BESI PADU</div><div id="sz-br" class="chip">TERASA BERAT</div></div></div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#sz-a", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 1.433);
+    tl.fromTo("#sz-3", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 1.853);
+    tl.fromTo("#sz-4", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 2.693);
+    tl.fromTo("#sz-5", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 3.373);
+    tl.fromTo("#sz-6", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 3.973);
+    tl.fromTo("#sz-8", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 4.813);
+    tl.to("#sz-a", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 6.533);
+    tl.fromTo("#sz-b", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 7.533);
+    tl.fromTo("#sz-pb", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 9.093);
+    tl.to("#sz-b", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 9.833);
+    tl.fromTo("#sz-c", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 11.333);
+    tl.fromTo("#sz-br", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 13.553);
+    tl.to("#sz-c", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 14.483);
+
+    window.__timelines["sizes"] = tl;
+  </script>
+</template>

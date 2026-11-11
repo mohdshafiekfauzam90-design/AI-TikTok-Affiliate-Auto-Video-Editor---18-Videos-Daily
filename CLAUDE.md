@@ -43,6 +43,9 @@ Never put a "REVIEW JUJUR · MUROH DOOH" line (or any "review jujur" kicker) on 
    the presenter's face, checked on snapshots of the close-ups (the face moves: a side column covered it in the work
    light video, so cards now sit just above the captions, bottom-anchored); keep the CTA below the face; hide
    captions under the CTA. `pipeline/gen_work_light.py` has a compact `card_scene()` helper for spec cards.
+   With no presenter on camera (hands-only demo, e.g. `pipeline/gen_table_vice.py`), cards go in a top band over
+   the blank background instead. Read a list of sizes as units in captions ("3″ 4″ 5″"), not "3456".
+   A source tagged with a rotation (e.g. 3840×2160 with rotation -90) is still portrait: ffmpeg auto-rotates.
    `npx hyperframes check`, then a snapshot review. (`edit/` is the first video, the hammer drill.)
 7. **Render**: `cd projects/<video> && npx hyperframes render -q delivery -f 30 -w 3 -o <out>.mp4`. GSAP is bundled in `edit/assets/vendor/` (the CDN fails under the render proxy).
 8. **Deliver**: copy the result to `output/` (never overwrite or delete earlier outputs).
