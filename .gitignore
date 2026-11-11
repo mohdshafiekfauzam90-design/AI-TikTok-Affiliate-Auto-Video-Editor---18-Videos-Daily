@@ -8,3 +8,6 @@ edit/.media/
 edit/snapshots/
 edit/renders/
 .hyperframes/
+projects/*/snapshots/
+projects/*/.hyperframes/
+projects/*/node_modules/

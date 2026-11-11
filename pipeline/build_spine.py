@@ -1,7 +1,9 @@
 """Cut the original recording into the 1080x1920 / 30 fps spine following build/edl.json.
 Each segment is rendered on its own (frame-accurate seek, re-encode), then concatenated,
 so memory stays flat. Original voice kept; the hook = demo picture + the speaker's own
-line over ducked drill sound. Every audio piece gets 8 ms fades so jump cuts never click."""
+line over ducked drill sound (or, with "voice": null, a plain in-sync shot). Every audio
+piece gets 8 ms fades so jump cuts never click. A segment may carry "speed" (picture and
+sound sped up together, pitch kept) and "gain" (0 mutes a repeated line under a demo)."""
 import json, subprocess, sys, os
 from concurrent.futures import ThreadPoolExecutor
 src, edl, out = sys.argv[1], sys.argv[2], sys.argv[3]
@@ -13,6 +15,8 @@ ENC = ["-c:v", "libx264", "-preset", "medium", "-crf", "15", "-pix_fmt", "yuv420
 def run(cmd): subprocess.run(["ffmpeg", "-v", "error", "-y", "-threads", "2"] + cmd, check=True)
 
 def hook():
+    if not d["hook"].get("voice"):                    # in-sync hook: an ordinary segment
+        return seg(0, {"src_in": d["hook"]["video"][0], "src_out": d["hook"]["video"][1]})
     hv0, hv1 = d["hook"]["video"]; ha0, ha1 = d["hook"]["voice"]; L = round(hv1 - hv0, 3)
     g = d["hook"]["drill_gain"]
     run(["-ss", str(hv0), "-t", str(L), "-i", src, "-ss", str(ha0), "-t", str(ha1 - ha0), "-i", src,
@@ -24,8 +28,12 @@ def hook():
 
 def seg(i, s):
     a, b = s["src_in"], s["src_out"]; dur = round(b - a, 3); o = f"{tmp}/s{i:03d}.mov"
-    run(["-ss", str(a), "-t", str(dur), "-i", src, "-vf", V,
-         "-af", f"afade=t=in:d=0.008,afade=t=out:st={dur-0.008:.3f}:d=0.008", "-t", str(dur)] + ENC + [o])
+    sp, g = s.get("speed", 1), s.get("gain", 1)
+    od = round(dur / sp, 3)                           # output length
+    vf = (f"setpts=PTS/{sp}," if sp != 1 else "") + V
+    af = (f"atempo={sp}," if sp != 1 else "") + (f"volume={g}," if g != 1 else "") + \
+         f"afade=t=in:d=0.008,afade=t=out:st={od-0.008:.3f}:d=0.008"
+    run(["-ss", str(a), "-t", str(dur), "-i", src, "-vf", vf, "-af", af, "-t", str(od)] + ENC + [o])
     return o
 
 with ThreadPoolExecutor(2) as ex:

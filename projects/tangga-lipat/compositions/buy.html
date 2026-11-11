@@ -1,0 +1,47 @@
+<template>
+  <style>
+
+      :root { --yellow:#FFD21F; --red:#E5252A; --ink:#0D0D0D; --white:#FFFFFF; }
+
+      .hf-stroke { paint-order: stroke fill; -webkit-text-stroke: 14px var(--ink); }
+
+      #buy { position:absolute; inset:0; font-family:'Inter',sans-serif; color:var(--white); }
+
+      .band { position:absolute; left:56px; right:150px; top:850px; }
+      .card { display:inline-flex; flex-direction:column; gap:10px; background:rgba(13,13,13,.84);
+        border-left:12px solid var(--yellow); border-radius:22px; padding:20px 26px; box-shadow:0 16px 36px rgba(0,0,0,.35); }
+      .card .k { font-weight:900; font-size:30px; letter-spacing:.08em; color:var(--yellow); }
+      .card .v { font-family:'Archivo Black','Inter',sans-serif; font-size:64px; line-height:1; }
+      .row { display:flex; flex-wrap:wrap; gap:12px; }
+      .chip { display:inline-flex; align-items:center; gap:12px; background:var(--yellow); color:var(--ink); font-weight:900;
+        font-size:42px; padding:10px 22px; border-radius:14px; opacity:0; }
+      .chip.dark { background:var(--white); }
+      .tick { display:inline-flex; align-items:center; justify-content:center; width:46px; height:46px; border-radius:50%;
+        background:var(--ink); color:var(--yellow); font-size:28px; }
+      .sticker { position:absolute; right:70px; top:700px; background:var(--red); color:var(--white);
+        font-family:'Archivo Black','Inter',sans-serif; font-size:58px; padding:14px 28px; border-radius:16px;
+        border:5px solid var(--white); box-shadow:0 14px 30px rgba(0,0,0,.4); }
+      .card .chip { align-self:flex-start; font-size:38px; }
+
+  </style>
+  <div id="buy" data-composition-id="buy" data-width="1080" data-height="1920">
+    <div id="by-bajet" class="clip sticker" data-start="2.71" data-duration="2.17" data-track-index="2">HARGA BAJET</div>
+    <div id="by-pick" class="clip band" data-start="4.93" data-duration="4.950000000000001" data-track-index="1">
+      <div class="card"><div class="k">PILIH IKUT KEPERLUAN</div>
+        <div id="by-8" class="chip">8 STEP &middot; PALING TINGGI</div>
+        <div id="by-4" class="chip dark">4 STEP &middot; PALING RENDAH</div></div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#by-bajet", { scale: 0.2, rotation: -24 }, { scale: 1, rotation: -6, duration: 0.42, ease: "back.out(2.4)" }, 2.71);
+    tl.to("#by-bajet", { scale: 0.4, opacity: 0, duration: 0.18, ease: "power3.in" }, 4.68);
+    tl.fromTo("#by-pick", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 4.93);
+    tl.fromTo("#by-8", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 5.45);
+    tl.fromTo("#by-4", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 7.77);
+    tl.to("#by-pick", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 9.68);
+
+    window.__timelines["buy"] = tl;
+  </script>
+</template>

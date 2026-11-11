@@ -1,0 +1,46 @@
+<template>
+  <style>
+
+      :root { --yellow:#FFD21F; --red:#E5252A; --ink:#0D0D0D; --white:#FFFFFF; }
+
+      .hf-stroke { paint-order: stroke fill; -webkit-text-stroke: 14px var(--ink); }
+
+      #store { position:absolute; inset:0; font-family:'Inter',sans-serif; color:var(--white); }
+
+      .band { position:absolute; left:56px; right:150px; top:850px; }
+      .card { display:inline-flex; flex-direction:column; gap:10px; background:rgba(13,13,13,.84);
+        border-left:12px solid var(--yellow); border-radius:22px; padding:20px 26px; box-shadow:0 16px 36px rgba(0,0,0,.35); }
+      .card .k { font-weight:900; font-size:30px; letter-spacing:.08em; color:var(--yellow); }
+      .card .v { font-family:'Archivo Black','Inter',sans-serif; font-size:64px; line-height:1; }
+      .row { display:flex; flex-wrap:wrap; gap:12px; }
+      .chip { display:inline-flex; align-items:center; gap:12px; background:var(--yellow); color:var(--ink); font-weight:900;
+        font-size:42px; padding:10px 22px; border-radius:14px; opacity:0; }
+      .chip.dark { background:var(--white); }
+      .tick { display:inline-flex; align-items:center; justify-content:center; width:46px; height:46px; border-radius:50%;
+        background:var(--ink); color:var(--yellow); font-size:28px; }
+      .sticker { position:absolute; right:70px; top:700px; background:var(--red); color:var(--white);
+        font-family:'Archivo Black','Inter',sans-serif; font-size:58px; padding:14px 28px; border-radius:16px;
+        border:5px solid var(--white); box-shadow:0 14px 30px rgba(0,0,0,.4); }
+      #sr-bk { font-size:36px; }
+
+  </style>
+  <div id="store" data-composition-id="store" data-width="1080" data-height="1920">
+    <div id="sr-a" class="clip band" data-start="2.28" data-duration="4.950000000000001" data-track-index="1">
+      <div class="card"><div class="k">SENANG SIMPAN</div><div class="v">TAK MAKAN RUANG</div></div>
+    </div>
+    <div id="sr-b" class="clip band" data-start="7.43" data-duration="4.800000000000001" data-track-index="1">
+      <div class="card"><div class="v">NIPIS JE</div><div id="sr-bk" class="chip"><span class="tick">&#10003;</span>BOLEH SANDAR KAT DINDING</div></div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#sr-a", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 2.28);
+    tl.to("#sr-a", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 7.03);
+    tl.fromTo("#sr-b", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 7.93);
+    tl.fromTo("#sr-bk", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 10.13);
+    tl.to("#sr-b", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 12.03);
+
+    window.__timelines["store"] = tl;
+  </script>
+</template>

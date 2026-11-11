@@ -1,0 +1,53 @@
+<template>
+  <style>
+
+      :root { --yellow:#FFD21F; --red:#E5252A; --ink:#0D0D0D; --white:#FFFFFF; }
+
+      .hf-stroke { paint-order: stroke fill; -webkit-text-stroke: 14px var(--ink); }
+
+      #uses { position:absolute; inset:0; font-family:'Inter',sans-serif; color:var(--white); }
+
+      .band { position:absolute; left:56px; right:150px; top:850px; }
+      .card { display:inline-flex; flex-direction:column; gap:10px; background:rgba(13,13,13,.84);
+        border-left:12px solid var(--yellow); border-radius:22px; padding:20px 26px; box-shadow:0 16px 36px rgba(0,0,0,.35); }
+      .card .k { font-weight:900; font-size:30px; letter-spacing:.08em; color:var(--yellow); }
+      .card .v { font-family:'Archivo Black','Inter',sans-serif; font-size:64px; line-height:1; }
+      .row { display:flex; flex-wrap:wrap; gap:12px; }
+      .chip { display:inline-flex; align-items:center; gap:12px; background:var(--yellow); color:var(--ink); font-weight:900;
+        font-size:42px; padding:10px 22px; border-radius:14px; opacity:0; }
+      .chip.dark { background:var(--white); }
+      .tick { display:inline-flex; align-items:center; justify-content:center; width:46px; height:46px; border-radius:50%;
+        background:var(--ink); color:var(--yellow); font-size:28px; }
+      .sticker { position:absolute; right:70px; top:700px; background:var(--red); color:var(--white);
+        font-family:'Archivo Black','Inter',sans-serif; font-size:58px; padding:14px 28px; border-radius:16px;
+        border:5px solid var(--white); box-shadow:0 14px 30px rgba(0,0,0,.4); }
+      .card .chip { align-self:flex-start; }
+
+  </style>
+  <div id="uses" data-composition-id="uses" data-width="1080" data-height="1920">
+    <div id="us-8" class="clip band" data-start="1.0" data-duration="7.380000000000001" data-track-index="1">
+      <div class="card"><div class="k">8 STEP UNTUK</div>
+        <div id="us-8a" class="chip"><span class="tick">&#10003;</span>BERSIH LAMPU</div>
+        <div id="us-8b" class="chip"><span class="tick">&#10003;</span>TUKAR KIPAS</div></div>
+    </div>
+    <div id="us-4" class="clip band" data-start="9.3" data-duration="4.279999999999999" data-track-index="1">
+      <div class="card"><div class="k">4 STEP UNTUK</div>
+        <div id="us-4a" class="chip"><span class="tick">&#10003;</span>SIMPAN BARANG</div>
+        <div id="us-4b" class="chip dark">KABINET DAPUR</div></div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#us-8", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 1.0);
+    tl.fromTo("#us-8a", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 3.65);
+    tl.fromTo("#us-8b", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 5.54);
+    tl.to("#us-8", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 8.18);
+    tl.fromTo("#us-4", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 9.3);
+    tl.fromTo("#us-4a", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 9.65);
+    tl.fromTo("#us-4b", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 10.58);
+    tl.to("#us-4", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 13.38);
+
+    window.__timelines["uses"] = tl;
+  </script>
+</template>
