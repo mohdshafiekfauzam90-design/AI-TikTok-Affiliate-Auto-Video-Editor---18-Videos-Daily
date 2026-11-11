@@ -34,7 +34,7 @@ KEEPS = [
     (9.76, 16.20, "speech", "Sebelum ni bag dia ni jenis apa, transparent, sekarang dia tertutup habis, tapi dekat atas ni dia ada span ni."),
     (20.68, 23.10, "speech", "Jadi kita boleh masuk macam ni."),
     (23.75, 28.90, "speech", "Contoh nak masuk... masuk je macam ni."),
-    (30.90, 36.05, "speech", "Lepas tu korang jangan risaulah, dia cun-cun lubang dia ni, kiri kanan ni cun-cun lubang dia."),
+    (31.54, 36.05, "exact", "(unclear filler cut) Korang jangan risaulah, dia cun-cun lubang dia ni, kiri kanan ni cun-cun lubang dia."),
     (36.90, 41.95, "speech", "Nak masuk korang tarik je yang ni, terus boleh masuk."),
     (44.70, 51.10, "speech", "Lepas tu kat sini dia ada bateri indicator dia, jadi senang korang nak monitor, korang boleh tengok ni."),
     (51.05, 54.45, "exact", "Untuk kabel dia ni lebih kurang dalam 1 meter."),
