@@ -1,0 +1,42 @@
+<template>
+  <style>
+
+      :root { --yellow:#FFD21F; --red:#E5252A; --ink:#0D0D0D; --white:#FFFFFF; }
+
+      .hf-stroke { paint-order: stroke fill; -webkit-text-stroke: 14px var(--ink); }
+
+      #build { position:absolute; inset:0; font-family:'Inter',sans-serif; color:var(--white); }
+
+      .band { position:absolute; left:48px; bottom:735px; width:620px; }
+      .card { display:inline-flex; flex-direction:column; align-items:flex-start; gap:8px; background:rgba(13,13,13,.84);
+        border-left:10px solid var(--yellow); border-radius:20px; padding:14px 22px; box-shadow:0 16px 36px rgba(0,0,0,.35); }
+      .card .k { font-weight:900; font-size:30px; letter-spacing:.08em; color:var(--yellow); }
+      .card .v { font-family:'Archivo Black','Inter',sans-serif; font-size:56px; line-height:1; }
+      .card .big { font-family:'Archivo Black','Inter',sans-serif; font-size:84px; line-height:.95; color:var(--yellow); }
+      .chips { display:flex; flex-wrap:wrap; gap:10px; }
+      .chip { display:inline-flex; align-items:center; gap:10px; background:var(--yellow); color:var(--ink); font-weight:900;
+        font-size:34px; padding:8px 18px; border-radius:12px; opacity:0; }
+      .chip.dark { background:var(--white); }
+
+  </style>
+  <div id="build" data-composition-id="build" data-width="1080" data-height="1920">
+    <div id="bd-al" class="clip band" data-start="2.8" data-duration="2.9" data-track-index="1"><div class="card"><div class="k">TAPAK</div><div class="v">ALUMINIUM</div><div id="bd-r" class="chip">RINGAN</div></div></div>
+    <div id="bd-kg" class="clip band" data-start="9.25" data-duration="2.3" data-track-index="1"><div class="card"><div class="k">DENGAN BATERI</div><div class="big">&plusmn;1KG</div></div></div>
+    <div id="bd-out" class="clip band" data-start="14.1" data-duration="2.05" data-track-index="1"><div class="card"><div class="k">SESUAI UNTUK</div><div class="chips"><div id="bd-o1" class="chip">OUTDOOR</div><div id="bd-o2" class="chip">CAMPING</div></div></div></div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#bd-al", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 2.8);
+    tl.fromTo("#bd-r", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 4.6);
+    tl.to("#bd-al", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 5.5);
+    tl.fromTo("#bd-kg", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 9.25);
+    tl.to("#bd-kg", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 11.35);
+    tl.fromTo("#bd-out", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 14.1);
+    tl.fromTo("#bd-o1", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 14.14);
+    tl.fromTo("#bd-o2", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 15.04);
+    tl.to("#bd-out", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 15.95);
+
+    window.__timelines["build"] = tl;
+  </script>
+</template>

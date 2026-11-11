@@ -1,0 +1,45 @@
+<template>
+  <style>
+
+      :root { --yellow:#FFD21F; --red:#E5252A; --ink:#0D0D0D; --white:#FFFFFF; }
+
+      .hf-stroke { paint-order: stroke fill; -webkit-text-stroke: 14px var(--ink); }
+
+      #intro { position:absolute; inset:0; font-family:'Inter',sans-serif; color:var(--white); }
+
+      .band { position:absolute; left:48px; bottom:735px; width:620px; }
+      .card { display:inline-flex; flex-direction:column; align-items:flex-start; gap:8px; background:rgba(13,13,13,.84);
+        border-left:10px solid var(--yellow); border-radius:20px; padding:14px 22px; box-shadow:0 16px 36px rgba(0,0,0,.35); }
+      .card .k { font-weight:900; font-size:30px; letter-spacing:.08em; color:var(--yellow); }
+      .card .v { font-family:'Archivo Black','Inter',sans-serif; font-size:56px; line-height:1; }
+      .card .big { font-family:'Archivo Black','Inter',sans-serif; font-size:84px; line-height:.95; color:var(--yellow); }
+      .chips { display:flex; flex-wrap:wrap; gap:10px; }
+      .chip { display:inline-flex; align-items:center; gap:10px; background:var(--yellow); color:var(--ink); font-weight:900;
+        font-size:34px; padding:8px 18px; border-radius:12px; opacity:0; }
+      .chip.dark { background:var(--white); }
+
+  </style>
+  <div id="intro" data-composition-id="intro" data-width="1080" data-height="1920">
+    <div id="in-brand" class="clip band" data-start="1.667" data-duration="2.6" data-track-index="1"><div class="card"><div class="k">WORK LIGHT</div><div class="v">SANTINO</div><div id="in-size" class="chip">SIZE 10 INCI</div></div></div>
+    <div id="in-led" class="clip band" data-start="5.667" data-duration="2.5" data-track-index="1"><div class="card"><div class="v">PENUH LED</div></div></div>
+    <div id="in-lvl" class="clip band" data-start="8.417" data-duration="6.55" data-track-index="1"><div class="card"><div class="k">BOLEH ADJUST</div><div class="v">2 LEVEL</div><div class="chips"><div id="in-l1" class="chip dark">LEVEL 1</div><div id="in-l2" class="chip">LEVEL 2 &middot; LAGI KEMBANG</div></div></div></div>
+    <div id="in-cov" class="clip band" data-start="16.517" data-duration="2.4" data-track-index="1"><div class="card"><div class="k">COVER</div><div class="big">&plusmn;10 M</div></div></div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#in-brand", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 1.667);
+    tl.fromTo("#in-size", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 3.007);
+    tl.to("#in-brand", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 4.067);
+    tl.fromTo("#in-led", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 5.667);
+    tl.to("#in-led", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 7.967);
+    tl.fromTo("#in-lvl", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 8.417);
+    tl.fromTo("#in-l1", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 11.087);
+    tl.fromTo("#in-l2", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 11.847);
+    tl.to("#in-lvl", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 14.767);
+    tl.fromTo("#in-cov", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 16.517);
+    tl.to("#in-cov", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 18.717);
+
+    window.__timelines["intro"] = tl;
+  </script>
+</template>

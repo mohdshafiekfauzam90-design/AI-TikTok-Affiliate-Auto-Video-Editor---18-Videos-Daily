@@ -26,17 +26,23 @@ Never put a "REVIEW JUJUR · MUROH DOOH" line (or any "review jujur" kicker) on 
 
 1. **Get the video**: from a Drive link id, `curl -L -o raw.mp4 "https://drive.usercontent.google.com/download?id=<ID>&export=download&confirm=t"` into the scratchpad.
 2. **Transcribe**: Whisper large-v3 on a 16 kHz mono wav; check key numbers/specs with a second, unprompted pass.
-3. **Cut list**: copy `pipeline/edl_tangga_lipat.py` (the newest, most general one) to `pipeline/edl_<video>.py`
+3. **Cut list**: copy `pipeline/edl_work_light.py` (the newest, most general one) to `pipeline/edl_<video>.py`
    and set `KEEPS`, `MANUAL_CUTS` and `HOOK`. A keep may carry `{"speed": 1.5}` (a slow demo) or `{"gain": 0}`
    (mute a repeated line under a demo shot); `HOOK` with `voice=None` is an in-sync hook shot. Check segment ends
-   against the audio level (whisper word ends are often early): a clipped last word shows up in step 5.
+   against the audio level: whisper word ends are often ~0.2 s early, and a clipped last word shows up in step 5.
+   Kinds: `speech` (snap edges + trim inner pauses), `exact` (trim pauses, keep the given edges), `demo` (keep exactly):
+   use `demo` for a line where the speaker pauses inside a number ("lima puluh… watt", "6500… K"), or the pause
+   trim cuts the number apart. When the full-spine transcript disagrees, re-transcribe just that stretch of the
+   spine and of the original to tell a real clip from an ASR slip (see `pipeline/edl_work_light.py`).
 4. **Spine**: `python3 pipeline/build_spine.py raw.mp4 edl.json spine.mp4` (per-segment encode; never one giant filter graph: it runs out of memory on 4K), then loudnorm to about −14.5 LUFS.
 5. **Verify**: re-transcribe the spine; every word must be present.
 6. **Compose**: one HyperFrames project per video in `projects/<video>/` (copy `assets/sfx`, `assets/vendor`,
    `hyperframes.json`, `package.json` from `projects/tangga-lipat/`; data in `pipeline/data/<video>/`). Copy
-   `pipeline/gen_tangga_lipat.py` to `pipeline/gen_<video>.py` and write the scenes for the spoken facts. Set the
+   `pipeline/gen_work_light.py` (newest) to `pipeline/gen_<video>.py` and write the scenes for the spoken facts. Set the
    caption groups by hand (`MANUAL_GROUPS`, natural Malay phrases, a number always with its unit); keep cards off
-   the presenter's face (band just above the captions on talking-head shots); hide captions under the CTA.
+   the presenter's face, checked on snapshots of the close-ups (the face moves: a side column covered it in the work
+   light video, so cards now sit just above the captions, bottom-anchored); keep the CTA below the face; hide
+   captions under the CTA. `pipeline/gen_work_light.py` has a compact `card_scene()` helper for spec cards.
    `npx hyperframes check`, then a snapshot review. (`edit/` is the first video, the hammer drill.)
 7. **Render**: `cd projects/<video> && npx hyperframes render -q delivery -f 30 -w 3 -o <out>.mp4`. GSAP is bundled in `edit/assets/vendor/` (the CDN fails under the render proxy).
 8. **Deliver**: copy the result to `output/` (never overwrite or delete earlier outputs).
