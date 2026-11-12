@@ -32,7 +32,8 @@ KEEPS = [
     (24.65, 28.12, "speech", "Jadi kalau korang nak potong sudut, senang adjust je dekat depan ni."),
     (28.12, 31.30, "speech", "Lepas tu yang ni dia ada satu cover, safety cover dia lah."),
     (39.22, 48.32, "speech", "Korang jangan terbuka macam ni pula, takut kena tangan budak-budak. Jadi kalau korang nak guna biar je tertutup macam ni, bila korang potong tu dia akan terangkat automatic."),
-    (73.75, 82.10, "speech", "Nak buat potong, nak buat potong plywood, memang takde masalah."),
+    (73.75, 77.45, "exact", "Nak buat potong, nak buat potong"),
+    (80.72, 82.10, "exact", "plywood, memang takde masalah."),   # 77.45-80.72 (a third "nak buat potong pa..."): passes disagree, cut
     (82.10, 90.70, "speech", "Yang ni dia ada 3 level korang boleh adjust, adjust level dia dekat sini, level 1, level 2, level 3."),
     (101.50, 109.00, "speech", "Yang mana tengah mencari circular saw jenis cordless harga budget, boleh ambil yang ni, boleh tengok dekat beg dekat bawah."),
     (109.30, 110.00, "demo", "end plate under CTA"),

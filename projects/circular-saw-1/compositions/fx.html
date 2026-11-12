@@ -1,0 +1,20 @@
+<template>
+  <style>
+
+      :root { --yellow:#FFD21F; --red:#E5252A; --ink:#0D0D0D; --white:#FFFFFF; }
+
+      .hf-stroke { paint-order: stroke fill; -webkit-text-stroke: 14px var(--ink); }
+
+      #fx { position:absolute; inset:0; font-family:'Inter',sans-serif; color:var(--white); }
+      .flash { position:absolute; inset:0; background:#fff; opacity:0; }
+
+  </style>
+  <div id="fx" data-composition-id="fx" data-width="1080" data-height="1920">
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    window.__timelines["fx"] = tl;
+  </script>
+</template>

@@ -32,7 +32,7 @@ KEEPS = [
     (27.50, 31.98, "speech", "Bila dah brushless macam ni, senang nak bawa ke mana-mana, tak serabut dengan wire."),
     (43.85, 51.62, "speech", "Jadi yang ni kalau korang nak buat potong papan, potong plywood, nak buat kerja-kerja DIY dekat rumah, nak buat pasang kabinet ke, sesuai pakai yang ni."),
     (53.40, 58.45, "speech", "Satu lagi yang special, dia boleh adjust tiga level. Nak adjust level dia dekat sini kan."),
-    (59.70, 64.10, "demo", "Ni level 1, level 2, level 3 (motor running)."),
+    (59.70, 63.75, "demo", "Ni level 1, level 2, level 3 (motor running; ends before a stray \"kalau korang\")."),
     (70.50, 74.38, "speech", "Jadi kalau korang nak adjust angle dia, boleh pusing dekat depan ni."),
     (80.20, 83.65, "exact", "Maximum dia boleh potong sudut dia 45 darjah."),
     (84.40, 90.85, "speech", "Jadi yang mana korang tengah mencari circular saw harga bajet, boleh cuba brand daripada ST ni."),
