@@ -20,16 +20,16 @@
 
   </style>
   <div id="levels" data-composition-id="levels" data-width="1080" data-height="1920">
-    <div id="lv" class="clip band" data-start="0.8" data-duration="8.25" data-track-index="1"><div class="card"><div class="k">BOLEH ADJUST</div><div class="v">3 LEVEL</div><div class="chips"><div id="lv-1" class="chip">LEVEL 1</div><div id="lv-2" class="chip">LEVEL 2</div><div id="lv-3" class="chip">LEVEL 3</div></div></div></div>
+    <div id="lv" class="clip band" data-start="0.84" data-duration="8.527" data-track-index="1"><div class="card"><div class="k">BOLEH ADJUST</div><div class="v">3 LEVEL</div><div class="chips"><div id="lv-1" class="chip">LEVEL 1</div><div id="lv-2" class="chip">LEVEL 2</div><div id="lv-3" class="chip">LEVEL 3</div></div></div></div>
 
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#lv", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 0.8);
-    tl.fromTo("#lv-1", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 5.76);
-    tl.fromTo("#lv-2", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 7.28);
-    tl.fromTo("#lv-3", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 8.7);
-    tl.to("#lv", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 8.85);
+    tl.fromTo("#lv", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 0.84);
+    tl.fromTo("#lv-1", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 6.027);
+    tl.fromTo("#lv-2", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 7.547);
+    tl.fromTo("#lv-3", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 8.967);
+    tl.to("#lv", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 9.167);
 
     window.__timelines["levels"] = tl;
   </script>

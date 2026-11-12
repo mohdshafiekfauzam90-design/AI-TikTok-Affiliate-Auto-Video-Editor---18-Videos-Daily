@@ -23,8 +23,8 @@
 
   </style>
   <div id="cta" data-composition-id="cta" data-width="1080" data-height="1920">
-    <div id="cta-scrim" class="clip" data-start="0" data-duration="3.763" data-track-index="1"></div>
-    <div id="cta-box" class="clip" data-start="0.05" data-duration="3.713" data-track-index="2">
+    <div id="cta-scrim" class="clip" data-start="0" data-duration="3.964" data-track-index="1"></div>
+    <div id="cta-box" class="clip" data-start="0.05" data-duration="3.914" data-track-index="2">
       <div id="cta-bag"><svg viewBox="0 0 120 120" width="190" height="190" aria-hidden="true">
           <path d="M22 40h76l-6 66a8 8 0 0 1-8 7H36a8 8 0 0 1-8-7z" fill="#FFD21F" stroke="#0D0D0D" stroke-width="6" stroke-linejoin="round"/>
           <path d="M42 46V34a18 18 0 0 1 36 0v12" fill="none" stroke="#0D0D0D" stroke-width="7" stroke-linecap="round"/>
@@ -41,25 +41,25 @@
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#cta-scrim", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.out" }, 0);
     tl.fromTo("#cta-bag", { y: -120, scale: 0.4, rotation: -18, opacity: 0 }, { y: 0, scale: 1, rotation: 0, opacity: 1, duration: 0.55, ease: "back.out(2)" }, 0.05);
-    tl.fromTo("#cta-l1", { scale: 1.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "expo.out" }, 0.3);
-    tl.fromTo("#cta-l2", { scale: 1.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "expo.out" }, 0.75);
-    tl.fromTo("#cta-arrow", { y: -20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.3, ease: "power3.out" }, 1.1);
-    tl.fromTo("#cta-brand", { y: 24, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 1.45);
-    tl.to("#cta-arrow", { y: 22, duration: 0.28, ease: "power1.inOut" }, 1.65);
-    tl.to("#cta-arrow", { y: 0, duration: 0.28, ease: "power1.inOut" }, 1.93);
-    tl.to("#cta-bag", { rotation: 5, duration: 0.56, ease: "sine.inOut" }, 1.45);
-    tl.to("#cta-arrow", { y: 22, duration: 0.28, ease: "power1.inOut" }, 2.21);
-    tl.to("#cta-arrow", { y: 0, duration: 0.28, ease: "power1.inOut" }, 2.49);
-    tl.to("#cta-bag", { rotation: -5, duration: 0.56, ease: "sine.inOut" }, 2.01);
-    tl.to("#cta-arrow", { y: 22, duration: 0.28, ease: "power1.inOut" }, 2.77);
-    tl.to("#cta-arrow", { y: 0, duration: 0.28, ease: "power1.inOut" }, 3.05);
-    tl.to("#cta-bag", { rotation: 5, duration: 0.56, ease: "sine.inOut" }, 2.57);
-    tl.to("#cta-arrow", { y: 22, duration: 0.28, ease: "power1.inOut" }, 3.33);
-    tl.to("#cta-arrow", { y: 0, duration: 0.28, ease: "power1.inOut" }, 3.61);
-    tl.to("#cta-bag", { rotation: -5, duration: 0.56, ease: "sine.inOut" }, 3.13);
-    tl.to("#cta-arrow", { y: 22, duration: 0.28, ease: "power1.inOut" }, 3.89);
-    tl.to("#cta-arrow", { y: 0, duration: 0.28, ease: "power1.inOut" }, 4.17);
-    tl.to("#cta-bag", { rotation: 5, duration: 0.56, ease: "sine.inOut" }, 3.69);
+    tl.fromTo("#cta-l1", { scale: 1.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "expo.out" }, 0.34);
+    tl.fromTo("#cta-l2", { scale: 1.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "expo.out" }, 0.79);
+    tl.fromTo("#cta-arrow", { y: -20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.3, ease: "power3.out" }, 1.14);
+    tl.fromTo("#cta-brand", { y: 24, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 1.49);
+    tl.to("#cta-arrow", { y: 22, duration: 0.28, ease: "power1.inOut" }, 1.69);
+    tl.to("#cta-arrow", { y: 0, duration: 0.28, ease: "power1.inOut" }, 1.97);
+    tl.to("#cta-bag", { rotation: 5, duration: 0.56, ease: "sine.inOut" }, 1.49);
+    tl.to("#cta-arrow", { y: 22, duration: 0.28, ease: "power1.inOut" }, 2.25);
+    tl.to("#cta-arrow", { y: 0, duration: 0.28, ease: "power1.inOut" }, 2.53);
+    tl.to("#cta-bag", { rotation: -5, duration: 0.56, ease: "sine.inOut" }, 2.05);
+    tl.to("#cta-arrow", { y: 22, duration: 0.28, ease: "power1.inOut" }, 2.81);
+    tl.to("#cta-arrow", { y: 0, duration: 0.28, ease: "power1.inOut" }, 3.09);
+    tl.to("#cta-bag", { rotation: 5, duration: 0.56, ease: "sine.inOut" }, 2.61);
+    tl.to("#cta-arrow", { y: 22, duration: 0.28, ease: "power1.inOut" }, 3.37);
+    tl.to("#cta-arrow", { y: 0, duration: 0.28, ease: "power1.inOut" }, 3.65);
+    tl.to("#cta-bag", { rotation: -5, duration: 0.56, ease: "sine.inOut" }, 3.17);
+    tl.to("#cta-arrow", { y: 22, duration: 0.28, ease: "power1.inOut" }, 3.93);
+    tl.to("#cta-arrow", { y: 0, duration: 0.28, ease: "power1.inOut" }, 4.21);
+    tl.to("#cta-bag", { rotation: 5, duration: 0.56, ease: "sine.inOut" }, 3.73);
 
     window.__timelines["cta"] = tl;
   </script>

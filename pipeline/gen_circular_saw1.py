@@ -14,7 +14,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 EDIT = os.path.join(ROOT, "projects", "circular-saw-1")
 DATA = os.path.join(ROOT, "pipeline", "data", "circular_saw_1")
 W, H, FPS = 1080, 1920, 30
-DUR = 53.23                      # spine + 1.2 s held last frame under the CTA
+DUR = 55.097                      # spine + 1.2 s held last frame under the CTA
 
 tx = json.load(open(os.path.join(DATA, "spine_transcript.json")))
 cmap = json.load(open(os.path.join(DATA, "spine_map.json")))
@@ -54,7 +54,7 @@ caps = []
 for g in groups:
     caps.append({"start": round(g[0]["start"] - 0.04, 2), "end": round(g[-1]["end"] + 0.12, 2), "words": g})
 caps[0]["start"] = max(caps[0]["start"], 2.44)        # after the hook's kinetic line
-CTA_START = 49.4                                       # the CTA card says the closing line itself
+CTA_START = 50.973                                       # the CTA card says the closing line itself
 caps = [c for c in caps if c["start"] < CTA_START - 0.2]
 caps[-1]["end"] = min(caps[-1]["end"], CTA_START)
 for a, b in zip(caps, caps[1:]):                       # one group on screen at a time
@@ -153,39 +153,39 @@ RIGHT_TOP_CSS = CARD_CSS.replace(".band { position:absolute; left:48px; bottom:7
                                  ".band { position:absolute; right:40px; top:250px; width:620px; text-align:right; }")
 assert LOW_CARD_CSS != CARD_CSS and RIGHT_TOP_CSS != CARD_CSS
 # ------------------------------------------------ 2. SIZE + BLADE + CORDLESS (presenter: bottom band)
-card_scene("intro", 9.933, 22.3, 11, [
-    ("sz", 11.1, 14.0, '<div class="k">CIRCULAR SAW</div><div class="big">5 INCI</div>', []),
-    ("bl", 14.1, 17.75, '<div class="k">BELI SEKALI</div><div class="v">DAPAT MATA</div>', []),
-    ("cl", 17.9, 22.25, '<div class="k">BRUSHLESS</div><div class="v">TAK SERABUT WIRE</div><div id="cl-c" class="chip">SENANG BAWA</div>', [("cl-c", 19.6)]),
+card_scene("intro", 9.933, 22.607, 11, [
+    ("sz", 11.14, 14.04, '<div class="k">CIRCULAR SAW</div><div class="big">5 INCI</div>', []),
+    ("bl", 14.14, 17.923, '<div class="k">BELI SEKALI</div><div class="v">DAPAT MATA</div>', []),
+    ("cl", 18.207, 22.557, '<div class="k">BRUSHLESS</div><div class="v">TAK SERABUT WIRE</div><div id="cl-c" class="chip">SENANG BAWA</div>', [("cl-c", 19.907)]),
 ])
 # ------------------------------------------------ 3. USES
-card_scene("uses", 22.367, 29.5, 12, [
-    ("us", 22.5, 29.45, '<div class="k">SESUAI UNTUK</div><div class="chips"><div id="us-1" class="chip">POTONG PAPAN</div>'
+card_scene("uses", 22.767, 30.04, 12, [
+    ("us", 22.9, 29.99, '<div class="k">SESUAI UNTUK</div><div class="chips"><div id="us-1" class="chip">POTONG PAPAN</div>'
      '<div id="us-2" class="chip">PLYWOOD</div><div id="us-3" class="chip">DIY</div><div id="us-4" class="chip">PASANG KABINET</div></div>',
-     [("us-1", 24.1), ("us-2", 24.78), ("us-3", 26.2), ("us-4", 27.46)]),
+     [("us-1", 24.5), ("us-2", 25.18), ("us-3", 26.6), ("us-4", 27.86)]),
 ])
-# ------------------------------------------------ 4. 3 LEVELS (button close-up at 34.6: card low)
-card_scene("levels", 29.6, 38.7, 13, [
-    ("lv", 30.4, 38.65, '<div class="k">BOLEH ADJUST</div><div class="v">3 LEVEL</div><div class="chips"><div id="lv-1" class="chip">LEVEL 1</div>'
-     '<div id="lv-2" class="chip">LEVEL 2</div><div id="lv-3" class="chip">LEVEL 3</div></div>', [("lv-1", 35.36), ("lv-2", 36.88), ("lv-3", 38.3)]),
+# ------------------------------------------------ 4. 3 LEVELS (button close-up at 35.407: card low)
+card_scene("levels", 30.233, 39.6, 13, [
+    ("lv", 31.073, 39.6, '<div class="k">BOLEH ADJUST</div><div class="v">3 LEVEL</div><div class="chips"><div id="lv-1" class="chip">LEVEL 1</div>'
+     '<div id="lv-2" class="chip">LEVEL 2</div><div id="lv-3" class="chip">LEVEL 3</div></div>', [("lv-1", 36.26), ("lv-2", 37.78), ("lv-3", 39.2)]),
 ], css=LOW_CARD_CSS)
 # ------------------------------------------------ 5. ANGLE (saw base fills the middle: card top right over the sky)
-card_scene("angle", 39.3, 45.4, 14, [
-    ("an", 39.4, 45.35, '<div class="k">ADJUST ANGLE DEPAN</div><div class="v">MAKSIMUM 45 DARJAH</div>', []),
+card_scene("angle", 40.3, 46.684, 14, [
+    ("an", 40.44, 46.634, '<div class="k">ADJUST ANGLE DEPAN</div><div class="v">MAKSIMUM 45 DARJAH</div>', []),
 ], css=RIGHT_TOP_CSS)
 # ------------------------------------------------ 6. PRICE
-card_scene("price", 45.467, 49.4, 15, [
-    ("pr", 46.3, 49.35, '<div class="k">CIRCULAR SAW</div><div class="v">HARGA BAJET</div>', []),
+card_scene("price", 46.867, 50.973, 15, [
+    ("pr", 47.74, 50.923, '<div class="k">CIRCULAR SAW</div><div class="v">HARGA BAJET</div>', []),
 ])
 # ------------------------------------------------------------- 6c. TOONS (key points only, 1-3 s)
 from toons import toon, TOP_RIGHT
-TOONS = [("t-saw", "saw_cut", 24.0, 2.4, TOP_RIGHT)]     # "potong papan, potong plywood"
+TOONS = [("t-saw", "saw_cut", 24.4, 2.4, TOP_RIGHT)]     # "potong papan, potong plywood"
 for k, (tid, kind, t0, d, pos) in enumerate(TOONS):
     th, tc, tj = toon(kind, tid, d)
     hosts.append(scene(tid, t0, d, th, tc + pos.format(tid=tid), tj, 21 + k))
 
-# ------------------------------------------------------------- 7. CTA (64.75 - end)
-C0 = 49.467; CD = r(DUR - C0)
+# ------------------------------------------------------------- 7. CTA (66.617 - end)
+C0 = 51.133; CD = r(DUR - C0)
 def LC(t): return r(t - C0)
 BAG = """<svg viewBox="0 0 120 120" width="190" height="190" aria-hidden="true">
           <path d="M22 40h76l-6 66a8 8 0 0 1-8 7H36a8 8 0 0 1-8-7z" fill="#FFD21F" stroke="#0D0D0D" stroke-width="6" stroke-linejoin="round"/>
@@ -218,12 +218,12 @@ cta_css = """
 """
 cta_js = f"""    tl.fromTo("#cta-scrim", {{ opacity: 0 }}, {{ opacity: 1, duration: 0.5, ease: "power2.out" }}, 0);
     tl.fromTo("#cta-bag", {{ y: -120, scale: 0.4, rotation: -18, opacity: 0 }}, {{ y: 0, scale: 1, rotation: 0, opacity: 1, duration: 0.55, ease: "back.out(2)" }}, 0.05);
-    tl.fromTo("#cta-l1", {{ scale: 1.5, opacity: 0 }}, {{ scale: 1, opacity: 1, duration: 0.3, ease: "expo.out" }}, {LC(49.767)});
-    tl.fromTo("#cta-l2", {{ scale: 1.5, opacity: 0 }}, {{ scale: 1, opacity: 1, duration: 0.3, ease: "expo.out" }}, {LC(50.217)});
-    tl.fromTo("#cta-arrow", {{ y: -20, opacity: 0 }}, {{ y: 0, opacity: 1, duration: 0.3, ease: "power3.out" }}, {LC(50.567)});
-    tl.fromTo("#cta-brand", {{ y: 24, opacity: 0 }}, {{ y: 0, opacity: 1, duration: 0.4, ease: "expo.out" }}, {LC(50.917)});
+    tl.fromTo("#cta-l1", {{ scale: 1.5, opacity: 0 }}, {{ scale: 1, opacity: 1, duration: 0.3, ease: "expo.out" }}, {LC(51.473)});
+    tl.fromTo("#cta-l2", {{ scale: 1.5, opacity: 0 }}, {{ scale: 1, opacity: 1, duration: 0.3, ease: "expo.out" }}, {LC(51.923)});
+    tl.fromTo("#cta-arrow", {{ y: -20, opacity: 0 }}, {{ y: 0, opacity: 1, duration: 0.3, ease: "power3.out" }}, {LC(52.273)});
+    tl.fromTo("#cta-brand", {{ y: 24, opacity: 0 }}, {{ y: 0, opacity: 1, duration: 0.4, ease: "expo.out" }}, {LC(52.623)});
 """
-bounce_t = LC(51.117)
+bounce_t = LC(52.823)
 for k in range(5):                                       # finite bounces, seek-safe
     cta_js += f'    tl.to("#cta-arrow", {{ y: 22, duration: 0.28, ease: "power1.inOut" }}, {r(bounce_t + k*0.56)});\n'
     cta_js += f'    tl.to("#cta-arrow", {{ y: 0, duration: 0.28, ease: "power1.inOut" }}, {r(bounce_t + k*0.56 + 0.28)});\n'
@@ -259,7 +259,7 @@ hosts.append(scene("fx", 0, DUR, fx_html, fx_css, fx_js, 18))
 cap_html, cap_js = [], []
 for gi, g in enumerate(caps):
     spans = " ".join(f'<span id="cw{gi}-{wi}" class="w">{html.escape(w["text"])}</span>' for wi, w in enumerate(g["words"]))
-    hi = ' style="top:1580px"' if 34.6 <= g["start"] < 38.7 else ""   # speed-button close-up mid-frame
+    hi = ' style="top:1580px"' if 35.407 <= g["start"] < 39.6 else ""   # speed-button close-up mid-frame
     cap_html.append(f'    <div id="cg{gi}" class="clip cg"{hi} data-start="{g["start"]}" data-duration="{r(g["end"]-g["start"])}" data-track-index="1"><div class="line">{spans}</div></div>')
     s = g["start"]
     cap_js.append(f'    tl.fromTo("#cg{gi} .line", {{ scale: 0.86, y: 14, opacity: 0 }}, {{ scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }}, {s});')
@@ -288,11 +288,11 @@ hosts.append(scene("captions", 0, DUR, "\n".join(cap_html) + "\n", caps_css, cap
 # (time, file, volume) - every hit has a cause on screen; peaks land on the picture.
 SFX = [
     (0.05, "whoosh-short", 0.22), (0.5, "impact-bass-1", 0.1), (9.85, "whoosh-cinematic", 0.24),
-    (11.08, "pop", 0.42), (14.08, "pop", 0.4), (17.88, "whoosh-short", 0.22), (19.58, "pop", 0.38),
-    (22.48, "whoosh-short", 0.22), (23.98, "sparkle", 0.16), (24.08, "pop", 0.34), (24.76, "pop", 0.34), (26.18, "pop", 0.34), (27.44, "pop", 0.34),
-    (30.38, "whoosh-short", 0.22), (35.34, "pop", 0.36), (36.86, "pop", 0.36), (38.28, "ping", 0.42),
-    (39.38, "whoosh-short", 0.22), (43.85, "pop", 0.4), (46.28, "whoosh-short", 0.22),
-    (49.45, "sparkle", 0.28), (50.2, "impact-bass-2", 0.07),
+    (11.12, "pop", 0.42), (14.12, "pop", 0.4), (18.187, "whoosh-short", 0.22), (19.887, "pop", 0.38),
+    (22.88, "whoosh-short", 0.22), (24.38, "sparkle", 0.16), (24.48, "pop", 0.34), (25.16, "pop", 0.34), (26.58, "pop", 0.34), (27.84, "pop", 0.34),
+    (31.053, "whoosh-short", 0.22), (36.24, "pop", 0.36), (37.76, "pop", 0.36), (39.18, "ping", 0.42),
+    (40.42, "whoosh-short", 0.22), (45.134, "pop", 0.4), (47.72, "whoosh-short", 0.22),
+    (51.023, "sparkle", 0.28), (51.906, "impact-bass-2", 0.07),
 ]
 SFX_LEN = {"whoosh-short": 0.57, "whoosh": 0.57, "whoosh-cinematic": 2.5, "pop": 0.72, "ping": 1.32,
            "impact-bass-1": 2.1, "impact-bass-2": 2.5, "sparkle": 1.8}
@@ -306,9 +306,9 @@ sfx_tags = "\n".join(
 # (hides the cut), one punch-in per key point, slow drift elsewhere.
 REVEALS = {0.0: (1.1, 1.0, 9.9, "sine.inOut"), 9.933: (1.16, 1.0, 0.6, "expo.out")}
 MERGE_INTO_PREV = set()
-CTA_FROM = 49.467                        # one slow push from here to the end
-EMPH = {9.933: [(12.8, 1.1, 0.35, "power3.out")], 22.367: [(24.7, 1.08, 0.35, "power3.out")],
-        29.6: [(31.8, 1.1, 0.35, "power3.out")], 42.533: [(43.8, 1.1, 0.35, "power3.out")]}
+CTA_FROM = 51.133                        # one slow push from here to the end
+EMPH = {9.933: [(12.84, 1.1, 0.35, "power3.out")], 22.767: [(25.1, 1.08, 0.35, "power3.out")],
+        30.233: [(32.473, 1.1, 0.35, "power3.out")], 43.767: [(45.084, 1.1, 0.35, "power3.out")]}
 bounds = [c for c in CUTS if c not in MERGE_INTO_PREV and c < CTA_FROM] + [CTA_FROM, DUR]
 pieces, alt = [], 0
 for a, b in zip(bounds, bounds[1:]):

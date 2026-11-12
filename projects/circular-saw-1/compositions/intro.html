@@ -20,20 +20,20 @@
 
   </style>
   <div id="intro" data-composition-id="intro" data-width="1080" data-height="1920">
-    <div id="sz" class="clip band" data-start="1.167" data-duration="2.9" data-track-index="1"><div class="card"><div class="k">CIRCULAR SAW</div><div class="big">5 INCI</div></div></div>
-    <div id="bl" class="clip band" data-start="4.167" data-duration="3.65" data-track-index="1"><div class="card"><div class="k">BELI SEKALI</div><div class="v">DAPAT MATA</div></div></div>
-    <div id="cl" class="clip band" data-start="7.967" data-duration="4.35" data-track-index="1"><div class="card"><div class="k">BRUSHLESS</div><div class="v">TAK SERABUT WIRE</div><div id="cl-c" class="chip">SENANG BAWA</div></div></div>
+    <div id="sz" class="clip band" data-start="1.207" data-duration="2.9" data-track-index="1"><div class="card"><div class="k">CIRCULAR SAW</div><div class="big">5 INCI</div></div></div>
+    <div id="bl" class="clip band" data-start="4.207" data-duration="3.783" data-track-index="1"><div class="card"><div class="k">BELI SEKALI</div><div class="v">DAPAT MATA</div></div></div>
+    <div id="cl" class="clip band" data-start="8.274" data-duration="4.35" data-track-index="1"><div class="card"><div class="k">BRUSHLESS</div><div class="v">TAK SERABUT WIRE</div><div id="cl-c" class="chip">SENANG BAWA</div></div></div>
 
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#sz", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 1.167);
-    tl.to("#sz", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 3.867);
-    tl.fromTo("#bl", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 4.167);
-    tl.to("#bl", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 7.617);
-    tl.fromTo("#cl", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 7.967);
-    tl.fromTo("#cl-c", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 9.667);
-    tl.to("#cl", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 12.117);
+    tl.fromTo("#sz", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 1.207);
+    tl.to("#sz", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 3.907);
+    tl.fromTo("#bl", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 4.207);
+    tl.to("#bl", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 7.79);
+    tl.fromTo("#cl", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 8.274);
+    tl.fromTo("#cl-c", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 9.974);
+    tl.to("#cl", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 12.424);
 
     window.__timelines["intro"] = tl;
   </script>
