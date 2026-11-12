@@ -34,7 +34,7 @@ KEEPS = [
     (45.95, 53.17, "speech", "Jadi untuk yang ni kalau korang nak jadikan power bank pun boleh, dia ada 2 port USB, jadi korang boleh charge telefon."),
     (53.22, 60.65, "speech", "Yang mana korang buat kerja tak cukup pencahayaan tu, boleh beli satu lampu cordless daripada Santino ni."),
     (60.65, 63.80, "exact", "Size 10 inci, full LED tau."),
-    (63.80, 64.50, "demo", "end plate under CTA"),
+    (65.45, 66.15, "demo", "end plate under CTA (silent; 63.8-65.2 is \"penuh dengan...\")"),
 ]
 MANUAL_CUTS = []
 HOOK = dict(video=(22.95, 25.45), voice=(0.12, 2.62), drill_gain=0.0)
