@@ -19,6 +19,7 @@ outlines in the MUROH DOOH palette) placed in a free corner, popping in and out 
     wind_flow      curved air lines stream out of a fan  (fan)
     pivot_fold     a pistol-grip screwdriver's handle swings round to straight  ("tekan, pusing", lurus)
     light_beam     a work lamp switches on and throws a fan of light  (work light: terang, mod cahaya)
+    magnet         a horseshoe magnet pulls a light bar onto it  ("ada magnet", lekat dekat besi)
 """
 INK, YEL, RED, WHITE = "#0D0D0D", "#FFD21F", "#E5252A", "#FFFFFF"
 
@@ -150,6 +151,19 @@ def toon(kind, tid, dur):
         js = ("".join(f'    tl.to("#{p}-l{i}", {{ attr: {{ fill: "{WHITE}" }}, duration: 0.08 }}, {round(0.35 + 0.03 * i, 3)});\n' for i in range(9)) +
               "".join(f'    tl.fromTo("#{p}-r{i}", {{ opacity: 0, scaleX: 0.2, svgOrigin: "120 100" }}, {{ opacity: 0.85, scaleX: 1, duration: 0.35, ease: "power2.out" }}, {round(0.55 + 0.06 * i, 3)});\n'
                       f'    tl.to("#{p}-r{i}", {{ opacity: 0.45, duration: 0.3, repeat: 2, yoyo: true, ease: "sine.inOut" }}, {round(1.0 + 0.06 * i, 3)});\n' for i in range(4)))
+    elif kind == "magnet":
+        lines = "".join(f'<path id="{p}-f{i}" d="M150 {64 + 36 * i} Q 178 {82 + 18 * i} 206 {64 + 36 * i}" fill="none" stroke="{WHITE}" '
+                        f'stroke-width="5" stroke-linecap="round" stroke-dasharray="8 10" opacity="0"/>' for i in range(3))
+        svg = (f'<path d="M140 40 H80 A 60 60 0 0 0 80 160 H140 V124 H80 A 24 24 0 0 1 80 76 H140 Z" fill="{RED}" stroke="{INK}" stroke-width="7" stroke-linejoin="round"/>'
+               f'<rect x="112" y="40" width="28" height="36" fill="#D9DDE2" stroke="{INK}" stroke-width="5"/>'
+               f'<rect x="112" y="124" width="28" height="36" fill="#D9DDE2" stroke="{INK}" stroke-width="5"/>' + lines +
+               f'<g id="{p}-b"><rect x="214" y="40" width="40" height="120" rx="14" fill="{INK}" stroke="{YEL}" stroke-width="6"/>'
+               f'<rect x="224" y="52" width="20" height="96" rx="8" fill="{WHITE}"/></g>')
+        js = ("".join(f'    tl.fromTo("#{p}-f{i}", {{ opacity: 0 }}, {{ opacity: 1, duration: 0.2 }}, {round(0.3 + 0.08 * i, 3)});\n'
+                      f'    tl.fromTo("#{p}-f{i}", {{ strokeDashoffset: 0 }}, {{ strokeDashoffset: -54, duration: 0.9, ease: "none" }}, 0.3);\n' for i in range(3)) +
+              f'    tl.fromTo("#{p}-b", {{ x: 50, rotation: 10, svgOrigin: "234 100" }}, {{ x: -66, rotation: 0, duration: 0.45, ease: "back.in(1.4)" }}, 0.9);\n' +
+              "".join(f'    tl.to("#{p}-f{i}", {{ opacity: 0, duration: 0.15 }}, 1.32);\n' for i in range(3)) +
+              f'    tl.fromTo("#{p}-b", {{ scale: 1 }}, {{ scale: 1.08, duration: 0.12, yoyo: true, repeat: 1, transformOrigin: "50% 50%" }}, 1.36);\n')
     else:
         raise ValueError(kind)
     html = f'    <div class="toon"><svg viewBox="0 0 320 200" aria-hidden="true">{svg}</svg></div>\n'

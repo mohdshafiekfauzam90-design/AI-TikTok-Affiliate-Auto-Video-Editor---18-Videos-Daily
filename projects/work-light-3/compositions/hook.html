@@ -1,0 +1,30 @@
+<template>
+  <style>
+
+      :root { --yellow:#FFD21F; --red:#E5252A; --ink:#0D0D0D; --white:#FFFFFF; }
+
+      .hf-stroke { paint-order: stroke fill; -webkit-text-stroke: 14px var(--ink); }
+
+      #hook { position:absolute; inset:0; font-family:'Inter',sans-serif; color:var(--white); }
+
+      #hook-top { position:absolute; left:0; right:0; top:1290px; text-align:center; }   /* the light bar runs up the middle */
+      #hook-title { font-family:'Archivo Black','Inter',sans-serif; font-size:100px; line-height:1.02; text-shadow:0 10px 30px rgba(0,0,0,.45); }
+      .hook-beat { position:absolute; left:40px; right:40px; top:1560px; text-align:center; font-family:'Archivo Black','Inter',sans-serif;
+        font-size:170px; line-height:1; color:var(--yellow); }
+
+  </style>
+  <div id="hook" data-composition-id="hook" data-width="1080" data-height="1920">
+    <div id="hook-top" class="clip" data-start="0" data-duration="4.1" data-track-index="1">
+      <div id="hook-title"><span class="hf-stroke">LAMPU BLACK DOG</span></div>
+    </div>
+    <div id="hook-b0" class="clip hook-beat" data-start="1.6" data-duration="2.5" data-track-index="2"><span class="hf-stroke">8 MODE!</span></div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#hook-title", { scale: 1.12, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.45, ease: "expo.out" }, 0.05);
+    tl.fromTo("#hook-b0 span", { scale: 1.6, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.26, ease: "back.out(2)" }, 1.6);
+
+    window.__timelines["hook"] = tl;
+  </script>
+</template>
