@@ -1,0 +1,104 @@
+{
+  "title": "Dagmara K-Series Brushless Cordless Hammer Drill 50Nm",
+  "input": "input/Dagmara.MOV",
+  "output": "output/dagmara_k_series_tiktok.mp4",
+  "crf": 16,
+  "preset": "slow",
+  "sfx_volume": 0.5,
+
+  "whisper": {"ggml_model": "models/ggml-large-v3.bin", "language": "ms"},
+
+  "corrections": {
+    "can": "K-Series",
+    "series": "",
+    "nara": "Dagmara",
+    "cat": "chuck",
+    "tahal": "tahan",
+    "asap": "lasak",
+    "in": "",
+    "case": "kalau"
+  },
+  "word_overrides": [
+    {"from": 0.0, "to": 4.0, "words": [
+      {"word": "K-Series,", "start": 0.20, "end": 0.90},
+      {"word": "model", "start": 0.95, "end": 1.40}]},
+    {"from": 5.5, "to": 9.5, "words": [
+      {"word": "Dagmara.", "start": 5.91, "end": 6.70},
+      {"word": "50Nm", "start": 6.75, "end": 7.65},
+      {"word": "torque.", "start": 7.99, "end": 9.40}]},
+    {"from": 18.9, "to": 19.9, "words": [
+      {"word": "2.0Ah", "start": 18.92, "end": 19.90}]}
+  ],
+
+  "subtitle_style": {"y": 1330, "font_size": 86, "max_words": 3, "max_chars": 16,
+                     "active_color": "#FFE600"},
+  "number_color": "#FFE600",
+  "keyword_colors": {
+    "#39FF14": ["dagmara", "k-series", "kseries", "brushless", "bateri", "charger", "chuck",
+                "bit", "bracket", "hammer", "motor"],
+    "#FF3B6B": ["latest", "cantik", "senang", "lasak", "tahan", "fast"],
+    "#00E5FF": ["tebuk", "kayu", "besi", "skru", "ketuk", "paku", "carbon", "tinggi-tinggi"]
+  },
+
+  "hook": {
+    "duration": 3.0,
+    "label": "TUKANG & DIY WAJIB ADA!",
+    "lines": ["1 DRILL,", "SEMUA KERJA SETTLE!"],
+    "colors": ["#FFFFFF", "#FFE600"],
+    "box_color": "#E0102E"
+  },
+
+  "callouts": [
+    {"start": 5.9, "end": 9.6, "title": "50 Nm", "subtitle": "TORQUE • K-SERIES TERKINI",
+     "side": "left", "y": 700, "color": "#FFE600", "title_size": 120, "badge": "POWER"},
+    {"start": 10.6, "end": 16.6, "title": "3 FUNGSI", "subtitle": "Tebuk kayu • Tebuk besi • Skru",
+     "side": "right", "y": 700, "color": "#00E5FF", "title_size": 84},
+    {"start": 16.8, "end": 20.2, "title": "18V 2.0Ah", "subtitle": "Bateri Lithium",
+     "side": "left", "y": 720, "color": "#39FF14", "title_size": 88},
+    {"start": 21.6, "end": 28.4, "title": "MOD HAMMER", "subtitle": "Ketuk besi • paku • skru",
+     "side": "right", "y": 700, "color": "#FF3B6B", "title_size": 84, "badge": "2 IN 1"},
+    {"start": 28.6, "end": 31.3, "title": "BRUSHLESS", "subtitle": "Tak perlu tukar carbon",
+     "side": "left", "y": 720, "color": "#39FF14", "title_size": 84},
+    {"start": 31.4, "end": 36.6, "title": "CHUCK BESI", "subtitle": "Tahan lasak",
+     "side": "right", "y": 720, "color": "#FFE600", "title_size": 84},
+    {"start": 39.3, "end": 44.0, "title": "6 MATA BIT", "subtitle": "+ Bracket simpanan",
+     "side": "left", "y": 700, "color": "#39FF14", "title_size": 84, "badge": "BONUS"},
+    {"start": 52.6, "end": 57.0, "title": "KERJA TINGGI", "subtitle": "Mata bit sentiasa di tepi",
+     "side": "right", "y": 700, "color": "#00E5FF", "title_size": 80},
+    {"start": 59.9, "end": 64.4, "title": "2x BATERI", "subtitle": "+ Fast Charger",
+     "side": "left", "y": 720, "color": "#FFE600", "title_size": 88, "badge": "SET"}
+  ],
+
+  "zooms": [
+    {"start": -1.0, "end": 1.7,  "scale": 1.20, "ramp_out": 0.7, "sfx": false},
+    {"start": 5.9,  "end": 9.4,  "scale": 1.32},
+    {"start": 11.5, "end": 13.4, "scale": 1.15},
+    {"start": 17.0, "end": 19.9, "scale": 1.20},
+    {"start": 22.6, "end": 24.8, "scale": 1.18},
+    {"start": 28.6, "end": 31.0, "scale": 1.25},
+    {"start": 34.7, "end": 36.8, "scale": 1.15},
+    {"start": 38.9, "end": 42.5, "scale": 1.28, "ramp_in": 0.08, "ramp_out": 1.8},
+    {"start": 61.4, "end": 64.4, "scale": 1.18}
+  ],
+
+  "smart_animation": {
+    "enabled": true,
+    "product_type": "auto",
+    "max_ratio": 0.10,
+    "duration": 2.0,
+    "min_gap": 10,
+    "min_score": 3,
+    "size": 320,
+    "y": 210
+  },
+
+  "cta": {
+    "duration": 4.5,
+    "y": 470,
+    "lines": ["JANGAN TUNGGU LAGI!", "MODEL TERKINI!", "STOK TERHAD"],
+    "colors": ["#FFFFFF", "#FFE600", "#39FF14"],
+    "button": "TEKAN BEG KUNING",
+    "button_y": 880,
+    "arrow_x": 150
+  }
+}

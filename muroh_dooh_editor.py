@@ -180,6 +180,11 @@ def apply_corrections(words: list[dict], cfg: dict) -> list[dict]:
             punct = re.search(r"[.,!?]*$", w["word"]).group(0)
             w = {**w, "word": corr[core] + punct}
         out.append(w)
+    # gantian ikut julat masa (cth. nama jenama yang Whisper terlepas)
+    for ov in cfg.get("word_overrides", []):
+        out = [w for w in out if not (ov["from"] <= w["start"] < ov["to"])]
+        out += [dict(x) for x in ov["words"]]
+    out.sort(key=lambda w: w["start"])
     return out
 
 
