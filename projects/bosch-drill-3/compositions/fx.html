@@ -1,0 +1,23 @@
+<template>
+  <style>
+
+      :root { --yellow:#FFD21F; --red:#E5252A; --ink:#0D0D0D; --white:#FFFFFF; }
+
+      .hf-stroke { paint-order: stroke fill; -webkit-text-stroke: 14px var(--ink); }
+
+      #fx { position:absolute; inset:0; font-family:'Inter',sans-serif; color:var(--white); }
+      .flash { position:absolute; inset:0; background:#fff; opacity:0; }
+
+  </style>
+  <div id="fx" data-composition-id="fx" data-width="1080" data-height="1920">
+    <div id="fx-f0" class="clip flash" data-start="2.72" data-duration="0.4" data-track-index="1"></div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#fx-f0", { opacity: 0 }, { opacity: 0.85, duration: 0.08, ease: "power2.in" }, 2.72);
+    tl.to("#fx-f0", { opacity: 0, duration: 0.26, ease: "power2.out" }, 2.8);
+
+    window.__timelines["fx"] = tl;
+  </script>
+</template>
