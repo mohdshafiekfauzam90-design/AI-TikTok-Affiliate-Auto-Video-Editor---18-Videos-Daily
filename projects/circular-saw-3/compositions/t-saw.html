@@ -1,0 +1,40 @@
+<template>
+  <style>
+
+      :root { --yellow:#FFD21F; --red:#E5252A; --ink:#0D0D0D; --white:#FFFFFF; }
+
+      .hf-stroke { paint-order: stroke fill; -webkit-text-stroke: 14px var(--ink); }
+
+      #t-saw { position:absolute; inset:0; font-family:'Inter',sans-serif; color:var(--white); }
+
+      .toon { position:absolute; width:364px; height:236px; border-radius:28px; background:rgba(13,13,13,.74);
+        border:4px solid var(--yellow); box-shadow:0 18px 40px rgba(0,0,0,.4); display:flex; align-items:center; justify-content:center; }
+      .toon svg { width:344px; height:215px; overflow:visible; }
+      #t-saw .toon { left:680px; top:1330px; }
+
+  </style>
+  <div id="t-saw" data-composition-id="t-saw" data-width="1080" data-height="1920">
+    <div class="toon"><svg viewBox="0 0 320 200" aria-hidden="true"><rect x="10" y="128" width="300" height="34" rx="4" fill="#C8955A" stroke="#0D0D0D" stroke-width="6"/><path d="M30 140 H120 M150 150 H280" stroke="#9C6B36" stroke-width="3"/><rect id="t-saw-k" x="20" y="126" width="6" height="38" fill="#0D0D0D"/><circle id="t-saw-d0" cx="70" cy="132" r="4" fill="#E8C98E" stroke="#0D0D0D" stroke-width="2" opacity="0"/><circle id="t-saw-d1" cx="70" cy="132" r="5" fill="#E8C98E" stroke="#0D0D0D" stroke-width="2" opacity="0"/><circle id="t-saw-d2" cx="70" cy="132" r="6" fill="#E8C98E" stroke="#0D0D0D" stroke-width="2" opacity="0"/><circle id="t-saw-d3" cx="70" cy="132" r="4" fill="#E8C98E" stroke="#0D0D0D" stroke-width="2" opacity="0"/><circle id="t-saw-d4" cx="70" cy="132" r="5" fill="#E8C98E" stroke="#0D0D0D" stroke-width="2" opacity="0"/><g id="t-saw-m"><g id="t-saw-w"><polygon points="122.0,86.0 113.1,94.7 118.0,105.9 106.5,110.6 106.8,122.8 94.3,122.7 89.9,134.0 78.4,129.2 70.0,138.0 61.3,129.1 50.1,134.0 45.4,122.5 33.2,122.8 33.3,110.3 22.0,105.9 26.8,94.4 18.0,86.0 26.9,77.3 22.0,66.1 33.5,61.4 33.2,49.2 45.7,49.3 50.1,38.0 61.6,42.8 70.0,34.0 78.7,42.9 89.9,38.0 94.6,49.5 106.8,49.2 106.7,61.7 118.0,66.1 113.2,77.6" fill="#C9CDD2" stroke="#0D0D0D" stroke-width="4" stroke-linejoin="round"/><circle cx="70" cy="86" r="16" fill="#FFD21F" stroke="#0D0D0D" stroke-width="5"/></g><path d="M20 70 A 52 52 0 0 1 120 70" fill="none" stroke="#1FBF8F" stroke-width="14" stroke-linecap="round"/></g></svg></div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#t-saw .toon", { scale: 0.4, opacity: 0, rotation: -6 }, { scale: 1, opacity: 1, rotation: 0, duration: 0.35, ease: "back.out(2.2)" }, 0);
+    tl.to("#t-saw .toon", { scale: 0.7, opacity: 0, duration: 0.2, ease: "power3.in" }, 2.18);
+    tl.fromTo("#t-saw-w", { rotation: 0, svgOrigin: "70 86" }, { rotation: 1440, duration: 2.1, ease: "none" }, 0.1);
+    tl.fromTo("#t-saw-m", { x: -30 }, { x: 190, duration: 1.8, ease: "power1.inOut" }, 0.25);
+    tl.fromTo("#t-saw-k", { attr: { width: 6 } }, { attr: { width: 230 }, duration: 1.8, ease: "power1.inOut" }, 0.25);
+    tl.fromTo("#t-saw-d0", { opacity: 0, x: 0, y: 0 }, { opacity: 1, x: -30, y: -28, duration: 0.35, ease: "power2.out" }, 0.45);
+    tl.to("#t-saw-d0", { opacity: 0, duration: 0.15 }, 0.8);
+    tl.fromTo("#t-saw-d1", { opacity: 0, x: 40, y: 0 }, { opacity: 1, x: 4, y: -35, duration: 0.35, ease: "power2.out" }, 0.7);
+    tl.to("#t-saw-d1", { opacity: 0, duration: 0.15 }, 1.05);
+    tl.fromTo("#t-saw-d2", { opacity: 0, x: 80, y: 0 }, { opacity: 1, x: 38, y: -42, duration: 0.35, ease: "power2.out" }, 0.95);
+    tl.to("#t-saw-d2", { opacity: 0, duration: 0.15 }, 1.3);
+    tl.fromTo("#t-saw-d3", { opacity: 0, x: 120, y: 0 }, { opacity: 1, x: 72, y: -49, duration: 0.35, ease: "power2.out" }, 1.2);
+    tl.to("#t-saw-d3", { opacity: 0, duration: 0.15 }, 1.55);
+    tl.fromTo("#t-saw-d4", { opacity: 0, x: 160, y: 0 }, { opacity: 1, x: 106, y: -56, duration: 0.35, ease: "power2.out" }, 1.45);
+    tl.to("#t-saw-d4", { opacity: 0, duration: 0.15 }, 1.8);
+
+    window.__timelines["t-saw"] = tl;
+  </script>
+</template>
