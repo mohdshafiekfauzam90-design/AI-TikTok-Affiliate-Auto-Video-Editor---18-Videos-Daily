@@ -104,9 +104,9 @@ def toon(kind, tid, dur):
                f'<line x1="150" y1="34" x2="150" y2="126" stroke="{INK}" stroke-width="4"/><line x1="104" y1="80" x2="196" y2="80" stroke="{INK}" stroke-width="4"/>'
                f'<circle cx="150" cy="80" r="12" fill="{INK}"/></g>')
         js = (f'    tl.fromTo("#{p}-d", {{ rotation: 0, svgOrigin: "150 80" }}, {{ rotation: 1080, duration: {round(dur - 0.3, 3)}, ease: "none" }}, 0.1);\n' +
-              "".join(f'    tl.fromTo("#{p}-s{i}", {{ opacity: 0, scale: 0.2, svgOrigin: "170 126" }}, {{ opacity: 1, scale: 1, duration: 0.16, ease: "power2.out" }}, {round(0.25 + 0.3 * k + 0.05 * i, 3)});\n'
-                      f'    tl.to("#{p}-s{i}", {{ opacity: 0, duration: 0.12 }}, {round(0.41 + 0.3 * k + 0.05 * i, 3)});\n'
-                      for k in range(int((dur - 0.6) / 0.3)) for i in range(6)))
+              "".join(f'    tl.fromTo("#{p}-s{i}", {{ opacity: 0, scale: 0.2, svgOrigin: "170 126" }}, {{ opacity: 1, scale: 1, duration: 0.15, '
+                      f'yoyo: true, repeat: {2 * max(1, int((dur - 0.6) / 0.3)) - 1}, ease: "power2.out" }}, {round(0.25 + 0.05 * i, 3)});\n'
+                      for i in range(6)))
     elif kind == "drill_wall":
         dust = "".join(f'<circle id="{p}-p{i}" cx="200" cy="{100 + dy}" r="{r}" fill="#D8C7A8" stroke="{INK}" stroke-width="2" opacity="0"/>'
                        for i, (dy, r) in enumerate([(-18, 6), (14, 5), (-4, 7), (22, 4)]))
