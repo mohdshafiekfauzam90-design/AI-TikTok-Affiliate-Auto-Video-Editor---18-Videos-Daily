@@ -14,7 +14,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 EDIT = os.path.join(ROOT, "projects", "bosch-grinder")
 DATA = os.path.join(ROOT, "pipeline", "data", "bosch_grinder")
 W, H, FPS = 1080, 1920, 30
-DUR = 53.73                      # spine + 1.2 s held last frame under the CTA
+DUR = 56.197                      # spine + 1.2 s held last frame under the CTA
 
 tx = json.load(open(os.path.join(DATA, "spine_transcript.json")))
 cmap = json.load(open(os.path.join(DATA, "spine_map.json")))
@@ -55,8 +55,8 @@ assert sum(len(g) for g in groups) == len(cap_words), "every caption word in exa
 caps = []
 for g in groups:
     caps.append({"start": round(g[0]["start"] - 0.04, 2), "end": round(g[-1]["end"] + 0.12, 2), "words": g})
-caps[0]["start"] = max(caps[0]["start"], 3.72)        # after the hook's kinetic line
-CTA_START = 48.55                                       # the CTA card says the closing line itself
+caps[0]["start"] = max(caps[0]["start"], 3.76)        # after the hook's kinetic line
+CTA_START = 50.79                                       # the CTA card says the closing line itself
 caps = [c for c in caps if c["start"] < CTA_START - 0.2]
 caps[-1]["end"] = min(caps[-1]["end"], CTA_START)
 for a, b in zip(caps, caps[1:]):                       # one group on screen at a time
@@ -152,25 +152,25 @@ hook_js = """    tl.fromTo("#hook-title", { scale: 1.12, opacity: 0 }, { scale: 
 """
 hosts.append(scene("hook", 0, HK, hook_html, hook_css, hook_js, 10))
 
-card_scene("intro", 3.7, 13.7, 11, [
-    ("in-a", 3.8, 7.0, '<div class="k">ANGLE GRINDER</div><div class="v">BOSCH</div>', []),
-    ("in-b", 7.05, 13.65, '<div class="k">MODEL LATEST</div><div class="v">GWS 700</div><div class="chips"><div id="in-w" class="chip">710W</div>'
-     '<div id="in-r" class="chip">12000 RPM</div></div>', [("in-w", 9.46), ("in-r", 12.0)]),
+card_scene("intro", 3.7, 13.767, 11, [
+    ("in-a", 3.84, 7.04, '<div class="k">ANGLE GRINDER</div><div class="v">BOSCH</div>', []),
+    ("in-b", 7.09, 13.69, '<div class="k">MODEL LATEST</div><div class="v">GWS 700</div><div class="chips"><div id="in-w" class="chip">710W</div>'
+     '<div id="in-r" class="chip">12000 RPM</div></div>', [("in-w", 9.5), ("in-r", 12.04)]),
 ])
-card_scene("design", 13.7, 24.1, 12, [
-    ("ds-a", 14.0, 17.4, '<div class="k">DESIGN BARU</div><div class="v">LAIN SIKIT</div>', []),
-    ("ds-b", 17.45, 24.05, '<div class="k">LEBIH SLIM</div><div class="v">SELESA PEGANG</div><div id="ds-g" class="chip">LAGI GRIP</div>', [("ds-g", 22.5)]),
+card_scene("design", 13.767, 25.173, 12, [
+    ("ds-a", 14.067, 17.867, '<div class="k">DESIGN BARU</div><div class="v">LAIN SIKIT</div>', []),
+    ("ds-b", 17.917, 25.123, '<div class="k">LEBIH SLIM</div><div class="v">SELESA PEGANG</div><div id="ds-g" class="chip">LAGI GRIP</div>', [("ds-g", 23.573)]),
 ])
-card_scene("spec", 24.167, 29.2, 13, [
-    ("sp", 24.3, 29.15, '<div class="k">SIZE</div><div class="big">4 INCI</div><div id="sp-p" class="chip">PLUG BIASA</div>', [("sp-p", 26.7)]),
+card_scene("spec", 25.333, 30.517, 13, [
+    ("sp", 25.466, 30.467, '<div class="k">SIZE</div><div class="big">4 INCI</div><div id="sp-p" class="chip">PLUG BIASA</div>', [("sp-p", 27.866)]),
 ])
-card_scene("parts", 29.267, 38.8, 14, [
-    ("hd", 29.4, 33.8, '<div class="k">HANDLE</div><div class="v">KIRI &amp; KANAN</div>', []),
-    ("cv", 33.9, 36.4, '<div class="k">COVER</div><div class="v">TEBAL</div>', []),
-    ("pb", 36.5, 38.75, '<div class="k">SATU LAGI</div><div class="v">PEMBUKA</div>', []),
+card_scene("parts", 30.7, 40.606, 14, [
+    ("hd", 30.833, 35.373, '<div class="k">HANDLE</div><div class="v">KIRI &amp; KANAN</div>', []),
+    ("cv", 35.433, 37.966, '<div class="k">COVER</div><div class="v">TEBAL</div>', []),
+    ("pb", 38.133, 40.556, '<div class="k">SATU LAGI</div><div class="v">PEMBUKA</div>', []),
 ])
-card_scene("durable", 38.833, 48.7, 15, [
-    ("tl", 39.0, 48.65, '<div class="k">KERJA SEHARIAN</div><div class="v">TAHAN LASAK</div><div id="tl-b" class="chip">BOSCH MEMANG TERKENAL</div>', [("tl-b", 46.1)]),
+card_scene("durable", 40.733, 51.0, 15, [
+    ("tl", 40.94, 50.89, '<div class="k">KERJA SEHARIAN</div><div class="v">TAHAN LASAK</div><div id="tl-b" class="chip">BOSCH MEMANG TERKENAL</div>', [("tl-b", 48.34)]),
 ])
 from toons import toon
 MID_RIGHT = "      #{tid} .toon {{ left:680px; top:880px; }}\n"     # over his shirt: face top-centre, grinder top-left
@@ -179,8 +179,8 @@ for k, (tid, kind, t0, d, pos) in enumerate(TOONS):
     th, tc, tj = toon(kind, tid, d)
     hosts.append(scene(tid, t0, d, th, tc + pos.format(tid=tid), tj, 21 + k))
 
-# ------------------------------------------------------------- 7. CTA (64.75 - end)
-C0 = 48.767; CD = r(DUR - C0)
+# ------------------------------------------------------------- 7. CTA (67.217 - end)
+C0 = 51.0; CD = r(DUR - C0)
 def LC(t): return r(t - C0)
 BAG = """<svg viewBox="0 0 120 120" width="190" height="190" aria-hidden="true">
           <path d="M22 40h76l-6 66a8 8 0 0 1-8 7H36a8 8 0 0 1-8-7z" fill="#FFD21F" stroke="#0D0D0D" stroke-width="6" stroke-linejoin="round"/>
@@ -213,12 +213,12 @@ cta_css = """
 """
 cta_js = f"""    tl.fromTo("#cta-scrim", {{ opacity: 0 }}, {{ opacity: 1, duration: 0.5, ease: "power2.out" }}, 0);
     tl.fromTo("#cta-bag", {{ y: -120, scale: 0.4, rotation: -18, opacity: 0 }}, {{ y: 0, scale: 1, rotation: 0, opacity: 1, duration: 0.55, ease: "back.out(2)" }}, 0.05);
-    tl.fromTo("#cta-l1", {{ scale: 1.5, opacity: 0 }}, {{ scale: 1, opacity: 1, duration: 0.3, ease: "expo.out" }}, {LC(49.067)});
-    tl.fromTo("#cta-l2", {{ scale: 1.5, opacity: 0 }}, {{ scale: 1, opacity: 1, duration: 0.3, ease: "expo.out" }}, {LC(49.517)});
-    tl.fromTo("#cta-arrow", {{ y: -20, opacity: 0 }}, {{ y: 0, opacity: 1, duration: 0.3, ease: "power3.out" }}, {LC(49.867)});
-    tl.fromTo("#cta-brand", {{ y: 24, opacity: 0 }}, {{ y: 0, opacity: 1, duration: 0.4, ease: "expo.out" }}, {LC(50.217)});
+    tl.fromTo("#cta-l1", {{ scale: 1.5, opacity: 0 }}, {{ scale: 1, opacity: 1, duration: 0.3, ease: "expo.out" }}, {LC(51.3)});
+    tl.fromTo("#cta-l2", {{ scale: 1.5, opacity: 0 }}, {{ scale: 1, opacity: 1, duration: 0.3, ease: "expo.out" }}, {LC(51.75)});
+    tl.fromTo("#cta-arrow", {{ y: -20, opacity: 0 }}, {{ y: 0, opacity: 1, duration: 0.3, ease: "power3.out" }}, {LC(52.1)});
+    tl.fromTo("#cta-brand", {{ y: 24, opacity: 0 }}, {{ y: 0, opacity: 1, duration: 0.4, ease: "expo.out" }}, {LC(52.45)});
 """
-bounce_t = LC(50.417)
+bounce_t = LC(52.65)
 for k in range(5):                                       # finite bounces, seek-safe
     cta_js += f'    tl.to("#cta-arrow", {{ y: 22, duration: 0.28, ease: "power1.inOut" }}, {r(bounce_t + k*0.56)});\n'
     cta_js += f'    tl.to("#cta-arrow", {{ y: 0, duration: 0.28, ease: "power1.inOut" }}, {r(bounce_t + k*0.56 + 0.28)});\n'
@@ -283,10 +283,10 @@ hosts.append(scene("captions", 0, DUR, "\n".join(cap_html) + "\n", caps_css, cap
 # (time, file, volume) - every hit has a cause on screen; peaks land on the picture.
 SFX = [
     (0.0, "whoosh-short", 0.2), (0.88, "sparkle", 0.16), (2.68, "impact-bass-1", 0.12), (3.6, "whoosh-cinematic", 0.24),
-    (3.78, "pop", 0.42), (7.03, "pop", 0.4), (9.44, "pop", 0.36), (11.98, "ping", 0.42), (13.98, "whoosh-short", 0.22),
-    (17.43, "pop", 0.4), (22.48, "pop", 0.36), (24.28, "whoosh-short", 0.22), (26.68, "pop", 0.36),
-    (29.38, "whoosh-short", 0.22), (33.88, "pop", 0.38), (36.48, "pop", 0.38), (38.98, "whoosh-short", 0.22), (46.08, "pop", 0.38),
-    (48.75, "sparkle", 0.28), (49.5, "impact-bass-2", 0.07),
+    (3.82, "pop", 0.42), (7.07, "pop", 0.4), (9.48, "pop", 0.36), (12.02, "ping", 0.42), (14.047, "whoosh-short", 0.22),
+    (17.897, "pop", 0.4), (23.553, "pop", 0.36), (25.446, "whoosh-short", 0.22), (27.846, "pop", 0.36),
+    (30.813, "whoosh-short", 0.22), (35.433, "pop", 0.38), (38.133, "pop", 0.38), (40.92, "whoosh-short", 0.22), (48.32, "pop", 0.38),
+    (51.0, "sparkle", 0.28), (51.733, "impact-bass-2", 0.07),
 ]
 SFX_LEN = {"whoosh-short": 0.57, "whoosh": 0.57, "whoosh-cinematic": 2.5, "pop": 0.72, "ping": 1.32,
            "impact-bass-1": 2.1, "impact-bass-2": 2.5, "sparkle": 1.8}
@@ -300,9 +300,9 @@ sfx_tags = "\n".join(
 # (hides the cut), one punch-in per key point, slow drift elsewhere.
 REVEALS = {0.0: (1.14, 1.04, 3.7, "power2.out"), 3.7: (1.18, 1.0, 0.6, "expo.out")}
 MERGE_INTO_PREV = set()
-CTA_FROM = 48.767                        # one slow push from here to the end
-EMPH = {3.7: [(7.14, 1.1, 0.35, "power3.out"), (12.0, 1.1, 0.35, "power3.out")], 17.333: [(18.0, 1.08, 0.3, "power3.out")],
-        24.167: [(25.0, 1.1, 0.35, "power3.out")], 42.6: [(44.4, 1.08, 0.35, "power3.out")]}
+CTA_FROM = 51.0                        # one slow push from here to the end
+EMPH = {3.7: [(7.18, 1.1, 0.35, "power3.out"), (12.04, 1.1, 0.35, "power3.out")], 17.8: [(18.467, 1.08, 0.3, "power3.out")],
+        25.333: [(26.166, 1.1, 0.35, "power3.out")], 44.8: [(46.64, 1.08, 0.35, "power3.out")]}
 bounds = [c for c in CUTS if c not in MERGE_INTO_PREV and c < CTA_FROM] + [CTA_FROM, DUR]
 pieces, alt = [], 0
 for a, b in zip(bounds, bounds[1:]):

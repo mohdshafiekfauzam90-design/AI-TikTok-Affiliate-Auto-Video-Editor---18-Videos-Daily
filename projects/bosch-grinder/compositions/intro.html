@@ -20,18 +20,18 @@
 
   </style>
   <div id="intro" data-composition-id="intro" data-width="1080" data-height="1920">
-    <div id="in-a" class="clip band" data-start="0.1" data-duration="3.2" data-track-index="1"><div class="card"><div class="k">ANGLE GRINDER</div><div class="v">BOSCH</div></div></div>
-    <div id="in-b" class="clip band" data-start="3.35" data-duration="6.6" data-track-index="1"><div class="card"><div class="k">MODEL LATEST</div><div class="v">GWS 700</div><div class="chips"><div id="in-w" class="chip">710W</div><div id="in-r" class="chip">12000 RPM</div></div></div></div>
+    <div id="in-a" class="clip band" data-start="0.14" data-duration="3.2" data-track-index="1"><div class="card"><div class="k">ANGLE GRINDER</div><div class="v">BOSCH</div></div></div>
+    <div id="in-b" class="clip band" data-start="3.39" data-duration="6.6" data-track-index="1"><div class="card"><div class="k">MODEL LATEST</div><div class="v">GWS 700</div><div class="chips"><div id="in-w" class="chip">710W</div><div id="in-r" class="chip">12000 RPM</div></div></div></div>
 
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#in-a", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 0.1);
-    tl.to("#in-a", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 3.1);
-    tl.fromTo("#in-b", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 3.35);
-    tl.fromTo("#in-w", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 5.76);
-    tl.fromTo("#in-r", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 8.3);
-    tl.to("#in-b", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 9.75);
+    tl.fromTo("#in-a", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 0.14);
+    tl.to("#in-a", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 3.14);
+    tl.fromTo("#in-b", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 3.39);
+    tl.fromTo("#in-w", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 5.8);
+    tl.fromTo("#in-r", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 8.34);
+    tl.to("#in-b", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 9.79);
 
     window.__timelines["intro"] = tl;
   </script>

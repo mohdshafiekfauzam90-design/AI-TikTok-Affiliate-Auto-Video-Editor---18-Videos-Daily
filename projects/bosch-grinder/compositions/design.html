@@ -20,17 +20,17 @@
 
   </style>
   <div id="design" data-composition-id="design" data-width="1080" data-height="1920">
-    <div id="ds-a" class="clip band" data-start="0.3" data-duration="3.4" data-track-index="1"><div class="card"><div class="k">DESIGN BARU</div><div class="v">LAIN SIKIT</div></div></div>
-    <div id="ds-b" class="clip band" data-start="3.75" data-duration="6.6" data-track-index="1"><div class="card"><div class="k">LEBIH SLIM</div><div class="v">SELESA PEGANG</div><div id="ds-g" class="chip">LAGI GRIP</div></div></div>
+    <div id="ds-a" class="clip band" data-start="0.3" data-duration="3.8" data-track-index="1"><div class="card"><div class="k">DESIGN BARU</div><div class="v">LAIN SIKIT</div></div></div>
+    <div id="ds-b" class="clip band" data-start="4.15" data-duration="7.206" data-track-index="1"><div class="card"><div class="k">LEBIH SLIM</div><div class="v">SELESA PEGANG</div><div id="ds-g" class="chip">LAGI GRIP</div></div></div>
 
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#ds-a", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 0.3);
-    tl.to("#ds-a", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 3.5);
-    tl.fromTo("#ds-b", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 3.75);
-    tl.fromTo("#ds-g", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 8.8);
-    tl.to("#ds-b", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 10.15);
+    tl.to("#ds-a", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 3.9);
+    tl.fromTo("#ds-b", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 4.15);
+    tl.fromTo("#ds-g", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 9.806);
+    tl.to("#ds-b", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 11.156);
 
     window.__timelines["design"] = tl;
   </script>

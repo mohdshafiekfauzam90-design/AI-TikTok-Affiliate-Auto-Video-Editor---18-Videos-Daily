@@ -20,14 +20,14 @@
 
   </style>
   <div id="durable" data-composition-id="durable" data-width="1080" data-height="1920">
-    <div id="tl" class="clip band" data-start="0.167" data-duration="9.65" data-track-index="1"><div class="card"><div class="k">KERJA SEHARIAN</div><div class="v">TAHAN LASAK</div><div id="tl-b" class="chip">BOSCH MEMANG TERKENAL</div></div></div>
+    <div id="tl" class="clip band" data-start="0.207" data-duration="9.95" data-track-index="1"><div class="card"><div class="k">KERJA SEHARIAN</div><div class="v">TAHAN LASAK</div><div id="tl-b" class="chip">BOSCH MEMANG TERKENAL</div></div></div>
 
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#tl", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 0.167);
-    tl.fromTo("#tl-b", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 7.267);
-    tl.to("#tl", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 9.617);
+    tl.fromTo("#tl", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 0.207);
+    tl.fromTo("#tl-b", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 7.607);
+    tl.to("#tl", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 9.957);
 
     window.__timelines["durable"] = tl;
   </script>

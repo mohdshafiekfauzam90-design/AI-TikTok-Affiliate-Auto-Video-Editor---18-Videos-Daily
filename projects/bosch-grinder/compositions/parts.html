@@ -20,19 +20,19 @@
 
   </style>
   <div id="parts" data-composition-id="parts" data-width="1080" data-height="1920">
-    <div id="hd" class="clip band" data-start="0.133" data-duration="4.4" data-track-index="1"><div class="card"><div class="k">HANDLE</div><div class="v">KIRI &amp; KANAN</div></div></div>
-    <div id="cv" class="clip band" data-start="4.633" data-duration="2.5" data-track-index="1"><div class="card"><div class="k">COVER</div><div class="v">TEBAL</div></div></div>
-    <div id="pb" class="clip band" data-start="7.233" data-duration="2.25" data-track-index="1"><div class="card"><div class="k">SATU LAGI</div><div class="v">PEMBUKA</div></div></div>
+    <div id="hd" class="clip band" data-start="0.133" data-duration="4.54" data-track-index="1"><div class="card"><div class="k">HANDLE</div><div class="v">KIRI &amp; KANAN</div></div></div>
+    <div id="cv" class="clip band" data-start="4.733" data-duration="2.533" data-track-index="1"><div class="card"><div class="k">COVER</div><div class="v">TEBAL</div></div></div>
+    <div id="pb" class="clip band" data-start="7.433" data-duration="2.423" data-track-index="1"><div class="card"><div class="k">SATU LAGI</div><div class="v">PEMBUKA</div></div></div>
 
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#hd", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 0.133);
-    tl.to("#hd", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 4.333);
-    tl.fromTo("#cv", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 4.633);
-    tl.to("#cv", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 6.933);
-    tl.fromTo("#pb", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 7.233);
-    tl.to("#pb", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 9.283);
+    tl.to("#hd", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 4.473);
+    tl.fromTo("#cv", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 4.733);
+    tl.to("#cv", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 7.066);
+    tl.fromTo("#pb", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 7.433);
+    tl.to("#pb", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 9.656);
 
     window.__timelines["parts"] = tl;
   </script>

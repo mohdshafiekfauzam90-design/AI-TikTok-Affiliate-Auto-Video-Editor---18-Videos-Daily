@@ -20,14 +20,14 @@
 
   </style>
   <div id="spec" data-composition-id="spec" data-width="1080" data-height="1920">
-    <div id="sp" class="clip band" data-start="0.133" data-duration="4.85" data-track-index="1"><div class="card"><div class="k">SIZE</div><div class="big">4 INCI</div><div id="sp-p" class="chip">PLUG BIASA</div></div></div>
+    <div id="sp" class="clip band" data-start="0.133" data-duration="5.001" data-track-index="1"><div class="card"><div class="k">SIZE</div><div class="big">4 INCI</div><div id="sp-p" class="chip">PLUG BIASA</div></div></div>
 
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#sp", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 0.133);
     tl.fromTo("#sp-p", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 2.533);
-    tl.to("#sp", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 4.783);
+    tl.to("#sp", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 4.934);
 
     window.__timelines["spec"] = tl;
   </script>
