@@ -3,7 +3,7 @@
 Times are seconds in the ORIGINAL recording. Owner's rule: 30 s - 1 min, key points only, never clip a word ending.
 - Hook: the case opened to the drill, batteries and bit set (94.00-98.15) under his line "brand Bosch ni memang
   boleh pakai lama, kita labur sekali" (31.52-35.67, J-cut, original sound muted; not repeated later).
-Dropped: the repeated "dia ada banyak package" lines, the battery-shape aside, the repeated "ambil 2 bateri",
+Dropped: "yang biasa tu dia ringan sikit, yang ni berat" (said just before), the repeated "dia ada banyak package" lines, the battery-shape aside, the repeated "ambil 2 bateri",
 the "dia datang macam ni" package walk-through (its case is the hook picture), "so kalau korang tengah macam
 di-dry" (both passes unclear) and the closing "terima kasih" the first pass invented over silence.
 """
@@ -29,7 +29,7 @@ def snap(t):
 # opts: {"speed": x} speeds picture+sound, {"gain": 0} mutes a repeated line under a demo shot.
 KEEPS = [
     (1.08, 8.62, "exact", "GSR 120-LI, yang ni drill cordless daripada Bosch, original Bosch."),
-    (12.95, 28.80, "exact", "Kalau korang pegang drill daripada Bosch ni, mana-mana drill lah, drill ke angle grinder ke tak kisah, korang boleh compare dengan brand yang lain, korang akan rasa beza. Drill ni bila korang pegang akan rasa berat kan, yang biasa tu dia ringan sikit, yang ni berat."),
+    (12.95, 25.85, "exact", "Kalau korang pegang drill daripada Bosch ni, mana-mana drill lah, drill ke angle grinder ke tak kisah, korang boleh compare dengan brand yang lain, korang akan rasa beza. Drill ni bila korang pegang akan rasa berat kan."),
     (38.83, 43.42, "exact", "Jadi untuk yang ni dia ada banyak package korang boleh pilih,"),
     (52.88, 58.80, "exact", "nak satu bateri, nak dua bateri, nak dengan set mata bit, korang boleh pilih ikut budget korang."),
     (58.80, 63.20, "exact", "So kalau korang ada budget, saya suggest korang ambil terus dua bateri."),
