@@ -35,7 +35,7 @@ KEEPS = [
     (9.70, 17.15, "speech", "Kalau korang nak guna, nak guna mata bit dia, buat keluar, masuk sahaja, terus boleh guna."),
     (20.65, 21.70, "speech", "Jom kita tengok."),
     (23.20, 29.85, "speech", "Macam korang nak buat pasang skru, buka skru tu memang mudah. Nampak? Ha memang mudah kan."),
-    (45.92, 50.70, "exact", "(unclear word cut) Pasal-pasal perabot dekat rumah, haa memang boleh sangat pakai yang ni."),
+    (45.92, 50.70, "exact", "(unclear word cut) Pasang-pasang perabot (owner: 'pasang', not 'pasal') dekat rumah, haa memang boleh sangat pakai yang ni."),
     (50.66, 54.30, "speech", "So kalau dah tak nak guna, kita boleh simpan."),
     (54.26, 63.85, "speech", "So yang ni kalau korang nak jadikan lurus pun boleh, tekan, pusing. Nampak? Nak jadikan bentuk asal balik, pusing, tekan, pusing."),
     (64.85, 70.75, "speech", "Yang ni dia datang dengan 30 pieces, korang tengok lah mata bit dia ni banyak macam-macam bentuk ada."),
