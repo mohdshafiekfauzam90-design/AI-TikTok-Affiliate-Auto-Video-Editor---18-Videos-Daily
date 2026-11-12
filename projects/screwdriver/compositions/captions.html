@@ -1,0 +1,335 @@
+<template>
+  <style>
+
+      :root { --yellow:#FFD21F; --red:#E5252A; --ink:#0D0D0D; --white:#FFFFFF; }
+
+      .hf-stroke { paint-order: stroke fill; -webkit-text-stroke: 14px var(--ink); }
+
+      #captions { position:absolute; inset:0; font-family:'Inter',sans-serif; color:var(--white); }
+
+      .cg { position:absolute; left:70px; right:150px; top:1205px; text-align:center; overflow:visible; }
+      .cg .line { display:inline-block; font-family:'Inter',sans-serif; font-weight:900; font-size:64px; line-height:1.08;   /* owner: subtitles a little smaller */
+        letter-spacing:-.01em; color:var(--white); paint-order:stroke fill; -webkit-text-stroke:10px var(--ink);
+        text-shadow:0 8px 22px rgba(0,0,0,.55); }
+
+  </style>
+  <div id="captions" data-composition-id="captions" data-width="1080" data-height="1920">
+    <div id="cg0" class="clip cg" data-start="3.09" data-duration="1.35" data-track-index="1"><div class="line"><span id="cw0-0" class="w">YANG</span> <span id="cw0-1" class="w">NI</span> <span id="cw0-2" class="w">MINI</span> <span id="cw0-3" class="w">SCREWDRIVER</span></div></div>
+    <div id="cg1" class="clip cg" data-start="5.02" data-duration="0.98" data-track-index="1"><div class="line"><span id="cw1-0" class="w">DARIPADA</span> <span id="cw1-1" class="w">KEELAT</span></div></div>
+    <div id="cg2" class="clip cg" data-start="6.0" data-duration="1.28" data-track-index="1"><div class="line"><span id="cw2-0" class="w">KALAU</span> <span id="cw2-1" class="w">KORANG</span> <span id="cw2-2" class="w">NAK</span> <span id="cw2-3" class="w">GUNA</span></div></div>
+    <div id="cg3" class="clip cg" data-start="7.28" data-duration="1.4" data-track-index="1"><div class="line"><span id="cw3-0" class="w">NAK</span> <span id="cw3-1" class="w">GUNA</span> <span id="cw3-2" class="w">MATA</span> <span id="cw3-3" class="w">BIT</span> <span id="cw3-4" class="w">DIA</span></div></div>
+    <div id="cg4" class="clip cg" data-start="8.68" data-duration="0.76" data-track-index="1"><div class="line"><span id="cw4-0" class="w">BUAT</span> <span id="cw4-1" class="w">KELUAR</span></div></div>
+    <div id="cg5" class="clip cg" data-start="9.46" data-duration="1.22" data-track-index="1"><div class="line"><span id="cw5-0" class="w">MASUK</span> <span id="cw5-1" class="w">SAHAJA</span></div></div>
+    <div id="cg6" class="clip cg" data-start="10.68" data-duration="1.0" data-track-index="1"><div class="line"><span id="cw6-0" class="w">TERUS</span> <span id="cw6-1" class="w">BOLEH</span> <span id="cw6-2" class="w">GUNA</span></div></div>
+    <div id="cg7" class="clip cg" data-start="11.68" data-duration="1.16" data-track-index="1"><div class="line"><span id="cw7-0" class="w">JOM</span> <span id="cw7-1" class="w">KITA</span> <span id="cw7-2" class="w">TENGOK</span></div></div>
+    <div id="cg8" class="clip cg" data-start="12.88" data-duration="1.14" data-track-index="1"><div class="line"><span id="cw8-0" class="w">MACAM</span> <span id="cw8-1" class="w">KORANG</span> <span id="cw8-2" class="w">NAK</span> <span id="cw8-3" class="w">BUAT</span></div></div>
+    <div id="cg9" class="clip cg" data-start="14.02" data-duration="1.34" data-track-index="1"><div class="line"><span id="cw9-0" class="w">PASANG</span> <span id="cw9-1" class="w">SKRU</span> <span id="cw9-2" class="w">BUKA</span> <span id="cw9-3" class="w">SKRU</span></div></div>
+    <div id="cg10" class="clip cg" data-start="15.36" data-duration="1.16" data-track-index="1"><div class="line"><span id="cw10-0" class="w">TU</span> <span id="cw10-1" class="w">MEMANG</span> <span id="cw10-2" class="w">MUDAH</span></div></div>
+    <div id="cg11" class="clip cg" data-start="17.18" data-duration="0.96" data-track-index="1"><div class="line"><span id="cw11-0" class="w">NAMPAK</span> <span id="cw11-1" class="w">HAA</span></div></div>
+    <div id="cg12" class="clip cg" data-start="18.14" data-duration="1.12" data-track-index="1"><div class="line"><span id="cw12-0" class="w">MEMANG</span> <span id="cw12-1" class="w">MUDAH</span> <span id="cw12-2" class="w">KAN</span></div></div>
+    <div id="cg13" class="clip cg" data-start="19.26" data-duration="0.84" data-track-index="1"><div class="line"><span id="cw13-0" class="w">PASANG-PASANG</span> <span id="cw13-1" class="w">PERABOT</span></div></div>
+    <div id="cg14" class="clip cg" data-start="20.1" data-duration="0.68" data-track-index="1"><div class="line"><span id="cw14-0" class="w">DEKAT</span> <span id="cw14-1" class="w">RUMAH</span></div></div>
+    <div id="cg15" class="clip cg" data-start="21.18" data-duration="1.48" data-track-index="1"><div class="line"><span id="cw15-0" class="w">MEMANG</span> <span id="cw15-1" class="w">BOLEH</span> <span id="cw15-2" class="w">SANGAT</span></div></div>
+    <div id="cg16" class="clip cg" data-start="22.66" data-duration="0.98" data-track-index="1"><div class="line"><span id="cw16-0" class="w">PAKAI</span> <span id="cw16-1" class="w">YANG</span> <span id="cw16-2" class="w">NI</span></div></div>
+    <div id="cg17" class="clip cg" data-start="23.64" data-duration="2.28" data-track-index="1"><div class="line"><span id="cw17-0" class="w">SO</span> <span id="cw17-1" class="w">KALAU</span> <span id="cw17-2" class="w">DAH</span> <span id="cw17-3" class="w">TAK</span> <span id="cw17-4" class="w">NAK</span> <span id="cw17-5" class="w">GUNA</span></div></div>
+    <div id="cg18" class="clip cg" data-start="25.92" data-duration="1.2" data-track-index="1"><div class="line"><span id="cw18-0" class="w">KITA</span> <span id="cw18-1" class="w">BOLEH</span> <span id="cw18-2" class="w">SIMPAN</span></div></div>
+    <div id="cg19" class="clip cg" data-start="27.12" data-duration="1.26" data-track-index="1"><div class="line"><span id="cw19-0" class="w">SO</span> <span id="cw19-1" class="w">YANG</span> <span id="cw19-2" class="w">NI</span> <span id="cw19-3" class="w">KALAU</span> <span id="cw19-4" class="w">KORANG</span></div></div>
+    <div id="cg20" class="clip cg" data-start="28.38" data-duration="1.1" data-track-index="1"><div class="line"><span id="cw20-0" class="w">NAK</span> <span id="cw20-1" class="w">JADIKAN</span> <span id="cw20-2" class="w">LURUS</span> <span id="cw20-3" class="w">PUN</span></div></div>
+    <div id="cg21" class="clip cg" data-start="29.48" data-duration="1.14" data-track-index="1"><div class="line"><span id="cw21-0" class="w">BOLEH</span> <span id="cw21-1" class="w">TEKAN</span> <span id="cw21-2" class="w">PUSING</span></div></div>
+    <div id="cg22" class="clip cg" data-start="31.18" data-duration="0.54" data-track-index="1"><div class="line"><span id="cw22-0" class="w">NAMPAK</span></div></div>
+    <div id="cg23" class="clip cg" data-start="31.72" data-duration="1.34" data-track-index="1"><div class="line"><span id="cw23-0" class="w">NAK</span> <span id="cw23-1" class="w">JADIKAN</span> <span id="cw23-2" class="w">BENTUK</span> <span id="cw23-3" class="w">ASAL</span> <span id="cw23-4" class="w">BALIK</span></div></div>
+    <div id="cg24" class="clip cg" data-start="33.06" data-duration="1.66" data-track-index="1"><div class="line"><span id="cw24-0" class="w">PUSING</span> <span id="cw24-1" class="w">TEKAN</span> <span id="cw24-2" class="w">PUSING</span></div></div>
+    <div id="cg25" class="clip cg" data-start="34.78" data-duration="1.62" data-track-index="1"><div class="line"><span id="cw25-0" class="w">YANG</span> <span id="cw25-1" class="w">NI</span> <span id="cw25-2" class="w">DIA</span> <span id="cw25-3" class="w">DATANG</span> <span id="cw25-4" class="w">DENGAN</span></div></div>
+    <div id="cg26" class="clip cg" data-start="36.4" data-duration="0.92" data-track-index="1"><div class="line"><span id="cw26-0" class="w">30</span> <span id="cw26-1" class="w">PIECES</span></div></div>
+    <div id="cg27" class="clip cg" data-start="37.32" data-duration="1.02" data-track-index="1"><div class="line"><span id="cw27-0" class="w">KORANG</span> <span id="cw27-1" class="w">TENGOK</span> <span id="cw27-2" class="w">LAH</span></div></div>
+    <div id="cg28" class="clip cg" data-start="38.34" data-duration="0.86" data-track-index="1"><div class="line"><span id="cw28-0" class="w">MATA</span> <span id="cw28-1" class="w">BIT</span> <span id="cw28-2" class="w">DIA</span> <span id="cw28-3" class="w">NI</span></div></div>
+    <div id="cg29" class="clip cg" data-start="39.2" data-duration="1.42" data-track-index="1"><div class="line"><span id="cw29-0" class="w">BANYAK</span> <span id="cw29-1" class="w">MACAM-MACAM</span> <span id="cw29-2" class="w">BENTUK</span> <span id="cw29-3" class="w">ADA</span></div></div>
+    <div id="cg30" class="clip cg" data-start="40.78" data-duration="1.48" data-track-index="1"><div class="line"><span id="cw30-0" class="w">LEPAS</span> <span id="cw30-1" class="w">TU</span> <span id="cw30-2" class="w">NI</span> <span id="cw30-3" class="w">KABEL</span></div></div>
+    <div id="cg31" class="clip cg" data-start="42.26" data-duration="0.92" data-track-index="1"><div class="line"><span id="cw31-0" class="w">YANG</span> <span id="cw31-1" class="w">DIA</span> <span id="cw31-2" class="w">BAGI</span></div></div>
+    <div id="cg32" class="clip cg" data-start="43.18" data-duration="1.78" data-track-index="1"><div class="line"><span id="cw32-0" class="w">UNTUK</span> <span id="cw32-1" class="w">CHARGE</span> <span id="cw32-2" class="w">PAKAI</span> <span id="cw32-3" class="w">KABEL</span> <span id="cw32-4" class="w">TYPE</span> <span id="cw32-5" class="w">C</span></div></div>
+    <div id="cg33" class="clip cg" data-start="45.08" data-duration="2.24" data-track-index="1"><div class="line"><span id="cw33-0" class="w">DATANG</span> <span id="cw33-1" class="w">DENGAN</span> <span id="cw33-2" class="w">CASING</span> <span id="cw33-3" class="w">MACAM</span> <span id="cw33-4" class="w">NI</span></div></div>
+    <div id="cg34" class="clip cg" data-start="47.32" data-duration="1.58" data-track-index="1"><div class="line"><span id="cw34-0" class="w">YANG</span> <span id="cw34-1" class="w">NI</span> <span id="cw34-2" class="w">BRAND</span> <span id="cw34-3" class="w">DARIPADA</span> <span id="cw34-4" class="w">KEELAT</span></div></div>
+    <div id="cg35" class="clip cg" data-start="48.96" data-duration="1.06" data-track-index="1"><div class="line"><span id="cw35-0" class="w">SEBELUM</span> <span id="cw35-1" class="w">NI</span> <span id="cw35-2" class="w">DAH</span> <span id="cw35-3" class="w">HABIS</span> <span id="cw35-4" class="w">STOCK</span></div></div>
+    <div id="cg36" class="clip cg" data-start="50.02" data-duration="0.78" data-track-index="1"><div class="line"><span id="cw36-0" class="w">DAH</span> <span id="cw36-1" class="w">AGAK</span> <span id="cw36-2" class="w">LAMA</span></div></div>
+    <div id="cg37" class="clip cg" data-start="50.8" data-duration="1.3" data-track-index="1"><div class="line"><span id="cw37-0" class="w">SEKARANG</span> <span id="cw37-1" class="w">BARU</span> <span id="cw37-2" class="w">RESTOCK</span></div></div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#cg0 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 3.09);
+    tl.set("#cw0-0", { color: "#FFD21F" }, 3.09);
+    tl.set("#cw0-0", { color: "#FFFFFF" }, 3.1);
+    tl.set("#cw0-1", { color: "#FFD21F" }, 3.1);
+    tl.set("#cw0-1", { color: "#FFFFFF" }, 3.3);
+    tl.set("#cw0-2", { color: "#FFD21F" }, 3.3);
+    tl.set("#cw0-2", { color: "#FFFFFF" }, 3.9);
+    tl.set("#cw0-3", { color: "#FFD21F" }, 3.9);
+    tl.fromTo("#cg1 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 5.02);
+    tl.set("#cw1-0", { color: "#FFD21F" }, 5.06);
+    tl.set("#cw1-0", { color: "#FFFFFF" }, 5.48);
+    tl.set("#cw1-1", { color: "#FFD21F" }, 5.48);
+    tl.fromTo("#cg2 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 6.0);
+    tl.set("#cw2-0", { color: "#FFD21F" }, 6.04);
+    tl.set("#cw2-0", { color: "#FFFFFF" }, 6.46);
+    tl.set("#cw2-1", { color: "#FFD21F" }, 6.46);
+    tl.set("#cw2-1", { color: "#FFFFFF" }, 6.78);
+    tl.set("#cw2-2", { color: "#FFD21F" }, 6.78);
+    tl.set("#cw2-2", { color: "#FFFFFF" }, 6.88);
+    tl.set("#cw2-3", { color: "#FFD21F" }, 6.88);
+    tl.fromTo("#cg3 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 7.28);
+    tl.set("#cw3-0", { color: "#FFD21F" }, 7.32);
+    tl.set("#cw3-0", { color: "#FFFFFF" }, 7.56);
+    tl.set("#cw3-1", { color: "#FFD21F" }, 7.56);
+    tl.set("#cw3-1", { color: "#FFFFFF" }, 7.98);
+    tl.set("#cw3-2", { color: "#FFD21F" }, 7.98);
+    tl.set("#cw3-2", { color: "#FFFFFF" }, 8.16);
+    tl.set("#cw3-3", { color: "#FFD21F" }, 8.16);
+    tl.set("#cw3-3", { color: "#FFFFFF" }, 8.44);
+    tl.set("#cw3-4", { color: "#FFD21F" }, 8.44);
+    tl.fromTo("#cg4 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 8.68);
+    tl.set("#cw4-0", { color: "#FFD21F" }, 8.72);
+    tl.set("#cw4-0", { color: "#FFFFFF" }, 9.02);
+    tl.set("#cw4-1", { color: "#FFD21F" }, 9.02);
+    tl.fromTo("#cg5 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 9.46);
+    tl.set("#cw5-0", { color: "#FFD21F" }, 9.5);
+    tl.set("#cw5-0", { color: "#FFFFFF" }, 10.08);
+    tl.set("#cw5-1", { color: "#FFD21F" }, 10.08);
+    tl.fromTo("#cg6 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 10.68);
+    tl.set("#cw6-0", { color: "#FFD21F" }, 10.72);
+    tl.set("#cw6-0", { color: "#FFFFFF" }, 11.04);
+    tl.set("#cw6-1", { color: "#FFD21F" }, 11.04);
+    tl.set("#cw6-1", { color: "#FFFFFF" }, 11.24);
+    tl.set("#cw6-2", { color: "#FFD21F" }, 11.24);
+    tl.fromTo("#cg7 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 11.68);
+    tl.set("#cw7-0", { color: "#FFD21F" }, 11.72);
+    tl.set("#cw7-0", { color: "#FFFFFF" }, 12.18);
+    tl.set("#cw7-1", { color: "#FFD21F" }, 12.18);
+    tl.set("#cw7-1", { color: "#FFFFFF" }, 12.3);
+    tl.set("#cw7-2", { color: "#FFD21F" }, 12.3);
+    tl.fromTo("#cg8 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 12.88);
+    tl.set("#cw8-0", { color: "#FFD21F" }, 12.92);
+    tl.set("#cw8-0", { color: "#FFFFFF" }, 13.48);
+    tl.set("#cw8-1", { color: "#FFD21F" }, 13.48);
+    tl.set("#cw8-1", { color: "#FFFFFF" }, 13.76);
+    tl.set("#cw8-2", { color: "#FFD21F" }, 13.76);
+    tl.set("#cw8-2", { color: "#FFFFFF" }, 13.86);
+    tl.set("#cw8-3", { color: "#FFD21F" }, 13.86);
+    tl.fromTo("#cg9 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 14.02);
+    tl.set("#cw9-0", { color: "#FFD21F" }, 14.06);
+    tl.set("#cw9-0", { color: "#FFFFFF" }, 14.5);
+    tl.set("#cw9-1", { color: "#FFD21F" }, 14.5);
+    tl.set("#cw9-1", { color: "#FFFFFF" }, 14.76);
+    tl.set("#cw9-2", { color: "#FFD21F" }, 14.76);
+    tl.set("#cw9-2", { color: "#FFFFFF" }, 14.98);
+    tl.set("#cw9-3", { color: "#FFD21F" }, 14.98);
+    tl.fromTo("#cg10 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 15.36);
+    tl.set("#cw10-0", { color: "#FFD21F" }, 15.4);
+    tl.set("#cw10-0", { color: "#FFFFFF" }, 15.62);
+    tl.set("#cw10-1", { color: "#FFD21F" }, 15.62);
+    tl.set("#cw10-1", { color: "#FFFFFF" }, 15.94);
+    tl.set("#cw10-2", { color: "#FFD21F" }, 15.94);
+    tl.fromTo("#cg11 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 17.18);
+    tl.set("#cw11-0", { color: "#FFD21F" }, 17.22);
+    tl.set("#cw11-0", { color: "#FFFFFF" }, 17.94);
+    tl.set("#cw11-1", { color: "#FFD21F" }, 17.94);
+    tl.fromTo("#cg12 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 18.14);
+    tl.set("#cw12-0", { color: "#FFD21F" }, 18.18);
+    tl.set("#cw12-0", { color: "#FFFFFF" }, 18.5);
+    tl.set("#cw12-1", { color: "#FFD21F" }, 18.5);
+    tl.set("#cw12-1", { color: "#FFFFFF" }, 18.92);
+    tl.set("#cw12-2", { color: "#FFD21F" }, 18.92);
+    tl.fromTo("#cg13 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 19.26);
+    tl.set("#cw13-0", { color: "#FFD21F" }, 19.3);
+    tl.set("#cw13-0", { color: "#FFFFFF" }, 19.7);
+    tl.set("#cw13-1", { color: "#FFD21F" }, 19.7);
+    tl.fromTo("#cg14 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 20.1);
+    tl.set("#cw14-0", { color: "#FFD21F" }, 20.14);
+    tl.set("#cw14-0", { color: "#FFFFFF" }, 20.36);
+    tl.set("#cw14-1", { color: "#FFD21F" }, 20.36);
+    tl.fromTo("#cg15 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 21.18);
+    tl.set("#cw15-0", { color: "#FFD21F" }, 21.22);
+    tl.set("#cw15-0", { color: "#FFFFFF" }, 21.94);
+    tl.set("#cw15-1", { color: "#FFD21F" }, 21.94);
+    tl.set("#cw15-1", { color: "#FFFFFF" }, 22.36);
+    tl.set("#cw15-2", { color: "#FFD21F" }, 22.36);
+    tl.fromTo("#cg16 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 22.66);
+    tl.set("#cw16-0", { color: "#FFD21F" }, 22.7);
+    tl.set("#cw16-0", { color: "#FFFFFF" }, 23.08);
+    tl.set("#cw16-1", { color: "#FFD21F" }, 23.08);
+    tl.set("#cw16-1", { color: "#FFFFFF" }, 23.42);
+    tl.set("#cw16-2", { color: "#FFD21F" }, 23.42);
+    tl.fromTo("#cg17 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 23.64);
+    tl.set("#cw17-0", { color: "#FFD21F" }, 23.68);
+    tl.set("#cw17-0", { color: "#FFFFFF" }, 24.54);
+    tl.set("#cw17-1", { color: "#FFD21F" }, 24.54);
+    tl.set("#cw17-1", { color: "#FFFFFF" }, 24.96);
+    tl.set("#cw17-2", { color: "#FFD21F" }, 24.96);
+    tl.set("#cw17-2", { color: "#FFFFFF" }, 25.22);
+    tl.set("#cw17-3", { color: "#FFD21F" }, 25.22);
+    tl.set("#cw17-3", { color: "#FFFFFF" }, 25.4);
+    tl.set("#cw17-4", { color: "#FFD21F" }, 25.4);
+    tl.set("#cw17-4", { color: "#FFFFFF" }, 25.52);
+    tl.set("#cw17-5", { color: "#FFD21F" }, 25.52);
+    tl.fromTo("#cg18 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 25.92);
+    tl.set("#cw18-0", { color: "#FFD21F" }, 25.96);
+    tl.set("#cw18-0", { color: "#FFFFFF" }, 26.22);
+    tl.set("#cw18-1", { color: "#FFD21F" }, 26.22);
+    tl.set("#cw18-1", { color: "#FFFFFF" }, 26.68);
+    tl.set("#cw18-2", { color: "#FFD21F" }, 26.68);
+    tl.fromTo("#cg19 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 27.12);
+    tl.set("#cw19-0", { color: "#FFD21F" }, 27.16);
+    tl.set("#cw19-0", { color: "#FFFFFF" }, 27.62);
+    tl.set("#cw19-1", { color: "#FFD21F" }, 27.62);
+    tl.set("#cw19-1", { color: "#FFFFFF" }, 27.82);
+    tl.set("#cw19-2", { color: "#FFD21F" }, 27.82);
+    tl.set("#cw19-2", { color: "#FFFFFF" }, 27.98);
+    tl.set("#cw19-3", { color: "#FFD21F" }, 27.98);
+    tl.set("#cw19-3", { color: "#FFFFFF" }, 28.14);
+    tl.set("#cw19-4", { color: "#FFD21F" }, 28.14);
+    tl.fromTo("#cg20 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 28.38);
+    tl.set("#cw20-0", { color: "#FFD21F" }, 28.42);
+    tl.set("#cw20-0", { color: "#FFFFFF" }, 28.52);
+    tl.set("#cw20-1", { color: "#FFD21F" }, 28.52);
+    tl.set("#cw20-1", { color: "#FFFFFF" }, 28.86);
+    tl.set("#cw20-2", { color: "#FFD21F" }, 28.86);
+    tl.set("#cw20-2", { color: "#FFFFFF" }, 29.38);
+    tl.set("#cw20-3", { color: "#FFD21F" }, 29.38);
+    tl.fromTo("#cg21 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 29.48);
+    tl.set("#cw21-0", { color: "#FFD21F" }, 29.52);
+    tl.set("#cw21-0", { color: "#FFFFFF" }, 29.76);
+    tl.set("#cw21-1", { color: "#FFD21F" }, 29.76);
+    tl.set("#cw21-1", { color: "#FFFFFF" }, 30.18);
+    tl.set("#cw21-2", { color: "#FFD21F" }, 30.18);
+    tl.fromTo("#cg22 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 31.18);
+    tl.set("#cw22-0", { color: "#FFD21F" }, 31.22);
+    tl.fromTo("#cg23 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 31.72);
+    tl.set("#cw23-0", { color: "#FFD21F" }, 31.76);
+    tl.set("#cw23-0", { color: "#FFFFFF" }, 32.08);
+    tl.set("#cw23-1", { color: "#FFD21F" }, 32.08);
+    tl.set("#cw23-1", { color: "#FFFFFF" }, 32.4);
+    tl.set("#cw23-2", { color: "#FFD21F" }, 32.4);
+    tl.set("#cw23-2", { color: "#FFFFFF" }, 32.66);
+    tl.set("#cw23-3", { color: "#FFD21F" }, 32.66);
+    tl.set("#cw23-3", { color: "#FFFFFF" }, 32.8);
+    tl.set("#cw23-4", { color: "#FFD21F" }, 32.8);
+    tl.fromTo("#cg24 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 33.06);
+    tl.set("#cw24-0", { color: "#FFD21F" }, 33.1);
+    tl.set("#cw24-0", { color: "#FFFFFF" }, 33.92);
+    tl.set("#cw24-1", { color: "#FFD21F" }, 33.92);
+    tl.set("#cw24-1", { color: "#FFFFFF" }, 34.34);
+    tl.set("#cw24-2", { color: "#FFD21F" }, 34.34);
+    tl.fromTo("#cg25 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 34.78);
+    tl.set("#cw25-0", { color: "#FFD21F" }, 34.82);
+    tl.set("#cw25-0", { color: "#FFFFFF" }, 35.24);
+    tl.set("#cw25-1", { color: "#FFD21F" }, 35.24);
+    tl.set("#cw25-1", { color: "#FFFFFF" }, 35.48);
+    tl.set("#cw25-2", { color: "#FFD21F" }, 35.48);
+    tl.set("#cw25-2", { color: "#FFFFFF" }, 35.68);
+    tl.set("#cw25-3", { color: "#FFD21F" }, 35.68);
+    tl.set("#cw25-3", { color: "#FFFFFF" }, 36.18);
+    tl.set("#cw25-4", { color: "#FFD21F" }, 36.18);
+    tl.fromTo("#cg26 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 36.4);
+    tl.set("#cw26-0", { color: "#FFD21F" }, 36.44);
+    tl.set("#cw26-0", { color: "#FFFFFF" }, 36.88);
+    tl.set("#cw26-1", { color: "#FFD21F" }, 36.88);
+    tl.fromTo("#cg27 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 37.32);
+    tl.set("#cw27-0", { color: "#FFD21F" }, 37.36);
+    tl.set("#cw27-0", { color: "#FFFFFF" }, 37.88);
+    tl.set("#cw27-1", { color: "#FFD21F" }, 37.88);
+    tl.set("#cw27-1", { color: "#FFFFFF" }, 38.24);
+    tl.set("#cw27-2", { color: "#FFD21F" }, 38.24);
+    tl.fromTo("#cg28 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 38.34);
+    tl.set("#cw28-0", { color: "#FFD21F" }, 38.38);
+    tl.set("#cw28-0", { color: "#FFFFFF" }, 38.62);
+    tl.set("#cw28-1", { color: "#FFD21F" }, 38.62);
+    tl.set("#cw28-1", { color: "#FFFFFF" }, 38.94);
+    tl.set("#cw28-2", { color: "#FFD21F" }, 38.94);
+    tl.set("#cw28-2", { color: "#FFFFFF" }, 39.08);
+    tl.set("#cw28-3", { color: "#FFD21F" }, 39.08);
+    tl.fromTo("#cg29 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 39.2);
+    tl.set("#cw29-0", { color: "#FFD21F" }, 39.24);
+    tl.set("#cw29-0", { color: "#FFFFFF" }, 39.5);
+    tl.set("#cw29-1", { color: "#FFD21F" }, 39.5);
+    tl.set("#cw29-1", { color: "#FFFFFF" }, 39.94);
+    tl.set("#cw29-2", { color: "#FFD21F" }, 39.94);
+    tl.set("#cw29-2", { color: "#FFFFFF" }, 40.32);
+    tl.set("#cw29-3", { color: "#FFD21F" }, 40.32);
+    tl.fromTo("#cg30 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 40.78);
+    tl.set("#cw30-0", { color: "#FFD21F" }, 40.82);
+    tl.set("#cw30-0", { color: "#FFFFFF" }, 41.24);
+    tl.set("#cw30-1", { color: "#FFD21F" }, 41.24);
+    tl.set("#cw30-1", { color: "#FFFFFF" }, 41.42);
+    tl.set("#cw30-2", { color: "#FFD21F" }, 41.42);
+    tl.set("#cw30-2", { color: "#FFFFFF" }, 41.84);
+    tl.set("#cw30-3", { color: "#FFD21F" }, 41.84);
+    tl.fromTo("#cg31 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 42.26);
+    tl.set("#cw31-0", { color: "#FFD21F" }, 42.3);
+    tl.set("#cw31-0", { color: "#FFFFFF" }, 42.66);
+    tl.set("#cw31-1", { color: "#FFD21F" }, 42.66);
+    tl.set("#cw31-1", { color: "#FFFFFF" }, 42.9);
+    tl.set("#cw31-2", { color: "#FFD21F" }, 42.9);
+    tl.fromTo("#cg32 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 43.18);
+    tl.set("#cw32-0", { color: "#FFD21F" }, 43.22);
+    tl.set("#cw32-0", { color: "#FFFFFF" }, 43.34);
+    tl.set("#cw32-1", { color: "#FFD21F" }, 43.34);
+    tl.set("#cw32-1", { color: "#FFFFFF" }, 43.72);
+    tl.set("#cw32-2", { color: "#FFD21F" }, 43.72);
+    tl.set("#cw32-2", { color: "#FFFFFF" }, 43.96);
+    tl.set("#cw32-3", { color: "#FFD21F" }, 43.96);
+    tl.set("#cw32-3", { color: "#FFFFFF" }, 44.38);
+    tl.set("#cw32-4", { color: "#FFD21F" }, 44.38);
+    tl.set("#cw32-4", { color: "#FFFFFF" }, 44.6);
+    tl.set("#cw32-5", { color: "#FFD21F" }, 44.6);
+    tl.fromTo("#cg33 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 45.08);
+    tl.set("#cw33-0", { color: "#FFD21F" }, 45.12);
+    tl.set("#cw33-0", { color: "#FFFFFF" }, 45.54);
+    tl.set("#cw33-1", { color: "#FFD21F" }, 45.54);
+    tl.set("#cw33-1", { color: "#FFFFFF" }, 46.32);
+    tl.set("#cw33-2", { color: "#FFD21F" }, 46.32);
+    tl.set("#cw33-2", { color: "#FFFFFF" }, 46.74);
+    tl.set("#cw33-3", { color: "#FFD21F" }, 46.74);
+    tl.set("#cw33-3", { color: "#FFFFFF" }, 47.1);
+    tl.set("#cw33-4", { color: "#FFD21F" }, 47.1);
+    tl.fromTo("#cg34 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 47.32);
+    tl.set("#cw34-0", { color: "#FFD21F" }, 47.36);
+    tl.set("#cw34-0", { color: "#FFFFFF" }, 47.56);
+    tl.set("#cw34-1", { color: "#FFD21F" }, 47.56);
+    tl.set("#cw34-1", { color: "#FFFFFF" }, 47.74);
+    tl.set("#cw34-2", { color: "#FFD21F" }, 47.74);
+    tl.set("#cw34-2", { color: "#FFFFFF" }, 47.92);
+    tl.set("#cw34-3", { color: "#FFD21F" }, 47.92);
+    tl.set("#cw34-3", { color: "#FFFFFF" }, 48.46);
+    tl.set("#cw34-4", { color: "#FFD21F" }, 48.46);
+    tl.fromTo("#cg35 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 48.96);
+    tl.set("#cw35-0", { color: "#FFD21F" }, 49.0);
+    tl.set("#cw35-0", { color: "#FFFFFF" }, 49.42);
+    tl.set("#cw35-1", { color: "#FFD21F" }, 49.42);
+    tl.set("#cw35-1", { color: "#FFFFFF" }, 49.52);
+    tl.set("#cw35-2", { color: "#FFD21F" }, 49.52);
+    tl.set("#cw35-2", { color: "#FFFFFF" }, 49.66);
+    tl.set("#cw35-3", { color: "#FFD21F" }, 49.66);
+    tl.set("#cw35-3", { color: "#FFFFFF" }, 49.8);
+    tl.set("#cw35-4", { color: "#FFD21F" }, 49.8);
+    tl.fromTo("#cg36 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 50.02);
+    tl.set("#cw36-0", { color: "#FFD21F" }, 50.06);
+    tl.set("#cw36-0", { color: "#FFFFFF" }, 50.36);
+    tl.set("#cw36-1", { color: "#FFD21F" }, 50.36);
+    tl.set("#cw36-1", { color: "#FFFFFF" }, 50.7);
+    tl.set("#cw36-2", { color: "#FFD21F" }, 50.7);
+    tl.fromTo("#cg37 .line", { scale: 0.86, y: 14, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.14, ease: "back.out(2)" }, 50.8);
+    tl.set("#cw37-0", { color: "#FFD21F" }, 50.84);
+    tl.set("#cw37-0", { color: "#FFFFFF" }, 51.2);
+    tl.set("#cw37-1", { color: "#FFD21F" }, 51.2);
+    tl.set("#cw37-1", { color: "#FFFFFF" }, 51.72);
+    tl.set("#cw37-2", { color: "#FFD21F" }, 51.72);
+    // fit each group to the caption box
+    document.querySelectorAll("#captions .cg .line").forEach((el) => {
+      const fit = window.__hyperframes && window.__hyperframes.fitTextFontSize
+        ? window.__hyperframes.fitTextFontSize(el.textContent, { fontFamily: "Inter", fontWeight: 900, maxWidth: 820, baseFontSize: 64, minFontSize: 44 })
+        : null;
+      if (fit && fit.fontSize) el.style.fontSize = fit.fontSize + "px";
+    });
+
+    window.__timelines["captions"] = tl;
+  </script>
+</template>

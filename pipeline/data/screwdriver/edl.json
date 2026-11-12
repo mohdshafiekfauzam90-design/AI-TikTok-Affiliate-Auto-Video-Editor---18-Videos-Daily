@@ -1,0 +1,147 @@
+{
+ "hook": {
+  "video": [
+   30.0,
+   33.05
+  ],
+  "voice": [
+   85.22,
+   88.27
+  ],
+  "drill_gain": 0.5
+ },
+ "hook_len": 3.05,
+ "segments": [
+  {
+   "src_in": 0.0,
+   "src_out": 1.01,
+   "out_in": 3.05
+  },
+  {
+   "src_in": 1.29,
+   "src_out": 2.08,
+   "out_in": 4.06
+  },
+  {
+   "src_in": 2.27,
+   "src_out": 3.5,
+   "out_in": 4.85
+  },
+  {
+   "src_in": 9.76,
+   "src_out": 10.08,
+   "out_in": 6.08
+  },
+  {
+   "src_in": 10.26,
+   "src_out": 11.32,
+   "out_in": 6.4
+  },
+  {
+   "src_in": 12.16,
+   "src_out": 13.56,
+   "out_in": 7.46
+  },
+  {
+   "src_in": 14.25,
+   "src_out": 17.18,
+   "out_in": 8.86
+  },
+  {
+   "src_in": 20.71,
+   "src_out": 21.79,
+   "out_in": 11.79
+  },
+  {
+   "src_in": 23.28,
+   "src_out": 28.4,
+   "out_in": 12.87
+  },
+  {
+   "src_in": 28.78,
+   "src_out": 29.96,
+   "out_in": 17.99
+  },
+  {
+   "src_in": 45.92,
+   "src_out": 48.9,
+   "out_in": 19.17
+  },
+  {
+   "src_in": 49.21,
+   "src_out": 50.7,
+   "out_in": 22.15
+  },
+  {
+   "src_in": 50.74,
+   "src_out": 54.24,
+   "out_in": 23.64
+  },
+  {
+   "src_in": 54.24,
+   "src_out": 54.44,
+   "out_in": 27.14
+  },
+  {
+   "src_in": 54.62,
+   "src_out": 58.6,
+   "out_in": 27.34
+  },
+  {
+   "src_in": 58.95,
+   "src_out": 59.12,
+   "out_in": 31.32
+  },
+  {
+   "src_in": 59.5,
+   "src_out": 59.83,
+   "out_in": 31.49
+  },
+  {
+   "src_in": 61.01,
+   "src_out": 63.85,
+   "out_in": 31.82
+  },
+  {
+   "src_in": 64.86,
+   "src_out": 70.85,
+   "out_in": 34.66
+  },
+  {
+   "src_in": 71.41,
+   "src_out": 73.39,
+   "out_in": 40.65
+  },
+  {
+   "src_in": 74.17,
+   "src_out": 76.56,
+   "out_in": 42.63
+  },
+  {
+   "src_in": 77.15,
+   "src_out": 79.6,
+   "out_in": 45.02
+  },
+  {
+   "src_in": 80.31,
+   "src_out": 84.93,
+   "out_in": 47.47
+  },
+  {
+   "src_in": 95.05,
+   "src_out": 95.29,
+   "out_in": 52.09
+  },
+  {
+   "src_in": 95.61,
+   "src_out": 97.62,
+   "out_in": 52.33
+  },
+  {
+   "src_in": 97.62,
+   "src_out": 98.4,
+   "out_in": 54.34
+  }
+ ],
+ "total": 55.12
+}

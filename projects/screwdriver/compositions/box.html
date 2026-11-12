@@ -1,0 +1,44 @@
+<template>
+  <style>
+
+      :root { --yellow:#FFD21F; --red:#E5252A; --ink:#0D0D0D; --white:#FFFFFF; }
+
+      .hf-stroke { paint-order: stroke fill; -webkit-text-stroke: 14px var(--ink); }
+
+      #box { position:absolute; inset:0; font-family:'Inter',sans-serif; color:var(--white); }
+
+      .band { position:absolute; left:48px; top:250px; width:640px; }
+      .card { display:inline-flex; flex-direction:column; align-items:flex-start; gap:8px; background:rgba(13,13,13,.84);
+        border-left:10px solid var(--yellow); border-radius:20px; padding:14px 22px; box-shadow:0 16px 36px rgba(0,0,0,.35); }
+      .card .k { font-weight:900; font-size:30px; letter-spacing:.08em; color:var(--yellow); }
+      .card .v { font-family:'Archivo Black','Inter',sans-serif; font-size:56px; line-height:1; }
+      .card .big { font-family:'Archivo Black','Inter',sans-serif; font-size:84px; line-height:.95; color:var(--yellow); }
+      .chips { display:flex; flex-wrap:wrap; gap:10px; }
+      .chip { display:inline-flex; align-items:center; gap:10px; background:var(--yellow); color:var(--ink); font-weight:900;
+        font-size:34px; padding:8px 18px; border-radius:12px; opacity:0; }
+      .chip.dark { background:var(--white); }
+
+  </style>
+  <div id="box" data-composition-id="box" data-width="1080" data-height="1920">
+    <div id="bx-a" class="clip band" data-start="0.1" data-duration="5.75" data-track-index="1"><div class="card"><div class="k">DATANG DENGAN</div><div class="big">30 PIECES</div><div id="bx-b" class="chip">MATA BIT MACAM-MACAM BENTUK</div></div></div>
+    <div id="bx-c" class="clip band" data-start="5.95" data-duration="4.25" data-track-index="1"><div class="card"><div class="k">CHARGE GUNA</div><div class="v">CABLE TYPE C</div></div></div>
+    <div id="bx-d" class="clip band" data-start="10.25" data-duration="2.45" data-track-index="1"><div class="card"><div class="k">DATANG DENGAN</div><div class="v">CASING</div></div></div>
+    <div id="bx-e" class="clip band" data-start="12.8" data-duration="4.85" data-track-index="1"><div class="card"><div class="k">BRAND KEELAT</div><div class="v">DAH RESTOCK</div><div id="bx-f" class="chip dark">SEBELUM NI HABIS STOCK</div></div></div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#bx-a", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 0.1);
+    tl.fromTo("#bx-b", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 3.75);
+    tl.to("#bx-a", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 5.65);
+    tl.fromTo("#bx-c", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 5.95);
+    tl.to("#bx-c", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 10.0);
+    tl.fromTo("#bx-d", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 10.25);
+    tl.to("#bx-d", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 12.5);
+    tl.fromTo("#bx-e", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 12.8);
+    tl.fromTo("#bx-f", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 14.2);
+    tl.to("#bx-e", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 17.45);
+
+    window.__timelines["box"] = tl;
+  </script>
+</template>
