@@ -20,13 +20,13 @@
 
   </style>
   <div id="ply" data-composition-id="ply" data-width="1080" data-height="1920">
-    <div id="pl" class="clip band" data-start="0.067" data-duration="4.2" data-track-index="1"><div class="card"><div class="k">POTONG PLYWOOD</div><div class="v">TAKDE MASALAH</div></div></div>
+    <div id="pl" class="clip band" data-start="0.067" data-duration="4.8" data-track-index="1"><div class="card"><div class="k">POTONG PLYWOOD</div><div class="v">TAKDE MASALAH</div></div></div>
 
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#pl", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 0.067);
-    tl.to("#pl", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 4.067);
+    tl.to("#pl", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 4.667);
 
     window.__timelines["ply"] = tl;
   </script>

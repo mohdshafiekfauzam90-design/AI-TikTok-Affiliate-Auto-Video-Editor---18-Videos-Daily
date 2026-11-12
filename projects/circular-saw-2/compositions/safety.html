@@ -20,17 +20,17 @@
 
   </style>
   <div id="safety" data-composition-id="safety" data-width="1080" data-height="1920">
-    <div id="sf-a" class="clip band" data-start="0.133" data-duration="6.7" data-track-index="1"><div class="card"><div class="k">ADA</div><div class="v">SAFETY COVER</div><div id="sf-c" class="chip dark">TAK KENA TANGAN BUDAK-BUDAK</div></div></div>
-    <div id="sf-b" class="clip band" data-start="6.933" data-duration="4.95" data-track-index="1"><div class="card"><div class="k">BILA POTONG</div><div class="v">TERANGKAT AUTOMATIC</div></div></div>
+    <div id="sf-a" class="clip band" data-start="0.133" data-duration="6.8" data-track-index="1"><div class="card"><div class="k">ADA</div><div class="v">SAFETY COVER</div><div id="sf-c" class="chip dark">TAK KENA TANGAN BUDAK-BUDAK</div></div></div>
+    <div id="sf-b" class="clip band" data-start="7.033" data-duration="5.127" data-track-index="1"><div class="card"><div class="k">BILA POTONG</div><div class="v">TERANGKAT AUTOMATIC</div></div></div>
 
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#sf-a", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 0.133);
-    tl.fromTo("#sf-c", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 5.073);
-    tl.to("#sf-a", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 6.633);
-    tl.fromTo("#sf-b", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 6.933);
-    tl.to("#sf-b", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 11.683);
+    tl.fromTo("#sf-c", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 5.173);
+    tl.to("#sf-a", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 6.733);
+    tl.fromTo("#sf-b", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 7.033);
+    tl.to("#sf-b", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 11.96);
 
     window.__timelines["safety"] = tl;
   </script>
