@@ -20,6 +20,7 @@ outlines in the MUROH DOOH palette) placed in a free corner, popping in and out 
     pivot_fold     a pistol-grip screwdriver's handle swings round to straight  ("tekan, pusing", lurus)
     light_beam     a work lamp switches on and throws a fan of light  (work light: terang, mod cahaya)
     magnet         a horseshoe magnet pulls a light bar onto it  ("ada magnet", lekat dekat besi)
+    saw_cut        a circular-saw blade spins across a plank, cutting it with sawdust flying  (circular saw: potong papan)
 """
 INK, YEL, RED, WHITE = "#0D0D0D", "#FFD21F", "#E5252A", "#FFFFFF"
 
@@ -164,6 +165,22 @@ def toon(kind, tid, dur):
               f'    tl.fromTo("#{p}-b", {{ x: 50, rotation: 10, svgOrigin: "234 100" }}, {{ x: -66, rotation: 0, duration: 0.45, ease: "back.in(1.4)" }}, 0.9);\n' +
               "".join(f'    tl.to("#{p}-f{i}", {{ opacity: 0, duration: 0.15 }}, 1.32);\n' for i in range(3)) +
               f'    tl.fromTo("#{p}-b", {{ scale: 1 }}, {{ scale: 1.08, duration: 0.12, yoyo: true, repeat: 1, transformOrigin: "50% 50%" }}, 1.36);\n')
+    elif kind == "saw_cut":
+        teeth = " ".join(f"{70 + 52 * __import__('math').cos(k * 0.3927):.1f},{86 + 52 * __import__('math').sin(k * 0.3927):.1f} "
+                         f"{70 + 44 * __import__('math').cos(k * 0.3927 + 0.2):.1f},{86 + 44 * __import__('math').sin(k * 0.3927 + 0.2):.1f}" for k in range(16))
+        dust = "".join(f'<circle id="{p}-d{i}" cx="70" cy="132" r="{4 + i % 3}" fill="#E8C98E" stroke="{INK}" stroke-width="2" opacity="0"/>' for i in range(5))
+        svg = (f'<rect x="10" y="128" width="300" height="34" rx="4" fill="#C8955A" stroke="{INK}" stroke-width="6"/>'
+               f'<path d="M30 140 H120 M150 150 H280" stroke="#9C6B36" stroke-width="3"/>'
+               f'<rect id="{p}-k" x="20" y="126" width="6" height="38" fill="{INK}"/>' + dust +
+               f'<g id="{p}-m"><g id="{p}-w"><polygon points="{teeth}" fill="#C9CDD2" stroke="{INK}" stroke-width="4" stroke-linejoin="round"/>'
+               f'<circle cx="70" cy="86" r="16" fill="{YEL}" stroke="{INK}" stroke-width="5"/></g>'
+               f'<path d="M20 70 A 52 52 0 0 1 120 70" fill="none" stroke="#1FBF8F" stroke-width="14" stroke-linecap="round"/></g>')
+        d = round(dur - 0.6, 3)
+        js = (f'    tl.fromTo("#{p}-w", {{ rotation: 0, svgOrigin: "70 86" }}, {{ rotation: 1440, duration: {round(dur - 0.3, 3)}, ease: "none" }}, 0.1);\n'
+              f'    tl.fromTo("#{p}-m", {{ x: -30 }}, {{ x: 190, duration: {d}, ease: "power1.inOut" }}, 0.25);\n'
+              f'    tl.fromTo("#{p}-k", {{ attr: {{ width: 6 }} }}, {{ attr: {{ width: 230 }}, duration: {d}, ease: "power1.inOut" }}, 0.25);\n' +
+              "".join(f'    tl.fromTo("#{p}-d{i}", {{ opacity: 0, x: {40 * i}, y: 0 }}, {{ opacity: 1, x: {40 * i - 30 - 6 * i}, y: {-28 - 7 * i}, duration: 0.35, ease: "power2.out" }}, {round(0.45 + 0.25 * i, 3)});\n'
+                      f'    tl.to("#{p}-d{i}", {{ opacity: 0, duration: 0.15 }}, {round(0.8 + 0.25 * i, 3)});\n' for i in range(5)))
     else:
         raise ValueError(kind)
     html = f'    <div class="toon"><svg viewBox="0 0 320 200" aria-hidden="true">{svg}</svg></div>\n'
