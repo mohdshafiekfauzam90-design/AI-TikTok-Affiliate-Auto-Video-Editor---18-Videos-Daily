@@ -33,7 +33,7 @@ KEEPS = [
     (40.40, 42.20, "speech", "Yang ni original."),
     (44.15, 49.75, "exact", "Dia pakai plug pin yang biasa kita guna je, dia datang dengan kotak macam ni tau."),
     (61.15, 72.00, "exact", "Dekat dalam dia korang akan dapat aksesori dia macam ni, handle ni dia ada tulisan Bosch, lepas tu pembuka dia, ni cover dia, cover pun tebal."),
-    (79.30, 89.45, "exact", "Jadi yang mana korang nak buat kerja lasak, nak guna seharian tu, boleh beli yang ni geng, memang tahan lasak untuk jenama Bosch."),
+    (79.37, 89.45, "exact", "(edge keep: \"pakai lama\" ends just before) Jadi yang mana korang nak buat kerja lasak, nak guna seharian tu, boleh beli yang ni geng, memang tahan lasak untuk jenama Bosch.", {"edge": "keep"}),
     (96.00, 102.50, "speech", "Terus beli brand daripada Bosch, harga sekarang pun tak mahal mana, mampu milik je, boleh tengok dekat beg dekat bawah."),
     (102.60, 103.30, "demo", "end plate under CTA"),
 ]
@@ -59,11 +59,11 @@ for k in KEEPS:
             gs, ge = (i0 + j) / 100, (i0 + k) / 100
             if ge - gs > MAX_GAP and gs > s2 + 0.05 and ge < e2 - 0.05:
                 tail, lead = KEEP_GAP * 0.6, KEEP_GAP * 0.4      # more room after a word than before the next
-                segs.append([cur, round(gs + tail, 2), {}]); cur = round(ge - lead, 2)
+                segs.append([cur, round(gs + tail, 2), dict(opts)]); cur = round(ge - lead, 2)
             j = k
         else:
             j += 1
-    segs.append([cur, e2, {}])
+    segs.append([cur, e2, dict(opts)])
 
 for c0, c1 in MANUAL_CUTS:
     out = []

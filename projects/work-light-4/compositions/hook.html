@@ -1,0 +1,30 @@
+<template>
+  <style>
+
+      :root { --yellow:#FFD21F; --red:#E5252A; --ink:#0D0D0D; --white:#FFFFFF; }
+
+      .hf-stroke { paint-order: stroke fill; -webkit-text-stroke: 14px var(--ink); }
+
+      #hook { position:absolute; inset:0; font-family:'Inter',sans-serif; color:var(--white); }
+
+      #hook-top { position:absolute; left:40px; right:40px; top:260px; text-align:center; }   /* lamp low-left, bare wall on top */
+      #hook-title { font-family:'Archivo Black','Inter',sans-serif; font-size:118px; line-height:1.02; color:var(--yellow); text-shadow:0 10px 30px rgba(0,0,0,.45); }
+      #hook-tag { display:inline-block; margin-top:14px; background:var(--red); color:var(--white); padding:10px 28px;
+        border-radius:14px; transform:rotate(-3deg); font-family:'Archivo Black','Inter',sans-serif; font-size:52px; box-shadow:0 12px 30px rgba(0,0,0,.35); }
+
+  </style>
+  <div id="hook" data-composition-id="hook" data-width="1080" data-height="1920">
+    <div id="hook-top" class="clip" data-start="0" data-duration="3.9" data-track-index="1">
+      <div id="hook-title"><span class="hf-stroke">CAHAYA 10 METER</span></div>
+      <div id="hook-tag">WORK LIGHT SANTINO</div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#hook-title", { scale: 1.14, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.45, ease: "expo.out" }, 0.02);
+    tl.fromTo("#hook-tag", { scale: 0.6, rotation: -14, opacity: 0 }, { scale: 1, rotation: -3, opacity: 1, duration: 0.45, ease: "back.out(2.2)" }, 0.35);
+
+    window.__timelines["hook"] = tl;
+  </script>
+</template>

@@ -1,0 +1,2074 @@
+{
+ "text": " Kalau korang nak jimat, boleh beli kepala dia sahaja. Make sure korang dah ada bateri jenis tapak Makita dekat rumah. Tak kisah jenama apa, semua boleh masuk jenis tapak Makita. Yang ni, guys, work light daripada Santino, saiz 10 inci. Korang boleh tengok penuh dengan LED. Yang ni, korang jangan risau, dia boleh cover lebih kurang dalam 10 meter. Yang besar, perbukaan lampu dia. Nampak? Dia ada dua level korang boleh adjust. Level satu tu, perbukaan dia kecil sikit. Level dua tu, dia lagi luas. Lepas tu kat sini dia ada dua port USB. Kalau korang nak buat charge telefon pun boleh pakai. Kalau kat tepi ni dia ada dua port USB. Kalau korang nak buat charge telefon pun boleh pakai. Jadi dekat tepi ni dia ada dua port USB. Kalau korang nak buat charge telefon pun boleh dekat sini. Tampak dia boleh adjust ni. Tampak dia boleh adjust. Macam-macam bentuk, macam-macam kedudukan korang boleh. Untuk tampak dia ni korang boleh adjust mengikut kesesuaian kerja korang. Jadi yang mana korang tengah mencari work light, nak buat kerja tak cukup percayaan untuk abang-abang tukang, abang-abang kontraktor, boleh beli satu yang ni. Harga tak mahal mana pun. Boleh tengok dekat bag dekat bawah.",
+ "segments": [
+  {
+   "id": 0,
+   "seek": 0,
+   "start": 0.0,
+   "end": 3.82,
+   "text": " Kalau korang nak jimat, boleh beli kepala dia sahaja.",
+   "tokens": [
+    50365,
+    36366,
+    14784,
+    656,
+    20332,
+    361,
+    33862,
+    11,
+    25835,
+    989,
+    72,
+    36428,
+    5159,
+    6801,
+    19292,
+    12908,
+    13,
+    50560
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.1862953609890408,
+   "compression_ratio": 1.6208333333333333,
+   "no_speech_prob": 0.004661869257688522,
+   "words": [
+    {
+     "word": " Kalau",
+     "start": 0.0,
+     "end": 0.56,
+     "probability": 0.8094558715820312
+    },
+    {
+     "word": " korang",
+     "start": 0.56,
+     "end": 1.02,
+     "probability": 0.9982620775699615
+    },
+    {
+     "word": " nak",
+     "start": 1.02,
+     "end": 1.12,
+     "probability": 0.999326229095459
+    },
+    {
+     "word": " jimat,",
+     "start": 1.12,
+     "end": 1.46,
+     "probability": 0.7138742506504059
+    },
+    {
+     "word": " boleh",
+     "start": 1.62,
+     "end": 2.24,
+     "probability": 0.9989174604415894
+    },
+    {
+     "word": " beli",
+     "start": 2.24,
+     "end": 2.68,
+     "probability": 0.9998562633991241
+    },
+    {
+     "word": " kepala",
+     "start": 2.68,
+     "end": 3.12,
+     "probability": 0.9997401237487793
+    },
+    {
+     "word": " dia",
+     "start": 3.12,
+     "end": 3.32,
+     "probability": 0.9998846054077148
+    },
+    {
+     "word": " sahaja.",
+     "start": 3.32,
+     "end": 3.82,
+     "probability": 0.9997484683990479
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "seek": 0,
+   "start": 3.9,
+   "end": 8.02,
+   "text": " Make sure korang dah ada bateri jenis tapak Makita dekat rumah.",
+   "tokens": [
+    50569,
+    4387,
+    988,
+    14784,
+    656,
+    16800,
+    11063,
+    25735,
+    72,
+    361,
+    268,
+    271,
+    5119,
+    514,
+    16576,
+    2786,
+    368,
+    20876,
+    44988,
+    13,
+    50773
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.1862953609890408,
+   "compression_ratio": 1.6208333333333333,
+   "no_speech_prob": 0.004661869257688522,
+   "words": [
+    {
+     "word": " Make",
+     "start": 3.9,
+     "end": 4.12,
+     "probability": 0.9764289855957031
+    },
+    {
+     "word": " sure",
+     "start": 4.12,
+     "end": 4.36,
+     "probability": 0.9999734163284302
+    },
+    {
+     "word": " korang",
+     "start": 4.36,
+     "end": 5.22,
+     "probability": 0.9988002777099609
+    },
+    {
+     "word": " dah",
+     "start": 5.22,
+     "end": 5.34,
+     "probability": 0.9996947050094604
+    },
+    {
+     "word": " ada",
+     "start": 5.34,
+     "end": 5.58,
+     "probability": 0.9996980428695679
+    },
+    {
+     "word": " bateri",
+     "start": 5.58,
+     "end": 6.22,
+     "probability": 0.995429515838623
+    },
+    {
+     "word": " jenis",
+     "start": 6.22,
+     "end": 6.62,
+     "probability": 0.9997780919075012
+    },
+    {
+     "word": " tapak",
+     "start": 6.62,
+     "end": 7.04,
+     "probability": 0.9602422416210175
+    },
+    {
+     "word": " Makita",
+     "start": 7.04,
+     "end": 7.52,
+     "probability": 0.773270308971405
+    },
+    {
+     "word": " dekat",
+     "start": 7.52,
+     "end": 7.78,
+     "probability": 0.9994067251682281
+    },
+    {
+     "word": " rumah.",
+     "start": 7.78,
+     "end": 8.02,
+     "probability": 0.9999817609786987
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "seek": 0,
+   "start": 8.2,
+   "end": 12.68,
+   "text": " Tak kisah jenama apa, semua boleh masuk jenis tapak Makita.",
+   "tokens": [
+    50780,
+    9118,
+    350,
+    271,
+    545,
+    361,
+    268,
+    2404,
+    15951,
+    11,
+    28195,
+    25835,
+    42364,
+    361,
+    268,
+    271,
+    5119,
+    514,
+    16576,
+    2786,
+    13,
+    51008
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.1862953609890408,
+   "compression_ratio": 1.6208333333333333,
+   "no_speech_prob": 0.004661869257688522,
+   "words": [
+    {
+     "word": " Tak",
+     "start": 8.2,
+     "end": 8.34,
+     "probability": 0.9997727274894714
+    },
+    {
+     "word": " kisah",
+     "start": 8.34,
+     "end": 8.64,
+     "probability": 0.9993829329808553
+    },
+    {
+     "word": " jenama",
+     "start": 8.64,
+     "end": 9.06,
+     "probability": 0.9169133901596069
+    },
+    {
+     "word": " apa,",
+     "start": 9.06,
+     "end": 9.36,
+     "probability": 0.9999113082885742
+    },
+    {
+     "word": " semua",
+     "start": 9.5,
+     "end": 10.22,
+     "probability": 0.9999768733978271
+    },
+    {
+     "word": " boleh",
+     "start": 10.22,
+     "end": 10.56,
+     "probability": 0.9999856948852539
+    },
+    {
+     "word": " masuk",
+     "start": 10.56,
+     "end": 10.94,
+     "probability": 0.9999905824661255
+    },
+    {
+     "word": " jenis",
+     "start": 10.94,
+     "end": 11.4,
+     "probability": 0.7240468561649323
+    },
+    {
+     "word": " tapak",
+     "start": 11.4,
+     "end": 11.96,
+     "probability": 0.9989425241947174
+    },
+    {
+     "word": " Makita.",
+     "start": 11.96,
+     "end": 12.68,
+     "probability": 0.9999021291732788
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "seek": 0,
+   "start": 12.9,
+   "end": 18.16,
+   "text": " Yang ni, guys, work light daripada Santino, saiz 10 inci.",
+   "tokens": [
+    51028,
+    11978,
+    3867,
+    11,
+    1074,
+    11,
+    589,
+    1442,
+    4072,
+    647,
+    1538,
+    17315,
+    2982,
+    11,
+    601,
+    590,
+    1266,
+    294,
+    537,
+    13,
+    51279
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.1862953609890408,
+   "compression_ratio": 1.6208333333333333,
+   "no_speech_prob": 0.004661869257688522,
+   "words": [
+    {
+     "word": " Yang",
+     "start": 12.9,
+     "end": 13.32,
+     "probability": 0.9996908903121948
+    },
+    {
+     "word": " ni,",
+     "start": 13.32,
+     "end": 13.58,
+     "probability": 0.9719154238700867
+    },
+    {
+     "word": " guys,",
+     "start": 13.62,
+     "end": 13.78,
+     "probability": 0.24449150264263153
+    },
+    {
+     "word": " work",
+     "start": 13.96,
+     "end": 14.44,
+     "probability": 0.7607770562171936
+    },
+    {
+     "word": " light",
+     "start": 14.44,
+     "end": 14.76,
+     "probability": 0.9653651714324951
+    },
+    {
+     "word": " daripada",
+     "start": 14.76,
+     "end": 15.5,
+     "probability": 0.9997559189796448
+    },
+    {
+     "word": " Santino,",
+     "start": 15.5,
+     "end": 16.22,
+     "probability": 0.9732847213745117
+    },
+    {
+     "word": " saiz",
+     "start": 16.34,
+     "end": 16.9,
+     "probability": 0.8826918601989746
+    },
+    {
+     "word": " 10",
+     "start": 16.9,
+     "end": 17.38,
+     "probability": 0.995419979095459
+    },
+    {
+     "word": " inci.",
+     "start": 17.38,
+     "end": 18.16,
+     "probability": 0.9749231934547424
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "seek": 0,
+   "start": 18.3,
+   "end": 19.86,
+   "text": " Korang boleh tengok penuh dengan LED.",
+   "tokens": [
+    51290,
+    21690,
+    656,
+    25835,
+    10370,
+    453,
+    3435,
+    3232,
+    13877,
+    11261,
+    13,
+    51365
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.1862953609890408,
+   "compression_ratio": 1.6208333333333333,
+   "no_speech_prob": 0.004661869257688522,
+   "words": [
+    {
+     "word": " Korang",
+     "start": 18.3,
+     "end": 18.64,
+     "probability": 0.9992873668670654
+    },
+    {
+     "word": " boleh",
+     "start": 18.64,
+     "end": 18.76,
+     "probability": 0.9999469518661499
+    },
+    {
+     "word": " tengok",
+     "start": 18.76,
+     "end": 19.0,
+     "probability": 0.9999344348907471
+    },
+    {
+     "word": " penuh",
+     "start": 19.0,
+     "end": 19.4,
+     "probability": 0.9933493733406067
+    },
+    {
+     "word": " dengan",
+     "start": 19.4,
+     "end": 19.52,
+     "probability": 0.998846173286438
+    },
+    {
+     "word": " LED.",
+     "start": 19.52,
+     "end": 19.86,
+     "probability": 0.9986633062362671
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "seek": 0,
+   "start": 20.18,
+   "end": 25.18,
+   "text": " Yang ni, korang jangan risau, dia boleh cover lebih kurang dalam 10 meter.",
+   "tokens": [
+    51391,
+    11978,
+    3867,
+    11,
+    14784,
+    656,
+    45107,
+    2253,
+    1459,
+    11,
+    6801,
+    25835,
+    2060,
+    20451,
+    10072,
+    656,
+    23063,
+    1266,
+    9255,
+    13,
+    51631
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.1862953609890408,
+   "compression_ratio": 1.6208333333333333,
+   "no_speech_prob": 0.004661869257688522,
+   "words": [
+    {
+     "word": " Yang",
+     "start": 20.18,
+     "end": 20.58,
+     "probability": 0.9997145533561707
+    },
+    {
+     "word": " ni,",
+     "start": 20.58,
+     "end": 20.76,
+     "probability": 0.9997989535331726
+    },
+    {
+     "word": " korang",
+     "start": 20.76,
+     "end": 21.0,
+     "probability": 0.9993734955787659
+    },
+    {
+     "word": " jangan",
+     "start": 21.0,
+     "end": 21.18,
+     "probability": 0.9998315572738647
+    },
+    {
+     "word": " risau,",
+     "start": 21.18,
+     "end": 21.62,
+     "probability": 0.9994722902774811
+    },
+    {
+     "word": " dia",
+     "start": 21.62,
+     "end": 21.8,
+     "probability": 0.9995705485343933
+    },
+    {
+     "word": " boleh",
+     "start": 21.8,
+     "end": 22.14,
+     "probability": 0.999977707862854
+    },
+    {
+     "word": " cover",
+     "start": 22.14,
+     "end": 22.56,
+     "probability": 0.9997721314430237
+    },
+    {
+     "word": " lebih",
+     "start": 22.56,
+     "end": 23.06,
+     "probability": 0.999055802822113
+    },
+    {
+     "word": " kurang",
+     "start": 23.06,
+     "end": 23.48,
+     "probability": 0.9995250999927521
+    },
+    {
+     "word": " dalam",
+     "start": 23.48,
+     "end": 23.64,
+     "probability": 0.9999260902404785
+    },
+    {
+     "word": " 10",
+     "start": 23.64,
+     "end": 24.24,
+     "probability": 0.9998319149017334
+    },
+    {
+     "word": " meter.",
+     "start": 24.24,
+     "end": 25.18,
+     "probability": 0.9940429329872131
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "seek": 0,
+   "start": 25.4,
+   "end": 27.48,
+   "text": " Yang besar, perbukaan lampu dia.",
+   "tokens": [
+    51659,
+    11978,
+    48327,
+    11,
+    680,
+    65,
+    13599,
+    282,
+    12684,
+    84,
+    6801,
+    13,
+    51743
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.1862953609890408,
+   "compression_ratio": 1.6208333333333333,
+   "no_speech_prob": 0.004661869257688522,
+   "words": [
+    {
+     "word": " Yang",
+     "start": 25.4,
+     "end": 25.88,
+     "probability": 0.5010884404182434
+    },
+    {
+     "word": " besar,",
+     "start": 25.88,
+     "end": 26.16,
+     "probability": 0.9992915391921997
+    },
+    {
+     "word": " perbukaan",
+     "start": 26.34,
+     "end": 26.96,
+     "probability": 0.9003818184137344
+    },
+    {
+     "word": " lampu",
+     "start": 26.96,
+     "end": 27.36,
+     "probability": 0.9994376599788666
+    },
+    {
+     "word": " dia.",
+     "start": 27.36,
+     "end": 27.48,
+     "probability": 0.9998856782913208
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "seek": 0,
+   "start": 28.3,
+   "end": 28.98,
+   "text": " Nampak?",
+   "tokens": [
+    51783,
+    426,
+    1215,
+    514,
+    30,
+    51823
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.1862953609890408,
+   "compression_ratio": 1.6208333333333333,
+   "no_speech_prob": 0.004661869257688522,
+   "words": [
+    {
+     "word": " Nampak?",
+     "start": 28.3,
+     "end": 28.98,
+     "probability": 0.8283741275469462
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "seek": 3000,
+   "start": 31.060000000000002,
+   "end": 34.04,
+   "text": " Dia ada dua level korang boleh adjust.",
+   "tokens": [
+    50365,
+    22157,
+    11063,
+    40173,
+    1496,
+    14784,
+    656,
+    25835,
+    4369,
+    13,
+    50576
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.19131838989257813,
+   "compression_ratio": 2.49685534591195,
+   "no_speech_prob": 0.009176461957395077,
+   "words": [
+    {
+     "word": " Dia",
+     "start": 31.060000000000002,
+     "end": 31.6,
+     "probability": 0.7197243571281433
+    },
+    {
+     "word": " ada",
+     "start": 31.6,
+     "end": 32.14,
+     "probability": 0.9973788261413574
+    },
+    {
+     "word": " dua",
+     "start": 32.14,
+     "end": 32.52,
+     "probability": 0.5167450904846191
+    },
+    {
+     "word": " level",
+     "start": 32.52,
+     "end": 32.96,
+     "probability": 0.9953232407569885
+    },
+    {
+     "word": " korang",
+     "start": 32.96,
+     "end": 33.44,
+     "probability": 0.9788015782833099
+    },
+    {
+     "word": " boleh",
+     "start": 33.44,
+     "end": 33.64,
+     "probability": 0.9985498785972595
+    },
+    {
+     "word": " adjust.",
+     "start": 33.64,
+     "end": 34.04,
+     "probability": 0.992305338382721
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "seek": 3000,
+   "start": 34.2,
+   "end": 35.06,
+   "text": " Level satu tu,",
+   "tokens": [
+    50582,
+    16872,
+    27679,
+    2604,
+    11,
+    50626
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.19131838989257813,
+   "compression_ratio": 2.49685534591195,
+   "no_speech_prob": 0.009176461957395077,
+   "words": [
+    {
+     "word": " Level",
+     "start": 34.2,
+     "end": 34.36,
+     "probability": 0.9944304823875427
+    },
+    {
+     "word": " satu",
+     "start": 34.36,
+     "end": 34.8,
+     "probability": 0.7155753970146179
+    },
+    {
+     "word": " tu,",
+     "start": 34.8,
+     "end": 35.06,
+     "probability": 0.9717856049537659
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "seek": 3000,
+   "start": 35.980000000000004,
+   "end": 37.06,
+   "text": " perbukaan dia kecil sikit.",
+   "tokens": [
+    50672,
+    680,
+    65,
+    13599,
+    282,
+    6801,
+    803,
+    3208,
+    262,
+    48183,
+    13,
+    50721
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.19131838989257813,
+   "compression_ratio": 2.49685534591195,
+   "no_speech_prob": 0.009176461957395077,
+   "words": [
+    {
+     "word": " perbukaan",
+     "start": 35.980000000000004,
+     "end": 36.52,
+     "probability": 0.8269627317786217
+    },
+    {
+     "word": " dia",
+     "start": 36.52,
+     "end": 36.6,
+     "probability": 0.9997994303703308
+    },
+    {
+     "word": " kecil",
+     "start": 36.6,
+     "end": 36.76,
+     "probability": 0.9953759014606476
+    },
+    {
+     "word": " sikit.",
+     "start": 36.76,
+     "end": 37.06,
+     "probability": 0.996751219034195
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "seek": 3000,
+   "start": 37.1,
+   "end": 37.76,
+   "text": " Level dua tu,",
+   "tokens": [
+    50725,
+    16872,
+    40173,
+    2604,
+    11,
+    50759
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.19131838989257813,
+   "compression_ratio": 2.49685534591195,
+   "no_speech_prob": 0.009176461957395077,
+   "words": [
+    {
+     "word": " Level",
+     "start": 37.1,
+     "end": 37.22,
+     "probability": 0.9978590607643127
+    },
+    {
+     "word": " dua",
+     "start": 37.22,
+     "end": 37.52,
+     "probability": 0.999327540397644
+    },
+    {
+     "word": " tu,",
+     "start": 37.52,
+     "end": 37.76,
+     "probability": 0.9995927214622498
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "seek": 3000,
+   "start": 38.4,
+   "end": 39.28,
+   "text": " dia lagi luas.",
+   "tokens": [
+    50785,
+    6801,
+    17742,
+    10438,
+    296,
+    13,
+    50833
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.19131838989257813,
+   "compression_ratio": 2.49685534591195,
+   "no_speech_prob": 0.009176461957395077,
+   "words": [
+    {
+     "word": " dia",
+     "start": 38.150000000000006,
+     "end": 38.42,
+     "probability": 0.9997242093086243
+    },
+    {
+     "word": " lagi",
+     "start": 38.42,
+     "end": 38.76,
+     "probability": 0.9995437264442444
+    },
+    {
+     "word": " luas.",
+     "start": 38.76,
+     "end": 39.28,
+     "probability": 0.9995797574520111
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "seek": 3000,
+   "start": 39.38,
+   "end": 41.74,
+   "text": " Lepas tu kat sini dia ada dua port USB.",
+   "tokens": [
+    50852,
+    441,
+    595,
+    296,
+    2604,
+    16536,
+    30368,
+    6801,
+    11063,
+    40173,
+    2436,
+    10109,
+    13,
+    50967
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.19131838989257813,
+   "compression_ratio": 2.49685534591195,
+   "no_speech_prob": 0.009176461957395077,
+   "words": [
+    {
+     "word": " Lepas",
+     "start": 39.38,
+     "end": 39.92,
+     "probability": 0.9978455901145935
+    },
+    {
+     "word": " tu",
+     "start": 39.92,
+     "end": 40.06,
+     "probability": 0.99912029504776
+    },
+    {
+     "word": " kat",
+     "start": 40.06,
+     "end": 40.22,
+     "probability": 0.7527419924736023
+    },
+    {
+     "word": " sini",
+     "start": 40.22,
+     "end": 40.44,
+     "probability": 0.9999264478683472
+    },
+    {
+     "word": " dia",
+     "start": 40.44,
+     "end": 40.68,
+     "probability": 0.9070570468902588
+    },
+    {
+     "word": " ada",
+     "start": 40.68,
+     "end": 40.92,
+     "probability": 0.9999853372573853
+    },
+    {
+     "word": " dua",
+     "start": 40.92,
+     "end": 41.12,
+     "probability": 0.9902819395065308
+    },
+    {
+     "word": " port",
+     "start": 41.12,
+     "end": 41.44,
+     "probability": 0.9771054983139038
+    },
+    {
+     "word": " USB.",
+     "start": 41.44,
+     "end": 41.74,
+     "probability": 0.9994226694107056
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "seek": 3000,
+   "start": 42.04,
+   "end": 44.82,
+   "text": " Kalau korang nak buat charge telefon pun boleh pakai.",
+   "tokens": [
+    50976,
+    36366,
+    14784,
+    656,
+    20332,
+    22186,
+    4602,
+    26812,
+    4468,
+    25835,
+    49062,
+    13,
+    51119
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.19131838989257813,
+   "compression_ratio": 2.49685534591195,
+   "no_speech_prob": 0.009176461957395077,
+   "words": [
+    {
+     "word": " Kalau",
+     "start": 42.04,
+     "end": 42.2,
+     "probability": 0.9989286065101624
+    },
+    {
+     "word": " korang",
+     "start": 42.2,
+     "end": 42.54,
+     "probability": 0.999934732913971
+    },
+    {
+     "word": " nak",
+     "start": 42.54,
+     "end": 42.66,
+     "probability": 0.9999289512634277
+    },
+    {
+     "word": " buat",
+     "start": 42.66,
+     "end": 42.86,
+     "probability": 0.9998857975006104
+    },
+    {
+     "word": " charge",
+     "start": 42.86,
+     "end": 43.14,
+     "probability": 0.9482991695404053
+    },
+    {
+     "word": " telefon",
+     "start": 43.14,
+     "end": 43.5,
+     "probability": 0.9712423086166382
+    },
+    {
+     "word": " pun",
+     "start": 43.5,
+     "end": 43.9,
+     "probability": 0.9998748302459717
+    },
+    {
+     "word": " boleh",
+     "start": 43.9,
+     "end": 44.26,
+     "probability": 0.9737007021903992
+    },
+    {
+     "word": " pakai.",
+     "start": 44.26,
+     "end": 44.82,
+     "probability": 0.9987896084785461
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "seek": 3000,
+   "start": 45.9,
+   "end": 48.62,
+   "text": " Kalau kat tepi ni dia ada dua port USB.",
+   "tokens": [
+    51168,
+    36366,
+    16536,
+    535,
+    22630,
+    3867,
+    6801,
+    11063,
+    40173,
+    2436,
+    10109,
+    13,
+    51307
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.19131838989257813,
+   "compression_ratio": 2.49685534591195,
+   "no_speech_prob": 0.009176461957395077,
+   "words": [
+    {
+     "word": " Kalau",
+     "start": 45.9,
+     "end": 46.44,
+     "probability": 0.5317113995552063
+    },
+    {
+     "word": " kat",
+     "start": 46.44,
+     "end": 46.98,
+     "probability": 0.9876768589019775
+    },
+    {
+     "word": " tepi",
+     "start": 46.98,
+     "end": 47.24,
+     "probability": 0.9804622530937195
+    },
+    {
+     "word": " ni",
+     "start": 47.24,
+     "end": 47.4,
+     "probability": 0.9989251494407654
+    },
+    {
+     "word": " dia",
+     "start": 47.4,
+     "end": 47.54,
+     "probability": 0.9839276671409607
+    },
+    {
+     "word": " ada",
+     "start": 47.54,
+     "end": 47.72,
+     "probability": 0.9999920129776001
+    },
+    {
+     "word": " dua",
+     "start": 47.72,
+     "end": 47.86,
+     "probability": 0.9998660087585449
+    },
+    {
+     "word": " port",
+     "start": 47.86,
+     "end": 48.2,
+     "probability": 0.9997166991233826
+    },
+    {
+     "word": " USB.",
+     "start": 48.2,
+     "end": 48.62,
+     "probability": 0.999974250793457
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "seek": 3000,
+   "start": 48.78,
+   "end": 51.4,
+   "text": " Kalau korang nak buat charge telefon pun boleh pakai.",
+   "tokens": [
+    51316,
+    36366,
+    14784,
+    656,
+    20332,
+    22186,
+    4602,
+    26812,
+    4468,
+    25835,
+    49062,
+    13,
+    51448
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.19131838989257813,
+   "compression_ratio": 2.49685534591195,
+   "no_speech_prob": 0.009176461957395077,
+   "words": [
+    {
+     "word": " Kalau",
+     "start": 48.78,
+     "end": 48.98,
+     "probability": 0.9983757734298706
+    },
+    {
+     "word": " korang",
+     "start": 48.98,
+     "end": 49.32,
+     "probability": 0.9999699592590332
+    },
+    {
+     "word": " nak",
+     "start": 49.32,
+     "end": 49.42,
+     "probability": 0.9999498128890991
+    },
+    {
+     "word": " buat",
+     "start": 49.42,
+     "end": 49.62,
+     "probability": 0.9999788999557495
+    },
+    {
+     "word": " charge",
+     "start": 49.62,
+     "end": 49.9,
+     "probability": 0.9997678399085999
+    },
+    {
+     "word": " telefon",
+     "start": 49.9,
+     "end": 50.18,
+     "probability": 0.9977881908416748
+    },
+    {
+     "word": " pun",
+     "start": 50.18,
+     "end": 50.52,
+     "probability": 0.9999687671661377
+    },
+    {
+     "word": " boleh",
+     "start": 50.52,
+     "end": 50.86,
+     "probability": 0.9998917579650879
+    },
+    {
+     "word": " pakai.",
+     "start": 50.86,
+     "end": 51.4,
+     "probability": 0.9994661211967468
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "seek": 3000,
+   "start": 53.800000000000004,
+   "end": 56.34,
+   "text": " Jadi dekat tepi ni dia ada dua port USB.",
+   "tokens": [
+    51548,
+    21662,
+    368,
+    20876,
+    535,
+    22630,
+    3867,
+    6801,
+    11063,
+    40173,
+    2436,
+    10109,
+    13,
+    51692
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.19131838989257813,
+   "compression_ratio": 2.49685534591195,
+   "no_speech_prob": 0.009176461957395077,
+   "words": [
+    {
+     "word": " Jadi",
+     "start": 53.800000000000004,
+     "end": 54.34,
+     "probability": 0.9413892030715942
+    },
+    {
+     "word": " dekat",
+     "start": 54.34,
+     "end": 54.88,
+     "probability": 0.8442868292331696
+    },
+    {
+     "word": " tepi",
+     "start": 54.88,
+     "end": 55.16,
+     "probability": 0.9993312060832977
+    },
+    {
+     "word": " ni",
+     "start": 55.16,
+     "end": 55.3,
+     "probability": 0.9998760223388672
+    },
+    {
+     "word": " dia",
+     "start": 55.3,
+     "end": 55.44,
+     "probability": 0.9988879561424255
+    },
+    {
+     "word": " ada",
+     "start": 55.44,
+     "end": 55.62,
+     "probability": 0.9999929666519165
+    },
+    {
+     "word": " dua",
+     "start": 55.62,
+     "end": 55.78,
+     "probability": 0.9999326467514038
+    },
+    {
+     "word": " port",
+     "start": 55.78,
+     "end": 56.06,
+     "probability": 0.9997005462646484
+    },
+    {
+     "word": " USB.",
+     "start": 56.06,
+     "end": 56.34,
+     "probability": 0.9999794960021973
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "seek": 3000,
+   "start": 56.46,
+   "end": 58.84,
+   "text": " Kalau korang nak buat charge telefon pun boleh dekat sini.",
+   "tokens": [
+    51692,
+    36366,
+    14784,
+    656,
+    20332,
+    22186,
+    4602,
+    26812,
+    4468,
+    25835,
+    368,
+    20876,
+    30368,
+    13,
+    51814
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.19131838989257813,
+   "compression_ratio": 2.49685534591195,
+   "no_speech_prob": 0.009176461957395077,
+   "words": [
+    {
+     "word": " Kalau",
+     "start": 56.46,
+     "end": 56.7,
+     "probability": 0.9989495873451233
+    },
+    {
+     "word": " korang",
+     "start": 56.7,
+     "end": 57.02,
+     "probability": 0.9999781847000122
+    },
+    {
+     "word": " nak",
+     "start": 57.02,
+     "end": 57.14,
+     "probability": 0.9999531507492065
+    },
+    {
+     "word": " buat",
+     "start": 57.14,
+     "end": 57.34,
+     "probability": 0.9999798536300659
+    },
+    {
+     "word": " charge",
+     "start": 57.34,
+     "end": 57.6,
+     "probability": 0.9997265934944153
+    },
+    {
+     "word": " telefon",
+     "start": 57.6,
+     "end": 57.9,
+     "probability": 0.9947388768196106
+    },
+    {
+     "word": " pun",
+     "start": 57.9,
+     "end": 58.16,
+     "probability": 0.9999672174453735
+    },
+    {
+     "word": " boleh",
+     "start": 58.16,
+     "end": 58.44,
+     "probability": 0.9998843669891357
+    },
+    {
+     "word": " dekat",
+     "start": 58.44,
+     "end": 58.64,
+     "probability": 0.9917034208774567
+    },
+    {
+     "word": " sini.",
+     "start": 58.64,
+     "end": 58.84,
+     "probability": 0.9999452829360962
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "seek": 6000,
+   "start": 60.0,
+   "end": 61.16,
+   "text": " Tampak dia boleh adjust ni.",
+   "tokens": [
+    50365,
+    314,
+    1215,
+    514,
+    6801,
+    25835,
+    4369,
+    3867,
+    13,
+    50426
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.15953542108405128,
+   "compression_ratio": 1.8318181818181818,
+   "no_speech_prob": 0.0009873711969703436,
+   "words": [
+    {
+     "word": " Tampak",
+     "start": 60.0,
+     "end": 60.42,
+     "probability": 0.8681830167770386
+    },
+    {
+     "word": " dia",
+     "start": 60.42,
+     "end": 60.52,
+     "probability": 0.9963147044181824
+    },
+    {
+     "word": " boleh",
+     "start": 60.52,
+     "end": 60.68,
+     "probability": 0.9953038692474365
+    },
+    {
+     "word": " adjust",
+     "start": 60.68,
+     "end": 60.92,
+     "probability": 0.9847448468208313
+    },
+    {
+     "word": " ni.",
+     "start": 60.92,
+     "end": 61.16,
+     "probability": 0.7095298171043396
+    }
+   ]
+  },
+  {
+   "id": 20,
+   "seek": 6000,
+   "start": 61.6,
+   "end": 62.64,
+   "text": " Tampak dia boleh adjust.",
+   "tokens": [
+    50454,
+    314,
+    1215,
+    514,
+    6801,
+    25835,
+    4369,
+    13,
+    50503
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.15953542108405128,
+   "compression_ratio": 1.8318181818181818,
+   "no_speech_prob": 0.0009873711969703436,
+   "words": [
+    {
+     "word": " Tampak",
+     "start": 61.6,
+     "end": 62.08,
+     "probability": 0.9974233905474345
+    },
+    {
+     "word": " dia",
+     "start": 62.08,
+     "end": 62.18,
+     "probability": 0.9998043179512024
+    },
+    {
+     "word": " boleh",
+     "start": 62.18,
+     "end": 62.32,
+     "probability": 0.99932861328125
+    },
+    {
+     "word": " adjust.",
+     "start": 62.32,
+     "end": 62.64,
+     "probability": 0.9993306398391724
+    }
+   ]
+  },
+  {
+   "id": 21,
+   "seek": 6000,
+   "start": 62.78,
+   "end": 66.32,
+   "text": " Macam-macam bentuk, macam-macam kedudukan korang boleh.",
+   "tokens": [
+    50517,
+    5707,
+    335,
+    12,
+    37065,
+    335,
+    14075,
+    2034,
+    11,
+    44921,
+    12,
+    37065,
+    335,
+    42472,
+    532,
+    22324,
+    14784,
+    656,
+    25835,
+    13,
+    50686
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.15953542108405128,
+   "compression_ratio": 1.8318181818181818,
+   "no_speech_prob": 0.0009873711969703436,
+   "words": [
+    {
+     "word": " Macam",
+     "start": 62.78,
+     "end": 63.12,
+     "probability": 0.9889845550060272
+    },
+    {
+     "word": "-macam",
+     "start": 63.12,
+     "end": 63.48,
+     "probability": 0.9993028243382772
+    },
+    {
+     "word": " bentuk,",
+     "start": 63.48,
+     "end": 64.44,
+     "probability": 0.7733171284198761
+    },
+    {
+     "word": " macam",
+     "start": 64.44,
+     "end": 64.68,
+     "probability": 0.9984235763549805
+    },
+    {
+     "word": "-macam",
+     "start": 64.68,
+     "end": 65.1,
+     "probability": 0.9999492963155111
+    },
+    {
+     "word": " kedudukan",
+     "start": 65.1,
+     "end": 65.74,
+     "probability": 0.9842902819315592
+    },
+    {
+     "word": " korang",
+     "start": 65.74,
+     "end": 66.16,
+     "probability": 0.9858576357364655
+    },
+    {
+     "word": " boleh.",
+     "start": 66.16,
+     "end": 66.32,
+     "probability": 0.9999276399612427
+    }
+   ]
+  },
+  {
+   "id": 22,
+   "seek": 6000,
+   "start": 66.44,
+   "end": 70.84,
+   "text": " Untuk tampak dia ni korang boleh adjust mengikut kesesuaian kerja korang.",
+   "tokens": [
+    50702,
+    8256,
+    2034,
+    21424,
+    514,
+    6801,
+    3867,
+    14784,
+    656,
+    25835,
+    4369,
+    15330,
+    49971,
+    16050,
+    279,
+    4398,
+    952,
+    19377,
+    2938,
+    14784,
+    656,
+    13,
+    50908
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.15953542108405128,
+   "compression_ratio": 1.8318181818181818,
+   "no_speech_prob": 0.0009873711969703436,
+   "words": [
+    {
+     "word": " Untuk",
+     "start": 66.44,
+     "end": 66.92,
+     "probability": 0.9993097186088562
+    },
+    {
+     "word": " tampak",
+     "start": 66.92,
+     "end": 67.24,
+     "probability": 0.9925556182861328
+    },
+    {
+     "word": " dia",
+     "start": 67.24,
+     "end": 67.34,
+     "probability": 0.9999160766601562
+    },
+    {
+     "word": " ni",
+     "start": 67.34,
+     "end": 67.5,
+     "probability": 0.9995906949043274
+    },
+    {
+     "word": " korang",
+     "start": 67.5,
+     "end": 67.84,
+     "probability": 0.8325231671333313
+    },
+    {
+     "word": " boleh",
+     "start": 67.84,
+     "end": 67.98,
+     "probability": 0.9999710321426392
+    },
+    {
+     "word": " adjust",
+     "start": 67.98,
+     "end": 68.46,
+     "probability": 0.9996457099914551
+    },
+    {
+     "word": " mengikut",
+     "start": 68.46,
+     "end": 68.96,
+     "probability": 0.9960066974163055
+    },
+    {
+     "word": " kesesuaian",
+     "start": 68.96,
+     "end": 69.64,
+     "probability": 0.988439679145813
+    },
+    {
+     "word": " kerja",
+     "start": 69.64,
+     "end": 70.24,
+     "probability": 0.9998895525932312
+    },
+    {
+     "word": " korang.",
+     "start": 70.24,
+     "end": 70.84,
+     "probability": 0.9999552369117737
+    }
+   ]
+  },
+  {
+   "id": 23,
+   "seek": 6000,
+   "start": 70.98,
+   "end": 73.38,
+   "text": " Jadi yang mana korang tengah mencari work light,",
+   "tokens": [
+    50929,
+    21662,
+    5581,
+    21225,
+    14784,
+    656,
+    10370,
+    545,
+    1706,
+    66,
+    3504,
+    589,
+    1442,
+    11,
+    51043
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.15953542108405128,
+   "compression_ratio": 1.8318181818181818,
+   "no_speech_prob": 0.0009873711969703436,
+   "words": [
+    {
+     "word": " Jadi",
+     "start": 70.98,
+     "end": 71.46,
+     "probability": 0.9165540337562561
+    },
+    {
+     "word": " yang",
+     "start": 71.46,
+     "end": 71.78,
+     "probability": 0.8038628101348877
+    },
+    {
+     "word": " mana",
+     "start": 71.78,
+     "end": 72.04,
+     "probability": 0.9999673366546631
+    },
+    {
+     "word": " korang",
+     "start": 72.04,
+     "end": 72.4,
+     "probability": 0.9998907744884491
+    },
+    {
+     "word": " tengah",
+     "start": 72.4,
+     "end": 72.56,
+     "probability": 0.8351858258247375
+    },
+    {
+     "word": " mencari",
+     "start": 72.56,
+     "end": 72.88,
+     "probability": 0.9871763586997986
+    },
+    {
+     "word": " work",
+     "start": 72.88,
+     "end": 73.08,
+     "probability": 0.9224565625190735
+    },
+    {
+     "word": " light,",
+     "start": 73.08,
+     "end": 73.38,
+     "probability": 0.8206043243408203
+    }
+   ]
+  },
+  {
+   "id": 24,
+   "seek": 6000,
+   "start": 73.54,
+   "end": 76.78,
+   "text": " nak buat kerja tak cukup percayaan untuk abang-abang tukang,",
+   "tokens": [
+    51067,
+    20332,
+    22186,
+    19377,
+    2938,
+    991,
+    37485,
+    1010,
+    680,
+    66,
+    4427,
+    282,
+    12711,
+    410,
+    656,
+    12,
+    455,
+    656,
+    256,
+    2034,
+    656,
+    11,
+    51205
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.15953542108405128,
+   "compression_ratio": 1.8318181818181818,
+   "no_speech_prob": 0.0009873711969703436,
+   "words": [
+    {
+     "word": " nak",
+     "start": 73.54,
+     "end": 74.02,
+     "probability": 0.998930037021637
+    },
+    {
+     "word": " buat",
+     "start": 74.02,
+     "end": 74.26,
+     "probability": 0.9998830556869507
+    },
+    {
+     "word": " kerja",
+     "start": 74.26,
+     "end": 74.68,
+     "probability": 0.9997230172157288
+    },
+    {
+     "word": " tak",
+     "start": 74.68,
+     "end": 74.82,
+     "probability": 0.9959012866020203
+    },
+    {
+     "word": " cukup",
+     "start": 74.82,
+     "end": 75.18,
+     "probability": 0.9999468922615051
+    },
+    {
+     "word": " percayaan",
+     "start": 75.18,
+     "end": 75.74,
+     "probability": 0.9983310997486115
+    },
+    {
+     "word": " untuk",
+     "start": 75.74,
+     "end": 75.98,
+     "probability": 0.6805558800697327
+    },
+    {
+     "word": " abang",
+     "start": 75.98,
+     "end": 76.24,
+     "probability": 0.9895266592502594
+    },
+    {
+     "word": "-abang",
+     "start": 76.24,
+     "end": 76.4,
+     "probability": 0.9988466302553812
+    },
+    {
+     "word": " tukang,",
+     "start": 76.4,
+     "end": 76.78,
+     "probability": 0.9997391899426779
+    }
+   ]
+  },
+  {
+   "id": 25,
+   "seek": 6000,
+   "start": 76.8,
+   "end": 77.78,
+   "text": " abang-abang kontraktor,",
+   "tokens": [
+    51210,
+    410,
+    656,
+    12,
+    455,
+    656,
+    14373,
+    424,
+    28359,
+    11,
+    51261
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.15953542108405128,
+   "compression_ratio": 1.8318181818181818,
+   "no_speech_prob": 0.0009873711969703436,
+   "words": [
+    {
+     "word": " abang",
+     "start": 76.8,
+     "end": 77.08,
+     "probability": 0.9999621510505676
+    },
+    {
+     "word": "-abang",
+     "start": 77.08,
+     "end": 77.26,
+     "probability": 0.9999282956123352
+    },
+    {
+     "word": " kontraktor,",
+     "start": 77.26,
+     "end": 77.78,
+     "probability": 0.9393200476964315
+    }
+   ]
+  },
+  {
+   "id": 26,
+   "seek": 6000,
+   "start": 78.52,
+   "end": 79.78,
+   "text": " boleh beli satu yang ni.",
+   "tokens": [
+    51309,
+    25835,
+    989,
+    72,
+    27679,
+    5581,
+    3867,
+    13,
+    51358
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.15953542108405128,
+   "compression_ratio": 1.8318181818181818,
+   "no_speech_prob": 0.0009873711969703436,
+   "words": [
+    {
+     "word": " boleh",
+     "start": 78.52,
+     "end": 79.0,
+     "probability": 0.9997712969779968
+    },
+    {
+     "word": " beli",
+     "start": 79.0,
+     "end": 79.28,
+     "probability": 0.9995467364788055
+    },
+    {
+     "word": " satu",
+     "start": 79.28,
+     "end": 79.46,
+     "probability": 0.9937421679496765
+    },
+    {
+     "word": " yang",
+     "start": 79.46,
+     "end": 79.58,
+     "probability": 0.981368362903595
+    },
+    {
+     "word": " ni.",
+     "start": 79.58,
+     "end": 79.78,
+     "probability": 0.9989758729934692
+    }
+   ]
+  },
+  {
+   "id": 27,
+   "seek": 6000,
+   "start": 79.98,
+   "end": 81.2,
+   "text": " Harga tak mahal mana pun.",
+   "tokens": [
+    51375,
+    3653,
+    3680,
+    991,
+    463,
+    4947,
+    21225,
+    4468,
+    13,
+    51429
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.15953542108405128,
+   "compression_ratio": 1.8318181818181818,
+   "no_speech_prob": 0.0009873711969703436,
+   "words": [
+    {
+     "word": " Harga",
+     "start": 79.98,
+     "end": 80.46,
+     "probability": 0.9948669373989105
+    },
+    {
+     "word": " tak",
+     "start": 80.46,
+     "end": 80.56,
+     "probability": 0.9999481439590454
+    },
+    {
+     "word": " mahal",
+     "start": 80.56,
+     "end": 80.84,
+     "probability": 0.99955153465271
+    },
+    {
+     "word": " mana",
+     "start": 80.84,
+     "end": 80.96,
+     "probability": 0.9978216886520386
+    },
+    {
+     "word": " pun.",
+     "start": 80.96,
+     "end": 81.2,
+     "probability": 0.9996324777603149
+    }
+   ]
+  },
+  {
+   "id": 28,
+   "seek": 6000,
+   "start": 81.22,
+   "end": 82.56,
+   "text": " Boleh tengok dekat bag dekat bawah.",
+   "tokens": [
+    51436,
+    3286,
+    14557,
+    10370,
+    453,
+    368,
+    20876,
+    3411,
+    368,
+    20876,
+    40463,
+    545,
+    13,
+    51497
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.15953542108405128,
+   "compression_ratio": 1.8318181818181818,
+   "no_speech_prob": 0.0009873711969703436,
+   "words": [
+    {
+     "word": " Boleh",
+     "start": 81.22,
+     "end": 81.5,
+     "probability": 0.9997219443321228
+    },
+    {
+     "word": " tengok",
+     "start": 81.5,
+     "end": 81.74,
+     "probability": 0.999856561422348
+    },
+    {
+     "word": " dekat",
+     "start": 81.74,
+     "end": 81.94,
+     "probability": 0.9849766194820404
+    },
+    {
+     "word": " bag",
+     "start": 81.94,
+     "end": 82.14,
+     "probability": 0.6448161602020264
+    },
+    {
+     "word": " dekat",
+     "start": 82.14,
+     "end": 82.36,
+     "probability": 0.9813660681247711
+    },
+    {
+     "word": " bawah.",
+     "start": 82.36,
+     "end": 82.56,
+     "probability": 0.9856459498405457
+    }
+   ]
+  }
+ ],
+ "language": "ms"
+}
