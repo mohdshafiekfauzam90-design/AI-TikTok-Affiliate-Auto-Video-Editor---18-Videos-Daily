@@ -45,3 +45,41 @@ Transkrip disimpan dalam `work/<config>/transcript.json` (cache). Pembetulan eja
 ## Contoh: `configs/ryoku_impact_wrench.json`
 Review RYOKU 20V Brushless Impact Wrench 500Nm (78 s): hook "SKRU KETAT? SETTLE 1 SAAT!", 7 callout
 (Impact Wrench, 500 Nm, 1/2" Drive, Set Lengkap, 2x Bateri, Sesuai Untuk, Model Terkini), 9 zoom, CTA beg kuning.
+
+## Enhancement: Minimal Smart Animation (ON/OFF)
+
+**Konsep: 90% video original + 10% animasi.** Animasi kartun kecil (widget ~320px di sudut atas) hanya muncul 1–3 saat pada point penting. Demo produk sebenar kekal menjadi fokus.
+
+| Jenis | Animasi | Dicetus oleh (contoh) | Produk |
+|-------|---------|----------------------|--------|
+| `bolt` | bolt berpusing & diketatkan, cincin tork, ✓ | tork, 500Nm, ketat, bolt, skru | impact wrench |
+| `drill` | mata drill menembusi dinding bata | drill, tebuk, dinding, lubang | drill |
+| `sparks` | disk grinder + percikan api | potong, besi, grinder | grinder |
+| `airflow` | kipas + aliran angin | angin, kipas, sejuk | kipas / blower |
+| `energy` | bateri terisi + tenaga mengalir | bateri, charger, cas, 20V | semua produk berbateri |
+
+Cara AI memilih masa (`smart_anim.py → plan_animations`):
+1. Kenal pasti jenis produk (`product_type: "auto"` daripada tajuk + transkrip). Hanya animasi yang relevan dibenarkan. Contohnya, video impact wrench tak akan dapat animasi drill.
+2. Beri skor setiap kata kunci dalam transkrip Whisper (tetingkap ±2 s). Animasi utama produk diberi keutamaan.
+3. Tapis konteks negatif. Contohnya, "tak nak guna **tenaga**" bukan point bateri.
+4. Elak zon hook dan CTA. Hadkan bajet (`max_ratio`, lalai 10% durasi), jarak minimum (`min_gap`) dan bilangan per jenis.
+5. Widget diletak di sudut **bertentangan** dengan callout yang sedang aktif.
+6. **Tiada point yang cukup kuat (skor < `min_score`) → tiada animasi.**
+
+```jsonc
+"smart_animation": {
+  "enabled": true,            // false / buang blok = editor asal tanpa animasi
+  "product_type": "auto",     // impact_wrench | drill | grinder | fan | blower | battery | auto
+  "max_ratio": 0.10, "duration": 2.0, "min_gap": 10, "min_score": 3,
+  "size": 320, "y": 210
+  // "manual": [{"type": "bolt", "start": 14.0, "end": 16.0, "label": "500Nm TORK"}]
+}
+```
+
+```bash
+python3 muroh_dooh_editor.py configs/ryoku_impact_wrench.json --smart-anim on    # -> output/*_smartanim.mp4
+python3 muroh_dooh_editor.py configs/ryoku_impact_wrench.json --smart-anim off   # editor asal
+python3 smart_anim.py --demo work/anim_demo                                      # pratonton 5 animasi (.mov + .gif)
+```
+
+Pelan yang dipilih disimpan dalam `work/<config>/anim_plan.json` (berserta sebab setiap pilihan).

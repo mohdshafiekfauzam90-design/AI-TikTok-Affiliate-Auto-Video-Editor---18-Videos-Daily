@@ -541,6 +541,14 @@ def render(cfg: dict, base: Path, ass: Path, sfx: Path, work: Path, out: Path,
                        f":eof_action=pass[v{i + 1}]")
         last = f"v{i + 1}"
         idx += 1
+    # [enhancement] Minimal Smart Animation – widget kartun kecil 1–3 s (jika ON)
+    for i, a in enumerate(cfg.get("_anims", [])):
+        inputs += ["-i", a["mov"]]
+        filters.append(f"[{idx}:v]format=rgba,setpts=PTS-STARTPTS+{a['start']}/TB[an{i}]")
+        filters.append(f"[{last}][an{i}]overlay=x={a['x']}:y={a['y']}:eof_action=pass:"
+                       f"enable='between(t,{a['start']},{a['end']})'[va{i}]")
+        last = f"va{i}"
+        idx += 1
     # panel CTA
     panel = work / "cta_panel.png"
     render_cta_panel(cfg, panel)
@@ -605,6 +613,8 @@ def main() -> None:
     ap.add_argument("--preview", action="store_true", help="render pantas kualiti rendah")
     ap.add_argument("--start", type=float, help="(preview) mula pada saat ini")
     ap.add_argument("--length", type=float, help="(preview) panjang klip")
+    ap.add_argument("--smart-anim", choices=["on", "off"],
+                    help="Minimal Smart Animation (override config smart_animation.enabled)")
     args = ap.parse_args()
 
     cfg_path = Path(args.config).resolve()
@@ -633,8 +643,29 @@ def main() -> None:
 
     ass = work / "subs.ass"
     build_ass(words, cfg, duration, ass)
+    sfx_ev = auto_sfx(cfg, duration)
+
+    # [enhancement] Minimal Smart Animation (90% video asal + ≤10% animasi)
+    sa = cfg.setdefault("smart_animation", {})
+    enabled = sa.get("enabled", False) if args.smart_anim is None else args.smart_anim == "on"
+    if enabled:
+        import smart_anim
+
+        SFX.update(smart_anim.SFX_EXTRA)
+        anims = smart_anim.plan_animations(words, cfg, duration)
+        size = sa.get("size", 320)
+        smart_anim.place(anims, cfg, size, W)
+        for i, a in enumerate(anims):
+            a["mov"] = str(smart_anim.render_animation(a, work / f"anim_{i}_{a['type']}.mov", size))
+        (work / "anim_plan.json").write_text(json.dumps(anims, ensure_ascii=False, indent=1))
+        cfg["_anims"] = anims
+        out = out.with_name(out.stem + "_smartanim.mp4")
+        sfx_ev += smart_anim.sfx_events(anims, sa.get("sfx_gain", 0.35))
+    else:
+        print("[A] Smart animation: OFF")
+
     sfx = work / "sfx.wav"
-    build_sfx_track(auto_sfx(cfg, duration), duration, sfx)
+    build_sfx_track(sfx_ev, duration, sfx)
     if args.preview:
         cfg["preset"], cfg["crf"] = "ultrafast", 26
         out = out.with_name(out.stem + "_preview.mp4")
