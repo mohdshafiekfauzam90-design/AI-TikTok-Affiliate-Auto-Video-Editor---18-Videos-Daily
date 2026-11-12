@@ -353,7 +353,7 @@
    "id": 3,
    "seek": 0,
    "start": 17.06,
-   "end": 20.88,
+   "end": 21.154,
    "text": " Yang penting gang, untuk si klosor ni, yang ni harga tak mahal mana pun.",
    "tokens": [
     51223,
@@ -389,85 +389,85 @@
     {
      "word": " Yang",
      "start": 17.06,
-     "end": 17.22,
+     "end": 17.36,
      "probability": 0.999646782875061
     },
     {
      "word": " penting",
-     "start": 17.22,
-     "end": 17.56,
+     "start": 17.36,
+     "end": 17.7,
      "probability": 0.9989060759544373
     },
     {
      "word": " gang,",
-     "start": 17.56,
-     "end": 17.68,
+     "start": 17.7,
+     "end": 17.82,
      "probability": 0.9474072456359863
     },
     {
      "word": " untuk",
-     "start": 17.74,
-     "end": 18.02,
+     "start": 17.88,
+     "end": 18.16,
      "probability": 0.9995063543319702
     },
     {
      "word": " si",
-     "start": 18.02,
-     "end": 18.28,
+     "start": 18.16,
+     "end": 18.42,
      "probability": 0.0674445778131485
     },
     {
      "word": " klosor",
-     "start": 18.28,
-     "end": 18.72,
+     "start": 18.42,
+     "end": 18.86,
      "probability": 0.42447640001773834
     },
     {
      "word": " ni,",
-     "start": 18.72,
-     "end": 18.92,
+     "start": 18.86,
+     "end": 19.06,
      "probability": 0.9984246492385864
     },
     {
      "word": " yang",
-     "start": 18.98,
-     "end": 19.14,
+     "start": 19.12,
+     "end": 19.28,
      "probability": 0.9992666840553284
     },
     {
      "word": " ni",
-     "start": 19.14,
-     "end": 19.32,
+     "start": 19.28,
+     "end": 19.46,
      "probability": 0.9972255825996399
     },
     {
      "word": " harga",
-     "start": 19.32,
-     "end": 19.88,
+     "start": 19.46,
+     "end": 20.02,
      "probability": 0.9994294941425323
     },
     {
      "word": " tak",
-     "start": 19.88,
-     "end": 20.2,
+     "start": 20.02,
+     "end": 20.474,
      "probability": 0.99648118019104
     },
     {
      "word": " mahal",
-     "start": 20.2,
-     "end": 20.44,
+     "start": 20.474,
+     "end": 20.714,
      "probability": 0.9996672868728638
     },
     {
      "word": " mana",
-     "start": 20.44,
-     "end": 20.6,
+     "start": 20.714,
+     "end": 20.874,
      "probability": 0.9464274644851685
     },
     {
      "word": " pun.",
-     "start": 20.6,
-     "end": 20.88,
+     "start": 20.874,
+     "end": 21.154,
      "probability": 0.9998488426208496
     }
    ]
@@ -475,8 +475,8 @@
   {
    "id": 4,
    "seek": 0,
-   "start": 21.0,
-   "end": 23.54,
+   "start": 21.274,
+   "end": 23.947,
    "text": " Sangat-sangat mampu milik. Size 5 inci.",
    "tokens": [
     51426,
@@ -506,44 +506,44 @@
    "words": [
     {
      "word": " Sangat",
-     "start": 21.0,
-     "end": 21.44,
+     "start": 21.274,
+     "end": 21.714,
      "probability": 0.9998189210891724
     },
     {
      "word": "-sangat",
-     "start": 21.44,
-     "end": 21.74,
+     "start": 21.714,
+     "end": 22.014,
      "probability": 0.9983069449663162
     },
     {
      "word": " mampu",
-     "start": 21.74,
-     "end": 22.32,
+     "start": 22.014,
+     "end": 22.594,
      "probability": 0.9991980989774069
     },
     {
      "word": " milik.",
-     "start": 22.32,
-     "end": 22.56,
+     "start": 22.594,
+     "end": 22.834,
      "probability": 0.992255449295044
     },
     {
      "word": " Size",
-     "start": 22.68,
-     "end": 22.86,
+     "start": 22.954,
+     "end": 23.267,
      "probability": 0.33648306131362915
     },
     {
      "word": " 5",
-     "start": 22.86,
-     "end": 23.26,
+     "start": 23.267,
+     "end": 23.667,
      "probability": 0.990084171295166
     },
     {
      "word": " inci.",
-     "start": 23.26,
-     "end": 23.54,
+     "start": 23.667,
+     "end": 23.947,
      "probability": 0.46695540845394135
     }
    ]
@@ -551,8 +551,8 @@
   {
    "id": 5,
    "seek": 0,
-   "start": 23.9,
-   "end": 27.38,
+   "start": 24.473,
+   "end": 27.953,
    "text": " Brushless motor, tak perlu nak tukar karbon dah. Pakai je sampai lunyai.",
    "tokens": [
     51567,
@@ -587,74 +587,74 @@
    "words": [
     {
      "word": " Brushless",
-     "start": 23.9,
-     "end": 24.38,
+     "start": 24.473,
+     "end": 24.953,
      "probability": 0.6619393080472946
     },
     {
      "word": " motor,",
-     "start": 24.38,
-     "end": 24.62,
+     "start": 24.953,
+     "end": 25.193,
      "probability": 0.9991706609725952
     },
     {
      "word": " tak",
-     "start": 24.84,
-     "end": 24.96,
+     "start": 25.413,
+     "end": 25.533,
      "probability": 0.9999109506607056
     },
     {
      "word": " perlu",
-     "start": 24.96,
-     "end": 25.16,
+     "start": 25.533,
+     "end": 25.733,
      "probability": 0.9995429515838623
     },
     {
      "word": " nak",
-     "start": 25.16,
-     "end": 25.34,
+     "start": 25.733,
+     "end": 25.913,
      "probability": 0.9997504353523254
     },
     {
      "word": " tukar",
-     "start": 25.34,
-     "end": 25.56,
+     "start": 25.913,
+     "end": 26.133,
      "probability": 0.9930860996246338
     },
     {
      "word": " karbon",
-     "start": 25.56,
-     "end": 25.88,
+     "start": 26.133,
+     "end": 26.453,
      "probability": 0.18239430582616478
     },
     {
      "word": " dah.",
-     "start": 25.88,
-     "end": 26.04,
+     "start": 26.453,
+     "end": 26.613,
      "probability": 0.8643136024475098
     },
     {
      "word": " Pakai",
-     "start": 26.12,
-     "end": 26.58,
+     "start": 26.693,
+     "end": 27.153,
      "probability": 0.9815841019153595
     },
     {
      "word": " je",
-     "start": 26.58,
-     "end": 26.7,
+     "start": 27.153,
+     "end": 27.273,
      "probability": 0.9585451483726501
     },
     {
      "word": " sampai",
-     "start": 26.7,
-     "end": 26.9,
+     "start": 27.273,
+     "end": 27.473,
      "probability": 0.9974512457847595
     },
     {
      "word": " lunyai.",
-     "start": 26.9,
-     "end": 27.38,
+     "start": 27.473,
+     "end": 27.953,
      "probability": 0.9743359486262003
     }
    ]
@@ -662,8 +662,8 @@
   {
    "id": 6,
    "seek": 2738,
-   "start": 27.38,
-   "end": 30.38,
+   "start": 27.953,
+   "end": 31.087,
    "text": " lepas tu yang ni dia boleh adjust level tau",
    "tokens": [
     50365,
@@ -686,56 +686,56 @@
    "words": [
     {
      "word": " lepas",
-     "start": 27.38,
-     "end": 28.22,
+     "start": 27.953,
+     "end": 28.787,
      "probability": 0.6865180134773254
     },
     {
      "word": " tu",
-     "start": 28.22,
-     "end": 28.38,
+     "start": 28.787,
+     "end": 28.947,
      "probability": 0.9941891431808472
     },
     {
      "word": " yang",
-     "start": 28.38,
-     "end": 28.54,
+     "start": 28.947,
+     "end": 29.107,
      "probability": 0.8594295978546143
     },
     {
      "word": " ni",
-     "start": 28.54,
-     "end": 28.84,
+     "start": 29.107,
+     "end": 29.407,
      "probability": 0.9962584972381592
     },
     {
      "word": " dia",
-     "start": 28.84,
-     "end": 29.2,
+     "start": 29.407,
+     "end": 29.907,
      "probability": 0.8635227680206299
     },
     {
      "word": " boleh",
-     "start": 29.2,
-     "end": 29.38,
+     "start": 29.907,
+     "end": 30.087,
      "probability": 0.9991733431816101
     },
     {
      "word": " adjust",
-     "start": 29.38,
-     "end": 29.66,
+     "start": 30.087,
+     "end": 30.367,
      "probability": 0.9982159733772278
     },
     {
      "word": " level",
-     "start": 29.66,
-     "end": 30.08,
+     "start": 30.367,
+     "end": 30.787,
      "probability": 0.997694194316864
     },
     {
      "word": " tau",
-     "start": 30.08,
-     "end": 30.38,
+     "start": 30.787,
+     "end": 31.087,
      "probability": 0.9786581993103027
     }
    ]
@@ -743,8 +743,8 @@
   {
    "id": 7,
    "seek": 2738,
-   "start": 30.38,
-   "end": 32.32,
+   "start": 31.087,
+   "end": 33.027,
    "text": " 3 level korang boleh adjust",
    "tokens": [
     50521,
@@ -763,32 +763,32 @@
    "words": [
     {
      "word": " 3",
-     "start": 30.38,
-     "end": 30.74,
+     "start": 31.087,
+     "end": 31.447,
      "probability": 0.719418466091156
     },
     {
      "word": " level",
-     "start": 30.74,
-     "end": 31.54,
+     "start": 31.447,
+     "end": 32.247,
      "probability": 0.9990015625953674
     },
     {
      "word": " korang",
-     "start": 31.54,
-     "end": 31.92,
+     "start": 32.247,
+     "end": 32.627,
      "probability": 0.9987600743770599
     },
     {
      "word": " boleh",
-     "start": 31.92,
-     "end": 32.06,
+     "start": 32.627,
+     "end": 32.767,
      "probability": 0.9997839331626892
     },
     {
      "word": " adjust",
-     "start": 32.06,
-     "end": 32.32,
+     "start": 32.767,
+     "end": 33.027,
      "probability": 0.9994332194328308
     }
    ]
@@ -796,8 +796,8 @@
   {
    "id": 8,
    "seek": 2738,
-   "start": 32.32,
-   "end": 33.72,
+   "start": 33.027,
+   "end": 34.553,
    "text": " ni level 1",
    "tokens": [
     50621,
@@ -813,20 +813,20 @@
    "words": [
     {
      "word": " ni",
-     "start": 32.32,
-     "end": 33.28,
+     "start": 33.027,
+     "end": 34.113,
      "probability": 0.9666534662246704
     },
     {
      "word": " level",
-     "start": 33.28,
-     "end": 33.5,
+     "start": 34.113,
+     "end": 34.333,
      "probability": 0.9996558427810669
     },
     {
      "word": " 1",
-     "start": 33.5,
-     "end": 33.72,
+     "start": 34.333,
+     "end": 34.553,
      "probability": 0.9950959086418152
     }
    ]
@@ -834,8 +834,8 @@
   {
    "id": 9,
    "seek": 2738,
-   "start": 34.3,
-   "end": 36.42,
+   "start": 35.133,
+   "end": 37.253,
    "text": " level 2, level 3",
    "tokens": [
     50695,
@@ -853,26 +853,26 @@
    "words": [
     {
      "word": " level",
-     "start": 34.3,
-     "end": 34.86,
+     "start": 35.133,
+     "end": 35.693,
      "probability": 0.9097944498062134
     },
     {
      "word": " 2,",
-     "start": 34.86,
-     "end": 35.18,
+     "start": 35.693,
+     "end": 36.013,
      "probability": 0.9991990923881531
     },
     {
      "word": " level",
-     "start": 35.3,
-     "end": 35.94,
+     "start": 36.133,
+     "end": 36.773,
      "probability": 0.9991196990013123
     },
     {
      "word": " 3",
-     "start": 35.94,
-     "end": 36.42,
+     "start": 36.773,
+     "end": 37.253,
      "probability": 0.9997335076332092
     }
    ]
@@ -880,8 +880,8 @@
   {
    "id": 10,
    "seek": 2738,
-   "start": 36.42,
-   "end": 38.46,
+   "start": 37.253,
+   "end": 39.334,
    "text": " so contoh kalau korang nak",
    "tokens": [
     50822,
@@ -901,32 +901,32 @@
    "words": [
     {
      "word": " so",
-     "start": 36.42,
-     "end": 37.24,
+     "start": 37.253,
+     "end": 38.114,
      "probability": 0.9819328188896179
     },
     {
      "word": " contoh",
-     "start": 37.24,
-     "end": 37.88,
+     "start": 38.114,
+     "end": 38.754,
      "probability": 0.976447343826294
     },
     {
      "word": " kalau",
-     "start": 37.88,
-     "end": 38.04,
+     "start": 38.754,
+     "end": 38.914,
      "probability": 0.9894328713417053
     },
     {
      "word": " korang",
-     "start": 38.04,
-     "end": 38.38,
+     "start": 38.914,
+     "end": 39.254,
      "probability": 0.999919593334198
     },
     {
      "word": " nak",
-     "start": 38.38,
-     "end": 38.46,
+     "start": 39.254,
+     "end": 39.334,
      "probability": 0.999503493309021
     }
    ]
@@ -934,8 +934,8 @@
   {
    "id": 11,
    "seek": 2738,
-   "start": 38.46,
-   "end": 40.12,
+   "start": 39.334,
+   "end": 40.994,
    "text": " buat potong sudut korang",
    "tokens": [
     50924,
@@ -955,26 +955,26 @@
    "words": [
     {
      "word": " buat",
-     "start": 38.46,
-     "end": 38.66,
+     "start": 39.334,
+     "end": 39.534,
      "probability": 0.9908444285392761
     },
     {
      "word": " potong",
-     "start": 38.66,
-     "end": 39.0,
+     "start": 39.534,
+     "end": 39.874,
      "probability": 0.9984980523586273
     },
     {
      "word": " sudut",
-     "start": 39.0,
-     "end": 39.44,
+     "start": 39.874,
+     "end": 40.314,
      "probability": 0.9992676973342896
     },
     {
      "word": " korang",
-     "start": 39.44,
-     "end": 40.12,
+     "start": 40.314,
+     "end": 40.994,
      "probability": 0.9489335417747498
     }
    ]
@@ -982,8 +982,8 @@
   {
    "id": 12,
    "seek": 2738,
-   "start": 40.12,
-   "end": 42.46,
+   "start": 40.994,
+   "end": 43.467,
    "text": " korang ajar skru ni boleh adjust tapak dia ni",
    "tokens": [
     51005,
@@ -1009,56 +1009,56 @@
    "words": [
     {
      "word": " korang",
-     "start": 40.12,
-     "end": 40.44,
+     "start": 40.994,
+     "end": 41.447,
      "probability": 0.5024915947578847
     },
     {
      "word": " ajar",
-     "start": 40.44,
-     "end": 40.64,
+     "start": 41.447,
+     "end": 41.647,
      "probability": 0.4567990154027939
     },
     {
      "word": " skru",
-     "start": 40.64,
-     "end": 40.94,
+     "start": 41.647,
+     "end": 41.947,
      "probability": 0.9507534503936768
     },
     {
      "word": " ni",
-     "start": 40.94,
-     "end": 41.12,
+     "start": 41.947,
+     "end": 42.127,
      "probability": 0.999415397644043
     },
     {
      "word": " boleh",
-     "start": 41.12,
-     "end": 41.4,
+     "start": 42.127,
+     "end": 42.407,
      "probability": 0.9094996452331543
     },
     {
      "word": " adjust",
-     "start": 41.4,
-     "end": 41.68,
+     "start": 42.407,
+     "end": 42.687,
      "probability": 0.983991265296936
     },
     {
      "word": " tapak",
-     "start": 41.68,
-     "end": 42.22,
+     "start": 42.687,
+     "end": 43.227,
      "probability": 0.9854004383087158
     },
     {
      "word": " dia",
-     "start": 42.22,
-     "end": 42.32,
+     "start": 43.227,
+     "end": 43.327,
      "probability": 0.9996021389961243
     },
     {
      "word": " ni",
-     "start": 42.32,
-     "end": 42.46,
+     "start": 43.327,
+     "end": 43.467,
      "probability": 0.9637851715087891
     }
    ]
@@ -1066,8 +1066,8 @@
   {
    "id": 13,
    "seek": 2738,
-   "start": 42.46,
-   "end": 44.48,
+   "start": 43.467,
+   "end": 45.487,
    "text": " 45 dajah maksimum dia",
    "tokens": [
     51125,
@@ -1088,26 +1088,26 @@
    "words": [
     {
      "word": " 45",
-     "start": 42.46,
-     "end": 42.92,
+     "start": 43.467,
+     "end": 43.927,
      "probability": 0.9772805571556091
     },
     {
      "word": " dajah",
-     "start": 42.92,
-     "end": 43.82,
+     "start": 43.927,
+     "end": 44.827,
      "probability": 0.830548624197642
     },
     {
      "word": " maksimum",
-     "start": 43.82,
-     "end": 44.34,
+     "start": 44.827,
+     "end": 45.347,
      "probability": 0.9042331178983053
     },
     {
      "word": " dia",
-     "start": 44.34,
-     "end": 44.48,
+     "start": 45.347,
+     "end": 45.487,
      "probability": 0.9961156845092773
     }
    ]
@@ -1115,8 +1115,8 @@
   {
    "id": 14,
    "seek": 2738,
-   "start": 44.48,
-   "end": 46.44,
+   "start": 45.487,
+   "end": 47.58,
    "text": " jadi kalau korang ada",
    "tokens": [
     51224,
@@ -1134,26 +1134,26 @@
    "words": [
     {
      "word": " jadi",
-     "start": 44.48,
-     "end": 45.4,
+     "start": 45.487,
+     "end": 46.54,
      "probability": 0.9283679127693176
     },
     {
      "word": " kalau",
-     "start": 45.4,
-     "end": 45.96,
+     "start": 46.54,
+     "end": 47.1,
      "probability": 0.9996408224105835
     },
     {
      "word": " korang",
-     "start": 45.96,
-     "end": 46.34,
+     "start": 47.1,
+     "end": 47.48,
      "probability": 0.9999246001243591
     },
     {
      "word": " ada",
-     "start": 46.34,
-     "end": 46.44,
+     "start": 47.48,
+     "end": 47.58,
      "probability": 0.9995143413543701
     }
    ]
@@ -1161,8 +1161,8 @@
   {
    "id": 15,
    "seek": 2738,
-   "start": 46.44,
-   "end": 48.32,
+   "start": 47.58,
+   "end": 49.46,
    "text": " budget terus ambil 2 bateri",
    "tokens": [
     51324,
@@ -1182,32 +1182,32 @@
    "words": [
     {
      "word": " budget",
-     "start": 46.44,
-     "end": 46.82,
+     "start": 47.58,
+     "end": 47.96,
      "probability": 0.7845613956451416
     },
     {
      "word": " terus",
-     "start": 46.82,
-     "end": 47.12,
+     "start": 47.96,
+     "end": 48.26,
      "probability": 0.9977693557739258
     },
     {
      "word": " ambil",
-     "start": 47.12,
-     "end": 47.56,
+     "start": 48.26,
+     "end": 48.7,
      "probability": 0.9913991391658783
     },
     {
      "word": " 2",
-     "start": 47.56,
-     "end": 47.82,
+     "start": 48.7,
+     "end": 48.96,
      "probability": 0.9862749576568604
     },
     {
      "word": " bateri",
-     "start": 47.82,
-     "end": 48.32,
+     "start": 48.96,
+     "end": 49.46,
      "probability": 0.9863787293434143
     }
    ]
@@ -1215,8 +1215,8 @@
   {
    "id": 16,
    "seek": 2738,
-   "start": 48.32,
-   "end": 50.4,
+   "start": 49.46,
+   "end": 51.673,
    "text": " senang buat extra, jadi yang mana korang tengah",
    "tokens": [
     51415,
@@ -1241,50 +1241,50 @@
    "words": [
     {
      "word": " senang",
-     "start": 48.32,
-     "end": 48.7,
+     "start": 49.46,
+     "end": 49.84,
      "probability": 0.9961872398853302
     },
     {
      "word": " buat",
-     "start": 48.7,
-     "end": 48.88,
+     "start": 49.84,
+     "end": 50.02,
      "probability": 0.9683316946029663
     },
     {
      "word": " extra,",
-     "start": 48.88,
-     "end": 49.16,
+     "start": 50.02,
+     "end": 50.3,
      "probability": 0.9903343319892883
     },
     {
      "word": " jadi",
-     "start": 49.3,
-     "end": 49.46,
+     "start": 50.434,
+     "end": 50.733,
      "probability": 0.993916928768158
     },
     {
      "word": " yang",
-     "start": 49.46,
-     "end": 49.66,
+     "start": 50.733,
+     "end": 50.933,
      "probability": 0.9998512268066406
     },
     {
      "word": " mana",
-     "start": 49.66,
-     "end": 49.9,
+     "start": 50.933,
+     "end": 51.173,
      "probability": 0.9999688863754272
     },
     {
      "word": " korang",
-     "start": 49.9,
-     "end": 50.2,
+     "start": 51.173,
+     "end": 51.473,
      "probability": 0.9998510181903839
     },
     {
      "word": " tengah",
-     "start": 50.2,
-     "end": 50.4,
+     "start": 51.473,
+     "end": 51.673,
      "probability": 0.9990455806255341
     }
    ]
@@ -1292,8 +1292,8 @@
   {
    "id": 17,
    "seek": 2738,
-   "start": 50.4,
-   "end": 52.46,
+   "start": 51.673,
+   "end": 53.867,
    "text": " mencari C-Closer boleh cuba brand daripada",
    "tokens": [
     51519,
@@ -1321,44 +1321,44 @@
    "words": [
     {
      "word": " mencari",
-     "start": 50.4,
-     "end": 50.68,
+     "start": 51.673,
+     "end": 51.953,
      "probability": 0.9962173302968343
     },
     {
      "word": " C",
-     "start": 50.68,
-     "end": 50.86,
+     "start": 51.953,
+     "end": 52.133,
      "probability": 0.29700878262519836
     },
     {
      "word": "-Closer",
-     "start": 50.86,
-     "end": 51.26,
+     "start": 52.133,
+     "end": 52.533,
      "probability": 0.7084491103887558
     },
     {
      "word": " boleh",
-     "start": 51.26,
-     "end": 51.56,
+     "start": 52.533,
+     "end": 52.967,
      "probability": 0.7553333044052124
     },
     {
      "word": " cuba",
-     "start": 51.56,
-     "end": 51.9,
+     "start": 52.967,
+     "end": 53.307,
      "probability": 0.9955659210681915
     },
     {
      "word": " brand",
-     "start": 51.9,
-     "end": 52.1,
+     "start": 53.307,
+     "end": 53.507,
      "probability": 0.9894253015518188
     },
     {
      "word": " daripada",
-     "start": 52.1,
-     "end": 52.46,
+     "start": 53.507,
+     "end": 53.867,
      "probability": 0.981800893942515
     }
    ]
@@ -1366,8 +1366,8 @@
   {
    "id": 18,
    "seek": 2738,
-   "start": 52.46,
-   "end": 54.42,
+   "start": 53.867,
+   "end": 55.827,
    "text": " X-Tay ni, boleh tengok dekat bag dekat bawah",
    "tokens": [
     51621,
@@ -1396,60 +1396,61 @@
    "words": [
     {
      "word": " X",
-     "start": 52.46,
-     "end": 52.66,
+     "start": 53.867,
+     "end": 54.067,
      "probability": 0.9601787328720093
     },
     {
      "word": "-Tay",
-     "start": 52.66,
-     "end": 52.88,
+     "start": 54.067,
+     "end": 54.287,
      "probability": 0.5872209668159485
     },
     {
      "word": " ni,",
-     "start": 52.88,
-     "end": 53.0,
+     "start": 54.287,
+     "end": 54.407,
      "probability": 0.9901660084724426
     },
     {
      "word": " boleh",
-     "start": 53.04,
-     "end": 53.32,
+     "start": 54.447,
+     "end": 54.727,
      "probability": 0.9999648332595825
     },
     {
      "word": " tengok",
-     "start": 53.32,
-     "end": 53.62,
+     "start": 54.727,
+     "end": 55.027,
      "probability": 0.9998941123485565
     },
     {
      "word": " dekat",
-     "start": 53.62,
-     "end": 53.78,
+     "start": 55.027,
+     "end": 55.187,
      "probability": 0.9722726345062256
     },
     {
      "word": " bag",
-     "start": 53.78,
-     "end": 53.98,
+     "start": 55.187,
+     "end": 55.387,
      "probability": 0.693828284740448
     },
     {
      "word": " dekat",
-     "start": 53.98,
-     "end": 54.16,
+     "start": 55.387,
+     "end": 55.567,
      "probability": 0.9926138520240784
     },
     {
      "word": " bawah",
-     "start": 54.16,
-     "end": 54.42,
+     "start": 55.567,
+     "end": 55.827,
      "probability": 0.9994639456272125
     }
    ]
   }
  ],
- "language": "ms"
+ "language": "ms",
+ "retimed": "word times carried from /tmp/claude-0/-home-user-AI-TikTok-Affiliate-Auto-Video-Editor---18-Videos-Daily/6629750a-8b3d-53ef-8cd0-c54d4c2cd5e0/scratchpad/v17/build/spine_map_v1.json to /tmp/claude-0/-home-user-AI-TikTok-Affiliate-Auto-Video-Editor---18-Videos-Daily/6629750a-8b3d-53ef-8cd0-c54d4c2cd5e0/scratchpad/v17/build/spine_map.json (tail guard rebuild)"
 }
