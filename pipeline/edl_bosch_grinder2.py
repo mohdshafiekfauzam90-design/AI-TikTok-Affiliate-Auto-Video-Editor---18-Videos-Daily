@@ -33,7 +33,7 @@ KEEPS = [
     (40.40, 42.20, "speech", "Yang ni original."),
     (44.15, 49.75, "exact", "Dia pakai plug pin yang biasa kita guna je, dia datang dengan kotak macam ni tau."),
     (61.15, 72.00, "exact", "Dekat dalam dia korang akan dapat aksesori dia macam ni, handle ni dia ada tulisan Bosch, lepas tu pembuka dia, ni cover dia, cover pun tebal."),
-    (79.37, 89.45, "exact", "(edge keep: \"pakai lama\" ends just before) Jadi yang mana korang nak buat kerja lasak, nak guna seharian tu, boleh beli yang ni geng, memang tahan lasak untuk jenama Bosch.", {"edge": "keep"}),
+    (80.38, 89.45, "exact", "(edge keep: silence 80.18-80.40 before it; earlier starts kept a \"lama\" fragment, re-checked) Jadi yang mana korang nak buat kerja lasak, nak guna seharian tu, boleh beli yang ni geng, memang tahan lasak untuk jenama Bosch.", {"edge": "keep"}),
     (96.00, 102.50, "speech", "Terus beli brand daripada Bosch, harga sekarang pun tak mahal mana, mampu milik je, boleh tengok dekat beg dekat bawah."),
     (102.60, 103.30, "demo", "end plate under CTA"),
 ]
