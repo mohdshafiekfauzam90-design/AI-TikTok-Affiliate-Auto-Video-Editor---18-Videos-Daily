@@ -292,15 +292,15 @@ for gi, g in enumerate(caps):
             cap_js.append(f'    tl.set("#cw{gi}-{wi}", {{ color: "#FFFFFF" }}, {g["words"][wi+1]["start"]});')
 caps_css = """
       .cg { position:absolute; left:70px; right:150px; top:1205px; text-align:center; overflow:visible; }
-      .cg .line { display:inline-block; font-family:'Inter',sans-serif; font-weight:900; font-size:78px; line-height:1.08;
-        letter-spacing:-.01em; color:var(--white); paint-order:stroke fill; -webkit-text-stroke:12px var(--ink);
+      .cg .line { display:inline-block; font-family:'Inter',sans-serif; font-weight:900; font-size:64px; line-height:1.08;   /* owner: subtitles a little smaller (was 78) */
+        letter-spacing:-.01em; color:var(--white); paint-order:stroke fill; -webkit-text-stroke:10px var(--ink);
         text-shadow:0 8px 22px rgba(0,0,0,.55); }
 """
 caps_js = "\n".join(cap_js) + """
     // fit each group to the caption box
     document.querySelectorAll("#captions .cg .line").forEach((el) => {
       const fit = window.__hyperframes && window.__hyperframes.fitTextFontSize
-        ? window.__hyperframes.fitTextFontSize(el.textContent, { fontFamily: "Inter", fontWeight: 900, maxWidth: 820, baseFontSize: 78, minFontSize: 50 })
+        ? window.__hyperframes.fitTextFontSize(el.textContent, { fontFamily: "Inter", fontWeight: 900, maxWidth: 820, baseFontSize: 64, minFontSize: 44 })
         : null;
       if (fit && fit.fontSize) el.style.fontSize = fit.fontSize + "px";
     });

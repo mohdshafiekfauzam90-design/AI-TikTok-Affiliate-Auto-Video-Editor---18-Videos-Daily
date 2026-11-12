@@ -22,6 +22,9 @@ visuals, prices, discounts or specs not in the footage or speech. Keep the MUROH
 (brand tag + sign-off; palette yellow #FFD21F, red #E5252A, ink #0D0D0D unless the owner gives an official one).
 Never put a "REVIEW JUJUR · MUROH DOOH" line (or any "review jujur" kicker) on the hook: the owner asked for it gone.
 
+Subtitles: the owner asked for them a little smaller. Caption `.cg .line` font-size 64px (was 78), text-stroke 10px,
+`fitTextFontSize(... baseFontSize: 64, minFontSize: 44)`; copy this from `pipeline/gen_backpack_battery2.py`.
+
 ## Short cartoon animations on key points ("toons", standing request)
 
 Keep the edit style as it is, and add a small cartoon explainer only where a key point needs explaining:
