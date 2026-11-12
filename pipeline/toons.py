@@ -18,6 +18,7 @@ outlines in the MUROH DOOH palette) placed in a free corner, popping in and out 
     bolt_tighten   a bolt turns and drives into a plate  (impact wrench)
     wind_flow      curved air lines stream out of a fan  (fan)
     pivot_fold     a pistol-grip screwdriver's handle swings round to straight  ("tekan, pusing", lurus)
+    light_beam     a work lamp switches on and throws a fan of light  (work light: terang, mod cahaya)
 """
 INK, YEL, RED, WHITE = "#0D0D0D", "#FFD21F", "#E5252A", "#FFFFFF"
 
@@ -140,6 +141,15 @@ def toon(kind, tid, dur):
                f'<circle cx="112" cy="102" r="9" fill="{INK}"/>')
         js = (f'    tl.fromTo("#{p}-h", {{ rotation: 0, svgOrigin: "112 102" }}, {{ rotation: 90, duration: 0.6, ease: "back.out(1.6)" }}, 0.45);\n'
               f'    tl.to("#{p}-h", {{ rotation: 0, duration: 0.6, ease: "back.out(1.6)" }}, {round(max(1.3, dur - 1.0), 3)});\n')
+    elif kind == "light_beam":
+        leds = "".join(f'<circle id="{p}-l{i}" cx="{56 + 18 * (i % 3)}" cy="{78 + 18 * (i // 3)}" r="6" fill="#8A8F96"/>' for i in range(9))
+        rays = "".join(f'<path id="{p}-r{i}" d="M120 100 L300 {100 + y0} L300 {100 + y1} Z" fill="{YEL if i % 2 else WHITE}" opacity="0"/>'
+                       for i, (y0, y1) in enumerate([(-96, -60), (-46, -14), (0, 34), (48, 84)]))
+        svg = (rays + f'<rect x="38" y="60" width="86" height="80" rx="12" fill="{INK}" stroke="{YEL}" stroke-width="8"/>' + leds +
+               f'<path d="M48 140 L40 176 M114 140 L122 176 M32 176 H130" stroke="{INK}" stroke-width="8" stroke-linecap="round"/>')
+        js = ("".join(f'    tl.to("#{p}-l{i}", {{ attr: {{ fill: "{WHITE}" }}, duration: 0.08 }}, {round(0.35 + 0.03 * i, 3)});\n' for i in range(9)) +
+              "".join(f'    tl.fromTo("#{p}-r{i}", {{ opacity: 0, scaleX: 0.2, svgOrigin: "120 100" }}, {{ opacity: 0.85, scaleX: 1, duration: 0.35, ease: "power2.out" }}, {round(0.55 + 0.06 * i, 3)});\n'
+                      f'    tl.to("#{p}-r{i}", {{ opacity: 0.45, duration: 0.3, repeat: 2, yoyo: true, ease: "sine.inOut" }}, {round(1.0 + 0.06 * i, 3)});\n' for i in range(4)))
     else:
         raise ValueError(kind)
     html = f'    <div class="toon"><svg viewBox="0 0 320 200" aria-hidden="true">{svg}</svg></div>\n'

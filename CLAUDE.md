@@ -22,6 +22,10 @@ visuals, prices, discounts or specs not in the footage or speech. Keep the MUROH
 (brand tag + sign-off; palette yellow #FFD21F, red #E5252A, ink #0D0D0D unless the owner gives an official one).
 Never put a "REVIEW JUJUR · MUROH DOOH" line (or any "review jujur" kicker) on the hook: the owner asked for it gone.
 
+Length: every video between 30 s and 1 min (aim ~45–58 s with the CTA hold). Keep only the important
+points; drop asides, repeats and weak lines even when they are clean. Give each key point a punch-in zoom
+(`EMPH`, about 1.08–1.12×, one per important point, natural, never excessive).
+
 Subtitles: the owner asked for them a little smaller. Caption `.cg .line` font-size 64px (was 78), text-stroke 10px,
 `fitTextFontSize(... baseFontSize: 64, minFontSize: 44)`; copy this from `pipeline/gen_backpack_battery2.py`.
 
