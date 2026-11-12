@@ -17,6 +17,7 @@ outlines in the MUROH DOOH palette) placed in a free corner, popping in and out 
     drill_wall     a drill bit pushes through a wall, dust flying out  (drill)
     bolt_tighten   a bolt turns and drives into a plate  (impact wrench)
     wind_flow      curved air lines stream out of a fan  (fan)
+    pivot_fold     a pistol-grip screwdriver's handle swings round to straight  ("tekan, pusing", lurus)
 """
 INK, YEL, RED, WHITE = "#0D0D0D", "#FFD21F", "#E5252A", "#FFFFFF"
 
@@ -130,6 +131,15 @@ def toon(kind, tid, dur):
                f'<circle cx="64" cy="100" r="10" fill="{INK}"/></g>')
         js = (f'    tl.fromTo("#{p}-f", {{ rotation: 0, svgOrigin: "64 100" }}, {{ rotation: 1080, duration: {round(dur - 0.3, 3)}, ease: "none" }}, 0.1);\n' +
               "".join(f'    tl.fromTo("#{p}-w{i}", {{ strokeDashoffset: 0 }}, {{ strokeDashoffset: -280, duration: {round(dur - 0.3, 3)}, ease: "none" }}, 0.1);\n' for i in range(3)))
+    elif kind == "pivot_fold":
+        svg = (f'<rect x="236" y="90" width="44" height="22" rx="4" fill="#C9CDD2" stroke="{INK}" stroke-width="5"/>'
+               f'<path d="M280 90 L304 101 L280 112 Z" fill="#C9CDD2" stroke="{INK}" stroke-width="5" stroke-linejoin="round"/>'
+               f'<g id="{p}-h"><rect x="92" y="96" width="40" height="92" rx="14" fill="#2A2A2A" stroke="{INK}" stroke-width="6"/>'
+               f'<rect x="102" y="120" width="20" height="44" rx="6" fill="{YEL}"/></g>'
+               f'<rect x="106" y="78" width="134" height="48" rx="16" fill="{YEL}" stroke="{INK}" stroke-width="7"/>'
+               f'<circle cx="112" cy="102" r="9" fill="{INK}"/>')
+        js = (f'    tl.fromTo("#{p}-h", {{ rotation: 0, svgOrigin: "112 102" }}, {{ rotation: 90, duration: 0.6, ease: "back.out(1.6)" }}, 0.45);\n'
+              f'    tl.to("#{p}-h", {{ rotation: 0, duration: 0.6, ease: "back.out(1.6)" }}, {round(max(1.3, dur - 1.0), 3)});\n')
     else:
         raise ValueError(kind)
     html = f'    <div class="toon"><svg viewBox="0 0 320 200" aria-hidden="true">{svg}</svg></div>\n'
