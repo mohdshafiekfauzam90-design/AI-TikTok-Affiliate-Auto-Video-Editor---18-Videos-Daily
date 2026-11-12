@@ -195,6 +195,18 @@ card_scene("charger", 56.2, 66.45, 15, [
     ("ch-b", 60.35, 63.42, '<div class="k">CHARGER BIASA</div><div class="v">LAMA NAK PENUH</div>', []),
     ("ch-c", 63.5, 66.4, '<div class="k">CHARGER DIA</div><div class="v">WATT TINGGI</div>', []),
 ], css=TOP_CARD_CSS)
+# ------------------------------------------------------------- 6c. TOONS (owner's request, v2)
+# Short cartoon explainers only on the key points, 1-3 s each, in a free corner beside the card
+# (never over the battery, its label/indicator, his face or the demo: top right is bare wall there). Battery product = energy flowing.
+from toons import toon, TOP_RIGHT, BOTTOM_RIGHT
+TOONS = [("t-ind", "battery_fill", 34.15, 2.3, TOP_RIGHT),       # "senang korang nak monitor" (indicator)
+         ("t-cab", "energy_cable", 37.45, 2.25, TOP_RIGHT),        # "kabel dia ni lebih kurang 1 meter"
+         ("t-run", "long_runtime", 53.9, 2.2, TOP_RIGHT),          # "memang boleh guna lama"
+         ("t-chg", "fast_charge", 63.6, 2.6, TOP_RIGHT)]         # "dia bagi charger ni, watt dia pun tinggi"
+for k, (tid, kind, t0, d, pos) in enumerate(TOONS):
+    th, tc, tj = toon(kind, tid, d)
+    hosts.append(scene(tid, t0, d, th, tc + pos.format(tid=tid), tj, 21 + k))
+
 # ------------------------------------------------------------- 7. CTA (64.75 - end)
 C0 = 66.45; CD = r(DUR - C0)
 def LC(t): return r(t - C0)
@@ -304,6 +316,7 @@ SFX = [
     (32.18, "whoosh-short", 0.22), (34.04, "ping", 0.45), (37.28, "pop", 0.45), (40.38, "whoosh-short", 0.22),
     (44.88, "pop", 0.42), (50.88, "whoosh-short", 0.22), (53.24, "pop", 0.4),
     (57.38, "whoosh-short", 0.22), (60.33, "pop", 0.4), (63.48, "pop", 0.42),
+    (34.13, "sparkle", 0.16), (37.43, "sparkle", 0.16), (53.88, "sparkle", 0.16), (63.58, "sparkle", 0.16),
     (66.43, "sparkle", 0.28), (67.23, "impact-bass-2", 0.07),
 ]
 SFX_LEN = {"whoosh-short": 0.57, "whoosh": 0.57, "whoosh-cinematic": 2.5, "pop": 0.72, "ping": 1.32,

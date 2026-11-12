@@ -22,6 +22,17 @@ visuals, prices, discounts or specs not in the footage or speech. Keep the MUROH
 (brand tag + sign-off; palette yellow #FFD21F, red #E5252A, ink #0D0D0D unless the owner gives an official one).
 Never put a "REVIEW JUJUR · MUROH DOOH" line (or any "review jujur" kicker) on the hook: the owner asked for it gone.
 
+## Short cartoon animations on key points ("toons", standing request)
+
+Keep the edit style as it is, and add a small cartoon explainer only where a key point needs explaining:
+1–3 s each, small, clean and professional, never over the product, its label/screen, the presenter's face
+or the real demo (check on snapshots; a free corner beside the card, e.g. top right over bare wall).
+Use `pipeline/toons.py` (`toon(kind, tid, dur)` → its own scene on a free track, with a soft sparkle SFX).
+Match the product: drill → `drill_wall` (bit through a wall), impact wrench → `bolt_tighten`,
+grinder → `sparks`, fan → `wind_flow`, battery → `battery_fill` / `energy_cable` / `long_runtime` /
+`fast_charge` (energy flowing). About 3–5 per video, only on spoken points; add new kinds to `toons.py`
+in the same style when a product needs one. First used in `pipeline/gen_backpack_battery2.py` (v2).
+
 ## Owner's screenshot material ("Bahan screenshot")
 
 The owner may send a Drive folder of official product-listing screenshots after (or with) a video. List it with
