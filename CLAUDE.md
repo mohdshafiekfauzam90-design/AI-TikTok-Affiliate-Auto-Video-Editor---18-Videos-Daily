@@ -34,6 +34,12 @@ cut-list pause trim keeps ~0.26 s (60 % after the word) with a -42 dB silence th
 `pipeline/edl_bosch_grinder.py` (these settings). When checking the spine, also listen for (re-transcribe) the last
 word of every phrase, not only that every word is present.
 
+Spelling (owner: "setiap ejaan tu cek betul-betul dulu"): before composing, print every caption group and read it
+word by word against standard Malay spelling (Dewan), the product's real name on its label/box and the spoken English
+terms (brushless, cordless, RPM...). Fix every ASR slip in `FIX` (e.g. "dajah" -> "darjah", "tahal asap" -> "tahan lasak",
+"bag" -> "beg", "gang" -> "geng"), keep numbers with their units, and only then generate. Also do not cut early: the last
+word of every line must be heard in full (the tail guard above; check the spine transcript ends each line with it).
+
 Subtitles: the owner asked for them a little smaller. Caption `.cg .line` font-size 64px (was 78), text-stroke 10px,
 `fitTextFontSize(... baseFontSize: 64, minFontSize: 44)`; copy this from `pipeline/gen_backpack_battery2.py`.
 
