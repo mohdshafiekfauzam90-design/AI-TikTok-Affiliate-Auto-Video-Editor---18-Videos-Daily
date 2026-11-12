@@ -14,7 +14,7 @@ import json, sys, wave, numpy as np
 
 AUDIO = sys.argv[1]          # 16 kHz mono wav of the original
 OUT = sys.argv[2]
-SNAP, MAX_GAP, KEEP_GAP, THR_DB = 0.12, 0.30, 0.14, -38.0
+SNAP, MAX_GAP, KEEP_GAP, THR_DB = 0.12, 0.40, 0.26, -42.0   # owner: words sounded cut, so pauses keep a fuller tail
 
 w = wave.open(AUDIO); sr = w.getframerate()
 a = np.frombuffer(w.readframes(w.getnframes()), np.int16).astype(np.float32) / 32768
@@ -65,8 +65,8 @@ for k in KEEPS:
             while k < len(quiet) and quiet[k]: k += 1
             gs, ge = (i0 + j) / 100, (i0 + k) / 100
             if ge - gs > MAX_GAP and gs > s2 + 0.05 and ge < e2 - 0.05:
-                half = KEEP_GAP / 2
-                segs.append([cur, round(gs + half, 2), {}]); cur = round(ge - half, 2)
+                tail, lead = KEEP_GAP * 0.6, KEEP_GAP * 0.4      # more room after a word than before the next
+                segs.append([cur, round(gs + tail, 2), {}]); cur = round(ge - lead, 2)
             j = k
         else:
             j += 1

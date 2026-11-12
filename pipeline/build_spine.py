@@ -3,7 +3,8 @@ Each segment is rendered on its own (frame-accurate seek, re-encode), then conca
 so memory stays flat. Original voice kept; the hook = demo picture + the speaker's own
 line over ducked drill sound (or, with "voice": null, a plain in-sync shot). Every audio
 piece gets 8 ms fades so jump cuts never click. A segment may carry "speed" (picture and
-sound sped up together, pitch kept) and "gain" (0 mutes a repeated line under a demo)."""
+sound sped up together, pitch kept) and "gain" (0 mutes a repeated line under a demo).
+Before encoding, every cut is widened to real silence so no word ending is clipped (see the tail guard)."""
 import json, subprocess, sys, os
 from concurrent.futures import ThreadPoolExecutor
 src, edl, out = sys.argv[1], sys.argv[2], sys.argv[3]
@@ -13,6 +14,46 @@ ENC = ["-c:v", "libx264", "-preset", "medium", "-crf", "15", "-pix_fmt", "yuv420
        "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2"]
 
 def run(cmd): subprocess.run(["ffmpeg", "-v", "error", "-y", "-threads", "2"] + cmd, check=True)
+
+# ---- word-tail guard (owner: "banyak perkataan tak penuh", words clipped where a cut follows speech) ----
+# Whisper word ends run early and soft endings (final consonants, a fading vowel) sit around -35..-45 dB,
+# so every cut is checked against the real audio before encoding: an end moves forward to the first truly
+# quiet frame (< QUIET dB, else < SOFT) within TAIL s; a start moves back to a quiet frame within LEAD s;
+# with no quiet frame in reach (continuous speech, a deliberate cut) the edge is left alone. Neither may cross into the neighbouring kept piece. "edge": "keep" on a segment opts out.
+QUIET, SOFT, TAIL, LEAD, PAD_END, PAD_START = -46.0, -40.0, 0.35, 0.20, 0.10, 0.04
+import numpy as np
+_pcm = subprocess.run(["ffmpeg", "-v", "error", "-i", src, "-map", "0:a:0", "-ac", "1", "-ar", "16000", "-f", "s16le", "-"],
+                      capture_output=True).stdout
+_a = np.frombuffer(_pcm, np.int16).astype(np.float32) / 32768
+_hop = 160                                                            # 10 ms frames
+_db = 20 * np.log10(np.sqrt(np.add.reduceat(_a[:len(_a) // _hop * _hop] ** 2, np.arange(0, len(_a) // _hop * _hop, _hop)) / _hop) + 1e-9)
+
+def _tail(t, limit):
+    i0 = int(t * 100); i1 = min(int((t + TAIL) * 100), int(limit * 100), len(_db) - 1)
+    if i1 <= i0: return t
+    w = _db[i0:i1]
+    q = np.where(w < QUIET)[0]
+    if not len(q): q = np.where(w < SOFT)[0]     # no true silence: settle for the end of the soft tail
+    if not len(q): return t                      # continuous speech (a deliberate mid-sentence cut): leave it
+    return round(min((i0 + q[0]) / 100 + PAD_END, limit), 3)   # keep a breath of tail after the word
+
+def _lead(t, limit):
+    i1 = int(t * 100); i0 = max(int((t - LEAD) * 100), int(limit * 100), 0)
+    if i1 <= i0: return t
+    w = _db[i0:i1][::-1]
+    q = np.where(w < QUIET)[0]
+    if not len(q): return t                      # no silence just before: a deliberate cut (e.g. a removed word)
+    return round(max((i1 - q[0]) / 100 - PAD_START, limit), 3)
+
+_segs = d["segments"]; _moves = []
+for j, s in enumerate(_segs):
+    if s.get("edge") == "keep": continue
+    nxt = _segs[j + 1]["src_in"] if j + 1 < len(_segs) and _segs[j + 1]["src_in"] >= s["src_out"] else s["src_out"] + TAIL
+    prv = _segs[j - 1]["src_out"] if j and _segs[j - 1]["src_out"] <= s["src_in"] else s["src_in"] - LEAD
+    a2, b2 = _lead(s["src_in"], prv), _tail(s["src_out"], nxt)
+    if (a2, b2) != (s["src_in"], s["src_out"]):
+        _moves.append((round(s["src_in"], 2), round(s["src_out"], 2), a2, b2)); s["src_in"], s["src_out"] = a2, b2
+print(f"tail guard: {len(_moves)} of {len(_segs)} segments widened", *[f"  {m}" for m in _moves], sep="\n")
 
 def hook():
     if not d["hook"].get("voice"):                    # in-sync hook: an ordinary segment

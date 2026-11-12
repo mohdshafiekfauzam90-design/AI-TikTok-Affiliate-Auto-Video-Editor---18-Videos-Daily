@@ -26,6 +26,14 @@ Length: every video between 30 s and 1 min (aim ~45–58 s with the CTA hold). K
 points; drop asides, repeats and weak lines even when they are clean. Give each key point a punch-in zoom
 (`EMPH`, about 1.08–1.12×, one per important point, natural, never excessive).
 
+Word endings (owner: "banyak perkataan tak penuh, macam cut lepas habis cakap"): never cut tight on the last word.
+`pipeline/build_spine.py` now widens every cut to real silence before encoding (tail guard: an end moves to the first
+frame below -46 dB, else -40 dB, within 0.35 s and keeps ~0.10 s of tail; a start moves back to silence within 0.2 s;
+continuous speech, i.e. a deliberate mid-sentence cut, is left alone; `"edge": "keep"` opts a segment out), and the
+cut-list pause trim keeps ~0.26 s (60 % after the word) with a -42 dB silence threshold. Copy the cut list from
+`pipeline/edl_bosch_grinder.py` (these settings). When checking the spine, also listen for (re-transcribe) the last
+word of every phrase, not only that every word is present.
+
 Subtitles: the owner asked for them a little smaller. Caption `.cg .line` font-size 64px (was 78), text-stroke 10px,
 `fitTextFontSize(... baseFontSize: 64, minFontSize: 44)`; copy this from `pipeline/gen_backpack_battery2.py`.
 
@@ -54,7 +62,7 @@ say so in the reply. Deliver the result as a new file (`..._v2.mp4`), never over
 
 1. **Get the video**: from a Drive link id, `curl -L -o raw.mp4 "https://drive.usercontent.google.com/download?id=<ID>&export=download&confirm=t"` into the scratchpad.
 2. **Transcribe**: Whisper large-v3 on a 16 kHz mono wav; check key numbers/specs with a second, unprompted pass.
-3. **Cut list**: copy `pipeline/edl_work_light.py` (the newest, most general one) to `pipeline/edl_<video>.py`
+3. **Cut list**: copy `pipeline/edl_bosch_grinder.py` (the newest, with the fuller pause tails) to `pipeline/edl_<video>.py`
    and set `KEEPS`, `MANUAL_CUTS` and `HOOK`. A keep may carry `{"speed": 1.5}` (a slow demo) or `{"gain": 0}`
    (mute a repeated line under a demo shot); `HOOK` with `voice=None` is an in-sync hook shot. Check segment ends
    against the audio level: whisper word ends are often ~0.2 s early, and a clipped last word shows up in step 5.
