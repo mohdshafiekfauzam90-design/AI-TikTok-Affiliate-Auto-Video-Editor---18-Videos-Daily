@@ -1,0 +1,2681 @@
+{
+ "text": " untuk model ni yang ni dia ada 3 size lah korang boleh pilih untuk kapasiti tank dia lah untuk kapasiti tank dia ok yang tadi tu delete untuk kapasiti tank dia dia ada 3 model yang saya pegang ni yang kat depan saya ni size 8 liter satu lagi korang boleh pilih 30 liter satu lagi 50 liter dia ada 3 model tank berbeza size jadi untuk yang ni jenis silent free oil, tak perlu pun nak jaga minyak jadi senang cerita jenis free maintenance lah korang boleh dengar bunyi dia memang tak bising angin dia kuat angin dia kuat tau nampak bunyi dia memang tak bising untuk saiz 8 liter ni dia nak ambil masa penuh satu tank ni lebih kurang dalam 1 minit kategori laju jugalah jadi kalau korang beli korang juga akan dapat sekali dengan nozzle dia satu set lah satu set korang akan dapat semuanya balik terus boleh guna kalau korang nak ambil yang 8 liter ni sesuai lah macam korang nak buat bersih-bersih carburetor ke nak buat poman motor ke boleh ambil yang 8 liter ni tapi kalau korang ada bajet terus ambil yang 30 ataupun 50 liter nak buat cap motor cap kereta 30 ke atas lah lagi sesuai harga tak mahal mana mana kualiti cantik je kan. Jenis silent. Memang tak menggaguh jiran-jiran. Jadi kalau korang berminat boleh tengok dekat bag dekat bawah.",
+ "segments": [
+  {
+   "id": 0,
+   "seek": 0,
+   "start": 0.0,
+   "end": 2.66,
+   "text": " untuk model ni yang ni dia ada",
+   "tokens": [
+    50365,
+    12711,
+    2316,
+    3867,
+    5581,
+    3867,
+    6801,
+    11063,
+    50504
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.1512084823470932,
+   "compression_ratio": 2.1324503311258276,
+   "no_speech_prob": 0.011771362274885178,
+   "words": [
+    {
+     "word": " untuk",
+     "start": 0.0,
+     "end": 0.78,
+     "probability": 0.48759377002716064
+    },
+    {
+     "word": " model",
+     "start": 0.78,
+     "end": 1.42,
+     "probability": 0.9645185470581055
+    },
+    {
+     "word": " ni",
+     "start": 1.42,
+     "end": 1.76,
+     "probability": 0.9579623341560364
+    },
+    {
+     "word": " yang",
+     "start": 1.76,
+     "end": 1.94,
+     "probability": 0.5391781330108643
+    },
+    {
+     "word": " ni",
+     "start": 1.94,
+     "end": 2.16,
+     "probability": 0.9794753789901733
+    },
+    {
+     "word": " dia",
+     "start": 2.16,
+     "end": 2.42,
+     "probability": 0.9734696745872498
+    },
+    {
+     "word": " ada",
+     "start": 2.42,
+     "end": 2.66,
+     "probability": 0.9996222257614136
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "seek": 0,
+   "start": 2.66,
+   "end": 4.88,
+   "text": " 3 size lah korang boleh",
+   "tokens": [
+    50504,
+    805,
+    2744,
+    26532,
+    14784,
+    656,
+    25835,
+    50615
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.1512084823470932,
+   "compression_ratio": 2.1324503311258276,
+   "no_speech_prob": 0.011771362274885178,
+   "words": [
+    {
+     "word": " 3",
+     "start": 2.66,
+     "end": 3.16,
+     "probability": 0.9030366539955139
+    },
+    {
+     "word": " size",
+     "start": 3.16,
+     "end": 4.24,
+     "probability": 0.5976120829582214
+    },
+    {
+     "word": " lah",
+     "start": 4.24,
+     "end": 4.42,
+     "probability": 0.9870254397392273
+    },
+    {
+     "word": " korang",
+     "start": 4.42,
+     "end": 4.64,
+     "probability": 0.9952488541603088
+    },
+    {
+     "word": " boleh",
+     "start": 4.64,
+     "end": 4.88,
+     "probability": 0.999934196472168
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "seek": 0,
+   "start": 4.88,
+   "end": 6.5,
+   "text": " pilih untuk kapasiti tank dia lah",
+   "tokens": [
+    50615,
+    280,
+    2312,
+    71,
+    12711,
+    13816,
+    296,
+    8707,
+    5466,
+    6801,
+    26532,
+    50697
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.1512084823470932,
+   "compression_ratio": 2.1324503311258276,
+   "no_speech_prob": 0.011771362274885178,
+   "words": [
+    {
+     "word": " pilih",
+     "start": 4.88,
+     "end": 5.22,
+     "probability": 0.9997878869374593
+    },
+    {
+     "word": " untuk",
+     "start": 5.22,
+     "end": 5.4,
+     "probability": 0.998770534992218
+    },
+    {
+     "word": " kapasiti",
+     "start": 5.4,
+     "end": 5.88,
+     "probability": 0.9900763432184855
+    },
+    {
+     "word": " tank",
+     "start": 5.88,
+     "end": 6.24,
+     "probability": 0.9975651502609253
+    },
+    {
+     "word": " dia",
+     "start": 6.24,
+     "end": 6.38,
+     "probability": 0.9812939763069153
+    },
+    {
+     "word": " lah",
+     "start": 6.38,
+     "end": 6.5,
+     "probability": 0.9655364751815796
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "seek": 0,
+   "start": 6.5,
+   "end": 8.84,
+   "text": " untuk kapasiti",
+   "tokens": [
+    50697,
+    12711,
+    13816,
+    296,
+    8707,
+    50814
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.1512084823470932,
+   "compression_ratio": 2.1324503311258276,
+   "no_speech_prob": 0.011771362274885178,
+   "words": [
+    {
+     "word": " untuk",
+     "start": 6.5,
+     "end": 7.28,
+     "probability": 0.9639698266983032
+    },
+    {
+     "word": " kapasiti",
+     "start": 7.28,
+     "end": 8.84,
+     "probability": 0.9272329211235046
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "seek": 0,
+   "start": 8.84,
+   "end": 11.02,
+   "text": " tank dia ok yang tadi tu delete",
+   "tokens": [
+    50814,
+    5466,
+    6801,
+    3133,
+    5581,
+    42953,
+    2604,
+    12097,
+    50923
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.1512084823470932,
+   "compression_ratio": 2.1324503311258276,
+   "no_speech_prob": 0.011771362274885178,
+   "words": [
+    {
+     "word": " tank",
+     "start": 8.84,
+     "end": 9.24,
+     "probability": 0.9989929795265198
+    },
+    {
+     "word": " dia",
+     "start": 9.24,
+     "end": 9.44,
+     "probability": 0.9994636178016663
+    },
+    {
+     "word": " ok",
+     "start": 9.44,
+     "end": 9.9,
+     "probability": 0.8124735951423645
+    },
+    {
+     "word": " yang",
+     "start": 9.9,
+     "end": 10.32,
+     "probability": 0.9007560014724731
+    },
+    {
+     "word": " tadi",
+     "start": 10.32,
+     "end": 10.62,
+     "probability": 0.9999074935913086
+    },
+    {
+     "word": " tu",
+     "start": 10.62,
+     "end": 10.82,
+     "probability": 0.9861818552017212
+    },
+    {
+     "word": " delete",
+     "start": 10.82,
+     "end": 11.02,
+     "probability": 0.9653963446617126
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "seek": 0,
+   "start": 11.94,
+   "end": 12.62,
+   "text": " untuk",
+   "tokens": [
+    50923,
+    12711,
+    51013
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.1512084823470932,
+   "compression_ratio": 2.1324503311258276,
+   "no_speech_prob": 0.011771362274885178,
+   "words": [
+    {
+     "word": " untuk",
+     "start": 11.94,
+     "end": 12.62,
+     "probability": 0.9944129586219788
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "seek": 0,
+   "start": 12.62,
+   "end": 14.82,
+   "text": " kapasiti tank dia dia ada 3",
+   "tokens": [
+    51013,
+    13816,
+    296,
+    8707,
+    5466,
+    6801,
+    6801,
+    11063,
+    805,
+    51120
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.1512084823470932,
+   "compression_ratio": 2.1324503311258276,
+   "no_speech_prob": 0.011771362274885178,
+   "words": [
+    {
+     "word": " kapasiti",
+     "start": 12.62,
+     "end": 13.38,
+     "probability": 0.999790608882904
+    },
+    {
+     "word": " tank",
+     "start": 13.38,
+     "end": 13.84,
+     "probability": 0.9966652989387512
+    },
+    {
+     "word": " dia",
+     "start": 13.84,
+     "end": 14.02,
+     "probability": 0.9997689127922058
+    },
+    {
+     "word": " dia",
+     "start": 14.02,
+     "end": 14.26,
+     "probability": 0.9738801121711731
+    },
+    {
+     "word": " ada",
+     "start": 14.26,
+     "end": 14.44,
+     "probability": 0.9998853206634521
+    },
+    {
+     "word": " 3",
+     "start": 14.44,
+     "end": 14.82,
+     "probability": 0.9997593760490417
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "seek": 0,
+   "start": 14.82,
+   "end": 15.42,
+   "text": " model",
+   "tokens": [
+    51120,
+    2316,
+    51147
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.1512084823470932,
+   "compression_ratio": 2.1324503311258276,
+   "no_speech_prob": 0.011771362274885178,
+   "words": [
+    {
+     "word": " model",
+     "start": 14.82,
+     "end": 15.42,
+     "probability": 0.9996449947357178
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "seek": 0,
+   "start": 16.16,
+   "end": 17.88,
+   "text": " yang saya pegang ni",
+   "tokens": [
+    51147,
+    5581,
+    9160,
+    17199,
+    656,
+    3867,
+    51265
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.1512084823470932,
+   "compression_ratio": 2.1324503311258276,
+   "no_speech_prob": 0.011771362274885178,
+   "words": [
+    {
+     "word": " yang",
+     "start": 16.16,
+     "end": 16.84,
+     "probability": 0.9980950951576233
+    },
+    {
+     "word": " saya",
+     "start": 16.84,
+     "end": 17.34,
+     "probability": 0.9736809730529785
+    },
+    {
+     "word": " pegang",
+     "start": 17.34,
+     "end": 17.76,
+     "probability": 0.9977066516876221
+    },
+    {
+     "word": " ni",
+     "start": 17.76,
+     "end": 17.88,
+     "probability": 0.9988940358161926
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "seek": 0,
+   "start": 17.88,
+   "end": 20.9,
+   "text": " yang kat depan saya ni size 8 liter",
+   "tokens": [
+    51265,
+    5581,
+    16536,
+    1367,
+    282,
+    9160,
+    3867,
+    2744,
+    1649,
+    2733,
+    51416
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.1512084823470932,
+   "compression_ratio": 2.1324503311258276,
+   "no_speech_prob": 0.011771362274885178,
+   "words": [
+    {
+     "word": " yang",
+     "start": 17.88,
+     "end": 19.14,
+     "probability": 0.9984385371208191
+    },
+    {
+     "word": " kat",
+     "start": 19.14,
+     "end": 19.3,
+     "probability": 0.9074616432189941
+    },
+    {
+     "word": " depan",
+     "start": 19.3,
+     "end": 19.6,
+     "probability": 0.9996384680271149
+    },
+    {
+     "word": " saya",
+     "start": 19.6,
+     "end": 19.72,
+     "probability": 0.9992799162864685
+    },
+    {
+     "word": " ni",
+     "start": 19.72,
+     "end": 19.98,
+     "probability": 0.9994496703147888
+    },
+    {
+     "word": " size",
+     "start": 19.98,
+     "end": 20.24,
+     "probability": 0.9683167934417725
+    },
+    {
+     "word": " 8",
+     "start": 20.24,
+     "end": 20.54,
+     "probability": 0.9994034767150879
+    },
+    {
+     "word": " liter",
+     "start": 20.54,
+     "end": 20.9,
+     "probability": 0.8306299448013306
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "seek": 0,
+   "start": 20.9,
+   "end": 23.22,
+   "text": " satu lagi korang boleh pilih 30 liter",
+   "tokens": [
+    51416,
+    27679,
+    17742,
+    14784,
+    656,
+    25835,
+    280,
+    2312,
+    71,
+    2217,
+    2733,
+    51531
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.1512084823470932,
+   "compression_ratio": 2.1324503311258276,
+   "no_speech_prob": 0.011771362274885178,
+   "words": [
+    {
+     "word": " satu",
+     "start": 20.9,
+     "end": 21.52,
+     "probability": 0.8917936682701111
+    },
+    {
+     "word": " lagi",
+     "start": 21.52,
+     "end": 21.8,
+     "probability": 0.999976634979248
+    },
+    {
+     "word": " korang",
+     "start": 21.8,
+     "end": 22.06,
+     "probability": 0.9997379183769226
+    },
+    {
+     "word": " boleh",
+     "start": 22.06,
+     "end": 22.28,
+     "probability": 0.9999046325683594
+    },
+    {
+     "word": " pilih",
+     "start": 22.28,
+     "end": 22.52,
+     "probability": 0.9999480247497559
+    },
+    {
+     "word": " 30",
+     "start": 22.52,
+     "end": 22.76,
+     "probability": 0.9978553652763367
+    },
+    {
+     "word": " liter",
+     "start": 22.76,
+     "end": 23.22,
+     "probability": 0.9998637437820435
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "seek": 0,
+   "start": 23.22,
+   "end": 25.2,
+   "text": " satu lagi 50 liter",
+   "tokens": [
+    51531,
+    27679,
+    17742,
+    2625,
+    2733,
+    51630
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.1512084823470932,
+   "compression_ratio": 2.1324503311258276,
+   "no_speech_prob": 0.011771362274885178,
+   "words": [
+    {
+     "word": " satu",
+     "start": 23.22,
+     "end": 24.08,
+     "probability": 0.9900506138801575
+    },
+    {
+     "word": " lagi",
+     "start": 24.08,
+     "end": 24.36,
+     "probability": 0.9999576807022095
+    },
+    {
+     "word": " 50",
+     "start": 24.36,
+     "end": 24.7,
+     "probability": 0.9976535439491272
+    },
+    {
+     "word": " liter",
+     "start": 24.7,
+     "end": 25.2,
+     "probability": 0.9998157620429993
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "seek": 0,
+   "start": 25.2,
+   "end": 27.08,
+   "text": " dia ada 3 model tank",
+   "tokens": [
+    51630,
+    6801,
+    11063,
+    805,
+    2316,
+    5466,
+    51726
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.1512084823470932,
+   "compression_ratio": 2.1324503311258276,
+   "no_speech_prob": 0.011771362274885178,
+   "words": [
+    {
+     "word": " dia",
+     "start": 25.2,
+     "end": 25.44,
+     "probability": 0.9976182579994202
+    },
+    {
+     "word": " ada",
+     "start": 25.44,
+     "end": 25.64,
+     "probability": 0.9998898506164551
+    },
+    {
+     "word": " 3",
+     "start": 25.64,
+     "end": 25.98,
+     "probability": 0.9994282126426697
+    },
+    {
+     "word": " model",
+     "start": 25.98,
+     "end": 26.68,
+     "probability": 0.9987241625785828
+    },
+    {
+     "word": " tank",
+     "start": 26.68,
+     "end": 27.08,
+     "probability": 0.9960149526596069
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "seek": 0,
+   "start": 27.76,
+   "end": 28.82,
+   "text": " berbeza size",
+   "tokens": [
+    51726,
+    5948,
+    650,
+    2394,
+    2744,
+    51818
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.1512084823470932,
+   "compression_ratio": 2.1324503311258276,
+   "no_speech_prob": 0.011771362274885178,
+   "words": [
+    {
+     "word": " berbeza",
+     "start": 27.76,
+     "end": 28.44,
+     "probability": 0.9943702022234598
+    },
+    {
+     "word": " size",
+     "start": 28.44,
+     "end": 28.82,
+     "probability": 0.95655757188797
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "seek": 2882,
+   "start": 28.82,
+   "end": 30.96,
+   "text": " jadi untuk yang ni jenis silent",
+   "tokens": [
+    50365,
+    19399,
+    12711,
+    5581,
+    3867,
+    361,
+    268,
+    271,
+    12784,
+    50479
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.18373092718883954,
+   "compression_ratio": 1.7445652173913044,
+   "no_speech_prob": 0.17452821135520935,
+   "words": [
+    {
+     "word": " jadi",
+     "start": 28.82,
+     "end": 29.32,
+     "probability": 0.2906742990016937
+    },
+    {
+     "word": " untuk",
+     "start": 29.32,
+     "end": 29.82,
+     "probability": 0.9118768572807312
+    },
+    {
+     "word": " yang",
+     "start": 29.82,
+     "end": 30.08,
+     "probability": 0.9649242758750916
+    },
+    {
+     "word": " ni",
+     "start": 30.08,
+     "end": 30.26,
+     "probability": 0.9256410598754883
+    },
+    {
+     "word": " jenis",
+     "start": 30.26,
+     "end": 30.56,
+     "probability": 0.9780969421068827
+    },
+    {
+     "word": " silent",
+     "start": 30.56,
+     "end": 30.96,
+     "probability": 0.943364143371582
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "seek": 2882,
+   "start": 30.96,
+   "end": 33.24,
+   "text": " free oil, tak perlu pun nak jaga minyak",
+   "tokens": [
+    50479,
+    1737,
+    3184,
+    11,
+    991,
+    39779,
+    4468,
+    20332,
+    6368,
+    64,
+    923,
+    88,
+    514,
+    50592
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.18373092718883954,
+   "compression_ratio": 1.7445652173913044,
+   "no_speech_prob": 0.17452821135520935,
+   "words": [
+    {
+     "word": " free",
+     "start": 30.96,
+     "end": 31.5,
+     "probability": 0.8768560886383057
+    },
+    {
+     "word": " oil,",
+     "start": 31.5,
+     "end": 31.86,
+     "probability": 0.9971213936805725
+    },
+    {
+     "word": " tak",
+     "start": 31.96,
+     "end": 32.08,
+     "probability": 0.9991771578788757
+    },
+    {
+     "word": " perlu",
+     "start": 32.08,
+     "end": 32.3,
+     "probability": 0.978203296661377
+    },
+    {
+     "word": " pun",
+     "start": 32.3,
+     "end": 32.5,
+     "probability": 0.9935979843139648
+    },
+    {
+     "word": " nak",
+     "start": 32.5,
+     "end": 32.62,
+     "probability": 0.9725024700164795
+    },
+    {
+     "word": " jaga",
+     "start": 32.62,
+     "end": 32.9,
+     "probability": 0.9996457099914551
+    },
+    {
+     "word": " minyak",
+     "start": 32.9,
+     "end": 33.24,
+     "probability": 0.9995176990826925
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "seek": 2882,
+   "start": 33.24,
+   "end": 34.88,
+   "text": " jadi senang cerita",
+   "tokens": [
+    50592,
+    19399,
+    3151,
+    656,
+    10146,
+    2786,
+    50671
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.18373092718883954,
+   "compression_ratio": 1.7445652173913044,
+   "no_speech_prob": 0.17452821135520935,
+   "words": [
+    {
+     "word": " jadi",
+     "start": 33.24,
+     "end": 33.88,
+     "probability": 0.6109148263931274
+    },
+    {
+     "word": " senang",
+     "start": 33.88,
+     "end": 34.5,
+     "probability": 0.9048919975757599
+    },
+    {
+     "word": " cerita",
+     "start": 34.5,
+     "end": 34.88,
+     "probability": 0.9623233079910278
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "seek": 2882,
+   "start": 34.88,
+   "end": 36.16,
+   "text": " jenis free maintenance lah",
+   "tokens": [
+    50671,
+    361,
+    268,
+    271,
+    1737,
+    11258,
+    26532,
+    50744
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.18373092718883954,
+   "compression_ratio": 1.7445652173913044,
+   "no_speech_prob": 0.17452821135520935,
+   "words": [
+    {
+     "word": " jenis",
+     "start": 34.88,
+     "end": 35.28,
+     "probability": 0.9883948961893717
+    },
+    {
+     "word": " free",
+     "start": 35.28,
+     "end": 35.52,
+     "probability": 0.9923285841941833
+    },
+    {
+     "word": " maintenance",
+     "start": 35.52,
+     "end": 35.84,
+     "probability": 0.5955438613891602
+    },
+    {
+     "word": " lah",
+     "start": 35.84,
+     "end": 36.16,
+     "probability": 0.9161821603775024
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "seek": 2882,
+   "start": 36.16,
+   "end": 38.38,
+   "text": " korang boleh dengar bunyi dia memang tak bising",
+   "tokens": [
+    50744,
+    14784,
+    656,
+    25835,
+    1441,
+    2976,
+    6702,
+    8461,
+    6801,
+    39290,
+    991,
+    272,
+    3436,
+    50849
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.18373092718883954,
+   "compression_ratio": 1.7445652173913044,
+   "no_speech_prob": 0.17452821135520935,
+   "words": [
+    {
+     "word": " korang",
+     "start": 36.16,
+     "end": 36.96,
+     "probability": 0.9492137432098389
+    },
+    {
+     "word": " boleh",
+     "start": 36.96,
+     "end": 37.12,
+     "probability": 0.9997331500053406
+    },
+    {
+     "word": " dengar",
+     "start": 37.12,
+     "end": 37.38,
+     "probability": 0.998932272195816
+    },
+    {
+     "word": " bunyi",
+     "start": 37.38,
+     "end": 37.66,
+     "probability": 0.9491240680217743
+    },
+    {
+     "word": " dia",
+     "start": 37.66,
+     "end": 37.78,
+     "probability": 0.9998799562454224
+    },
+    {
+     "word": " memang",
+     "start": 37.78,
+     "end": 37.94,
+     "probability": 0.9998231530189514
+    },
+    {
+     "word": " tak",
+     "start": 37.94,
+     "end": 38.14,
+     "probability": 0.9998784065246582
+    },
+    {
+     "word": " bising",
+     "start": 38.14,
+     "end": 38.38,
+     "probability": 0.9864281415939331
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "seek": 2882,
+   "start": 39.76,
+   "end": 40.66,
+   "text": " angin dia kuat",
+   "tokens": [
+    50849,
+    364,
+    1494,
+    6801,
+    17807,
+    267,
+    50959
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.18373092718883954,
+   "compression_ratio": 1.7445652173913044,
+   "no_speech_prob": 0.17452821135520935,
+   "words": [
+    {
+     "word": " angin",
+     "start": 39.76,
+     "end": 40.36,
+     "probability": 0.8752318322658539
+    },
+    {
+     "word": " dia",
+     "start": 40.36,
+     "end": 40.46,
+     "probability": 0.9990504384040833
+    },
+    {
+     "word": " kuat",
+     "start": 40.46,
+     "end": 40.66,
+     "probability": 0.9996099174022675
+    }
+   ]
+  },
+  {
+   "id": 20,
+   "seek": 2882,
+   "start": 42.36,
+   "end": 43.48,
+   "text": " angin dia kuat tau",
+   "tokens": [
+    50959,
+    364,
+    1494,
+    6801,
+    17807,
+    267,
+    17842,
+    51117
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.18373092718883954,
+   "compression_ratio": 1.7445652173913044,
+   "no_speech_prob": 0.17452821135520935,
+   "words": [
+    {
+     "word": " angin",
+     "start": 42.36,
+     "end": 42.96,
+     "probability": 0.9786129891872406
+    },
+    {
+     "word": " dia",
+     "start": 42.96,
+     "end": 43.08,
+     "probability": 0.9997783303260803
+    },
+    {
+     "word": " kuat",
+     "start": 43.08,
+     "end": 43.32,
+     "probability": 0.9998700320720673
+    },
+    {
+     "word": " tau",
+     "start": 43.32,
+     "end": 43.48,
+     "probability": 0.6572836637496948
+    }
+   ]
+  },
+  {
+   "id": 21,
+   "seek": 2882,
+   "start": 48.339999999999996,
+   "end": 50.54,
+   "text": " nampak bunyi dia memang tak bising",
+   "tokens": [
+    51117,
+    297,
+    1215,
+    514,
+    6702,
+    8461,
+    6801,
+    39290,
+    991,
+    272,
+    3436,
+    51459
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.18373092718883954,
+   "compression_ratio": 1.7445652173913044,
+   "no_speech_prob": 0.17452821135520935,
+   "words": [
+    {
+     "word": " nampak",
+     "start": 48.339999999999996,
+     "end": 48.94,
+     "probability": 0.8402824401855469
+    },
+    {
+     "word": " bunyi",
+     "start": 48.94,
+     "end": 49.34,
+     "probability": 0.9878579080104828
+    },
+    {
+     "word": " dia",
+     "start": 49.34,
+     "end": 49.5,
+     "probability": 0.9999736547470093
+    },
+    {
+     "word": " memang",
+     "start": 49.5,
+     "end": 49.88,
+     "probability": 0.82393878698349
+    },
+    {
+     "word": " tak",
+     "start": 49.88,
+     "end": 50.2,
+     "probability": 0.9999370574951172
+    },
+    {
+     "word": " bising",
+     "start": 50.2,
+     "end": 50.54,
+     "probability": 0.9989981055259705
+    }
+   ]
+  },
+  {
+   "id": 22,
+   "seek": 2882,
+   "start": 50.54,
+   "end": 52.94,
+   "text": " untuk saiz 8 liter ni",
+   "tokens": [
+    51459,
+    12711,
+    601,
+    590,
+    1649,
+    2733,
+    3867,
+    51575
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.18373092718883954,
+   "compression_ratio": 1.7445652173913044,
+   "no_speech_prob": 0.17452821135520935,
+   "words": [
+    {
+     "word": " untuk",
+     "start": 50.54,
+     "end": 51.26,
+     "probability": 0.9786569476127625
+    },
+    {
+     "word": " saiz",
+     "start": 51.26,
+     "end": 52.06,
+     "probability": 0.8870896995067596
+    },
+    {
+     "word": " 8",
+     "start": 52.06,
+     "end": 52.32,
+     "probability": 0.9901429414749146
+    },
+    {
+     "word": " liter",
+     "start": 52.32,
+     "end": 52.7,
+     "probability": 0.7864027619361877
+    },
+    {
+     "word": " ni",
+     "start": 52.7,
+     "end": 52.94,
+     "probability": 0.975141167640686
+    }
+   ]
+  },
+  {
+   "id": 23,
+   "seek": 2882,
+   "start": 52.94,
+   "end": 54.66,
+   "text": " dia nak ambil",
+   "tokens": [
+    51575,
+    6801,
+    20332,
+    3913,
+    388,
+    51667
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.18373092718883954,
+   "compression_ratio": 1.7445652173913044,
+   "no_speech_prob": 0.17452821135520935,
+   "words": [
+    {
+     "word": " dia",
+     "start": 52.94,
+     "end": 53.14,
+     "probability": 0.509043276309967
+    },
+    {
+     "word": " nak",
+     "start": 53.14,
+     "end": 54.3,
+     "probability": 0.9964419007301331
+    },
+    {
+     "word": " ambil",
+     "start": 54.3,
+     "end": 54.66,
+     "probability": 0.987645149230957
+    }
+   ]
+  },
+  {
+   "id": 24,
+   "seek": 2882,
+   "start": 54.66,
+   "end": 56.44,
+   "text": " masa penuh satu tank ni",
+   "tokens": [
+    51667,
+    29216,
+    3435,
+    3232,
+    27679,
+    5466,
+    3867,
+    51749
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.18373092718883954,
+   "compression_ratio": 1.7445652173913044,
+   "no_speech_prob": 0.17452821135520935,
+   "words": [
+    {
+     "word": " masa",
+     "start": 54.66,
+     "end": 55.18,
+     "probability": 0.9989185333251953
+    },
+    {
+     "word": " penuh",
+     "start": 55.18,
+     "end": 55.76,
+     "probability": 0.9999056756496429
+    },
+    {
+     "word": " satu",
+     "start": 55.76,
+     "end": 55.96,
+     "probability": 0.8565742373466492
+    },
+    {
+     "word": " tank",
+     "start": 55.96,
+     "end": 56.3,
+     "probability": 0.9966427087783813
+    },
+    {
+     "word": " ni",
+     "start": 56.3,
+     "end": 56.44,
+     "probability": 0.9980559349060059
+    }
+   ]
+  },
+  {
+   "id": 25,
+   "seek": 2882,
+   "start": 56.44,
+   "end": 58.04,
+   "text": " lebih kurang dalam 1 minit",
+   "tokens": [
+    51749,
+    20451,
+    10072,
+    656,
+    23063,
+    502,
+    923,
+    270,
+    51830
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.18373092718883954,
+   "compression_ratio": 1.7445652173913044,
+   "no_speech_prob": 0.17452821135520935,
+   "words": [
+    {
+     "word": " lebih",
+     "start": 56.44,
+     "end": 56.64,
+     "probability": 0.9918760061264038
+    },
+    {
+     "word": " kurang",
+     "start": 56.64,
+     "end": 56.88,
+     "probability": 0.9999028444290161
+    },
+    {
+     "word": " dalam",
+     "start": 56.88,
+     "end": 57.08,
+     "probability": 0.9967718720436096
+    },
+    {
+     "word": " 1",
+     "start": 57.08,
+     "end": 57.5,
+     "probability": 0.7808845043182373
+    },
+    {
+     "word": " minit",
+     "start": 57.5,
+     "end": 58.04,
+     "probability": 0.9983887374401093
+    }
+   ]
+  },
+  {
+   "id": 26,
+   "seek": 5804,
+   "start": 58.04,
+   "end": 59.36,
+   "text": " kategori laju jugalah",
+   "tokens": [
+    50365,
+    350,
+    2968,
+    7386,
+    635,
+    8954,
+    9568,
+    16434,
+    50436
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.14583758536101765,
+   "compression_ratio": 2.004366812227074,
+   "no_speech_prob": 0.08212403953075409,
+   "words": [
+    {
+     "word": " kategori",
+     "start": 58.04,
+     "end": 58.66,
+     "probability": 0.8862522641817728
+    },
+    {
+     "word": " laju",
+     "start": 58.66,
+     "end": 59.02,
+     "probability": 0.9949378371238708
+    },
+    {
+     "word": " jugalah",
+     "start": 59.02,
+     "end": 59.36,
+     "probability": 0.9463840425014496
+    }
+   ]
+  },
+  {
+   "id": 27,
+   "seek": 5804,
+   "start": 59.36,
+   "end": 61.24,
+   "text": " jadi kalau korang beli",
+   "tokens": [
+    50436,
+    19399,
+    20218,
+    14784,
+    656,
+    989,
+    72,
+    50527
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.14583758536101765,
+   "compression_ratio": 2.004366812227074,
+   "no_speech_prob": 0.08212403953075409,
+   "words": [
+    {
+     "word": " jadi",
+     "start": 59.36,
+     "end": 60.3,
+     "probability": 0.4872075617313385
+    },
+    {
+     "word": " kalau",
+     "start": 60.3,
+     "end": 60.6,
+     "probability": 0.9779351949691772
+    },
+    {
+     "word": " korang",
+     "start": 60.6,
+     "end": 60.94,
+     "probability": 0.9989470541477203
+    },
+    {
+     "word": " beli",
+     "start": 60.94,
+     "end": 61.24,
+     "probability": 0.9989886283874512
+    }
+   ]
+  },
+  {
+   "id": 28,
+   "seek": 5804,
+   "start": 61.24,
+   "end": 62.1,
+   "text": " korang juga akan dapat",
+   "tokens": [
+    50527,
+    14784,
+    656,
+    14462,
+    16281,
+    35161,
+    50575
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.14583758536101765,
+   "compression_ratio": 2.004366812227074,
+   "no_speech_prob": 0.08212403953075409,
+   "words": [
+    {
+     "word": " korang",
+     "start": 61.24,
+     "end": 61.56,
+     "probability": 0.8577634990215302
+    },
+    {
+     "word": " juga",
+     "start": 61.56,
+     "end": 61.66,
+     "probability": 0.9934157133102417
+    },
+    {
+     "word": " akan",
+     "start": 61.66,
+     "end": 61.86,
+     "probability": 0.9988590478897095
+    },
+    {
+     "word": " dapat",
+     "start": 61.86,
+     "end": 62.1,
+     "probability": 0.9997712969779968
+    }
+   ]
+  },
+  {
+   "id": 29,
+   "seek": 5804,
+   "start": 62.1,
+   "end": 63.28,
+   "text": " sekali dengan nozzle dia",
+   "tokens": [
+    50575,
+    45016,
+    13877,
+    28998,
+    6801,
+    50631
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.14583758536101765,
+   "compression_ratio": 2.004366812227074,
+   "no_speech_prob": 0.08212403953075409,
+   "words": [
+    {
+     "word": " sekali",
+     "start": 62.1,
+     "end": 62.38,
+     "probability": 0.9968917965888977
+    },
+    {
+     "word": " dengan",
+     "start": 62.38,
+     "end": 62.72,
+     "probability": 0.999305248260498
+    },
+    {
+     "word": " nozzle",
+     "start": 62.72,
+     "end": 62.98,
+     "probability": 0.7151414155960083
+    },
+    {
+     "word": " dia",
+     "start": 62.98,
+     "end": 63.28,
+     "probability": 0.9984627962112427
+    }
+   ]
+  },
+  {
+   "id": 30,
+   "seek": 5804,
+   "start": 63.28,
+   "end": 63.96,
+   "text": " satu set lah",
+   "tokens": [
+    50631,
+    27679,
+    992,
+    26532,
+    50668
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.14583758536101765,
+   "compression_ratio": 2.004366812227074,
+   "no_speech_prob": 0.08212403953075409,
+   "words": [
+    {
+     "word": " satu",
+     "start": 63.28,
+     "end": 63.54,
+     "probability": 0.7466951012611389
+    },
+    {
+     "word": " set",
+     "start": 63.54,
+     "end": 63.82,
+     "probability": 0.9994202852249146
+    },
+    {
+     "word": " lah",
+     "start": 63.82,
+     "end": 63.96,
+     "probability": 0.7774218320846558
+    }
+   ]
+  },
+  {
+   "id": 31,
+   "seek": 5804,
+   "start": 63.96,
+   "end": 64.58,
+   "text": " satu set",
+   "tokens": [
+    50668,
+    27679,
+    992,
+    50698
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.14583758536101765,
+   "compression_ratio": 2.004366812227074,
+   "no_speech_prob": 0.08212403953075409,
+   "words": [
+    {
+     "word": " satu",
+     "start": 63.96,
+     "end": 64.34,
+     "probability": 0.8079683780670166
+    },
+    {
+     "word": " set",
+     "start": 64.34,
+     "end": 64.58,
+     "probability": 0.9999939203262329
+    }
+   ]
+  },
+  {
+   "id": 32,
+   "seek": 5804,
+   "start": 64.58,
+   "end": 65.88,
+   "text": " korang akan dapat semuanya",
+   "tokens": [
+    50698,
+    14784,
+    656,
+    16281,
+    35161,
+    4361,
+    84,
+    8791,
+    50761
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.14583758536101765,
+   "compression_ratio": 2.004366812227074,
+   "no_speech_prob": 0.08212403953075409,
+   "words": [
+    {
+     "word": " korang",
+     "start": 64.58,
+     "end": 64.98,
+     "probability": 0.9965197443962097
+    },
+    {
+     "word": " akan",
+     "start": 64.98,
+     "end": 65.08,
+     "probability": 0.9999381303787231
+    },
+    {
+     "word": " dapat",
+     "start": 65.08,
+     "end": 65.34,
+     "probability": 0.9999419450759888
+    },
+    {
+     "word": " semuanya",
+     "start": 65.34,
+     "end": 65.88,
+     "probability": 0.9969921310742696
+    }
+   ]
+  },
+  {
+   "id": 33,
+   "seek": 5804,
+   "start": 65.88,
+   "end": 66.72,
+   "text": " balik terus boleh",
+   "tokens": [
+    50761,
+    3119,
+    1035,
+    35977,
+    25835,
+    50807
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.14583758536101765,
+   "compression_ratio": 2.004366812227074,
+   "no_speech_prob": 0.08212403953075409,
+   "words": [
+    {
+     "word": " balik",
+     "start": 65.88,
+     "end": 66.24,
+     "probability": 0.9965565204620361
+    },
+    {
+     "word": " terus",
+     "start": 66.24,
+     "end": 66.46,
+     "probability": 0.9995970129966736
+    },
+    {
+     "word": " boleh",
+     "start": 66.46,
+     "end": 66.72,
+     "probability": 0.999868631362915
+    }
+   ]
+  },
+  {
+   "id": 34,
+   "seek": 5804,
+   "start": 66.72,
+   "end": 67.46,
+   "text": " guna",
+   "tokens": [
+    50807,
+    3874,
+    64,
+    50843
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.14583758536101765,
+   "compression_ratio": 2.004366812227074,
+   "no_speech_prob": 0.08212403953075409,
+   "words": [
+    {
+     "word": " guna",
+     "start": 66.72,
+     "end": 67.46,
+     "probability": 0.9803147614002228
+    }
+   ]
+  },
+  {
+   "id": 35,
+   "seek": 5804,
+   "start": 67.46,
+   "end": 68.62,
+   "text": " kalau korang",
+   "tokens": [
+    50843,
+    20218,
+    14784,
+    656,
+    50897
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.14583758536101765,
+   "compression_ratio": 2.004366812227074,
+   "no_speech_prob": 0.08212403953075409,
+   "words": [
+    {
+     "word": " kalau",
+     "start": 67.46,
+     "end": 68.04,
+     "probability": 0.9951943755149841
+    },
+    {
+     "word": " korang",
+     "start": 68.04,
+     "end": 68.62,
+     "probability": 0.9999827742576599
+    }
+   ]
+  },
+  {
+   "id": 36,
+   "seek": 5804,
+   "start": 68.62,
+   "end": 70.28,
+   "text": " nak ambil yang 8 liter ni",
+   "tokens": [
+    50897,
+    20332,
+    3913,
+    388,
+    5581,
+    1649,
+    2733,
+    3867,
+    50980
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.14583758536101765,
+   "compression_ratio": 2.004366812227074,
+   "no_speech_prob": 0.08212403953075409,
+   "words": [
+    {
+     "word": " nak",
+     "start": 68.62,
+     "end": 69.06,
+     "probability": 0.9996778964996338
+    },
+    {
+     "word": " ambil",
+     "start": 69.06,
+     "end": 69.32,
+     "probability": 0.9804434776306152
+    },
+    {
+     "word": " yang",
+     "start": 69.32,
+     "end": 69.44,
+     "probability": 0.9984014630317688
+    },
+    {
+     "word": " 8",
+     "start": 69.44,
+     "end": 69.64,
+     "probability": 0.9745348691940308
+    },
+    {
+     "word": " liter",
+     "start": 69.64,
+     "end": 69.96,
+     "probability": 0.9221211671829224
+    },
+    {
+     "word": " ni",
+     "start": 69.96,
+     "end": 70.28,
+     "probability": 0.9917427897453308
+    }
+   ]
+  },
+  {
+   "id": 37,
+   "seek": 5804,
+   "start": 70.28,
+   "end": 70.8,
+   "text": " sesuai lah",
+   "tokens": [
+    50980,
+    5385,
+    84,
+    1301,
+    26532,
+    51007
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.14583758536101765,
+   "compression_ratio": 2.004366812227074,
+   "no_speech_prob": 0.08212403953075409,
+   "words": [
+    {
+     "word": " sesuai",
+     "start": 70.28,
+     "end": 70.66,
+     "probability": 0.992441991964976
+    },
+    {
+     "word": " lah",
+     "start": 70.66,
+     "end": 70.8,
+     "probability": 0.9981814622879028
+    }
+   ]
+  },
+  {
+   "id": 38,
+   "seek": 5804,
+   "start": 70.8,
+   "end": 71.5,
+   "text": " macam korang nak buat",
+   "tokens": [
+    51007,
+    44921,
+    14784,
+    656,
+    20332,
+    22186,
+    51041
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.14583758536101765,
+   "compression_ratio": 2.004366812227074,
+   "no_speech_prob": 0.08212403953075409,
+   "words": [
+    {
+     "word": " macam",
+     "start": 70.8,
+     "end": 70.98,
+     "probability": 0.9980216026306152
+    },
+    {
+     "word": " korang",
+     "start": 70.98,
+     "end": 71.24,
+     "probability": 0.9999586343765259
+    },
+    {
+     "word": " nak",
+     "start": 71.24,
+     "end": 71.34,
+     "probability": 0.9998323917388916
+    },
+    {
+     "word": " buat",
+     "start": 71.34,
+     "end": 71.5,
+     "probability": 0.9950904846191406
+    }
+   ]
+  },
+  {
+   "id": 39,
+   "seek": 5804,
+   "start": 71.5,
+   "end": 72.76,
+   "text": " bersih-bersih carburetor ke",
+   "tokens": [
+    51041,
+    32147,
+    4247,
+    12,
+    1616,
+    4247,
+    12143,
+    540,
+    21151,
+    803,
+    51106
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.14583758536101765,
+   "compression_ratio": 2.004366812227074,
+   "no_speech_prob": 0.08212403953075409,
+   "words": [
+    {
+     "word": " bersih",
+     "start": 71.5,
+     "end": 71.78,
+     "probability": 0.6950397342443466
+    },
+    {
+     "word": "-bersih",
+     "start": 71.78,
+     "end": 71.92,
+     "probability": 0.9959105849266052
+    },
+    {
+     "word": " carburetor",
+     "start": 71.92,
+     "end": 72.54,
+     "probability": 0.8376393914222717
+    },
+    {
+     "word": " ke",
+     "start": 72.54,
+     "end": 72.76,
+     "probability": 0.9865792393684387
+    }
+   ]
+  },
+  {
+   "id": 40,
+   "seek": 5804,
+   "start": 72.76,
+   "end": 74.2,
+   "text": " nak buat poman motor ke",
+   "tokens": [
+    51106,
+    20332,
+    22186,
+    280,
+    4277,
+    5932,
+    803,
+    51181
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.14583758536101765,
+   "compression_ratio": 2.004366812227074,
+   "no_speech_prob": 0.08212403953075409,
+   "words": [
+    {
+     "word": " nak",
+     "start": 72.76,
+     "end": 72.98,
+     "probability": 0.9894042015075684
+    },
+    {
+     "word": " buat",
+     "start": 72.98,
+     "end": 73.2,
+     "probability": 0.9999212026596069
+    },
+    {
+     "word": " poman",
+     "start": 73.2,
+     "end": 73.46,
+     "probability": 0.39212092012166977
+    },
+    {
+     "word": " motor",
+     "start": 73.46,
+     "end": 73.72,
+     "probability": 0.903170108795166
+    },
+    {
+     "word": " ke",
+     "start": 73.72,
+     "end": 74.2,
+     "probability": 0.9979733824729919
+    }
+   ]
+  },
+  {
+   "id": 41,
+   "seek": 5804,
+   "start": 74.2,
+   "end": 75.62,
+   "text": " boleh ambil yang",
+   "tokens": [
+    51181,
+    25835,
+    3913,
+    388,
+    5581,
+    51251
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.14583758536101765,
+   "compression_ratio": 2.004366812227074,
+   "no_speech_prob": 0.08212403953075409,
+   "words": [
+    {
+     "word": " boleh",
+     "start": 74.2,
+     "end": 75.04,
+     "probability": 0.9994939565658569
+    },
+    {
+     "word": " ambil",
+     "start": 75.04,
+     "end": 75.38,
+     "probability": 0.9998622238636017
+    },
+    {
+     "word": " yang",
+     "start": 75.38,
+     "end": 75.62,
+     "probability": 0.9998036026954651
+    }
+   ]
+  },
+  {
+   "id": 42,
+   "seek": 5804,
+   "start": 75.62,
+   "end": 77.14,
+   "text": " 8 liter ni",
+   "tokens": [
+    51251,
+    1649,
+    2733,
+    3867,
+    51324
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.14583758536101765,
+   "compression_ratio": 2.004366812227074,
+   "no_speech_prob": 0.08212403953075409,
+   "words": [
+    {
+     "word": " 8",
+     "start": 75.62,
+     "end": 76.58,
+     "probability": 0.9124274253845215
+    },
+    {
+     "word": " liter",
+     "start": 76.58,
+     "end": 76.96,
+     "probability": 0.9997634291648865
+    },
+    {
+     "word": " ni",
+     "start": 76.96,
+     "end": 77.14,
+     "probability": 0.9982784986495972
+    }
+   ]
+  },
+  {
+   "id": 43,
+   "seek": 5804,
+   "start": 77.14,
+   "end": 78.6,
+   "text": " tapi kalau korang ada bajet",
+   "tokens": [
+    51324,
+    23901,
+    20218,
+    14784,
+    656,
+    11063,
+    23589,
+    302,
+    51397
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.14583758536101765,
+   "compression_ratio": 2.004366812227074,
+   "no_speech_prob": 0.08212403953075409,
+   "words": [
+    {
+     "word": " tapi",
+     "start": 77.14,
+     "end": 77.54,
+     "probability": 0.9964537620544434
+    },
+    {
+     "word": " kalau",
+     "start": 77.54,
+     "end": 77.76,
+     "probability": 0.9999109506607056
+    },
+    {
+     "word": " korang",
+     "start": 77.76,
+     "end": 78.08,
+     "probability": 0.9999062716960907
+    },
+    {
+     "word": " ada",
+     "start": 78.08,
+     "end": 78.2,
+     "probability": 0.9996352195739746
+    },
+    {
+     "word": " bajet",
+     "start": 78.2,
+     "end": 78.6,
+     "probability": 0.931323766708374
+    }
+   ]
+  },
+  {
+   "id": 44,
+   "seek": 5804,
+   "start": 78.6,
+   "end": 79.46,
+   "text": " terus ambil yang",
+   "tokens": [
+    51397,
+    35977,
+    3913,
+    388,
+    5581,
+    51441
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.14583758536101765,
+   "compression_ratio": 2.004366812227074,
+   "no_speech_prob": 0.08212403953075409,
+   "words": [
+    {
+     "word": " terus",
+     "start": 78.6,
+     "end": 78.84,
+     "probability": 0.9990567564964294
+    },
+    {
+     "word": " ambil",
+     "start": 78.84,
+     "end": 79.28,
+     "probability": 0.9998549520969391
+    },
+    {
+     "word": " yang",
+     "start": 79.28,
+     "end": 79.46,
+     "probability": 0.9997590184211731
+    }
+   ]
+  },
+  {
+   "id": 45,
+   "seek": 5804,
+   "start": 79.46,
+   "end": 79.86,
+   "text": " 30",
+   "tokens": [
+    51441,
+    2217,
+    51467
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.14583758536101765,
+   "compression_ratio": 2.004366812227074,
+   "no_speech_prob": 0.08212403953075409,
+   "words": [
+    {
+     "word": " 30",
+     "start": 79.46,
+     "end": 79.86,
+     "probability": 0.9842162728309631
+    }
+   ]
+  },
+  {
+   "id": 46,
+   "seek": 5804,
+   "start": 79.86,
+   "end": 81.34,
+   "text": " ataupun 50 liter",
+   "tokens": [
+    51467,
+    48639,
+    34572,
+    2625,
+    2733,
+    51537
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.14583758536101765,
+   "compression_ratio": 2.004366812227074,
+   "no_speech_prob": 0.08212403953075409,
+   "words": [
+    {
+     "word": " ataupun",
+     "start": 79.86,
+     "end": 80.6,
+     "probability": 0.8309506475925446
+    },
+    {
+     "word": " 50",
+     "start": 80.6,
+     "end": 80.98,
+     "probability": 0.9992458820343018
+    },
+    {
+     "word": " liter",
+     "start": 80.98,
+     "end": 81.34,
+     "probability": 0.9997573494911194
+    }
+   ]
+  },
+  {
+   "id": 47,
+   "seek": 5804,
+   "start": 81.34,
+   "end": 82.44,
+   "text": " nak buat cap motor",
+   "tokens": [
+    51537,
+    20332,
+    22186,
+    1410,
+    5932,
+    51598
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.14583758536101765,
+   "compression_ratio": 2.004366812227074,
+   "no_speech_prob": 0.08212403953075409,
+   "words": [
+    {
+     "word": " nak",
+     "start": 81.34,
+     "end": 81.74,
+     "probability": 0.9983135461807251
+    },
+    {
+     "word": " buat",
+     "start": 81.74,
+     "end": 81.94,
+     "probability": 0.9998751878738403
+    },
+    {
+     "word": " cap",
+     "start": 81.94,
+     "end": 82.2,
+     "probability": 0.6358829140663147
+    },
+    {
+     "word": " motor",
+     "start": 82.2,
+     "end": 82.44,
+     "probability": 0.9722334146499634
+    }
+   ]
+  },
+  {
+   "id": 48,
+   "seek": 5804,
+   "start": 82.44,
+   "end": 83.4,
+   "text": " cap kereta",
+   "tokens": [
+    51598,
+    1410,
+    19377,
+    7664,
+    51637
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.14583758536101765,
+   "compression_ratio": 2.004366812227074,
+   "no_speech_prob": 0.08212403953075409,
+   "words": [
+    {
+     "word": " cap",
+     "start": 82.44,
+     "end": 82.9,
+     "probability": 0.9497541785240173
+    },
+    {
+     "word": " kereta",
+     "start": 82.9,
+     "end": 83.4,
+     "probability": 0.9991523623466492
+    }
+   ]
+  },
+  {
+   "id": 49,
+   "seek": 5804,
+   "start": 83.4,
+   "end": 84.6,
+   "text": " 30 ke atas lah",
+   "tokens": [
+    51637,
+    2217,
+    803,
+    412,
+    296,
+    26532,
+    51699
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.14583758536101765,
+   "compression_ratio": 2.004366812227074,
+   "no_speech_prob": 0.08212403953075409,
+   "words": [
+    {
+     "word": " 30",
+     "start": 83.4,
+     "end": 83.8,
+     "probability": 0.9948176741600037
+    },
+    {
+     "word": " ke",
+     "start": 83.8,
+     "end": 84.16,
+     "probability": 0.8660669922828674
+    },
+    {
+     "word": " atas",
+     "start": 84.16,
+     "end": 84.5,
+     "probability": 0.9983518123626709
+    },
+    {
+     "word": " lah",
+     "start": 84.5,
+     "end": 84.6,
+     "probability": 0.9615300297737122
+    }
+   ]
+  },
+  {
+   "id": 50,
+   "seek": 5804,
+   "start": 84.6,
+   "end": 86.08,
+   "text": " lagi sesuai",
+   "tokens": [
+    51699,
+    17742,
+    5385,
+    84,
+    1301,
+    51773
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.14583758536101765,
+   "compression_ratio": 2.004366812227074,
+   "no_speech_prob": 0.08212403953075409,
+   "words": [
+    {
+     "word": " lagi",
+     "start": 84.6,
+     "end": 85.36,
+     "probability": 0.9831188321113586
+    },
+    {
+     "word": " sesuai",
+     "start": 85.36,
+     "end": 86.08,
+     "probability": 0.9998882412910461
+    }
+   ]
+  },
+  {
+   "id": 51,
+   "seek": 5804,
+   "start": 86.08,
+   "end": 87.72,
+   "text": " harga tak mahal mana",
+   "tokens": [
+    51773,
+    2233,
+    3680,
+    991,
+    463,
+    4947,
+    21225,
+    51857
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.14583758536101765,
+   "compression_ratio": 2.004366812227074,
+   "no_speech_prob": 0.08212403953075409,
+   "words": [
+    {
+     "word": " harga",
+     "start": 86.08,
+     "end": 87.14,
+     "probability": 0.9991778135299683
+    },
+    {
+     "word": " tak",
+     "start": 87.14,
+     "end": 87.28,
+     "probability": 0.999853253364563
+    },
+    {
+     "word": " mahal",
+     "start": 87.28,
+     "end": 87.58,
+     "probability": 0.9996480941772461
+    },
+    {
+     "word": " mana",
+     "start": 87.58,
+     "end": 87.72,
+     "probability": 0.9991857409477234
+    }
+   ]
+  },
+  {
+   "id": 52,
+   "seek": 8772,
+   "start": 87.72,
+   "end": 89.08,
+   "text": " mana kualiti cantik je kan.",
+   "tokens": [
+    50365,
+    21225,
+    350,
+    901,
+    8707,
+    11223,
+    1035,
+    1506,
+    4608,
+    13,
+    50437
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.2218964234837946,
+   "compression_ratio": 1.2897196261682242,
+   "no_speech_prob": 0.04420006647706032,
+   "words": [
+    {
+     "word": " mana",
+     "start": 87.72,
+     "end": 87.86,
+     "probability": 0.2571846842765808
+    },
+    {
+     "word": " kualiti",
+     "start": 87.86,
+     "end": 88.42,
+     "probability": 0.8181948562463125
+    },
+    {
+     "word": " cantik",
+     "start": 88.42,
+     "end": 88.86,
+     "probability": 0.9980774819850922
+    },
+    {
+     "word": " je",
+     "start": 88.86,
+     "end": 88.92,
+     "probability": 0.9290022850036621
+    },
+    {
+     "word": " kan.",
+     "start": 88.92,
+     "end": 89.08,
+     "probability": 0.20911863446235657
+    }
+   ]
+  },
+  {
+   "id": 53,
+   "seek": 8772,
+   "start": 89.98,
+   "end": 91.58,
+   "text": " Jenis silent. Memang tak",
+   "tokens": [
+    50489,
+    9228,
+    271,
+    12784,
+    13,
+    8731,
+    656,
+    991,
+    50561
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.2218964234837946,
+   "compression_ratio": 1.2897196261682242,
+   "no_speech_prob": 0.04420006647706032,
+   "words": [
+    {
+     "word": " Jenis",
+     "start": 89.98,
+     "end": 90.46,
+     "probability": 0.9947301149368286
+    },
+    {
+     "word": " silent.",
+     "start": 90.46,
+     "end": 90.76,
+     "probability": 0.9066463708877563
+    },
+    {
+     "word": " Memang",
+     "start": 90.96,
+     "end": 91.42,
+     "probability": 0.9992947578430176
+    },
+    {
+     "word": " tak",
+     "start": 91.42,
+     "end": 91.58,
+     "probability": 0.9993744492530823
+    }
+   ]
+  },
+  {
+   "id": 54,
+   "seek": 8772,
+   "start": 91.58,
+   "end": 93.44,
+   "text": " menggaguh jiran-jiran. Jadi kalau",
+   "tokens": [
+    50561,
+    15330,
+    70,
+    559,
+    3232,
+    361,
+    40111,
+    12,
+    73,
+    40111,
+    13,
+    21662,
+    20218,
+    50654
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.2218964234837946,
+   "compression_ratio": 1.2897196261682242,
+   "no_speech_prob": 0.04420006647706032,
+   "words": [
+    {
+     "word": " menggaguh",
+     "start": 91.58,
+     "end": 92.08,
+     "probability": 0.725290022790432
+    },
+    {
+     "word": " jiran",
+     "start": 92.08,
+     "end": 92.28,
+     "probability": 0.9637631177902222
+    },
+    {
+     "word": "-jiran.",
+     "start": 92.28,
+     "end": 92.54,
+     "probability": 0.9966337084770203
+    },
+    {
+     "word": " Jadi",
+     "start": 92.72,
+     "end": 93.2,
+     "probability": 0.9980567097663879
+    },
+    {
+     "word": " kalau",
+     "start": 93.2,
+     "end": 93.44,
+     "probability": 0.9172318577766418
+    }
+   ]
+  },
+  {
+   "id": 55,
+   "seek": 8772,
+   "start": 93.44,
+   "end": 95.52,
+   "text": " korang berminat boleh tengok dekat bag dekat bawah.",
+   "tokens": [
+    50654,
+    14784,
+    656,
+    50001,
+    259,
+    267,
+    25835,
+    10370,
+    453,
+    368,
+    20876,
+    3411,
+    368,
+    20876,
+    40463,
+    545,
+    13,
+    50759
+   ],
+   "temperature": 0.0,
+   "avg_logprob": -0.2218964234837946,
+   "compression_ratio": 1.2897196261682242,
+   "no_speech_prob": 0.04420006647706032,
+   "words": [
+    {
+     "word": " korang",
+     "start": 93.44,
+     "end": 93.68,
+     "probability": 0.9893581569194794
+    },
+    {
+     "word": " berminat",
+     "start": 93.68,
+     "end": 94.16,
+     "probability": 0.9257853627204895
+    },
+    {
+     "word": " boleh",
+     "start": 94.16,
+     "end": 94.32,
+     "probability": 0.7112522721290588
+    },
+    {
+     "word": " tengok",
+     "start": 94.32,
+     "end": 94.62,
+     "probability": 0.9996647536754608
+    },
+    {
+     "word": " dekat",
+     "start": 94.62,
+     "end": 94.8,
+     "probability": 0.9776060581207275
+    },
+    {
+     "word": " bag",
+     "start": 94.8,
+     "end": 95.02,
+     "probability": 0.5018461346626282
+    },
+    {
+     "word": " dekat",
+     "start": 95.02,
+     "end": 95.26,
+     "probability": 0.9961563944816589
+    },
+    {
+     "word": " bawah.",
+     "start": 95.26,
+     "end": 95.52,
+     "probability": 0.9996924996376038
+    }
+   ]
+  }
+ ],
+ "language": "ms"
+}
