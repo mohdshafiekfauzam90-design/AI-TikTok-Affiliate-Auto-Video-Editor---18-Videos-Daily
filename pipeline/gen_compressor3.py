@@ -149,7 +149,7 @@ hosts.append(scene("hook", 0, HK, hook_html, hook_css, hook_js, 10))
 LOW_CSS = CARD_CSS.replace(".band { position:absolute; left:48px; bottom:735px; width:620px; }",
                            ".band { position:absolute; left:48px; bottom:330px; width:620px; }")   # presenter crouched up top, bare floor below
 assert LOW_CSS != CARD_CSS
-card_scene("brand", 3.867, 13.9, 11, [
+card_scene("intro", 3.867, 13.9, 11, [
     ("br", 4.0, 9.85, '<div class="k">COMPRESSOR RE-AIM</div><div class="v">JENIS SILENT</div>', []),
     ("al", 10.0, 13.85, '<div class="k">NOZZLE</div><div class="v">AUTO LOCK</div>', []),
 ], css=LOW_CSS)
