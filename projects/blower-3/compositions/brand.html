@@ -1,0 +1,28 @@
+<template>
+  <style>
+
+      :root { --yellow:#FFD21F; --red:#E5252A; --ink:#0D0D0D; --white:#FFFFFF; }
+
+      .hf-stroke { paint-order: stroke fill; -webkit-text-stroke: 14px var(--ink); }
+
+      #brand { position:absolute; inset:0; font-family:'Inter',sans-serif; color:var(--white); }
+
+      #brand-tag { position:absolute; right:54px; top:182px; display:flex; align-items:center; gap:10px;
+        background:rgba(13,13,13,.6); color:var(--white); font-weight:900; font-size:28px; letter-spacing:.14em;
+        padding:9px 18px; border-radius:999px; border:2px solid rgba(255,210,31,.85); }
+      #brand-tag .d { width:12px; height:12px; border-radius:50%; background:var(--yellow); }
+
+  </style>
+  <div id="brand" data-composition-id="brand" data-width="1080" data-height="1920">
+    <div id="brand-tag" class="clip" data-start="3.4" data-duration="48.35" data-track-index="1">
+      <span class="d"></span>MUROH DOOH
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#brand-tag", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 0);
+
+    window.__timelines["brand"] = tl;
+  </script>
+</template>
