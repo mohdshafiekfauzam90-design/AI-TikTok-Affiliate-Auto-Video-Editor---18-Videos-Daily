@@ -31,9 +31,9 @@ KEEPS = [
     (7.55, 13.10, "exact", "Jadi yang mana korang ada halaman rumah yang jenis besar tu, nak buat bersih kebun,"),
     (20.45, 23.30, "exact", "nak buat bersih daun kering, rumput kering ke,"),
     (23.60, 26.22, "exact", "tengah mencari blower bajet, boleh ambil yang ni."),
-    (32.56, 36.82, "exact", "Bila kita angkat ni pun tak berat mana lah, ok je, orang perempuan pun boleh angkat."),
+    (32.60, 36.82, "exact", "(edge kept: a short fragment sits just before) Bila kita angkat ni pun tak berat mana lah, ok je, orang perempuan pun boleh angkat.", {"edge": "keep"}),
     (41.40, 51.08, "exact", "Sebelum korang nak guna tu, korang pump dulu. Ni dia ada satu balon dekat bawah ni, korang pump pump pump, bagi minyak naik dulu, baru senang nak hidup."),
-    (102.36, 110.34, "exact", "Yang ni harga bajet je, jadi kalau korang berminat dengan model blower EB260 ni boleh tengok dekat beg dekat bawah."),
+    (102.68, 110.34, "exact", "Yang ni harga bajet je, jadi kalau korang berminat dengan model blower EB260 ni boleh tengok dekat beg dekat bawah. (starts after \"boleh buka tau\", edge kept)", {"edge": "keep"}),
     (110.60, 111.30, "demo", "end plate under CTA"),
 ]
 MANUAL_CUTS = []
