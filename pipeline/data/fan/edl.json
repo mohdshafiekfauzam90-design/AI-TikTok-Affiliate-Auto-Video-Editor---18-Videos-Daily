@@ -1,0 +1,62 @@
+{
+ "hook": {
+  "video": [
+   30.0,
+   33.44
+  ],
+  "voice": [
+   39.86,
+   43.3
+  ],
+  "drill_gain": 0.0
+ },
+ "hook_len": 3.44,
+ "segments": [
+  {
+   "src_in": 0.0,
+   "src_out": 7.88,
+   "out_in": 3.44
+  },
+  {
+   "src_in": 17.62,
+   "src_out": 22.34,
+   "out_in": 11.32
+  },
+  {
+   "src_in": 22.53,
+   "src_out": 29.2,
+   "out_in": 16.04
+  },
+  {
+   "src_in": 29.22,
+   "src_out": 39.92,
+   "out_in": 22.71
+  },
+  {
+   "src_in": 43.3,
+   "src_out": 50.1,
+   "out_in": 33.41
+  },
+  {
+   "src_in": 55.34,
+   "src_out": 58.7,
+   "out_in": 40.21
+  },
+  {
+   "src_in": 58.87,
+   "src_out": 64.56,
+   "out_in": 43.57
+  },
+  {
+   "src_in": 67.26,
+   "src_out": 72.52,
+   "out_in": 49.26
+  },
+  {
+   "src_in": 72.9,
+   "src_out": 73.6,
+   "out_in": 54.52
+  }
+ ],
+ "total": 55.22
+}

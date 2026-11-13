@@ -1,0 +1,34 @@
+<template>
+  <style>
+
+      :root { --yellow:#FFD21F; --red:#E5252A; --ink:#0D0D0D; --white:#FFFFFF; }
+
+      .hf-stroke { paint-order: stroke fill; -webkit-text-stroke: 14px var(--ink); }
+
+      #batt { position:absolute; inset:0; font-family:'Inter',sans-serif; color:var(--white); }
+
+      .band { position:absolute; left:48px; bottom:375px; width:620px; }
+      .card { display:inline-flex; flex-direction:column; align-items:flex-start; gap:8px; background:rgba(13,13,13,.84);
+        border-left:10px solid var(--yellow); border-radius:20px; padding:14px 22px; box-shadow:0 16px 36px rgba(0,0,0,.35); }
+      .card .k { font-weight:900; font-size:30px; letter-spacing:.08em; color:var(--yellow); }
+      .card .v { font-family:'Archivo Black','Inter',sans-serif; font-size:56px; line-height:1; }
+      .card .big { font-family:'Archivo Black','Inter',sans-serif; font-size:84px; line-height:.95; color:var(--yellow); }
+      .chips { display:flex; flex-wrap:wrap; gap:10px; }
+      .chip { display:inline-flex; align-items:center; gap:10px; background:var(--yellow); color:var(--ink); font-weight:900;
+        font-size:34px; padding:8px 18px; border-radius:12px; opacity:0; }
+      .chip.dark { background:var(--white); }
+
+  </style>
+  <div id="batt" data-composition-id="batt" data-width="1080" data-height="1920">
+    <div id="bt" class="clip band" data-start="0.133" data-duration="6.55" data-track-index="1"><div class="card"><div class="k">BATERI</div><div class="v">TAPAK MAKITA</div><div id="bt-c" class="chip">MANA-MANA JENAMA</div></div></div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#bt", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 0.133);
+    tl.fromTo("#bt-c", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2.4)" }, 3.033);
+    tl.to("#bt", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 6.483);
+
+    window.__timelines["batt"] = tl;
+  </script>
+</template>

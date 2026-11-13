@@ -1,0 +1,55 @@
+{
+ "duration": 56.267,
+ "segments": [
+  {
+   "out_in": 0.0,
+   "src_in": 30.0,
+   "src_out": 33.44
+  },
+  {
+   "out_in": 3.433,
+   "src_in": 0.0,
+   "src_out": 8.03
+  },
+  {
+   "out_in": 11.467,
+   "src_in": 17.58,
+   "src_out": 22.44
+  },
+  {
+   "out_in": 16.333,
+   "src_in": 22.49,
+   "src_out": 29.22
+  },
+  {
+   "out_in": 23.067,
+   "src_in": 29.22,
+   "src_out": 40.02
+  },
+  {
+   "out_in": 33.867,
+   "src_in": 43.3,
+   "src_out": 50.1
+  },
+  {
+   "out_in": 40.667,
+   "src_in": 55.34,
+   "src_out": 58.8
+  },
+  {
+   "out_in": 44.133,
+   "src_in": 58.83,
+   "src_out": 64.75
+  },
+  {
+   "out_in": 50.067,
+   "src_in": 67.26,
+   "src_out": 72.62
+  },
+  {
+   "out_in": 55.433,
+   "src_in": 72.86,
+   "src_out": 73.69
+  }
+ ]
+}
