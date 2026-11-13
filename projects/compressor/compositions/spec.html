@@ -1,0 +1,39 @@
+<template>
+  <style>
+
+      :root { --yellow:#FFD21F; --red:#E5252A; --ink:#0D0D0D; --white:#FFFFFF; }
+
+      .hf-stroke { paint-order: stroke fill; -webkit-text-stroke: 14px var(--ink); }
+
+      #spec { position:absolute; inset:0; font-family:'Inter',sans-serif; color:var(--white); }
+
+      .band { position:absolute; left:48px; top:230px; width:600px; }
+      .card { display:inline-flex; flex-direction:column; align-items:flex-start; gap:8px; background:rgba(13,13,13,.84);
+        border-left:10px solid var(--yellow); border-radius:20px; padding:14px 22px; box-shadow:0 16px 36px rgba(0,0,0,.35); }
+      .card .k { font-weight:900; font-size:30px; letter-spacing:.08em; color:var(--yellow); }
+      .card .v { font-family:'Archivo Black','Inter',sans-serif; font-size:56px; line-height:1; }
+      .card .big { font-family:'Archivo Black','Inter',sans-serif; font-size:84px; line-height:.95; color:var(--yellow); }
+      .chips { display:flex; flex-wrap:wrap; gap:10px; }
+      .chip { display:inline-flex; align-items:center; gap:10px; background:var(--yellow); color:var(--ink); font-weight:900;
+        font-size:34px; padding:8px 18px; border-radius:12px; opacity:0; }
+      .chip.dark { background:var(--white); }
+
+  </style>
+  <div id="spec" data-composition-id="spec" data-width="1080" data-height="1920">
+    <div id="br" class="clip band" data-start="0.133" data-duration="3.1" data-track-index="1"><div class="card"><div class="k">AIR COMPRESSOR RE-AIM</div><div class="v">JENIS SILENT</div></div></div>
+    <div id="tk" class="clip band" data-start="3.333" data-duration="6.2" data-track-index="1"><div class="card"><div class="k">TANK 8 LITER</div><div class="v">PENUH &plusmn; 1 MINIT</div></div></div>
+    <div id="sz" class="clip band" data-start="9.633" data-duration="5.8" data-track-index="1"><div class="card"><div class="k">3 SIZE</div><div class="v">8L &middot; 30L &middot; 50L</div></div></div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#br", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 0.133);
+    tl.to("#br", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 3.033);
+    tl.fromTo("#tk", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 3.333);
+    tl.to("#tk", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 9.333);
+    tl.fromTo("#sz", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "expo.out" }, 9.633);
+    tl.to("#sz", { x: -40, opacity: 0, duration: 0.2, ease: "power3.in" }, 15.233);
+
+    window.__timelines["spec"] = tl;
+  </script>
+</template>
