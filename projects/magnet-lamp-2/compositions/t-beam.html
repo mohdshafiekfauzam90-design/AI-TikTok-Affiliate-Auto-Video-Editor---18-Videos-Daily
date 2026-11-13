@@ -1,0 +1,44 @@
+<template>
+  <style>
+
+      :root { --yellow:#FFD21F; --red:#E5252A; --ink:#0D0D0D; --white:#FFFFFF; }
+
+      .hf-stroke { paint-order: stroke fill; -webkit-text-stroke: 14px var(--ink); }
+
+      #t-beam { position:absolute; inset:0; font-family:'Inter',sans-serif; color:var(--white); }
+
+      .toon { position:absolute; width:364px; height:236px; border-radius:28px; background:rgba(13,13,13,.74);
+        border:4px solid var(--yellow); box-shadow:0 18px 40px rgba(0,0,0,.4); display:flex; align-items:center; justify-content:center; }
+      .toon svg { width:344px; height:215px; overflow:visible; }
+      #t-beam .toon { left:680px; top:250px; }
+
+  </style>
+  <div id="t-beam" data-composition-id="t-beam" data-width="1080" data-height="1920">
+    <div class="toon"><svg viewBox="0 0 320 200" aria-hidden="true"><path id="t-beam-r0" d="M120 100 L300 4 L300 40 Z" fill="#FFFFFF" opacity="0"/><path id="t-beam-r1" d="M120 100 L300 54 L300 86 Z" fill="#FFD21F" opacity="0"/><path id="t-beam-r2" d="M120 100 L300 100 L300 134 Z" fill="#FFFFFF" opacity="0"/><path id="t-beam-r3" d="M120 100 L300 148 L300 184 Z" fill="#FFD21F" opacity="0"/><rect x="38" y="60" width="86" height="80" rx="12" fill="#0D0D0D" stroke="#FFD21F" stroke-width="8"/><circle id="t-beam-l0" cx="56" cy="78" r="6" fill="#8A8F96"/><circle id="t-beam-l1" cx="74" cy="78" r="6" fill="#8A8F96"/><circle id="t-beam-l2" cx="92" cy="78" r="6" fill="#8A8F96"/><circle id="t-beam-l3" cx="56" cy="96" r="6" fill="#8A8F96"/><circle id="t-beam-l4" cx="74" cy="96" r="6" fill="#8A8F96"/><circle id="t-beam-l5" cx="92" cy="96" r="6" fill="#8A8F96"/><circle id="t-beam-l6" cx="56" cy="114" r="6" fill="#8A8F96"/><circle id="t-beam-l7" cx="74" cy="114" r="6" fill="#8A8F96"/><circle id="t-beam-l8" cx="92" cy="114" r="6" fill="#8A8F96"/><path d="M48 140 L40 176 M114 140 L122 176 M32 176 H130" stroke="#0D0D0D" stroke-width="8" stroke-linecap="round"/></svg></div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#t-beam .toon", { scale: 0.4, opacity: 0, rotation: -6 }, { scale: 1, opacity: 1, rotation: 0, duration: 0.35, ease: "back.out(2.2)" }, 0);
+    tl.to("#t-beam .toon", { scale: 0.7, opacity: 0, duration: 0.2, ease: "power3.in" }, 1.78);
+    tl.to("#t-beam-l0", { attr: { fill: "#FFFFFF" }, duration: 0.08 }, 0.35);
+    tl.to("#t-beam-l1", { attr: { fill: "#FFFFFF" }, duration: 0.08 }, 0.38);
+    tl.to("#t-beam-l2", { attr: { fill: "#FFFFFF" }, duration: 0.08 }, 0.41);
+    tl.to("#t-beam-l3", { attr: { fill: "#FFFFFF" }, duration: 0.08 }, 0.44);
+    tl.to("#t-beam-l4", { attr: { fill: "#FFFFFF" }, duration: 0.08 }, 0.47);
+    tl.to("#t-beam-l5", { attr: { fill: "#FFFFFF" }, duration: 0.08 }, 0.5);
+    tl.to("#t-beam-l6", { attr: { fill: "#FFFFFF" }, duration: 0.08 }, 0.53);
+    tl.to("#t-beam-l7", { attr: { fill: "#FFFFFF" }, duration: 0.08 }, 0.56);
+    tl.to("#t-beam-l8", { attr: { fill: "#FFFFFF" }, duration: 0.08 }, 0.59);
+    tl.fromTo("#t-beam-r0", { opacity: 0, scaleX: 0.2, svgOrigin: "120 100" }, { opacity: 0.85, scaleX: 1, duration: 0.35, ease: "power2.out" }, 0.55);
+    tl.to("#t-beam-r0", { opacity: 0.45, duration: 0.3, repeat: 2, yoyo: true, ease: "sine.inOut" }, 1.0);
+    tl.fromTo("#t-beam-r1", { opacity: 0, scaleX: 0.2, svgOrigin: "120 100" }, { opacity: 0.85, scaleX: 1, duration: 0.35, ease: "power2.out" }, 0.61);
+    tl.to("#t-beam-r1", { opacity: 0.45, duration: 0.3, repeat: 2, yoyo: true, ease: "sine.inOut" }, 1.06);
+    tl.fromTo("#t-beam-r2", { opacity: 0, scaleX: 0.2, svgOrigin: "120 100" }, { opacity: 0.85, scaleX: 1, duration: 0.35, ease: "power2.out" }, 0.67);
+    tl.to("#t-beam-r2", { opacity: 0.45, duration: 0.3, repeat: 2, yoyo: true, ease: "sine.inOut" }, 1.12);
+    tl.fromTo("#t-beam-r3", { opacity: 0, scaleX: 0.2, svgOrigin: "120 100" }, { opacity: 0.85, scaleX: 1, duration: 0.35, ease: "power2.out" }, 0.73);
+    tl.to("#t-beam-r3", { opacity: 0.45, duration: 0.3, repeat: 2, yoyo: true, ease: "sine.inOut" }, 1.18);
+
+    window.__timelines["t-beam"] = tl;
+  </script>
+</template>
