@@ -10,5 +10,4 @@ nice -n 5 ffmpeg -v error -y -i $B/spine.mp4 -vf "tpad=stop_mode=clone:stop_dura
 ffmpeg -v error -y -i $B/spine_n.mp4 -ac 1 -ar 16000 $B/s16.wav
 rm -rf $B/segs $B/spine.mp4
 echo SPINE_OK
-cd $SP/$v && $SP/wq.sh python3 tx/run.py build/s16.wav build/spine_tx.json > build/tx.log 2>&1
-echo TX_OK
+echo "$v spine" >> $SP/runq_pri.txt   # picked up first by runq.sh
