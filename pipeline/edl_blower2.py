@@ -30,7 +30,7 @@ KEEPS = [
     (0.00, 3.20, "exact", "Yang ni model EB260."),
     (4.15, 15.92, "exact", "Jadi kalau korang tengah mencari air blower harga bajet, nak buat bersih halaman rumah, nak buat bersih halaman kebun ke, boleh sangat pakai yang ni. Jenis 2 stroke, 26cc."),
     (16.40, 18.40, "exact", "Ni barang dia. Ringan je."),
-    (53.46, 63.16, "exact", "Dekat bawah ni dia ada satu pump tau. Kalau korang beli korang kena pump dulu, dekat bawah ni, pump pump pump pump, bagi minyak naik, baru senang nak start."),
+    (56.05, 63.16, "exact", "(he says the pump line twice; the spine check showed both, so the take starts on the second) Dekat bawah ni dia ada satu pump tau. Kalau korang beli korang kena pump dulu, dekat bawah ni, pump pump pump pump, bagi minyak naik, baru senang nak start."),
     (112.70, 125.78, "exact", "Yang kecil ni masuk 2T, yang besar ni masuk petrol. Jadi sukatan dia korang ikut je level dia ni, kalau petrol 5, 2T ni 5, korang goncang-goncang-goncang, terus tuang, macam tu je cara bancuh dia, senang."),
     (126.84, 133.90, "exact", "Jadi yang mana korang tengah cari blower harga bajet, boleh try yang ni, EB260."),
     (133.92, 134.10, "demo", "end plate under CTA"),
