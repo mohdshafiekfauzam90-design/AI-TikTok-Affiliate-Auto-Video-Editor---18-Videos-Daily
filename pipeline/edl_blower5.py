@@ -28,7 +28,7 @@ def snap(t):
 # line whose speaker pauses inside a number), exact = trim inner pauses but keep the given edges, speech = both
 # opts: {"speed": x} speeds picture+sound, {"gain": 0} mutes a repeated line under a demo shot.
 KEEPS = [
-    (8.50, 19.26, "exact", "Cordless Air Blower daripada Kimido. Yang ni pakai bateri jenis tapak Makita, jadi tak pakai wire, senang nak bawa ke mana-mana."),
+    (8.50, 19.20, "exact", "Cordless Air Blower daripada Kimido. Yang ni pakai bateri jenis tapak Makita, jadi tak pakai wire, senang nak bawa ke mana-mana.", {"edge": "keep"}),
     (23.44, 25.86, "exact", "Power tau, angin dia kuat."),
     (27.80, 36.60, "exact", "Lepas tu dia ada tiga level, ini level 1, level 2, level 3."),
     (49.10, 67.06, "exact", "Lepas tu dia punya angle ni boleh adjust tau. Jadi kalau korang nak buat bersih daun kering, rumput kering, habuk-habuk celah-celah sofa, celah-celah almari ke, nak buat bersih air lepas basuh motor, basuh kereta, pakai air blower ni memang boleh, tak ada masalah."),
