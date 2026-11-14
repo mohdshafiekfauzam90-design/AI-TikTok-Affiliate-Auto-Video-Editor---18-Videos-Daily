@@ -1,0 +1,36 @@
+<template>
+  <style>
+
+      :root { --yellow:#FFD21F; --red:#E5252A; --ink:#0D0D0D; --white:#FFFFFF; }
+
+      .hf-stroke { paint-order: stroke fill; -webkit-text-stroke: 14px var(--ink); }
+
+      #t-oil { position:absolute; inset:0; font-family:'Inter',sans-serif; color:var(--white); }
+
+      .toon { position:absolute; width:364px; height:236px; border-radius:28px; background:rgba(13,13,13,.74);
+        border:4px solid var(--yellow); box-shadow:0 18px 40px rgba(0,0,0,.4); display:flex; align-items:center; justify-content:center; }
+      .toon svg { width:344px; height:215px; overflow:visible; }
+      #t-oil .toon { left:680px; top:250px; }
+
+  </style>
+  <div id="t-oil" data-composition-id="t-oil" data-width="1080" data-height="1920">
+    <div class="toon"><svg viewBox="0 0 320 200" aria-hidden="true"><g id="t-oil-can"><path d="M88 22 H150 V74 H88 Z" fill="#E5252A" stroke="#0D0D0D" stroke-width="6" stroke-linejoin="round"/><path d="M150 40 L182 64 L176 72 L150 56 Z" fill="#C9CDD2" stroke="#0D0D0D" stroke-width="5" stroke-linejoin="round"/><rect x="100" y="36" width="38" height="20" rx="4" fill="#FFD21F"/></g><path id="t-oil-d0" d="M170 76 C 162 90, 162 98, 170 100 C 178 98, 178 90, 170 76 Z" fill="#3A2A12" stroke="#0D0D0D" stroke-width="3" opacity="0"/><path id="t-oil-d1" d="M170 76 C 162 90, 162 98, 170 100 C 178 98, 178 90, 170 76 Z" fill="#3A2A12" stroke="#0D0D0D" stroke-width="3" opacity="0"/><path id="t-oil-d2" d="M170 76 C 162 90, 162 98, 170 100 C 178 98, 178 90, 170 76 Z" fill="#3A2A12" stroke="#0D0D0D" stroke-width="3" opacity="0"/><rect id="t-oil-bar" x="20" y="150" width="280" height="30" rx="15" fill="#D9DDE2" stroke="#0D0D0D" stroke-width="6"/><g id="t-oil-t"><rect x="30" y="148" width="10" height="9" fill="#0D0D0D"/><rect x="50" y="148" width="10" height="9" fill="#0D0D0D"/><rect x="70" y="148" width="10" height="9" fill="#0D0D0D"/><rect x="90" y="148" width="10" height="9" fill="#0D0D0D"/><rect x="110" y="148" width="10" height="9" fill="#0D0D0D"/><rect x="130" y="148" width="10" height="9" fill="#0D0D0D"/><rect x="150" y="148" width="10" height="9" fill="#0D0D0D"/><rect x="170" y="148" width="10" height="9" fill="#0D0D0D"/><rect x="190" y="148" width="10" height="9" fill="#0D0D0D"/><rect x="210" y="148" width="10" height="9" fill="#0D0D0D"/><rect x="230" y="148" width="10" height="9" fill="#0D0D0D"/><rect x="250" y="148" width="10" height="9" fill="#0D0D0D"/><rect x="270" y="148" width="10" height="9" fill="#0D0D0D"/></g><rect id="t-oil-g" x="26" y="156" width="268" height="6" rx="3" fill="#FFFFFF" opacity="0"/></svg></div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#t-oil .toon", { scale: 0.4, opacity: 0, rotation: -6 }, { scale: 1, opacity: 1, rotation: 0, duration: 0.35, ease: "back.out(2.2)" }, 0);
+    tl.to("#t-oil .toon", { scale: 0.7, opacity: 0, duration: 0.2, ease: "power3.in" }, 1.58);
+    tl.fromTo("#t-oil-can", { rotation: 0, svgOrigin: "120 74" }, { rotation: 22, duration: 0.3, ease: "power2.out" }, 0.25);
+    tl.fromTo("#t-oil-t", { x: 0 }, { x: 20, duration: 0.14, repeat: 10, ease: "none" }, 0.1);
+    tl.fromTo("#t-oil-d0", { opacity: 1, y: 0 }, { opacity: 1, y: 52, duration: 0.32, ease: "power2.in" }, 0.5);
+    tl.to("#t-oil-d0", { opacity: 0, scaleX: 2, scaleY: 0.3, transformOrigin: "50% 100%", duration: 0.12 }, 0.82);
+    tl.fromTo("#t-oil-d1", { opacity: 1, y: 0 }, { opacity: 1, y: 52, duration: 0.32, ease: "power2.in" }, 0.8);
+    tl.to("#t-oil-d1", { opacity: 0, scaleX: 2, scaleY: 0.3, transformOrigin: "50% 100%", duration: 0.12 }, 1.12);
+    tl.fromTo("#t-oil-d2", { opacity: 1, y: 0 }, { opacity: 1, y: 52, duration: 0.32, ease: "power2.in" }, 1.1);
+    tl.to("#t-oil-d2", { opacity: 0, scaleX: 2, scaleY: 0.3, transformOrigin: "50% 100%", duration: 0.12 }, 1.42);
+    tl.fromTo("#t-oil-g", { opacity: 0 }, { opacity: 0.9, duration: 0.3, repeat: 1, yoyo: true }, 1.0);
+
+    window.__timelines["t-oil"] = tl;
+  </script>
+</template>
