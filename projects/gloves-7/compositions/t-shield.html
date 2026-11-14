@@ -1,0 +1,32 @@
+<template>
+  <style>
+
+      :root { --yellow:#FFD21F; --red:#E5252A; --ink:#0D0D0D; --white:#FFFFFF; }
+
+      .hf-stroke { paint-order: stroke fill; -webkit-text-stroke: 14px var(--ink); }
+
+      #t-shield { position:absolute; inset:0; font-family:'Inter',sans-serif; color:var(--white); }
+
+      .toon { position:absolute; width:364px; height:236px; border-radius:28px; background:rgba(13,13,13,.74);
+        border:4px solid var(--yellow); box-shadow:0 18px 40px rgba(0,0,0,.4); display:flex; align-items:center; justify-content:center; }
+      .toon svg { width:344px; height:215px; overflow:visible; }
+      #t-shield .toon { left:680px; top:250px; }
+
+  </style>
+  <div id="t-shield" data-composition-id="t-shield" data-width="1080" data-height="1920">
+    <div class="toon"><svg viewBox="0 0 320 200" aria-hidden="true"><g id="t-shield-g"><path d="M110 190 L110 110 C 110 100, 124 100, 124 110 L 124 60 C 124 48, 140 48, 140 60 L 140 44 C 140 32, 156 32, 156 44 L 156 52 C 156 40, 172 40, 172 52 L 172 66 C 172 56, 188 56, 188 66 L 188 140 C 188 170, 176 190, 160 190 Z" fill="#E5252A" stroke="#0D0D0D" stroke-width="6" stroke-linejoin="round"/><path d="M110 150 H188" stroke="#0D0D0D" stroke-width="4"/></g><g id="t-shield-s"><path d="M210 96 L246 84 L282 96 C 282 134, 266 156, 246 166 C 226 156, 210 134, 210 96 Z" fill="#FFD21F" stroke="#0D0D0D" stroke-width="6" stroke-linejoin="round"/><path d="M230 122 L242 134 L264 108" fill="none" stroke="#0D0D0D" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g><path id="t-shield-x0" d="M0 0 L14 8 L4 10 L16 22" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" transform="translate(30 40)" opacity="0"/><path id="t-shield-x1" d="M0 0 L14 8 L4 10 L16 22" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" transform="translate(262 60)" opacity="0"/><path id="t-shield-x2" d="M0 0 L14 8 L4 10 L16 22" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" transform="translate(40 140)" opacity="0"/></svg></div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#t-shield .toon", { scale: 0.4, opacity: 0, rotation: -6 }, { scale: 1, opacity: 1, rotation: 0, duration: 0.35, ease: "back.out(2.2)" }, 0);
+    tl.to("#t-shield .toon", { scale: 0.7, opacity: 0, duration: 0.2, ease: "power3.in" }, 1.68);
+    tl.fromTo("#t-shield-s", { scale: 0, opacity: 0, svgOrigin: "246 125" }, { scale: 1, opacity: 1, duration: 0.35, ease: "back.out(2.5)" }, 0.35);
+    tl.fromTo("#t-shield-x0", { opacity: 0, scale: 0.4 }, { opacity: 1, scale: 1, duration: 0.15, yoyo: true, repeat: 1, ease: "power2.out", transformOrigin: "50% 50%" }, 0.8);
+    tl.fromTo("#t-shield-x1", { opacity: 0, scale: 0.4 }, { opacity: 1, scale: 1, duration: 0.15, yoyo: true, repeat: 1, ease: "power2.out", transformOrigin: "50% 50%" }, 1.02);
+    tl.fromTo("#t-shield-x2", { opacity: 0, scale: 0.4 }, { opacity: 1, scale: 1, duration: 0.15, yoyo: true, repeat: 1, ease: "power2.out", transformOrigin: "50% 50%" }, 1.24);
+    tl.to("#t-shield-g", { x: 3, duration: 0.06, yoyo: true, repeat: 5, ease: "none" }, 0.8);
+
+    window.__timelines["t-shield"] = tl;
+  </script>
+</template>
