@@ -1,0 +1,32 @@
+<template>
+  <style>
+
+      :root { --yellow:#FFD21F; --red:#E5252A; --ink:#0D0D0D; --white:#FFFFFF; }
+
+      .hf-stroke { paint-order: stroke fill; -webkit-text-stroke: 14px var(--ink); }
+
+      #t-time { position:absolute; inset:0; font-family:'Inter',sans-serif; color:var(--white); }
+
+      .toon { position:absolute; width:364px; height:236px; border-radius:28px; background:rgba(13,13,13,.74);
+        border:4px solid var(--yellow); box-shadow:0 18px 40px rgba(0,0,0,.4); display:flex; align-items:center; justify-content:center; }
+      .toon svg { width:344px; height:215px; overflow:visible; }
+      #t-time .toon { left:680px; top:250px; }
+
+  </style>
+  <div id="t-time" data-composition-id="t-time" data-width="1080" data-height="1920">
+    <div class="toon"><svg viewBox="0 0 320 200" aria-hidden="true"><circle cx="95" cy="100" r="66" fill="#FFFFFF" stroke="#0D0D0D" stroke-width="7"/><line x1="95.0" y1="50.0" x2="95.0" y2="42.0" stroke="#0D0D0D" stroke-width="6" stroke-linecap="round"/><line x1="145.0" y1="100.0" x2="153.0" y2="100.0" stroke="#0D0D0D" stroke-width="6" stroke-linecap="round"/><line x1="95.0" y1="150.0" x2="95.0" y2="158.0" stroke="#0D0D0D" stroke-width="6" stroke-linecap="round"/><line x1="45.0" y1="100.0" x2="37.0" y2="100.0" stroke="#0D0D0D" stroke-width="6" stroke-linecap="round"/><line id="t-time-h" x1="95" y1="100" x2="95" y2="54" stroke="#E5252A" stroke-width="8" stroke-linecap="round"/><line x1="95" y1="100" x2="122" y2="100" stroke="#0D0D0D" stroke-width="7" stroke-linecap="round"/><circle cx="95" cy="100" r="8" fill="#0D0D0D"/><rect x="186" y="66" width="104" height="68" rx="14" fill="#FFFFFF" stroke="#0D0D0D" stroke-width="7"/><rect x="292" y="86.4" width="14" height="27.2" rx="4" fill="#0D0D0D"/><rect id="t-time-b0" x="196.0" y="76" width="16.5" height="48" rx="5" fill="#FFD21F" stroke="#0D0D0D" stroke-width="3"/><rect id="t-time-b1" x="218.5" y="76" width="16.5" height="48" rx="5" fill="#FFD21F" stroke="#0D0D0D" stroke-width="3"/><rect id="t-time-b2" x="241.0" y="76" width="16.5" height="48" rx="5" fill="#FFD21F" stroke="#0D0D0D" stroke-width="3"/><rect id="t-time-b3" x="263.5" y="76" width="16.5" height="48" rx="5" fill="#FFD21F" stroke="#0D0D0D" stroke-width="3"/></svg></div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#t-time .toon", { scale: 0.4, opacity: 0, rotation: -6 }, { scale: 1, opacity: 1, rotation: 0, duration: 0.35, ease: "back.out(2.2)" }, 0);
+    tl.to("#t-time .toon", { scale: 0.7, opacity: 0, duration: 0.2, ease: "power3.in" }, 1.78);
+    tl.fromTo("#t-time-h", { rotation: 0, svgOrigin: "95 100" }, { rotation: 720, duration: 1.5, ease: "power1.inOut" }, 0.2);
+    tl.fromTo("#t-time-b0", { opacity: 0.35 }, { opacity: 1, duration: 0.3, repeat: 2, repeatDelay: 0.2, ease: "power1.out" }, 0.4);
+    tl.fromTo("#t-time-b1", { opacity: 0.35 }, { opacity: 1, duration: 0.3, repeat: 2, repeatDelay: 0.2, ease: "power1.out" }, 0.48);
+    tl.fromTo("#t-time-b2", { opacity: 0.35 }, { opacity: 1, duration: 0.3, repeat: 2, repeatDelay: 0.2, ease: "power1.out" }, 0.56);
+    tl.fromTo("#t-time-b3", { opacity: 0.35 }, { opacity: 1, duration: 0.3, repeat: 2, repeatDelay: 0.2, ease: "power1.out" }, 0.64);
+
+    window.__timelines["t-time"] = tl;
+  </script>
+</template>
