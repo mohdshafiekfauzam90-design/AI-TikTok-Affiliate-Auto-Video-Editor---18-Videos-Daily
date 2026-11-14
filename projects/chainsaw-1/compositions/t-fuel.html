@@ -1,0 +1,34 @@
+<template>
+  <style>
+
+      :root { --yellow:#FFD21F; --red:#E5252A; --ink:#0D0D0D; --white:#FFFFFF; }
+
+      .hf-stroke { paint-order: stroke fill; -webkit-text-stroke: 14px var(--ink); }
+
+      #t-fuel { position:absolute; inset:0; font-family:'Inter',sans-serif; color:var(--white); }
+
+      .toon { position:absolute; width:364px; height:236px; border-radius:28px; background:rgba(13,13,13,.74);
+        border:4px solid var(--yellow); box-shadow:0 18px 40px rgba(0,0,0,.4); display:flex; align-items:center; justify-content:center; }
+      .toon svg { width:344px; height:215px; overflow:visible; }
+      #t-fuel .toon { left:680px; top:250px; }
+
+  </style>
+  <div id="t-fuel" data-composition-id="t-fuel" data-width="1080" data-height="1920">
+    <div class="toon"><svg viewBox="0 0 320 200" aria-hidden="true"><g id="t-fuel-a"><rect x="20" y="30" width="62" height="78" rx="10" fill="#1FBF8F" stroke="#0D0D0D" stroke-width="6"/><text x="51" y="80" text-anchor="middle" font-family="Archivo Black,Inter,sans-serif" font-size="22" fill="#0D0D0D">2T</text><rect x="40" y="16" width="22" height="16" rx="3" fill="#0D0D0D"/></g><g id="t-fuel-b"><path d="M238 30 H296 V108 H230 V44 Z" fill="#E5252A" stroke="#0D0D0D" stroke-width="6" stroke-linejoin="round"/><path d="M246 22 L262 22 L262 32" fill="none" stroke="#0D0D0D" stroke-width="6"/></g><path id="t-fuel-sa" d="M86 70 Q 120 90 132 128" fill="none" stroke="#1FBF8F" stroke-width="7" stroke-linecap="round" stroke-dasharray="70" stroke-dashoffset="70"/><path id="t-fuel-sb" d="M228 70 Q 196 90 186 128" fill="none" stroke="#FFD21F" stroke-width="7" stroke-linecap="round" stroke-dasharray="70" stroke-dashoffset="70"/><path d="M110 120 H210 L200 190 H120 Z" fill="#FFFFFF" stroke="#0D0D0D" stroke-width="6" stroke-linejoin="round"/><rect id="t-fuel-f" x="122" y="186" width="76" height="0" fill="#FFD21F"/><path id="t-fuel-w" d="M130 168 Q 160 150 190 168" fill="none" stroke="#1FBF8F" stroke-width="5" stroke-linecap="round" opacity="0"/></svg></div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#t-fuel .toon", { scale: 0.4, opacity: 0, rotation: -6 }, { scale: 1, opacity: 1, rotation: 0, duration: 0.35, ease: "back.out(2.2)" }, 0);
+    tl.to("#t-fuel .toon", { scale: 0.7, opacity: 0, duration: 0.2, ease: "power3.in" }, 1.98);
+    tl.fromTo("#t-fuel-a", { rotation: 0, svgOrigin: "82 70" }, { rotation: 35, duration: 0.3, ease: "power2.out" }, 0.2);
+    tl.fromTo("#t-fuel-b", { rotation: 0, svgOrigin: "230 70" }, { rotation: -35, duration: 0.3, ease: "power2.out" }, 0.3);
+    tl.to("#t-fuel-sa", { strokeDashoffset: 0, duration: 0.3, ease: "none" }, 0.45);
+    tl.to("#t-fuel-sb", { strokeDashoffset: 0, duration: 0.3, ease: "none" }, 0.55);
+    tl.fromTo("#t-fuel-f", { attr: { y: 186, height: 0 } }, { attr: { y: 140, height: 46 }, duration: 0.8, ease: "power1.out" }, 0.6);
+    tl.to(["#t-fuel-sa", "#t-fuel-sb"], { opacity: 0, duration: 0.2 }, 1.5);
+    tl.fromTo("#t-fuel-w", { opacity: 0, rotation: 0, svgOrigin: "160 160" }, { opacity: 1, rotation: 360, duration: 0.6, ease: "power1.inOut" }, 1.4);
+
+    window.__timelines["t-fuel"] = tl;
+  </script>
+</template>

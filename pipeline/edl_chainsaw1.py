@@ -4,7 +4,7 @@ Times are seconds in the ORIGINAL recording. Owner's rule: 30 s - 1 min, key poi
 - Hook: the GASOLINE 2-stroke close-up (19.40-21.30, his pause) under his line "kualiti cantik, harga budget je"
   (54.90-56.80, J-cut; not repeated at the end).
 Dropped: the first "warna dia ni, buat... cantik kan" take (the second, cleaner one is kept), "tukar je papan dia"
-repeat, "kat sini ni normal" (unclear) and the long pauses.
+repeat, "tukar je papan dia" (cut on the real word gaps, edges kept), "kat sini ni normal" (unclear) and the long pauses.
 """
 import json, sys, wave, numpy as np
 
@@ -29,9 +29,9 @@ def snap(t):
 KEEPS = [
     (0.00, 8.60, "exact", "Chainsaw size 11.5 inci, yang ni model latest daripada Re-Aim, jenis 2 stroke."),
     (17.62, 23.18, "exact", "Korang boleh tengok warna dia ni... cantik kan."),
-    (23.22, 30.66, "exact", "So yang ni papan dia pendek lah, kalau korang nak tukar papan dia pun boleh, ke 18 ke 22 inci ke, boleh je."),
-    (31.56, 34.64, "exact", "Tapi yang dia bagi original dia 11.5 inci."),
-    (36.26, 40.56, "exact", "Korang boleh masuk minyak hitam, minyak terpakai, fungsinya dia untuk basahkan rantai."),
+    (23.22, 30.72, "exact", "So yang ni papan dia pendek lah, kalau korang nak tukar papan dia pun boleh, ke 18 ke 22 inci ke, boleh je.", {"edge": "keep"}),
+    (31.68, 34.70, "exact", "Tapi yang dia bagi original dia 11.5 inci.", {"edge": "keep"}),
+    (36.62, 40.56, "exact", "Korang boleh masuk minyak hitam, minyak terpakai, fungsinya dia untuk basahkan rantai.", {"edge": "keep"}),
     (40.56, 45.30, "exact", "Lepas tu kat sini korang boleh masuk petrol, yang ni petrol bancuh 2T tau."),
     (45.30, 48.40, "exact", "Lepas tu sini on off dia, kat sini choke dia."),
     (49.06, 54.92, "exact", "Jadi kalau korang nak yang pendek sikit, korang boleh ambil 11.5 inci ni."),

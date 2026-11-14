@@ -1,0 +1,40 @@
+<template>
+  <style>
+
+      :root { --yellow:#FFD21F; --red:#E5252A; --ink:#0D0D0D; --white:#FFFFFF; }
+
+      .hf-stroke { paint-order: stroke fill; -webkit-text-stroke: 14px var(--ink); }
+
+      #t-chain { position:absolute; inset:0; font-family:'Inter',sans-serif; color:var(--white); }
+
+      .toon { position:absolute; width:364px; height:236px; border-radius:28px; background:rgba(13,13,13,.74);
+        border:4px solid var(--yellow); box-shadow:0 18px 40px rgba(0,0,0,.4); display:flex; align-items:center; justify-content:center; }
+      .toon svg { width:344px; height:215px; overflow:visible; }
+      #t-chain .toon { left:680px; top:250px; }
+
+  </style>
+  <div id="t-chain" data-composition-id="t-chain" data-width="1080" data-height="1920">
+    <div class="toon"><svg viewBox="0 0 320 200" aria-hidden="true"><ellipse cx="200" cy="150" rx="70" ry="34" fill="#C8955A" stroke="#0D0D0D" stroke-width="6"/><ellipse cx="200" cy="146" rx="46" ry="20" fill="#E3B57A" stroke="#9C6B36" stroke-width="3"/><rect id="t-chain-k" x="196" y="118" width="8" height="0" fill="#0D0D0D"/><rect id="t-chain-c0" x="200" y="104" width="10" height="6" rx="2" fill="#E8C98E" stroke="#0D0D0D" stroke-width="2" opacity="0"/><rect id="t-chain-c1" x="200" y="104" width="10" height="6" rx="2" fill="#E8C98E" stroke="#0D0D0D" stroke-width="2" opacity="0"/><rect id="t-chain-c2" x="200" y="104" width="10" height="6" rx="2" fill="#E8C98E" stroke="#0D0D0D" stroke-width="2" opacity="0"/><rect id="t-chain-c3" x="200" y="104" width="10" height="6" rx="2" fill="#E8C98E" stroke="#0D0D0D" stroke-width="2" opacity="0"/><rect id="t-chain-c4" x="200" y="104" width="10" height="6" rx="2" fill="#E8C98E" stroke="#0D0D0D" stroke-width="2" opacity="0"/><g id="t-chain-s"><rect x="20" y="50" width="250" height="34" rx="17" fill="#D9DDE2" stroke="#0D0D0D" stroke-width="6"/><g id="t-chain-t"><rect x="34" y="44" width="9" height="8" fill="#0D0D0D"/><rect x="52" y="44" width="9" height="8" fill="#0D0D0D"/><rect x="70" y="44" width="9" height="8" fill="#0D0D0D"/><rect x="88" y="44" width="9" height="8" fill="#0D0D0D"/><rect x="106" y="44" width="9" height="8" fill="#0D0D0D"/><rect x="124" y="44" width="9" height="8" fill="#0D0D0D"/><rect x="142" y="44" width="9" height="8" fill="#0D0D0D"/><rect x="160" y="44" width="9" height="8" fill="#0D0D0D"/><rect x="178" y="44" width="9" height="8" fill="#0D0D0D"/><rect x="196" y="44" width="9" height="8" fill="#0D0D0D"/><rect x="214" y="44" width="9" height="8" fill="#0D0D0D"/><rect x="232" y="44" width="9" height="8" fill="#0D0D0D"/></g><rect x="250" y="34" width="62" height="64" rx="14" fill="#FFD21F" stroke="#0D0D0D" stroke-width="6"/><rect x="262" y="48" width="38" height="14" rx="4" fill="#0D0D0D"/></g></svg></div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#t-chain .toon", { scale: 0.4, opacity: 0, rotation: -6 }, { scale: 1, opacity: 1, rotation: 0, duration: 0.35, ease: "back.out(2.2)" }, 0);
+    tl.to("#t-chain .toon", { scale: 0.7, opacity: 0, duration: 0.2, ease: "power3.in" }, 1.78);
+    tl.fromTo("#t-chain-t", { x: 0 }, { x: 18, duration: 0.12, repeat: 14, ease: "none" }, 0.1);
+    tl.fromTo("#t-chain-s", { y: -10 }, { y: 46, duration: 1.4, ease: "power1.inOut" }, 0.25);
+    tl.fromTo("#t-chain-k", { attr: { height: 0 } }, { attr: { height: 64 }, duration: 1.4, ease: "power1.inOut" }, 0.25);
+    tl.fromTo("#t-chain-c0", { opacity: 0, x: 0, y: 0, rotation: 0 }, { opacity: 1, x: 30, y: -30, rotation: 90, duration: 0.35, ease: "power2.out" }, 0.4);
+    tl.to("#t-chain-c0", { opacity: 0, duration: 0.15 }, 0.75);
+    tl.fromTo("#t-chain-c1", { opacity: 0, x: 0, y: 0, rotation: 0 }, { opacity: 1, x: -40, y: -38, rotation: 180, duration: 0.35, ease: "power2.out" }, 0.62);
+    tl.to("#t-chain-c1", { opacity: 0, duration: 0.15 }, 0.97);
+    tl.fromTo("#t-chain-c2", { opacity: 0, x: 0, y: 0, rotation: 0 }, { opacity: 1, x: 50, y: -46, rotation: 270, duration: 0.35, ease: "power2.out" }, 0.84);
+    tl.to("#t-chain-c2", { opacity: 0, duration: 0.15 }, 1.19);
+    tl.fromTo("#t-chain-c3", { opacity: 0, x: 0, y: 0, rotation: 0 }, { opacity: 1, x: -60, y: -54, rotation: 360, duration: 0.35, ease: "power2.out" }, 1.06);
+    tl.to("#t-chain-c3", { opacity: 0, duration: 0.15 }, 1.41);
+    tl.fromTo("#t-chain-c4", { opacity: 0, x: 0, y: 0, rotation: 0 }, { opacity: 1, x: 70, y: -62, rotation: 450, duration: 0.35, ease: "power2.out" }, 1.28);
+    tl.to("#t-chain-c4", { opacity: 0, duration: 0.15 }, 1.63);
+
+    window.__timelines["t-chain"] = tl;
+  </script>
+</template>

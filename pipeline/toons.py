@@ -21,6 +21,12 @@ outlines in the MUROH DOOH palette) placed in a free corner, popping in and out 
     light_beam     a work lamp switches on and throws a fan of light  (work light: terang, mod cahaya)
     magnet         a horseshoe magnet pulls a light bar onto it  ("ada magnet", lekat dekat besi)
     saw_cut        a circular-saw blade spins across a plank, cutting it with sawdust flying  (circular saw: potong papan)
+    chain_run      a chainsaw bar with its chain running drops through a log, chips flying  (chainsaw: potong kayu / pokok)
+    oil_drop       oil drips from a can onto a running chain, which turns glossy  (minyak rantai: basahkan rantai)
+    fuel_mix       petrol and 2T oil pour into one can and swirl together  (petrol bancuh 2T)
+    touch_screen   a gloved finger taps a phone screen, ripples answer  (sarung tangan boleh guna skrin sentuh)
+    glove_shield   a glove with a shield badge, hits bounce off it  (lindung tangan, tahan lasak)
+    leaf_blow      a blower nozzle pushes air lines that sweep leaves away  (blower: tiup daun / habuk)
 """
 INK, YEL, RED, WHITE = "#0D0D0D", "#FFD21F", "#E5252A", "#FFFFFF"
 
@@ -181,6 +187,86 @@ def toon(kind, tid, dur):
               f'    tl.fromTo("#{p}-k", {{ attr: {{ width: 6 }} }}, {{ attr: {{ width: 230 }}, duration: {d}, ease: "power1.inOut" }}, 0.25);\n' +
               "".join(f'    tl.fromTo("#{p}-d{i}", {{ opacity: 0, x: {40 * i}, y: 0 }}, {{ opacity: 1, x: {40 * i - 30 - 6 * i}, y: {-28 - 7 * i}, duration: 0.35, ease: "power2.out" }}, {round(0.45 + 0.25 * i, 3)});\n'
                       f'    tl.to("#{p}-d{i}", {{ opacity: 0, duration: 0.15 }}, {round(0.8 + 0.25 * i, 3)});\n' for i in range(5)))
+    elif kind == "chain_run":
+        import math
+        chips = "".join(f'<rect id="{p}-c{i}" x="200" y="104" width="10" height="6" rx="2" fill="#E8C98E" stroke="{INK}" stroke-width="2" opacity="0"/>' for i in range(5))
+        teeth = "".join(f'<rect x="{34 + 18 * k}" y="44" width="9" height="8" fill="{INK}"/>' for k in range(12))
+        svg = (f'<ellipse cx="200" cy="150" rx="70" ry="34" fill="#C8955A" stroke="{INK}" stroke-width="6"/>'
+               f'<ellipse cx="200" cy="146" rx="46" ry="20" fill="#E3B57A" stroke="#9C6B36" stroke-width="3"/>'
+               f'<rect id="{p}-k" x="196" y="118" width="8" height="0" fill="{INK}"/>' + chips +
+               f'<g id="{p}-s"><rect x="20" y="50" width="250" height="34" rx="17" fill="#D9DDE2" stroke="{INK}" stroke-width="6"/>'
+               f'<g id="{p}-t">{teeth}</g>'
+               f'<rect x="250" y="34" width="62" height="64" rx="14" fill="{YEL}" stroke="{INK}" stroke-width="6"/>'
+               f'<rect x="262" y="48" width="38" height="14" rx="4" fill="{INK}"/></g>')
+        d = round(dur - 0.6, 3)
+        js = (f'    tl.fromTo("#{p}-t", {{ x: 0 }}, {{ x: 18, duration: 0.12, repeat: {max(3, int((dur - 0.3) / 0.12))}, ease: "none" }}, 0.1);\n'
+              f'    tl.fromTo("#{p}-s", {{ y: -10 }}, {{ y: 46, duration: {d}, ease: "power1.inOut" }}, 0.25);\n'
+              f'    tl.fromTo("#{p}-k", {{ attr: {{ height: 0 }} }}, {{ attr: {{ height: 64 }}, duration: {d}, ease: "power1.inOut" }}, 0.25);\n' +
+              "".join(f'    tl.fromTo("#{p}-c{i}", {{ opacity: 0, x: 0, y: 0, rotation: 0 }}, {{ opacity: 1, x: {(-1) ** i * (30 + 10 * i)}, y: {-30 - 8 * i}, rotation: {90 * (i + 1)}, duration: 0.35, ease: "power2.out" }}, {round(0.4 + 0.22 * i, 3)});\n'
+                      f'    tl.to("#{p}-c{i}", {{ opacity: 0, duration: 0.15 }}, {round(0.75 + 0.22 * i, 3)});\n' for i in range(5)))
+    elif kind == "oil_drop":
+        teeth = "".join(f'<rect x="{30 + 20 * k}" y="148" width="10" height="9" fill="{INK}"/>' for k in range(13))
+        drops = "".join(f'<path id="{p}-d{i}" d="M170 76 C 162 90, 162 98, 170 100 C 178 98, 178 90, 170 76 Z" fill="#3A2A12" stroke="{INK}" stroke-width="3" opacity="0"/>' for i in range(3))
+        svg = (f'<g id="{p}-can"><path d="M88 22 H150 V74 H88 Z" fill="{RED}" stroke="{INK}" stroke-width="6" stroke-linejoin="round"/>'
+               f'<path d="M150 40 L182 64 L176 72 L150 56 Z" fill="#C9CDD2" stroke="{INK}" stroke-width="5" stroke-linejoin="round"/>'
+               f'<rect x="100" y="36" width="38" height="20" rx="4" fill="{YEL}"/></g>' + drops +
+               f'<rect id="{p}-bar" x="20" y="150" width="280" height="30" rx="15" fill="#D9DDE2" stroke="{INK}" stroke-width="6"/>'
+               f'<g id="{p}-t">{teeth}</g>'
+               f'<rect id="{p}-g" x="26" y="156" width="268" height="6" rx="3" fill="{WHITE}" opacity="0"/>')
+        js = (f'    tl.fromTo("#{p}-can", {{ rotation: 0, svgOrigin: "120 74" }}, {{ rotation: 22, duration: 0.3, ease: "power2.out" }}, 0.25);\n'
+              f'    tl.fromTo("#{p}-t", {{ x: 0 }}, {{ x: 20, duration: 0.14, repeat: {max(3, int((dur - 0.3) / 0.14))}, ease: "none" }}, 0.1);\n' +
+              "".join(f'    tl.fromTo("#{p}-d{i}", {{ opacity: 1, y: 0 }}, {{ opacity: 1, y: 52, duration: 0.32, ease: "power2.in" }}, {round(0.5 + 0.3 * i, 3)});\n'
+                      f'    tl.to("#{p}-d{i}", {{ opacity: 0, scaleX: 2, scaleY: 0.3, transformOrigin: "50% 100%", duration: 0.12 }}, {round(0.82 + 0.3 * i, 3)});\n' for i in range(3)) +
+              f'    tl.fromTo("#{p}-g", {{ opacity: 0 }}, {{ opacity: 0.9, duration: 0.3, repeat: 1, yoyo: true }}, 1.0);\n')
+    elif kind == "fuel_mix":
+        svg = (f'<g id="{p}-a"><rect x="20" y="30" width="62" height="78" rx="10" fill="#1FBF8F" stroke="{INK}" stroke-width="6"/>'
+               f'<text x="51" y="80" text-anchor="middle" font-family="Archivo Black,Inter,sans-serif" font-size="22" fill="{INK}">2T</text>'
+               f'<rect x="40" y="16" width="22" height="16" rx="3" fill="{INK}"/></g>'
+               f'<g id="{p}-b"><path d="M238 30 H296 V108 H230 V44 Z" fill="{RED}" stroke="{INK}" stroke-width="6" stroke-linejoin="round"/>'
+               f'<path d="M246 22 L262 22 L262 32" fill="none" stroke="{INK}" stroke-width="6"/></g>'
+               f'<path id="{p}-sa" d="M86 70 Q 120 90 132 128" fill="none" stroke="#1FBF8F" stroke-width="7" stroke-linecap="round" stroke-dasharray="70" stroke-dashoffset="70"/>'
+               f'<path id="{p}-sb" d="M228 70 Q 196 90 186 128" fill="none" stroke="{YEL}" stroke-width="7" stroke-linecap="round" stroke-dasharray="70" stroke-dashoffset="70"/>'
+               f'<path d="M110 120 H210 L200 190 H120 Z" fill="{WHITE}" stroke="{INK}" stroke-width="6" stroke-linejoin="round"/>'
+               f'<rect id="{p}-f" x="122" y="186" width="76" height="0" fill="{YEL}"/>'
+               f'<path id="{p}-w" d="M130 168 Q 160 150 190 168" fill="none" stroke="#1FBF8F" stroke-width="5" stroke-linecap="round" opacity="0"/>')
+        js = (f'    tl.fromTo("#{p}-a", {{ rotation: 0, svgOrigin: "82 70" }}, {{ rotation: 35, duration: 0.3, ease: "power2.out" }}, 0.2);\n'
+              f'    tl.fromTo("#{p}-b", {{ rotation: 0, svgOrigin: "230 70" }}, {{ rotation: -35, duration: 0.3, ease: "power2.out" }}, 0.3);\n'
+              f'    tl.to("#{p}-sa", {{ strokeDashoffset: 0, duration: 0.3, ease: "none" }}, 0.45);\n'
+              f'    tl.to("#{p}-sb", {{ strokeDashoffset: 0, duration: 0.3, ease: "none" }}, 0.55);\n'
+              f'    tl.fromTo("#{p}-f", {{ attr: {{ y: 186, height: 0 }} }}, {{ attr: {{ y: 140, height: 46 }}, duration: {round(max(0.6, dur - 1.4), 3)}, ease: "power1.out" }}, 0.6);\n'
+              f'    tl.to(["#{p}-sa", "#{p}-sb"], {{ opacity: 0, duration: 0.2 }}, {round(max(1.1, dur - 0.7), 3)});\n'
+              f'    tl.fromTo("#{p}-w", {{ opacity: 0, rotation: 0, svgOrigin: "160 160" }}, {{ opacity: 1, rotation: 360, duration: 0.6, ease: "power1.inOut" }}, {round(max(1.1, dur - 0.8), 3)});\n')
+    elif kind == "touch_screen":
+        rip = "".join(f'<circle id="{p}-r{i}" cx="118" cy="96" r="10" fill="none" stroke="{YEL}" stroke-width="5" opacity="0"/>' for i in range(2))
+        svg = (f'<rect x="64" y="14" width="110" height="176" rx="18" fill="{INK}" stroke="{WHITE}" stroke-width="5"/>'
+               f'<rect id="{p}-sc" x="74" y="30" width="90" height="144" rx="8" fill="#2E3A48"/>'
+               f'<rect x="84" y="44" width="70" height="12" rx="6" fill="#5B6B7E"/><rect x="84" y="64" width="50" height="12" rx="6" fill="#5B6B7E"/>' + rip +
+               f'<g id="{p}-h"><path d="M150 108 C 150 96, 166 96, 166 108 L 166 128 L 210 128 C 236 128, 250 146, 250 170 L 250 200 L 168 200 L 136 150 C 130 140, 146 132, 152 140 Z" fill="{RED}" stroke="{INK}" stroke-width="6" stroke-linejoin="round"/>'
+               f'<path d="M150 108 C 150 96, 166 96, 166 108 L 166 124 L 150 124 Z" fill="#2A2A2A" stroke="{INK}" stroke-width="4"/></g>'
+               f'<path id="{p}-ok" d="M190 40 L208 58 L240 24" fill="none" stroke="#1FBF8F" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="80" stroke-dashoffset="80"/>')
+        js = (f'    tl.fromTo("#{p}-h", {{ x: 40, y: 40 }}, {{ x: -40, y: -10, duration: 0.4, ease: "power2.out" }}, 0.2);\n'
+              f'    tl.to("#{p}-h", {{ y: -4, duration: 0.1, yoyo: true, repeat: 3, ease: "power1.inOut" }}, 0.65);\n' +
+              "".join(f'    tl.fromTo("#{p}-r{i}", {{ opacity: 1, attr: {{ r: 8 }} }}, {{ opacity: 0, attr: {{ r: 42 }}, duration: 0.45, ease: "power2.out" }}, {round(0.65 + 0.2 * i, 3)});\n' for i in range(2)) +
+              f'    tl.to("#{p}-sc", {{ attr: {{ fill: "#3C7BD9" }}, duration: 0.15 }}, 0.7);\n'
+              f'    tl.to("#{p}-ok", {{ strokeDashoffset: 0, duration: 0.3, ease: "power2.out" }}, 1.05);\n')
+    elif kind == "glove_shield":
+        hits = "".join(f'<path id="{p}-x{i}" d="M0 0 L14 8 L4 10 L16 22" fill="none" stroke="{WHITE}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" transform="translate({x} {y})" opacity="0"/>'
+                       for i, (x, y) in enumerate([(30, 40), (262, 60), (40, 140)]))
+        svg = (f'<g id="{p}-g"><path d="M110 190 L110 110 C 110 100, 124 100, 124 110 L 124 60 C 124 48, 140 48, 140 60 L 140 44 C 140 32, 156 32, 156 44 L 156 52 C 156 40, 172 40, 172 52 L 172 66 C 172 56, 188 56, 188 66 L 188 140 C 188 170, 176 190, 160 190 Z" fill="{RED}" stroke="{INK}" stroke-width="6" stroke-linejoin="round"/>'
+               f'<path d="M110 150 H188" stroke="{INK}" stroke-width="4"/></g>'
+               f'<g id="{p}-s"><path d="M210 96 L246 84 L282 96 C 282 134, 266 156, 246 166 C 226 156, 210 134, 210 96 Z" fill="{YEL}" stroke="{INK}" stroke-width="6" stroke-linejoin="round"/>'
+               f'<path d="M230 122 L242 134 L264 108" fill="none" stroke="{INK}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>' + hits)
+        js = (f'    tl.fromTo("#{p}-s", {{ scale: 0, opacity: 0, svgOrigin: "246 125" }}, {{ scale: 1, opacity: 1, duration: 0.35, ease: "back.out(2.5)" }}, 0.35);\n' +
+              "".join(f'    tl.fromTo("#{p}-x{i}", {{ opacity: 0, scale: 0.4 }}, {{ opacity: 1, scale: 1, duration: 0.15, yoyo: true, repeat: 1, ease: "power2.out", transformOrigin: "50% 50%" }}, {round(0.8 + 0.22 * i, 3)});\n' for i in range(3)) +
+              f'    tl.to("#{p}-g", {{ x: 3, duration: 0.06, yoyo: true, repeat: 5, ease: "none" }}, 0.8);\n')
+    elif kind == "leaf_blow":
+        leaves = "".join(f'<path id="{p}-l{i}" d="M0 0 C 10 -12, 26 -10, 30 0 C 26 10, 10 12, 0 0 Z" fill="{["#1FBF8F", YEL, "#C8955A", "#1FBF8F"][i]}" stroke="{INK}" stroke-width="3" transform="translate({180 + 22 * i} {120 + (i % 2) * 34})"/>' for i in range(4))
+        lines = "".join(f'<path id="{p}-w{i}" d="M120 {84 + 22 * i} H310" fill="none" stroke="{WHITE}" stroke-width="5" stroke-linecap="round" stroke-dasharray="30 26" opacity="0"/>' for i in range(3))
+        svg = (lines + leaves +
+               f'<path d="M14 70 H70 L120 84 V140 L70 150 H14 Z" fill="#1FBF8F" stroke="{INK}" stroke-width="6" stroke-linejoin="round"/>'
+               f'<rect x="20" y="150" width="34" height="40" rx="8" fill="{INK}"/>')
+        js = ("".join(f'    tl.fromTo("#{p}-w{i}", {{ opacity: 0, strokeDashoffset: 0 }}, {{ opacity: 1, strokeDashoffset: -224, duration: {round(dur - 0.4, 3)}, ease: "none" }}, 0.2);\n' for i in range(3)) +
+              "".join(f'    tl.to("#{p}-l{i}", {{ x: "+=140", y: "-={30 + 18 * i}", rotation: {200 + 60 * i}, opacity: 0, duration: 0.7, ease: "power2.in" }}, {round(0.5 + 0.18 * i, 3)});\n' for i in range(4)))
     else:
         raise ValueError(kind)
     html = f'    <div class="toon"><svg viewBox="0 0 320 200" aria-hidden="true">{svg}</svg></div>\n'
