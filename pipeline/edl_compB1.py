@@ -31,7 +31,7 @@ KEEPS = [
     (5.90, 8.34, "exact", "air compressor ni dah ada stock."),
     (19.46, 25.88, "exact", "Lepas tu satu lagi yang ni jenis silent, free oil, maknanya korang tak perlu pun nak jaga minyak."),
     (28.20, 31.40, "exact", "Korang boleh dengar bunyi dia tu."),
-    (38.00, 41.58, "exact", "Bila korang on ni dia akan stop sampai 8 bar.", {"edge": "keep"}),
+    (38.00, 41.76, "exact", "Bila korang on ni dia akan stop sampai 8 bar.", {"edge": "keep"}),
     (49.60, 57.54, "exact", "Dia ambil masa ni lah macam untuk yang saiz kecil ni, ok untuk ambil masa dia penuh 1 minit untuk 8 liter.", {"edge": "keep"}),
     (57.58, 69.58, "exact", "Jadi yang ni 30 liter memang puas hati kan, kalau korang ada bajet terus ambil yang 30 liter ni, senang nak buat kerja, nak buat pula main motor, pula main kereta, lepas je.", {"edge": "keep"}),
     (70.30, 76.74, "exact", "Untuk yang ni kalau korang beli korang juga akan dapat sekali dengan hose nozzle ni sekali, harga bajet je."),

@@ -27,6 +27,7 @@ outlines in the MUROH DOOH palette) placed in a free corner, popping in and out 
     touch_screen   a gloved finger taps a phone screen, ripples answer  (sarung tangan boleh guna skrin sentuh)
     glove_shield   a glove with a shield badge, hits bounce off it  (lindung tangan, tahan lasak)
     leaf_blow      a blower nozzle pushes air lines that sweep leaves away  (blower: tiup daun / habuk)
+    gauge          a pressure gauge needle sweeps up to the red mark, then a tick  (compressor: "stop sampai 8 bar", tekanan)
 """
 INK, YEL, RED, WHITE = "#0D0D0D", "#FFD21F", "#E5252A", "#FFFFFF"
 
@@ -267,6 +268,19 @@ def toon(kind, tid, dur):
                f'<rect x="20" y="150" width="34" height="40" rx="8" fill="{INK}"/>')
         js = ("".join(f'    tl.fromTo("#{p}-w{i}", {{ opacity: 0, strokeDashoffset: 0 }}, {{ opacity: 1, strokeDashoffset: -224, duration: {round(dur - 0.4, 3)}, ease: "none" }}, 0.2);\n' for i in range(3)) +
               "".join(f'    tl.to("#{p}-l{i}", {{ x: "+=140", y: "-={30 + 18 * i}", rotation: {200 + 60 * i}, opacity: 0, duration: 0.7, ease: "power2.in" }}, {round(0.5 + 0.18 * i, 3)});\n' for i in range(4)))
+    elif kind == "gauge":
+        import math
+        ticks = "".join(f'<line x1="{160 + 62 * math.cos(math.radians(a)):.1f}" y1="{120 - 62 * math.sin(math.radians(a)):.1f}" '
+                        f'x2="{160 + 74 * math.cos(math.radians(a)):.1f}" y2="{120 - 74 * math.sin(math.radians(a)):.1f}" stroke="{INK}" stroke-width="5"/>'
+                        for a in range(180, -1, -30))
+        svg = (f'<path d="M78 120 A 82 82 0 0 1 242 120 Z" fill="{WHITE}" stroke="{INK}" stroke-width="8" stroke-linejoin="round"/>'
+               f'<path d="M218 62 A 82 82 0 0 1 242 120 L 228 120 A 68 68 0 0 0 208 72 Z" fill="{RED}"/>' + ticks +
+               f'<g id="{p}-n"><line x1="160" y1="120" x2="96" y2="120" stroke="{RED}" stroke-width="8" stroke-linecap="round"/></g>'
+               f'<circle cx="160" cy="120" r="12" fill="{INK}"/>'
+               f'<rect x="120" y="138" width="80" height="40" rx="10" fill="{YEL}" stroke="{INK}" stroke-width="5"/>'
+               f'<path id="{p}-ok" d="M146 158 L156 168 L176 146" fill="none" stroke="{INK}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="50" stroke-dashoffset="50"/>')
+        js = (f'    tl.fromTo("#{p}-n", {{ rotation: 0, svgOrigin: "160 120" }}, {{ rotation: 150, duration: {round(max(0.6, dur - 1.0), 3)}, ease: "power2.inOut" }}, 0.3);\n'
+              f'    tl.to("#{p}-ok", {{ strokeDashoffset: 0, duration: 0.3, ease: "power2.out" }}, {round(max(1.0, dur - 0.6), 3)});\n')
     else:
         raise ValueError(kind)
     html = f'    <div class="toon"><svg viewBox="0 0 320 200" aria-hidden="true">{svg}</svg></div>\n'
