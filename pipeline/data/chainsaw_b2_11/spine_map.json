@@ -1,0 +1,75 @@
+{
+ "duration": 48.5,
+ "segments": [
+  {
+   "out_in": 0.0,
+   "src_in": 0.46,
+   "src_out": 5.7
+  },
+  {
+   "out_in": 5.233,
+   "src_in": 5.7,
+   "src_out": 6.64
+  },
+  {
+   "out_in": 6.167,
+   "src_in": 6.98,
+   "src_out": 14.74
+  },
+  {
+   "out_in": 13.933,
+   "src_in": 22.12,
+   "src_out": 27.18
+  },
+  {
+   "out_in": 19.0,
+   "src_in": 27.4,
+   "src_out": 27.9
+  },
+  {
+   "out_in": 19.5,
+   "src_in": 28.25,
+   "src_out": 31.66
+  },
+  {
+   "out_in": 22.9,
+   "src_in": 41.74,
+   "src_out": 47.48
+  },
+  {
+   "out_in": 28.633,
+   "src_in": 47.48,
+   "src_out": 51.98
+  },
+  {
+   "out_in": 33.133,
+   "src_in": 57.64,
+   "src_out": 58.03
+  },
+  {
+   "out_in": 33.533,
+   "src_in": 58.32,
+   "src_out": 60.93
+  },
+  {
+   "out_in": 36.133,
+   "src_in": 62.63,
+   "src_out": 63.46
+  },
+  {
+   "out_in": 36.967,
+   "src_in": 72.12,
+   "src_out": 80.7
+  },
+  {
+   "out_in": 45.533,
+   "src_in": 86.02,
+   "src_out": 88.22
+  },
+  {
+   "out_in": 47.733,
+   "src_in": 88.22,
+   "src_out": 89.0
+  }
+ ]
+}
